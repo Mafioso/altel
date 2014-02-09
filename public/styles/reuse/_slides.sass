@@ -1,0 +1,95 @@
+%absolute-box
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+.slider-container
+.slides
+.item
+  @extend %absolute-box
+  @extend %animation-hack
+  @include transition-property(opacity)
+  @include transition-duration(.3s)
+  @include transition-timing-function($ease-in-out-sine)
+  overflow: hidden
+  opacity: 0
+  &.active
+    opacity: 1
+    z-index: 1
+
+.slide-visual,
+.slide-message,
+.slide-product
+  @extend %absolute-box
+
+.slide-visual,
+.slide-heading,
+.slide-product,
+.slide-cta
+  @extend %animation-hack
+  @include transition-property(transform, opacity)
+  @include transition-duration(.8s)
+  @include transition-timing-function($ease-in-out-sine)
+
+
+.slide-message
+  top: 50%
+  @include transform(translateY(-50%))
+  bottom: auto
+  width: 50%
+  padding-left: (1/12)*100%
+
+.slide-visual
+  width: 50%
+  left: auto
+  text-align: right
+  @include transform(translateX(100%))
+  @include transition-timing-function($ease-in-out-expo)
+  .active &
+    @include transform(translateX(0))
+.slide-product
+  @include transform(translateY(100%))
+  .active &
+    @include transform(translateY(0))
+
+.slide-heading
+  padding: 0 0 $gutter
+  display: block
+  @extend %epic-heading
+  font-weight: 400
+  text-transform: uppercase
+  opacity: 0
+  @include transition-delay(.2s)
+  @include transform(translateX(-100%))
+  .active &
+    opacity: 1
+    @include transform(translateX(0))
+  .extra
+    @extend %small-heading
+    text-transform: none
+    display: block
+
+// TODO: change this to a more robust button
+.cta-button
+  display: inline-block
+  padding: $gutter 2*$gutter
+  border-radius: $gutter
+  background-color: $accent-color
+  color: white
+  &:hover
+    color: white
+  
+.slide-cta
+  opacity: 0
+  @include transition-delay(.4s)
+  @include transform(translateX(-100%))
+  padding-bottom: $small-line
+  .active &
+    @include transform(translateX(0))
+    opacity: 1
+
+.slide-product
+  text-align: center
+  padding-top: 24px

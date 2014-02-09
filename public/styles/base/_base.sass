@@ -1,0 +1,23 @@
+*
+  @include box-sizing(border-box)
+
+@import "mixins"
+@import "vars"
+@import "grid"
+@import "type"
+@import "form"
+
+html,
+body
+  min-height: 100%
+
+body
+  color: $normal-text-color
+  background-color: $bg-color
+  border-top: 3px solid $accent-color
+  border-bottom: 3px solid $accent-color
+
+%animation-hack
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+  @include backface-visibility(hidden)
+  @include transform(translateZ(0))

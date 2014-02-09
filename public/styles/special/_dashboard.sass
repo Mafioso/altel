@@ -1,0 +1,30 @@
+.account-info
+  left: 0
+  padding: $gutter
+  display: block
+  position: absolute
+  top: 50%
+  @include transform(translateY(-50%))
+  color: $secondary-text-color
+  @extend %small-text
+
+.current-balance
+  color: $accent-color
+  @extend %large-heading
+  font-weight: 400
+  text-transform: uppercase
+  text-align: center
+  padding-bottom: $small-line
+  &:after
+    content: ""
+    width: 30px
+    width: calculateRem(30px)
+    height: 30px
+    height: calculateRem(30px)
+    display: inline-block
+    @include background-image("icons/icon-tenge")
+    background-position: 50% 50%
+    background-repeat: no-repeat
+
+.account-additional-info
+  padding-top: $small-line

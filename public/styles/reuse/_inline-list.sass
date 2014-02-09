@@ -1,0 +1,10 @@
+.inline-list
+  >li
+    display: inline-block
+    &:after
+      content: $scut-middot
+      padding-left: $gutter
+      padding-right: $gutter
+    &:last-child:after
+      content: ""
+      padding: 0

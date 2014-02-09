@@ -1,0 +1,137 @@
+%container
+  position: relative
+  margin: auto
+  // width: $container-width + 2*$gutter
+  padding-left: $gutter
+  padding-right: $gutter
+
+.container
+  @extend %container
+  @include bp-xlarge
+    width: 82.5em
+  @include bp-large
+    width: 60em
+
+%column
+  @include inline-block
+  vertical-align: top
+
+%gutter
+  padding-left:  $gutter
+  padding-right: $gutter
+
+%extend-left
+  margin-left: -1*$gutter
+%extend-right
+  margin-right: -1*$gutter
+%extend-both
+  @extend %extend-left
+  @extend %extend-right
+
+.column
+  @extend %column
+.middle
+  vertical-align: middle
+
+.gutter
+  @extend %gutter
+.gutter-right
+  padding-right: $gutter
+.gutter-left
+  padding-left: $gutter
+.extend-both
+  @extend %extend-both
+
+@mixin grid-for($namespace: "")
+  .#{$namespace}1
+    width: 100%
+    @extend %column
+
+  .#{$namespace}1-2
+    width: 50%
+    @extend %column
+
+  .#{$namespace}1-3
+    width: (100/3)*1%
+    @extend %column
+  .#{$namespace}2-3
+    width: (100/3)*2%
+    @extend %column
+
+  .#{$namespace}1-4
+    width: 25%
+    @extend %column
+  .#{$namespace}2-4
+    @extend .#{$namespace}1-2
+  .#{$namespace}3-4
+    width: 75%
+    @extend %column
+
+  .#{$namespace}1-6
+    width: (100/6)*1%
+    @extend %column
+  .#{$namespace}2-6
+    @extend .#{$namespace}1-3
+  .#{$namespace}3-6
+    @extend .#{$namespace}1-2
+  .#{$namespace}4-6
+    @extend .#{$namespace}2-3
+  .#{$namespace}5-6
+    width: (100/6)*5%
+    @extend %column
+
+  .#{$namespace}1-10
+    width: 10%
+    @extend %column
+  .#{$namespace}2-10
+    width: 20%
+    @extend %column
+  .#{$namespace}3-10
+    width: 30%
+    @extend %column
+  .#{$namespace}4-10
+    width: 40%
+    @extend %column
+  .#{$namespace}5-10
+    @extend .#{$namespace}1-2
+  .#{$namespace}6-10
+    width: 60%
+    @extend %column
+  .#{$namespace}7-10
+    width: 70%
+    @extend %column
+  .#{$namespace}8-10
+    width: 80%
+    @extend %column
+  .#{$namespace}9-10
+    width: 90%
+    @extend %column
+
+  .#{$namespace}1-12
+    width: (100/12)*1%
+    @extend %column
+  .#{$namespace}2-12
+    @extend .#{$namespace}1-6
+  .#{$namespace}3-12
+    @extend .#{$namespace}1-4
+  .#{$namespace}4-12
+    @extend .#{$namespace}1-3
+  .#{$namespace}5-12
+    width: (100/12)*5%
+    @extend %column
+  .#{$namespace}6-12
+    @extend .#{$namespace}1-6
+  .#{$namespace}7-12
+    width: (100/12)*7%
+    @extend %column
+  .#{$namespace}8-12
+    @extend .#{$namespace}2-3
+  .#{$namespace}9-12
+    @extend .#{$namespace}3-4
+  .#{$namespace}10-12
+    @extend .#{$namespace}5-6
+  .#{$namespace}11-12
+    width: (100/12)*11%
+    @extend %column
+
+@include grid-for("d")
