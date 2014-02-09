@@ -1,5 +1,6 @@
 .account-info
   left: 0
+  right: 0
   padding: $gutter
   display: block
   position: absolute
@@ -8,13 +9,22 @@
   color: $secondary-text-color
   @extend %small-text
 
+.current-balance-container
+  text-align: center
+
 .current-balance
-  color: $accent-color
+  // color: $accent-color
+  padding: $baseline $gutter
+  display: inline-block
+  color: white
+  background-color: $accent-color
   @extend %large-heading
   font-weight: 400
   text-transform: uppercase
   text-align: center
-  padding-bottom: $small-line
+  margin-bottom: $small-line
+  border-radius: 18px
+  // text-shadow: 0 2px 1px darken($accent-color, 5%)
   &:after
     content: ""
     width: 30px
@@ -26,5 +36,11 @@
     background-position: 50% 50%
     background-repeat: no-repeat
 
+.counter-group
+  padding-top:    $gutter
+  padding-bottom: $gutter
+
 .account-additional-info
-  padding-top: $small-line
+  @extend %small-text
+  color: white
+  background-color: $secondary-text-color

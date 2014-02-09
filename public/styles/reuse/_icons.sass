@@ -1,6 +1,8 @@
 [class^="icon-"]
   &:before
     content: ""
+    height: 18px
+    width: 18px
     height: calculateRem(18px)
     width: calculateRem(18px)
     display: inline-block
@@ -15,3 +17,23 @@
   @include background-image("icons/icon-support")
 .icon-search:before
   @include background-image("icons/icon-search")
+.icon-time:before
+  @include background-image("icons/icon-time")
+.icon-message:before
+  @include background-image("icons/icon-message")
+.icon-wifi:before
+  @include background-image("icons/icon-wifi")
+.icon-lte:before
+  @include background-image("icons/icon-lte")
+.icon-phone:before
+  @include background-image("icons/icon-phone")
+.icon-edit
+  color: $normal-text-color
+  &:hover
+    color: darken($normal-text-color, 10%)
+.icon-edit:before
+  height: 36px
+  width: 36px
+  height: calculateRem(36px)
+  width: calculateRem(36px)
+  @include background-image("icons/icon-edit")

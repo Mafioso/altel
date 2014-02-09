@@ -1,0 +1,44 @@
+.plan-title
+  padding-top: $baseline
+  padding-bottom: $baseline - 1px
+  @extend %small-heading
+  font-weight: 600
+  color: $normal-text-color
+  border-bottom: 1px solid $bg-color
+.plan-benefits
+  @extend %small-text
+  padding-top: $baseline
+  color: $secondary-text-color
+  @include scut-list-unstyled
+  .active
+    font-weight: 600
+    color: $normal-text-color
+.plan-price
+  display: inline-block
+  color: white
+  background-color: $accent-color
+  padding: $baseline
+  border-radius: 12px
+  @extend %small-heading
+  font-weight: 500
+  vertical-align: middle
+  &:after
+    content: ""
+    width: 16px
+    width: calculateRem(16px)
+    height: 16px
+    height: calculateRem(16px)
+    display: inline-block
+    @include background-image("icons/icon-tenge-small")
+    background-position: 50% 50%
+    background-repeat: no-repeat
+
+.plan-period
+  @extend %small-text
+  display: inline-block
+  vertical-align: middle
+
+.plan-price-container
+  text-align: right
+  background-color: $box-bg-color
+  @include box-shadow(0 -12px 3px -8px rgba(0,0,0,.12))

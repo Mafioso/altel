@@ -1,10 +1,18 @@
 {% block content %}
-  <div class="d1-3 gutter middle">
-    <h1><a href="#">(e)</a> Kathryn Sims</h1>
-  </div><div class="d1-2 gutter middle">
-    Her devices and phone numbers
-    <a href="#">Настройки</a>
-    <a href="#">Блокировать</a>
+  <div class="d1 gutter">
+    <div class="d2-6 middle">
+      <h1><a href="#" class="icon-edit">Kathryn Sims</a></h1>
+    </div><div class="d4-6 middle">
+      <nav class="navigation">
+        <ul class="navigation nav-level-0">
+          <li class="d1-4">
+            <a href="#" class="nav-button active"><span class="icon-phone">708 1344515</span></a>
+          </li><li class="d1-4">
+            <a href="#" class="nav-button"><span class="icon-lte">708 1344515</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 
   <div class="d1-3">
@@ -14,32 +22,34 @@
         Пополнить счет
 
         <div class="account-info">
-          <div class="current-balance">
-            1 235,34
-          </div>
-          
-          <div class="d1-3 counter">
-            49 (30)
-            <span class="counter-title">Минуты</span>
-          </div><div class="d1-3 counter">
-            240 (100)
-            <span class="counter-title">СМС</span>
-          </div><div class="d1-3 counter">
-            2 (3)
-            <span class="counter-title">Трафик (Гб)</span>
-          </div>
-          
-          <div class="account-additional-info">
-            <div class="split">
-              <span class="split-title">Последнее списание</span>
-              xx xxxxxxxx xxxx
-            </div>
-            <div class="split">
-              <span class="split-title">Следующее списание</span>
-              xx xxxxxxxx xxxx
+          <div class="current-balance-container">
+            <div class="current-balance">
+              1 235,34
             </div>
           </div>
+          <div class="counter-group">
+            <div class="d1-3 counter">
+              49 <sup>+30</sup>
+              <span class="counter-title"><span class="icon-time">Минуты</span></span>
+            </div><div class="d1-3 counter">
+              240 <sup>+100</sup>
+              <span class="counter-title"><span class="icon-message">СМС</span></span>
+            </div><div class="d1-3 counter">
+              2 <sup>+320 Мб</sup>
+              <span class="counter-title"><span class="icon-wifi">Трафик, Гб</span></span>
+            </div>
+          </div>
+        </div>
 
+        <div class="box-footer account-additional-info">
+          <div class="split">
+            <span class="split-title">Последнее списание</span>
+            8 января 2013
+          </div>
+          <div class="split">
+            <span class="split-title">Следующее списание</span>
+            8 февраля 2013
+          </div>
         </div>
       </div>
     </a>
@@ -50,6 +60,22 @@
         <div class="box-background"></div>
         <div class="box-content">
           Тариф
+          <div class="plan-title">
+            Plan name
+          </div>
+          <ul class="plan-benefits">
+            <li>benefit 1. Lorem ipsum dolor sit amet</li>
+            <li>benefit 2. Lorem ipsum dolor sit amet</li>
+            <li>benefit 3. Lorem ipsum dolor sit amet</li>
+            <li>benefit 4. Lorem ipsum dolor sit amet</li>
+          </ul>
+          <div class="box-footer plan-price-container">
+
+            <span class="plan-price">
+              10
+            </span>
+            <span class="plan-period">за минуту</span>
+          </div>
         </div>
       </a>
     </div><div class="d1-2">
@@ -57,6 +83,19 @@
         <div class="box-background"></div>
         <div class="box-content">
           Дополнительные услуги
+          <ul class="plan-benefits">
+            <li class="active">Additional service 1. Lorem ipsum dolor sit amet</li>
+            <li class="active">Additional service 2. Lorem ipsum dolor sit amet</li>
+            <li>Additional service 3. Lorem ipsum dolor sit amet</li>
+            <li>Additional service 4. Lorem ipsum dolor sit amet</li>
+            <li>Additional service 5. Lorem ipsum dolor sit amet</li>
+          </ul>
+          <div class="box-footer plan-price-container">
+            <span class="plan-price">
+              200
+            </span>
+            <span class="plan-period">в месяц за всё</span>
+          </div>
         </div>
       </a>
     </div>

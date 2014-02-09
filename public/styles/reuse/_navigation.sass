@@ -38,7 +38,7 @@
     padding: $gutter
   .logotype
     padding-left: 0
-.nav-level-1
+.nav-level-1, .nav-level-0
   .nav-button
     display: block
     padding: $gutter
@@ -63,3 +63,17 @@
   @include background-image("logotype")
   background-position: 0 50%
   background-repeat: no-repeat
+
+.lang-switcher
+  font-weight: normal
+
+.lang-switcher .active
+  font-weight: 600
+
+.nav-level-0
+  .nav-button
+    background-color: transparent
+    font-weight: 600
+    &:active, &.active
+      color: inherit
+      background-color: $box-bg-color

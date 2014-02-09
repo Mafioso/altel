@@ -4,8 +4,8 @@
     <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="icon-tenge" sketch:type="MSArtboardGroup" fill="#ED0088">
-            <path d="M8,9.392 L13.952,9.392 L13.952,25.136 L15.584,25.136 L15.584,9.392 L21.56,9.392 L21.56,8 L8,8 L8,9.392 Z M21.56,5 L8,5 L8,6.392 L21.56,6.392 L21.56,5 Z" id="T" sketch:type="MSShapeGroup"></path>
+        <g id="icon-tenge" sketch:type="MSArtboardGroup" fill="#F8F8F8">
+            <path d="M14,11 L14,26 L16,26 L16,11 L22,11 L22,9 L8,9 L8,11 L14,11 Z M8,5 L8,7 L22,7 L22,5 L8,5 Z" id="T" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>

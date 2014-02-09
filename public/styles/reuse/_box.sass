@@ -39,6 +39,7 @@
   @include transform(translateY(-12px))
 
 .box-content
+  overflow: hidden
   margin: $gutter
   padding: $gutter
   // border: 3px solid transparent
@@ -52,6 +53,13 @@
   @include transition-timing-function($ease-in-out-sine)
   // @include transition(all .3s ease-in-out)
 
+.box-footer
+  padding: $gutter
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+
 a.box
   color: $accent-color
   &:hover
@@ -64,9 +72,11 @@ a.box
     .box-background
       opacity: 1
       @include transform(translateY(0))
-  // &:active
-  //   .box-content
-  //     opacity: .95
+  &:active
+    .box-content
+      @include transform(translateY(0px))
+      @include transition-duration(.12s)
+      @include animation(none)
 
 
 @include keyframes(box-hover)
