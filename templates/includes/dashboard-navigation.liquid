@@ -5,11 +5,11 @@
     <nav class="navigation">
       <ul class="navigation nav-level-0">
         <li class="d1-4 middle">
-          <a href="#" class="nav-button active"><span class="icon-phone">708 1344515</span></a>
+          <a href="/dashboard" class="nav-button {% if mixture.url != "new-number" %}active{% endif %}"><span class="icon-phone">708 1344515</span></a>
         </li><li class="d1-4 middle">
           <a href="#" class="nav-button"><span class="icon-lte">708 1344515</span></a>
         </li><li class="d1-4 middle">
-          <a href="#" class="nav-link">
+          <a href="/new-number" class="nav-button {% if mixture.url == "new-number" %}active{% endif %}">
             Добавить номер
           </a>
         </li>

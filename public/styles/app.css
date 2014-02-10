@@ -1282,6 +1282,30 @@ a.box {
       .no-svg .box-icon-internet {
         background-image: url(/public/images/icons/wifi@2x.png); } }
 
+.box-icon-pdf {
+  background-image: url(/public/images/icons/box-icon-pdf.svg); }
+  .no-svg .box-icon-pdf {
+    background-image: url(/public/images/icons/box-icon-pdf.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      .no-svg .box-icon-pdf {
+        background-image: url(/public/images/icons/box-icon-pdf@2x.png); } }
+
+.box-icon-xls {
+  background-image: url(/public/images/icons/box-icon-xls.svg); }
+  .no-svg .box-icon-xls {
+    background-image: url(/public/images/icons/box-icon-xls.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      .no-svg .box-icon-xls {
+        background-image: url(/public/images/icons/box-icon-xls@2x.png); } }
+
+.box-icon-html {
+  background-image: url(/public/images/icons/box-icon-html.svg); }
+  .no-svg .box-icon-html {
+    background-image: url(/public/images/icons/box-icon-html.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      .no-svg .box-icon-html {
+        background-image: url(/public/images/icons/box-icon-html@2x.png); } }
+
 .item, .slide-visual,
 .slide-message,
 .slide-product {
@@ -1731,3 +1755,9 @@ a.box {
 .history-select {
   vertical-align: middle;
   width: 7.5rem; }
+
+.entrance {
+  padding-top: 24px; }
+
+.entrance-heading {
+  font-weight: 400; }
