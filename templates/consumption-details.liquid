@@ -1,0 +1,41 @@
+{% block content %}
+
+{% include "dashboard-navigation" %}
+
+  <div class="d1 gutter">
+    <h2 class="page-title">
+      Детализация потребления
+    </h2>
+    <form>
+      <div class="input-line">
+        <div class="d1-3 middle">
+          <a href="#">Этот месяц</a>
+          <span class="space"></span>
+          <a href="#" class="active-link">Предыдущий месяц</a>
+        </div><div class="d2-3 middle">
+          <span class="middle">или</span>
+          <select class="history-select" name="" id=""></select>
+          <a class="middle" href="#">сформировать детализацию</a>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="d1-6">
+    <a href="#" class="box">
+      <div class="box-background"></div>
+      <div class="box-content">XLS</div>
+    </a>
+  </div><div class="d1-6">
+    <a href="#" class="box">
+      <div class="box-background"></div>
+      <div class="box-content">PDF</div>
+    </a>
+  </div><div class="d1-6">
+    <a href="#" class="box">
+      <div class="box-background"></div>
+      <div class="box-content">HTML</div>
+    </a>
+  </div>
+
+{% endblock %}

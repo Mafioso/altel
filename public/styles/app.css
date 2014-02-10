@@ -462,7 +462,7 @@ th {
 .d11-12 {
   width: 91.66667%; }
 
-.button small, button small, input[type="submit"] small, .extra {
+.button small, button small, input[type="submit"] small, .extra, .payment-history-header {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 18px;
@@ -480,7 +480,7 @@ h3, h4, h5, h6, .box {
   line-height: 24px;
   line-height: 1.5rem; }
 
-h2, .counter, .slide-heading .extra, .plan-title, .plan-price {
+h2, .counter, .slide-heading .extra, .plan-title, .plan-price, .history-period {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 30px;
@@ -552,6 +552,9 @@ a {
   color: #a5acb0; }
   a:hover {
     color: #d30079; }
+
+.active-link {
+  color: #d30079; }
 
 sup, sub {
   line-height: 0;
@@ -1443,6 +1446,8 @@ a.box {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0; }
+  .plan-benefits > li {
+    padding: 3px 0; }
   .plan-benefits .active {
     font-weight: 600;
     color: #56565c; }
@@ -1627,6 +1632,10 @@ a.box {
 .no-trailer {
   padding-bottom: 0; }
 
+.space {
+  display: inline-block;
+  width: 2em; }
+
 .account-info {
   left: 0;
   right: 0;
@@ -1680,3 +1689,45 @@ a.box {
 
 .payment-options {
   padding-top: 30px; }
+
+.payment-history {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 12px 12px;
+  background-color: white; }
+  @media only screen and (max-width: 62em) {
+    .payment-history {
+      font-size: 14px;
+      font-size: 0.875rem;
+      line-height: 18px;
+      line-height: 1.125rem; } }
+  .payment-history .split-title {
+    font-weight: normal; }
+  .payment-history .split {
+    padding: 6px 0; }
+
+.payment-history-header {
+  font-weight: 600;
+  color: #a5acb0; }
+  .payment-history-header .split-title {
+    font-weight: 600; }
+
+.hms-time {
+  color: #a5acb0; }
+
+.history-period {
+  padding: 12px 0 5px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #d4d8d9; }
+  @media only screen and (max-width: 62em) {
+    .history-period {
+      font-size: 18px;
+      font-size: 1.125rem;
+      line-height: 24px;
+      line-height: 1.5rem; } }
+
+.history-select {
+  vertical-align: middle;
+  width: 7.5rem; }
