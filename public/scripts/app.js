@@ -22,6 +22,11 @@ require(['jquery'], function( $ ) {
           $carousel.carousel($carousel.data());
         });
     });
+    $('.drawer-title').bind('click', function(e) {
+        e.preventDefault();
+        console.log('click!');
+        $(this).parents('.drawer').toggleClass('active');
+    });
 });
 
 // require.config({

@@ -1,22 +1,8 @@
 {% block content %}
-  <div class="d1 gutter">
-    <div class="d2-6 middle">
-      <h1><a href="#" class="icon-edit">Kathryn Sims</a></h1>
-    </div><div class="d4-6 middle">
-      <nav class="navigation">
-        <ul class="navigation nav-level-0">
-          <li class="d1-4">
-            <a href="#" class="nav-button active"><span class="icon-phone">708 1344515</span></a>
-          </li><li class="d1-4">
-            <a href="#" class="nav-button"><span class="icon-lte">708 1344515</span></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+  {% include "dashboard-navigation" %}
 
   <div class="d1-3">
-    <a href="#" class="box">
+    <a href="/payment" class="box">
       <div class="box-background"></div>
       <div class="box-content">
         Пополнить счет
@@ -56,7 +42,7 @@
 
   </div><div class="d2-3">
     <div class="d1-2">
-      <a href="#" class="box ratio-2-1">
+      <a href="/plans" class="box ratio-2-1">
         <div class="box-background"></div>
         <div class="box-content">
           Тариф
@@ -79,7 +65,7 @@
         </div>
       </a>
     </div><div class="d1-2">
-      <a href="#" class="box ratio-2-1">
+      <a href="/additional-services" class="box ratio-2-1">
         <div class="box-background"></div>
         <div class="box-content">
           Дополнительные услуги
@@ -99,21 +85,21 @@
         </div>
       </a>
     </div>
-    <a href="#" class="box ratio-8-1">
+    <a href="/connected-services" class="box ratio-8-1">
       <div class="box-background"></div>
       <div class="box-content">
         Все подключенные услуги
       </div>
     </a>
     <div class="d1-2">
-      <a href="#" class="box ratio-4-1">
+      <a href="/payment-history" class="box ratio-4-1">
         <div class="box-background"></div>
         <div class="box-content">
           История платежей
         </div>
       </a>
     </div><div class="d1-2">
-      <a href="#" class="box ratio-4-1">
+      <a href="/consumption-details" class="box ratio-4-1">
         <div class="box-background"></div>
         <div class="box-content">
           Детализация потребления

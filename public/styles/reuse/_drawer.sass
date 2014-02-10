@@ -1,0 +1,77 @@
+.drawer
+  display: block
+  position: relative
+  height: 72px
+  overflow: hidden
+  margin-bottom: $gutter
+  // @extend %animation-hack
+  // @include transition-property(-sliding-vertically)
+  // @include transition-duration(.25s)
+  // @include transition-timing-function(linear)
+  &.active
+    height: auto
+
+.drawer-background
+  @extend %animation-hack
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: 9px 9px 0
+  opacity: 0
+  background-color: $accent-color
+  @include transition-property(transform opacity)
+  @include transition-duration(.25s)
+  @include transition-timing-function($ease-in-out-sine)
+  @include transform(translateY(-9px))
+  .active &
+    opacity: 1
+    @include transform(translateY(0))
+.drawer-title
+  display: block
+  color: $accent-color
+  padding: $gutter $gutter ($gutter - 1px)
+  position: relative
+  border-bottom: 1px dashed transparent
+  &:hover
+    color: $accent-color
+  .active &
+    border-color: $accent-color
+.drawer-content
+  overflow: hidden
+  margin: $gutter $gutter 0
+  position: relative
+  z-index: 1
+  background-color: $box-bg-color
+  
+  @extend %animation-hack
+  @include transition-property(transform opacity)
+  @include transition-duration(.25s)
+  @include transition-timing-function($ease-in-out-sine)
+  .active &
+    opacity: 1
+    @include transform(translateY(-12px))
+.drawer-box
+  @extend %animation-hack
+  @include transition-property(transform opacity)
+  @include transition-duration(.4s)
+  @include transition-timing-function($ease-in-out-sine)
+  @include transform(translateY(24px))
+  opacity: 0
+  .active &
+    opacity: 1
+    @include transform(translateY(0))
+
+.drawer-text-box
+  padding: $gutter $gutter 0
+  @include bp-large
+    @include font($small-text, $small-line)
+
+.drawer-box .bank-list
+  @include scut-list-unstyled
+  
+.drawer-box .bank-list-item
+  display: block
+  padding: $gutter $gutter ($gutter - 1px)
+  border-bottom: 1px solid $bg-color
