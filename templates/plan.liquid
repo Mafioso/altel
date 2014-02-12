@@ -1,0 +1,96 @@
+{% block content %}
+
+<div class="gutter">
+  <div class="d1-4">
+    
+    <a href="/plans" class="back-button"><span class="icon-back">Все тарифы</span></a>
+    
+    <ul class="side-navigation ">
+      {% for j in (1..3) %}
+        <li class="side-navigation-group-title">Group {{ j }}</li>
+        {% for i in (1..3) %}
+          <li><a href="#" class="side-navigation-item">Plan {{i}} A bit longer name than expected</a></li>
+        {% endfor %}
+      {% endfor %}
+      
+    </ul>
+  </div><div class="d3-4">
+    <div class="no-ratio-box">
+      <div class="no-ratio-box-content">
+        <div class="epic-plan-title">
+          Plan 1 title
+        </div>
+        <div class="epic-plan-subtitle">
+          Price information
+        </div>
+        <div class="plan-graphic">
+          <img src="/public/images/plan-icon-generic.svg" alt="Plan 1 title">
+        </div>
+        <div class="epic-plan-benefits">
+          <div class="d1-6"></div><div class="d2-3">
+            {% comment %}<h2>*123*123# чтобы подключить</h2>{% endcomment %}
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, illum, fugiat, perspiciatis numquam itaque vel eveniet esse atque laboriosam debitis rerum quo nam est dolore odit. Incidunt qui quibusdam ullam?
+            </p>
+            <div class="epic-plan-cta-container">
+              <p class="epic-plan-cta-frame">
+                Чтобы подключить тариф &laquo;Plan 1&raquo; наберите <span class="button">&lowast;123&lowast;344#</span>
+              </p>
+            </div>
+            {% for i in (1..3) %}
+            <table class="plan-table">
+              <thead>
+                <tr>
+                  <th colspan="2" class="plan-table-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for i in (1..2) %}
+                  <tr>
+                    <td class="plan-table-label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quisquam, ea non magni illum assumenda reprehenderit culpa laboriosam eveniet laudantium dicta iusto et possimus dolorem modi itaque adipisci laborum odio.</td><td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li>List item 1</li>
+                      </ul>
+                    </td>
+                    <td class="plan-table-price">
+                      <strong>300</strong> тенге
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li>List item 1</li>
+                      </ul>
+                    </td>
+                    <td class="plan-table-price">
+                      <strong>300</strong> тенге
+                    </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+            {% endfor %}
+            <div class="epic-plan-cta-container">
+              <p class="epic-plan-cta-frame">
+                Чтобы подключить тариф &laquo;Plan 1&raquo; наберите <span class="button">&lowast;123&lowast;344#</span>
+              </p>
+            </div>
+            <div class="footnotes">
+              <p class="footnote">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, dignissimos, soluta quod molestias dolor possimus quas eligendi cupiditate nostrum voluptate libero modi voluptatum eius iste obcaecati minima vitae sint. Iusto.
+              </p>
+            </div>
+          </div><div class="d1-6">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

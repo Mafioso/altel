@@ -1,4 +1,41 @@
-.entrance
-  padding-top: $normal-line
-.entrance-heading
+.entrance-body
+  background-color: $box-bg-color
+.entrance-logotype
+  display: block
+  width: 100%
+  padding: $gutter
+  .logotype-image
+    width: 100%
+    background-position: 50% 50%
+
+.entrance-container
+  position: relative
+  height: 100%
+  min-height: 600px
+  padding: 2*$gutter
+.entrance-alternative-path
+  position: absolute
+  bottom: 0
+  left: 0
+  right: 0
+
+
+.entrance-frame
+  z-index: 1
+  width: (1/3)*100%
+  position: absolute
+  top: 50%
+  left: 50%
+  @include transform(translateY(-50%) translateX(-50%))
+  @include bp-large
+    width: (1/2)*100%
+
+.entrance-title
+  @extend %small-heading
   font-weight: 400
+  color: $secondary-text-color
+  text-align: center
+
+.entrance-alternative-path
+  top: auto
+  text-align: center

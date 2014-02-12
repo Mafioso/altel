@@ -1,105 +1,42 @@
 {% block content %}
-  {% include "dashboard-navigation" %}
-
-  <div class="d1 gutter">
-    <h2 class="page-title">
-      <span class="middle">У Вас</span>
-      <div class="plan-price">1 235,34</div>
-      <span class="middle">на счете. Выберите подходящий Вам тарифный план:</span>
-    </h2>
-  </div>
-
-  <div class="d1-4">
-    <a href="#" class="box active">
-      <div class="box-background"></div>
-      <div class="box-content">
-        <div class="plan-title">
-            Plan name <sup>(текущий план)</sup>
-        </div>
-        <ul class="plan-benefits">
-          <li>benefit 1. Lorem ipsum dolor sit amet</li>
-          <li>benefit 2. Lorem ipsum dolor sit amet</li>
-          <li>benefit 3. Lorem ipsum dolor sit amet</li>
-          <li>benefit 4. Lorem ipsum dolor sit amet</li>
-        </ul>
-        <div class="box-footer plan-price-container">
-
-          <span class="plan-price">
-            10
-          </span>
-          <span class="plan-period">за минуту</span>
-        </div>
-      </div>
-    </a>
-    <p class="gutter small-text"><a href="#">Подробнее об этом плане</a></p>
-  </div><div class="d1-4">
-    <a href="#" class="box">
-      <div class="box-background"></div>
-      <div class="box-content">
-        <div class="plan-title">
-            Plan name
-          </div>
-          <ul class="plan-benefits">
-            <li>benefit 1. Lorem ipsum dolor sit amet</li>
-            <li>benefit 2. Lorem ipsum dolor sit amet</li>
-            <li>benefit 3. Lorem ipsum dolor sit amet</li>
-            <li>benefit 4. Lorem ipsum dolor sit amet</li>
-          </ul>
-          <div class="box-footer plan-price-container">
-
-            <span class="plan-price">
-              10
-            </span>
-            <span class="plan-period">за минуту</span>
-          </div>
-      </div>
-    </a>
-    <p class="gutter small-text"><a href="#">Подробнее об этом плане</a></p>
-  </div><div class="d1-4">
-    <a href="#" class="box active">
-      <div class="box-background"></div>
-      <div class="box-content">
-        <div class="plan-title">
-            Plan name
-          </div>
-          <ul class="plan-benefits">
-            <li>benefit 1. Lorem ipsum dolor sit amet</li>
-            <li>benefit 2. Lorem ipsum dolor sit amet</li>
-            <li>benefit 3. Lorem ipsum dolor sit amet</li>
-            <li>benefit 4. Lorem ipsum dolor sit amet</li>
-          </ul>
-          <div class="box-footer plan-price-container">
-
-            <span class="plan-price">
-              10
-            </span>
-            <span class="plan-period">за минуту</span>
-          </div>
-      </div>
-    </a>
-    <p class="gutter small-text"><a href="#" class="active-link">Отменить подключение (60 секунд)</a></p>
-  </div><div class="d1-4">
-    <a href="#" class="box">
-      <div class="box-background"></div>
-      <div class="box-content">
-        <div class="plan-title">
-            Plan name
-          </div>
-          <ul class="plan-benefits">
-            <li>benefit 1. Lorem ipsum dolor sit amet</li>
-            <li>benefit 2. Lorem ipsum dolor sit amet</li>
-            <li>benefit 3. Lorem ipsum dolor sit amet</li>
-            <li>benefit 4. Lorem ipsum dolor sit amet</li>
-          </ul>
-          <div class="box-footer plan-price-container">
-
-            <span class="plan-price">
-              10
-            </span>
-            <span class="plan-period">за минуту</span>
-          </div>
-      </div>
-    </a>
-    <p class="gutter small-text"><a href="#">Подробнее об этом плане</a></p>
+  
+  <div class="gutter">
+    <div class="d1-4">
+      <ul class="side-navigation">
+        {% for j in (1..3) %}
+          <li class="side-navigation-group-title">Group {{ j }}</li>
+          {% for i in (1..3) %}
+            <li><a href="/plan" class="side-navigation-item">Plan {{i}} A bit longer name than expected</a></li>
+          {% endfor %}
+        {% endfor %}
+        
+      </ul>
+    </div><div class="d3-4">
+      {% for j in (1..3) %}
+        <h1 class="gutter">Group {{j}}</h1>
+        {% for i in (1..3) %}<div class="d1-3">
+          <a href="/plan" class="box ratio-3-4">
+            <div class="box-background"></div>
+            <div class="box-content">
+              <h2 class="plan-title">
+                Plan {{i}} title
+              </h2>
+              <p class="plan-subtitle">
+                From <span class="price">{{ 'now' | date: "%j" }}</span> a month
+              </p>
+              <div class="plan-graphic">
+                <img src="/public/images/plan-icon-generic.svg" alt="plan {{ i }}">
+              </div>
+              <p class="plan-benefits hide-on-large">
+                {{ 1| lorem_ipsum | truncate:140 }}
+              </p>
+              <div class="box-footer plan-cta-container">
+                <div href="#" class="button">Read more</div>
+              </div>
+            </div>
+          </a>
+        </div>{% endfor%}
+      {% endfor %}
+    </div>
   </div>
 {% endblock %}

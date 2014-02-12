@@ -357,7 +357,7 @@ td,
 th {
   padding: 0; }
 
-* {
+*, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -462,25 +462,26 @@ th {
 .d11-12 {
   width: 91.66667%; }
 
-.button small, button small, input[type="submit"] small, .extra, .payment-history-header {
+.button small, button small, input[type="submit"] small, .extra, .payment-history-header, .footnotes {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 18px;
   line-height: 1.125rem; }
 
-sup, sub, legend, .agreement-label, .counter-title, .navigation, .plan-benefits, .plan-period, .account-info, .account-additional-info {
+sup, sub, legend, .agreement-label, .counter-title, .navigation, .plan-benefits, .plan-period, .account-info, .account-additional-info, .plan-table {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 18px;
   line-height: 1.125rem; }
 
-h3, h4, h5, h6, .box {
+h3, h4, h5, h6, .side-navigation-group-title, .box,
+.no-ratio-box, .epic-plan-benefits {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 24px;
   line-height: 1.5rem; }
 
-h2, .counter, .slide-heading .extra, .plan-title, .plan-price, .history-period {
+h2, .counter, .slide-heading .extra, .plan-title, .epic-plan-title, .plan-price, .epic-plan-subtitle, .history-period, .entrance-title {
   font-size: 24px;
   font-size: 1.5rem;
   line-height: 30px;
@@ -492,13 +493,13 @@ h1 {
   line-height: 36px;
   line-height: 2.25rem; }
 
-.epic-heading, .slide-heading, .current-balance {
+.epic-heading, .slide-heading, .epic-plan-title, .current-balance {
   font-size: 48px;
   font-size: 3rem;
   line-height: 54px;
   line-height: 3.375rem; }
 
-h2, h3, h4, h5, h6, .epic-heading, .slide-heading, h1 {
+h2, h3, h4, h5, h6, .epic-heading, .slide-heading, .epic-plan-title, h1 {
   display: block;
   margin: 0; }
 
@@ -506,7 +507,7 @@ h2, h3, h4, h5, h6 {
   padding-top: 6px;
   padding-bottom: 6px; }
 
-.epic-heading, .slide-heading, h1 {
+.epic-heading, .slide-heading, .epic-plan-title, h1 {
   padding-top: 12px;
   padding-bottom: 12px; }
 
@@ -559,6 +560,9 @@ a {
 sup, sub {
   line-height: 0;
   position: relative; }
+
+.wrong {
+  color: #ff4d4d; }
 
 fieldset {
   background-color: white;
@@ -855,7 +859,8 @@ body {
 .sticky-footer {
   border-bottom: 3px solid #ed0088; }
 
-.nav-level-1 .nav-button, .nav-level-0 .nav-button, footer, .box-background, .box-content, .item, .slide-visual,
+.nav-level-1 .nav-button, .nav-level-0 .nav-button, footer, .box-background, .box-content,
+.no-ratio-box-content, .item, .slide-visual,
 .slide-heading,
 .slide-product,
 .slide-cta, .drawer-background, .drawer-content, .drawer-box {
@@ -976,6 +981,19 @@ body {
     color: inherit;
     background-color: white; }
 
+.side-navigation {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.side-navigation-item {
+  padding: 6px;
+  display: block; }
+
+.side-navigation-group-title {
+  padding: 12px 6px 12px 0; }
+
 .inline-list > li {
   display: inline-block; }
   .inline-list > li:after {
@@ -996,19 +1014,30 @@ footer {
         .no-svg footer .logotype-image {
           background-image: url(/public/images/footer-logotype@2x.png); } }
 
-.box {
+.box,
+.no-ratio-box {
   display: block;
   position: relative; }
-  .box:before {
-    content: "";
-    display: block;
-    padding-top: 100%; }
+
+.box:before {
+  content: "";
+  display: block;
+  padding-top: 100%; }
 
 .ratio-1-2:before {
   padding-top: 200%; }
 
 .ratio-2-1:before {
   padding-top: 50%; }
+
+.ratio-2-3:before {
+  padding-top: 150%; }
+
+.ratio-3-4:before {
+  padding-top: 133.33333%; }
+
+.ratio-4-3:before {
+  padding-top: 75%; }
 
 .ratio-3-1:before {
   padding-top: 33.33333%; }
@@ -1028,7 +1057,7 @@ footer {
   right: 0; }
 
 .box-background {
-  margin: 18px 9px 6px;
+  margin: 18px 10px 9px;
   background-color: #ed0088;
   opacity: 0;
   -webkit-transition-property: transform opacity;
@@ -1046,7 +1075,8 @@ footer {
   -o-transform: translateY(-12px);
   transform: translateY(-12px); }
 
-.box-content {
+.box-content,
+.no-ratio-box-content {
   overflow: hidden;
   margin: 12px;
   padding: 12px;
@@ -1445,26 +1475,35 @@ a.box {
   text-align: center;
   padding-top: 24px; }
 
-.plan-title {
+.plan-title, .epic-plan-title {
   padding-top: 6px;
-  padding-bottom: 5px;
-  font-weight: 600;
+  font-weight: 400;
   color: #56565c;
-  border-bottom: 1px solid #d4d8d9; }
-  .plan-title sup {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+  .active .plan-title, .active .epic-plan-title {
     color: #ed0088; }
 
-.extra-plan {
+.plan-service {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 24px;
   line-height: 1.5rem;
-  border: 0;
-  padding-top: 0;
-  padding-bottom: 6px; }
+  padding-bottom: 6px;
+  white-space: normal;
+  text-overflow: none; }
+
+.plan-subtitle {
+  text-align: center;
+  color: #a5acb0; }
+
+.plan-graphic img {
+  position: relative;
+  width: 100%; }
 
 .plan-benefits {
-  padding-top: 6px;
   color: #a5acb0;
   list-style-type: none;
   padding-left: 0;
@@ -1475,6 +1514,14 @@ a.box {
   .plan-benefits .active {
     font-weight: 600;
     color: #56565c; }
+
+.plan-cta-container {
+  text-align: center;
+  padding: 24px;
+  background-color: white;
+  box-shadow: 0 -3px 6px 0 rgba(255, 255, 255, 0.8); }
+  .plan-cta-container .button {
+    padding: 6px 12px; }
 
 .plan-price {
   display: inline-block;
@@ -1504,10 +1551,25 @@ a.box {
   display: inline-block;
   vertical-align: middle; }
 
-.plan-price-container {
-  text-align: right;
-  background-color: white;
-  box-shadow: 0 -12px 3px -8px rgba(0, 0, 0, 0.12); }
+.epic-plan-title {
+  padding-top: 24px; }
+
+.epic-plan-subtitle {
+  text-align: center;
+  color: #a5acb0;
+  font-weight: 400; }
+
+.epic-plan-cta-container {
+  padding-top: 24px;
+  padding-bottom: 48px; }
+
+.epic-plan-cta-frame {
+  padding: 23px;
+  border: 1px solid #d4d8d9;
+  border-radius: 18px;
+  text-align: center; }
+  .epic-plan-cta-frame .button {
+    padding: 6px 12px; }
 
 .back-button-container {
   border-top: 1px solid #a5acb0;
@@ -1660,6 +1722,10 @@ a.box {
   display: inline-block;
   width: 2em; }
 
+@media only screen and (max-width: 62em) {
+  .hide-on-large {
+    display: none; } }
+
 .account-info {
   left: 0;
   right: 0;
@@ -1756,8 +1822,81 @@ a.box {
   vertical-align: middle;
   width: 7.5rem; }
 
-.entrance {
-  padding-top: 24px; }
+.entrance-body {
+  background-color: white; }
 
-.entrance-heading {
-  font-weight: 400; }
+.entrance-logotype {
+  display: block;
+  width: 100%;
+  padding: 12px; }
+  .entrance-logotype .logotype-image {
+    width: 100%;
+    background-position: 50% 50%; }
+
+.entrance-container {
+  position: relative;
+  height: 100%;
+  min-height: 600px;
+  padding: 24px; }
+
+.entrance-alternative-path {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.entrance-frame {
+  z-index: 1;
+  width: 33.33333%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%); }
+  @media only screen and (max-width: 62em) {
+    .entrance-frame {
+      width: 50%; } }
+
+.entrance-title {
+  font-weight: 400;
+  color: #a5acb0;
+  text-align: center; }
+
+.entrance-alternative-path {
+  top: auto;
+  text-align: center; }
+
+.plan-table {
+  border-top: 1px dotted #d4d8d9;
+  margin-bottom: 24px; }
+  .plan-table ul {
+    padding-bottom: 0; }
+  .plan-table td {
+    padding: 6px; }
+
+.plan-table-title {
+  padding: 11px 6px 12px;
+  text-align: left; }
+
+.plan-table-label {
+  padding: 6px;
+  width: 75%; }
+
+.plan-table-price {
+  width: 25%;
+  text-align: right; }
+
+.footnotes {
+  color: #a5acb0;
+  padding: 12px; }
+
+.footnote {
+  position: relative;
+  padding-left: 12px; }
+  .footnote:before {
+    position: absolute;
+    content: "*";
+    left: -6px; }

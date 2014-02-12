@@ -77,3 +77,13 @@
     &:active, &.active
       color: inherit
       background-color: $box-bg-color
+
+.side-navigation
+  @include scut-list-unstyled
+  // padding-top: $large-heading-line + 2*$baseline
+.side-navigation-item
+  padding: $baseline
+  display: block
+.side-navigation-group-title
+  padding: $gutter $baseline $gutter 0
+  @extend %normal-text

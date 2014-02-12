@@ -42,25 +42,21 @@
 
   </div><div class="d2-3">
     <div class="d1-2">
-      <a href="/plans" class="box ratio-2-1">
+      <a href="/dashboard-plans" class="box ratio-2-1">
         <div class="box-background"></div>
         <div class="box-content">
-          Тариф
           <div class="plan-title">
             Plan name
           </div>
-          <ul class="plan-benefits">
-            <li>benefit 1. Lorem ipsum dolor sit amet</li>
-            <li>benefit 2. Lorem ipsum dolor sit amet</li>
-            <li>benefit 3. Lorem ipsum dolor sit amet</li>
-            <li>benefit 4. Lorem ipsum dolor sit amet</li>
-          </ul>
-          <div class="box-footer plan-price-container">
-
-            <span class="plan-price">
-              10
-            </span>
-            <span class="plan-period">за минуту</span>
+          <div class="plan-subtitle">
+            Price information
+          </div>
+          <p class="plan-benefits">
+            {{ 1| lorem_ipsum | truncate:140 }}
+          </p>
+          
+          <div class="box-footer plan-cta-container">
+            <div class="button">Сменить тариф</div>
           </div>
         </div>
       </a>
@@ -76,7 +72,7 @@
             <li>Additional service 4. Lorem ipsum dolor sit amet</li>
             <li>Additional service 5. Lorem ipsum dolor sit amet</li>
           </ul>
-          <div class="box-footer plan-price-container">
+          <div class="box-footer plan-cta-container">
             <span class="plan-price">
               200
             </span>

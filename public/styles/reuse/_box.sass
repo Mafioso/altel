@@ -1,15 +1,22 @@
-.box
+.box,
+.no-ratio-box
   display: block
   position: relative
   @extend %normal-text
-  &:before
-    content: ""
-    display: block
-    padding-top: 100% // default ratio 1-1
+.box:before
+  content: ""
+  display: block
+  padding-top: 100% // default ratio 1-1
 .ratio-1-2:before
   padding-top: 200%
 .ratio-2-1:before
   padding-top: 50%
+.ratio-2-3:before
+  padding-top: (3/2)*100%
+.ratio-3-4:before
+  padding-top: (4/3)*100%
+.ratio-4-3:before
+  padding-top: (3/4)*100%
 .ratio-3-1:before
   padding-top: (1/3)*100%
 .ratio-4-1:before
@@ -19,15 +26,15 @@
 
 .box-background,
 .box-content
+  // border-radius: 3px
   position: absolute
   top: 0
   bottom: 0
   left: 0
   right: 0
 
-
 .box-background
-  margin: 18px 9px 6px
+  margin: 18px 10px 9px
   background-color: $accent-color
   // @include background-image("epic-lines")
   // background-position: 25% 30%
@@ -38,7 +45,8 @@
   @include transition-timing-function($ease-in-out-sine)
   @include transform(translateY(-12px))
 
-.box-content
+.box-content, 
+.no-ratio-box-content
   overflow: hidden
   margin: $gutter
   padding: $gutter
