@@ -1,11 +1,17 @@
 [class*="box-icon-"]
   background-position: 50% 50%
   @include background-size(auto 33%)
+  // @include background-size(contain)
   background-repeat: no-repeat
 .box-icon-redeem
-  @include background-image("icons/speech-bubble")
+  @include background-image("icons/box-icon-payment")
+  // @inlude transition(background-image 0.4s ease-in-out)
+  // .box:hover &
+  //   @include background-image("icons/speech-bubble-hover")
 .box-icon-global-coverage
-  @include background-image("icons/planet")
+  @include background-image("icons/box-icon-planet")
+  // .box:hover &
+  //   @include background-image("icons/planet-hover")
 .box-icon-dashboard
   @include background-image("icons/person")
 .box-icon-migration
@@ -13,10 +19,14 @@
 .box-icon-plans
   @include background-image("icons/mobiles")
 .box-icon-internet
-  @include background-image("icons/wifi")
+  @include background-image("icons/box-icon-4g")
 .box-icon-pdf
   @include background-image("icons/box-icon-pdf")
 .box-icon-xls
   @include background-image("icons/box-icon-xls")
 .box-icon-html
   @include background-image("icons/box-icon-html")
+.box-icon-payment-history
+  @include background-image("icons/box-icon-payment-history")
+.box-icon-consumption-details
+  @include background-image("icons/box-icon-consumption-details")

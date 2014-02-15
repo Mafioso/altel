@@ -1,86 +1,107 @@
+.plan-icon
+  @include background-size(50%)
+  background-position: 50% 33%
+  background-repeat: no-repeat
+  @include background-image("plan-icon-generic")
+
 .plan-title
-  padding-top: $baseline
   @extend %small-heading
-  font-weight: 400
   color: $normal-text-color
   text-align: center
-  white-space: nowrap
-  overflow: hidden
-  text-overflow: ellipsis
-  .active &,
+  .active &
     color: $accent-color
-.plan-service
-  @include font($normal-text, $normal-line)
-  padding-bottom: $baseline
-  white-space: normal
-  text-overflow: none
 .plan-subtitle
-  text-align: center
   color: $secondary-text-color
-.plan-graphic
-  img
-    position: relative
-    width: 100%
+  text-align: center
 .plan-benefits
   @extend %small-text
-  // padding-top: $baseline
+  @extend %animation-hack
+  @include transition(color .25s ease-in-out)
   color: $secondary-text-color
-  @include scut-list-unstyled
-  > li
-    padding: 3px 0
-  .active
-    font-weight: 600
+  .box:hover &
     color: $normal-text-color
 .plan-cta-container
   text-align: center
-  padding: 2*$gutter
-  background-color: $box-bg-color
-  @include box-shadow(0 -3px 6px 0 rgba($box-bg-color, .8))
+  padding: $small-line $gutter $normal-line
   .button
-    padding: $baseline $gutter
-.plan-price
-  display: inline-block
-  color: white
-  background-color: $accent-color
-  padding: $baseline
-  border-radius: 12px
-  @extend %small-heading
-  font-weight: 500
-  vertical-align: middle
-  &:after
-    content: ""
-    width: 16px
-    width: calculateRem(16px)
-    height: 16px
-    height: calculateRem(16px)
-    display: inline-block
-    @include background-image("icons/icon-tenge-small")
-    background-position: 50% 50%
-    background-repeat: no-repeat
+    padding: 9px 2*$gutter
 
-.plan-period
-  @extend %small-text
-  display: inline-block
-  vertical-align: middle
 
-.epic-plan-title
-  @extend .plan-title
-  @extend %epic-heading
-  padding-top: $normal-line
-.epic-plan-subtitle
-  @extend %small-heading
-  text-align: center
-  color: $secondary-text-color
-  font-weight: 400
-.epic-plan-benefits
-  @extend %normal-text
-.epic-plan-cta-container
-  padding-top: $normal-line
-  padding-bottom: 2*$normal-line
-.epic-plan-cta-frame
-  padding: $normal-line - 1px
-  border: 1px solid $bg-color
-  border-radius: 18px
-  text-align: center
-  .button
-    padding: $baseline $gutter
+// .plan-title
+//   padding-top: $baseline
+//   @extend %small-heading
+//   font-weight: 400
+//   color: $normal-text-color
+//   text-align: center
+//   .active &,
+//     color: $accent-color
+
+// .plan-service
+//   @include font($normal-text, $normal-line)
+//   padding-bottom: $baseline
+//   white-space: normal
+//   text-overflow: none
+// .plan-subtitle
+//   text-align: center
+//   color: $secondary-text-color
+// .plan-graphic
+//   img
+//     position: relative
+//     width: 100%
+// .plan-benefits
+//   @extend %small-text
+//   // padding-top: $baseline
+//   color: $secondary-text-color
+//   @include scut-list-unstyled
+//   > li
+//     padding: 3px 0
+//   .active
+//     font-weight: 600
+//     color: $normal-text-color
+// .plan-cta-container
+//   text-align: center
+//   padding: 2*$gutter
+//   background-color: $box-bg-color
+//   .button
+//     padding: $baseline $gutter
+// // .plan-price
+// //   display: inline-block
+// //   color: white
+// //   background-color: $accent-color
+// //   padding: $baseline
+// //   border-radius: 12px
+// //   @extend %small-heading
+// //   font-weight: 500
+// //   vertical-align: middle
+// //   &:after
+// //     content: ""
+// //     width: 16px
+// //     width: calculateRem(16px)
+// //     height: 16px
+// //     height: calculateRem(16px)
+// //     display: inline-block
+// //     @include background-image("icons/icon-tenge-small")
+// //     background-position: 50% 50%
+// //     background-repeat: no-repeat
+
+// .epic-plan-title
+//   @extend .plan-title
+//   @extend %epic-heading
+//   padding-top: $normal-line
+// .epic-plan-subtitle
+//   @extend %small-heading
+//   text-align: center
+//   color: $secondary-text-color
+//   font-weight: 400
+// .epic-plan-benefits
+//   @extend %normal-text
+// .epic-plan-cta-container
+//   padding-top: $normal-line
+//   padding-bottom: 2*$normal-line
+// .epic-plan-cta-frame
+//   padding: $normal-line - 1px
+//   border: 1px solid $bg-color
+//   border-radius: 18px
+//   text-align: center
+//   .button
+//     padding: $baseline $gutter

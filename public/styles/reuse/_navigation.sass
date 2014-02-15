@@ -41,20 +41,29 @@
 .nav-level-1, .nav-level-0
   .nav-button
     display: block
-    padding: $gutter
+    padding: $gutter $gutter ($gutter - 2px)
     background-color: $box-bg-color
     text-transform: uppercase
-    border-left: 1px solid $bg-color
+    border-bottom: 2px solid transparent
+    // border-radius: 2px
+    // border-left: 1px solid $bg-color
     @extend %animation-hack
-    // @include transition-property(background-color)
-    // @include transition-duration(.25s)
-    // @include transition-timing-function($ease-out-sine)
+    @include transition-property(border-color)
+    @include transition-duration(.25s)
+    @include transition-timing-function(ease-in-out)
+    &:hover
+      border-color: $accent-color
     &:active, &.active
       color: $box-bg-color
       background-color: $accent-color
       // border-right-color: $accent-color
   .nav-col:first-child .nav-button
-    border-left-color: transparent
+    @include border-left-radius(2px)
+  .nav-col:last-child .nav-button
+    @include border-right-radius(2px)
+
+.nav-level-1
+  @include box-shadow(0 1px 2px rgba(0,0,0,.25))
 
 .logotype-image
   display: block

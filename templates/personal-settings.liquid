@@ -1,27 +1,73 @@
 {% block content %}
   {% include "dashboard-navigation" %}
 
-  <div class="d1-3">
-  </div><div class="d1-3">
-    <h2 class="entrance-heading">
-      Settings
-    </h2>
-    <form>
-      <fieldset>
-        <div class="input-line">
-          <label for="">Some field</label>
-          <input class="input-d1" type="text">
+  <section class="section-container">
+    <div class="page-title-container">
+      <a href="/dashboard" class="back-button">Назад в кабинет</a>
+      <h2 class="page-title">
+        Настройки
+      </h2>
+    </div>
+
+    <div class="text-center">
+      <div class="d2-3">
+        <div class="box">
+          <div class="box-content text-left">
+            <form>
+              <h2>Смена пароля кабинета</h2>
+              <div class="input-line">
+                <div class="d1-2 gutter-right middle">
+                  <label for="">Текущий пароль</label>
+                  <input class="input-d1" type="password">
+                </div><div class="d1-2 gutter-left middle">
+                  <label for="">Новый пароль</label>
+                  <input class="input-d1" type="password">
+                </div>
+              </div>
+              <div class="input-line text-right">
+                <a href="#" class="u-link">Отмена</a>
+                <span class="space"></span>
+                <button type="submit">Сохранить</button>
+              </div>
+            </form>
+            <form>
+              <h2>Редактировать e-mail</h2>
+              <div class="input-line">
+                <div class="d1-2 gutter-right middle">
+                  <label for="">Текущий e-mail</label>
+                  <input class="input-d1" type="text" disabled value="john.appleseed@me.com">
+                </div><div class="d1-2 gutter-left middle">
+                  <label for="">Новый e-mail</label>
+                  <input class="input-d1" type="text">
+                </div>
+              </div>
+              <div class="input-line text-right">
+                <a href="#" class="u-link">Отмена</a>
+                <span class="space"></span>
+                <button type="submit">Сохранить</button>
+              </div>
+            </form>
+            <form>
+              <h2>Контакт</h2>
+              <div class="input-line">
+                <div class="d1-2 gutter-right middle">
+                  <label for="">Текущий номер</label>
+                  <input class="input-d1" type="text" disabled value="921349762317">
+                </div><div class="d1-2 gutter-left middle">
+                  <label for="">Новый номер</label>
+                  <input class="input-d1" type="text">
+                </div>
+              </div>
+              <div class="input-line text-right">
+                <a href="#" class="u-link">Отмена</a>
+                <span class="space"></span>
+                <button type="submit">Сохранить</button>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="input-line">
-          <label for="">Some field</label>
-          <input class="input-d1" type="text">
-        </div>
-        <div class="input-line text-center">
-          
-            <a href="#" class="button middle">Save</a>
-          
-        </div>
-      </fieldset>
-    </form>
-  </div>
+      </div>
+    </div>
+  </section>
+
 {% endblock %}

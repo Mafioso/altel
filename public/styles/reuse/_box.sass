@@ -1,18 +1,93 @@
-.box,
-.no-ratio-box
+%box-animation-setup
+  @extend %animation-hack
+  @include transition-property(transform opacity)
+  @include transition-duration(.25s)
+  @include transition-timing-function($ease-in-out-sine)
+
+%box-content-setup
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+
+.box
+  @extend %normal-text
   display: block
   position: relative
-  @extend %normal-text
-.box:before
+  overflow: hidden
+  &.animated-box:hover
+    color: $accent-color
+a.box
+  color: $secondary-text-color
+  &:hover
+    color: $normal-text-color
+
+.box-background
+  border-radius: 2px
+  @extend %box-animation-setup
+  @extend %box-content-setup
+  margin: 18px 10px 9px
+  background-color: $accent-color
+  opacity: 0
+  @include transform(translateY(-12px))
+  a.box:hover &,
+  .active &
+    opacity: 1
+    @include transform(translateY(0))
+
+.box-content
+  border-radius: 2px
+  @extend %box-animation-setup
+  margin: $gutter
+  padding: $gutter
+  background-color: $box-bg-color
+  overflow: hidden
+  @include box-shadow(0 1px 2px rgba(0,0,0,.25))
+  .ratio-box &
+    @extend %box-content-setup
+  a.box:hover &,
+  .active &
+    @include transform(translateY(-6px))
+  .animated-box:hover &,
+  .animated-box.active &
+    @include animation(box-hover 1.6s $ease-in-out-sine infinite)
+    @include animation-delay(.25s)
+    @include animation-direction(alternate)
+  a.box:active &
+    @include transform(translateY(-2px))
+    @include transition-duration(.12s)
+    @include animation(none)
+
+.box-redeem
+  background-position: 50% 33%
+
+.box-footer
+  background-color: rgba($box-bg-color, .5)
+  .ratio-box &
+    @extend %box-content-setup
+    top: auto
+
+.ratio-box:before
   content: ""
   display: block
-  padding-top: 100% // default ratio 1-1
+  padding-top: 100%
+
+@include keyframes(box-hover)
+  50%
+    @include transform(translateY(-3px))
+  100%
+    @include transform(translateY(-6px))
+
+// BOX RATIOS
 .ratio-1-2:before
   padding-top: 200%
 .ratio-2-1:before
   padding-top: 50%
 .ratio-2-3:before
   padding-top: (3/2)*100%
+.ratio-3-2:before
+  padding-top: (2/3)*100%
 .ratio-3-4:before
   padding-top: (4/3)*100%
 .ratio-4-3:before
@@ -23,72 +98,9 @@
   padding-top: 25%
 .ratio-8-1:before
   padding-top: 12.5%
+.ratio-8-9:before
+  padding-top: (9/8)*100%
 
-.box-background,
-.box-content
-  // border-radius: 3px
-  position: absolute
-  top: 0
-  bottom: 0
-  left: 0
-  right: 0
-
-.box-background
-  margin: 18px 10px 9px
-  background-color: $accent-color
-  // @include background-image("epic-lines")
-  // background-position: 25% 30%
-  opacity: 0
-  @extend %animation-hack
-  @include transition-property(transform opacity)
-  @include transition-duration(.25s)
-  @include transition-timing-function($ease-in-out-sine)
-  @include transform(translateY(-12px))
-
-.box-content, 
-.no-ratio-box-content
-  overflow: hidden
-  margin: $gutter
-  padding: $gutter
-  // border: 3px solid transparent
-  background-color: $box-bg-color
-  
-  // Hacks
-  @extend %animation-hack
-
-  @include transition-property(transform)
-  @include transition-duration(.25s)
-  @include transition-timing-function($ease-in-out-sine)
-  // @include transition(all .3s ease-in-out)
-
-.box-footer
-  padding: $gutter
-  position: absolute
-  bottom: 0
-  left: 0
-  right: 0
-
-a.box
-  color: $accent-color
-  &:hover, &.active
-    color: $accent-color
-    .box-content
-      @include transform(translateY(-6px))
-      @include animation(box-hover 1.6s $ease-in-out-sine infinite)
-      @include animation-delay(.25s)
-      @include animation-direction(alternate)
-    .box-background
-      opacity: 1
-      @include transform(translateY(0))
-  &:active
-    .box-content
-      @include transform(translateY(0px))
-      @include transition-duration(.12s)
-      @include animation(none)
-
-
-@include keyframes(box-hover)
-  50%
-    @include transform(translateY(-3px))
-  100%
-    @include transform(translateY(-6px))
+@include bp-large
+  .l-ratio-2-3:before
+    padding-top: (3/2)*100%

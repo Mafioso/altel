@@ -1,67 +1,102 @@
+{% model "plans.json" %}
 {% block content %}
   {% include "dashboard-navigation" %}
 
   <div class="d1-3">
-    <a href="/payment" class="box">
+    <a href="/payment" class="box ratio-box ratio-8-9 l-ratio-2-3">
       <div class="box-background"></div>
-      <div class="box-content">
-        Пополнить счет
+      <div class="box-content box-redeem box-icon-redeem">
+        <h2 class="account-balance">
+          1 235
+        </h2>
+        <p class="text-right account-balance-note">тенге на счете</p>
 
-        <div class="account-info">
-          <div class="current-balance-container">
-            <div class="current-balance">
-              1 235,34
+        <div class="box-footer plan-cta-container">
+          <div class="account-additional-info">
+            <div class="counter-group">
+              <p class="d1-3 counter">
+                49
+                <span class="counter-title"><span class="icon-time">Мин.</span></span>
+              </p><p class="d1-3 counter">
+                240
+                <span class="counter-title"><span class="icon-message">СМС</span></span>
+              </p><p class="d1-3 counter">
+                2 048
+                <span class="counter-title"><span class="icon-wifi">Мб</span></span>
+              </p>
             </div>
           </div>
-          <div class="counter-group">
-            <div class="d1-3 counter">
-              49 <sup>+30</sup>
-              <span class="counter-title"><span class="icon-time">Минуты</span></span>
-            </div><div class="d1-3 counter">
-              240 <sup>+100</sup>
-              <span class="counter-title"><span class="icon-message">СМС</span></span>
-            </div><div class="d1-3 counter">
-              2 <sup>+320 Мб</sup>
-              <span class="counter-title"><span class="icon-wifi">Трафик, Гб</span></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="box-footer account-additional-info">
-          <div class="split">
-            <span class="split-title">Последнее списание</span>
-            8 января 2013
-          </div>
-          <div class="split">
-            <span class="split-title">Следующее списание</span>
-            8 февраля 2013
-          </div>
+          <div class="button">Пополнить счет</div>
         </div>
       </div>
     </a>
+    <div class="account-additional-info no-leader">
+      <p class="no-trailer">
+        <strong>Бонусы:</strong>
+        49 мин. | 240 СМС | 2 048 Мб 
+      </p>
+      <p class="split no-trailer">
+        <strong class="split-title">Последнее списание</strong>
+        8.12.2013
+      </p>
+      <p class="split no-trailer">
+        <strong class="split-title">Следующее списание</strong>
+        8.1.2014
+      </p>
+    </div>
+  </div><div class="d1-4 l1-3">
+    {% include "dashboard-planbox" with model.ltePlans[0] %}
+  </div><div class="d1-4 l1-3">
+    <a href="/additional-services" class="box ratio-box ratio-2-3">
+      <div class="box-background"></div>
+      <div class="box-content">
+        <h2 class="plan-title">Дополнительные услуги</h2>
+        <ul class="additional-services">
+          <li class="active">Уведомления по e-mail</li>
+          <li>Ежемесячная детализация вызовов по e-mail</li>
+          <li>Разовая детализация</li>
+        </ul>
+        <div class="box-footer plan-cta-container">
+          <div class="button">Подключить</div>
+        </div>
+      </div>
+    </a>
+    <p class="gutter"><a href="/connected-services" class="u-link">Все подключенные услуги</a></p>
+  </div><div class="d1-6 l1">
+    <div class="d1 l1-2">
+      <a href="/payment-history" class="box ratio-box animated-box ratio-8-9">
+        <div class="box-background"></div>
+        <div class="box-content box-icon-payment-history">
+          История платежей
+        </div>
+      </a>
+    </div><div class="d1 l1-2">
+      <a href="/consumption-details" class="box ratio-box animated-box ratio-8-9">
+        <div class="box-background"></div>
+        <div class="box-content box-icon-consumption-details">
+          Детализация потребления
+        </div>
+      </a>
+    </div>
+  </div>
 
-  </div><div class="d2-3">
-    <div class="d1-2">
-      <a href="/dashboard-plans" class="box ratio-2-1">
+    {% comment %}<div class="d1-2">
+      <a href="/dashboard-plans" class="box ratio-box ratio-2-1">
         <div class="box-background"></div>
         <div class="box-content">
-          <div class="plan-title">
-            Plan name
-          </div>
-          <div class="plan-subtitle">
-            Price information
-          </div>
-          <p class="plan-benefits">
-            {{ 1| lorem_ipsum | truncate:140 }}
+          <h2 class="plan-title">
+            Тарифная линейка «2ГБ» / «4ГБ» / «6ГБ»
+          </h2>
+          <p class="plan-subtitle">
+            900 тенге в месяц
           </p>
-          
           <div class="box-footer plan-cta-container">
             <div class="button">Сменить тариф</div>
           </div>
         </div>
       </a>
     </div><div class="d1-2">
-      <a href="/additional-services" class="box ratio-2-1">
+      <a href="/additional-services" class="box ratio-box ratio-2-1">
         <div class="box-background"></div>
         <div class="box-content">
           Дополнительные услуги
@@ -81,26 +116,25 @@
         </div>
       </a>
     </div>
-    <a href="/connected-services" class="box ratio-8-1">
+    <a href="/connected-services" class="box ratio-box animated-box ratio-8-1">
       <div class="box-background"></div>
       <div class="box-content">
         Все подключенные услуги
       </div>
     </a>
     <div class="d1-2">
-      <a href="/payment-history" class="box ratio-4-1">
+      <a href="/payment-history" class="box ratio-box animated-box ratio-4-1">
         <div class="box-background"></div>
         <div class="box-content">
           История платежей
         </div>
       </a>
     </div><div class="d1-2">
-      <a href="/consumption-details" class="box ratio-4-1">
+      <a href="/consumption-details" class="box ratio-box animated-box ratio-4-1">
         <div class="box-background"></div>
         <div class="box-content">
           Детализация потребления
         </div>
       </a>
-    </div>
-  </div>
+    </div>{% endcomment %}
 {% endblock %}

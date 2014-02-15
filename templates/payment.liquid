@@ -1,12 +1,18 @@
 {% block content %}
   {% include "dashboard-navigation" %}
 
-  <div class="d1-3 gutter">
-    <div class="">
-      <div class="plan-price">1 235,34</div>
-      <span class="plan-period">на счете</span>
+  <section class="section-container">
+    <div class="page-title-container">
+      <a href="/dashboard" class="back-button">Назад в кабинет</a>
+      <h2 class="page-title">
+        Online-оплата
+      </h2>
+      <p class="section-container-badge">
+        1235 тенге на счете
+      </p>
     </div>
-    <div class="aside-note">
+
+    <aside class="d1-3 aside-note">
       <p>Благодаря системе «Онлайн оплата» Вы можете пополнить свой баланс с помощью платежных банковских карт платежных систем:</p>
         <ul>
           <li>Visa</li>
@@ -14,53 +20,91 @@
           <li>American Express</li>
         </ul>
         <p>
-        Оплата осуществляется через портал АО «Казкоммерцбанк».
-        Перед тем как осуществить Онлайн оплату, пожалуйста, ознакомьтесь с <a href="#">настоящими Правилами</a>.</p>
+        Оплата осуществляется через портал АО «Казкоммерцбанк». Перед тем как осуществить Онлайн оплату, пожалуйста, ознакомьтесь с <a class="iu-link" href="#">настоящими Правилами</a>.
+        </p>
+    </aside><div class="d1-3 l2-3">
+      <div class="box">
+        <div class="box-content">
+          <form>
+              <div class="input-line">
+                <label for="email">Ваш e-mail</label>
+                <input class="input-d1" id="email" name="email" type="text">
+                <div class="extra">
+                  <p class="no-trailer extra-small-text">Введите Ваш e-mail для получения информации об оплате и/или уведомлениях об ошибках.</p>
+                </div>
+              </div>
+              <div class="input-line">
+                <label for="payment">Сумма в тенге</label>
+                <input class="input-d1" id="payment" name="payment" type="text">
+                <div class="extra">
+                  <p class="no-trailer extra-small-text">
+                    Введите сумму в тенге или выберите одну из сумм, указанных ниже, на которую вы желаете пополнить баланс.
+                  </p>
+                </div>
+              </div>
+              <div class="input-line text-center">
+                <label class="cr-label"><input type="radio" name="predefined-payment"> 200</label>
+                <label class="cr-label"><input type="radio" name="predefined-payment"> 500</label>
+                <label class="cr-label"><input type="radio" name="predefined-payment"> 1000</label>
+                <label class="cr-label"><input type="radio" name="predefined-payment"> 2000</label>
+                <label class="cr-label"><input type="radio" name="predefined-payment"> 5000</label>
+              </div>
+              <div class="input-line">
+                <label class="cr-label agreement-label" for="agreement">
+                  <input id="agreement" name="agreement" type="checkbox"> Я прочитал Правила, согласен и принимаю условия проведения Онлайн оплаты. Я проверил и подтверждаю, что намерен оплатить выбранную сумму на указанный Абонентский номер. Вся информация внесена мной правильно.
+                </label>
+              </div>
+              <div class="input-line text-center">
+                <a href="#" class="button">Далее</a>
+              </div>
+          </form>
+        </div>
       </div>
-  </div><div class="d1-3">
-    <h2>Online-оплата</h2>
-    <form>
-      <fieldset>
-        <div class="input-line">
-          <label for="email">Ваш e-mail</label>
-          <input class="input-d1" id="email" name="email" type="text">
-          <div class="extra">
-            <p class="no-trailer extra-small-text">Введите Ваш e-mail для получения информации об оплате и/или уведомлениях об ошибках.</p>
+    </div><div class="d1-3 l1">
+      <h2 class="gutter">Другие способы оплаты:</h2>
+      <div class="d1 l1-2">
+        <a href="#" class="box">
+          <div class="box-background"></div>
+          <div class="box-content">
+            <p class="plan-benefits text-center no-trailer">Пополнение баланса картой экспресс-оплаты.</p>
           </div>
-        </div>
-        <div class="input-line">
-          <label for="payment">Сумма в тенге</label>
-          <input class="input-d1" id="payment" name="payment" type="text">
-          <div class="extra">
-            <p class="no-trailer extra-small-text">
-              Введите сумму в тенге или выберите одну из сумм, указанных ниже, на которую вы желаете пополнить баланс.
-            </p>
+        </a>
+      </div><div class="d1 l1-2">
+        <a href="#" class="box">
+          <div class="box-background"></div>
+          <div class="box-content">
+            <p class="plan-benefits text-center no-trailer">Через банкоматы.</p>
           </div>
-        </div>
-        <div class="input-line text-center">
-          <label class="cr-label"><input type="radio" name="predefined-payment"> 200</label>
-          <label class="cr-label"><input type="radio" name="predefined-payment"> 500</label>
-          <label class="cr-label"><input type="radio" name="predefined-payment"> 1000</label>
-          <label class="cr-label"><input type="radio" name="predefined-payment"> 2000</label>
-          <label class="cr-label"><input type="radio" name="predefined-payment"> 5000</label>
-        </div>
-        <div class="input-line">
-          <label class="cr-label agreement-label" for="agreement">
-            <input id="agreement" name="agreement" type="checkbox"> Я прочитал Правила, согласен и принимаю условия проведения Онлайн оплаты. Я проверил и подтверждаю, что намерен оплатить выбранную сумму на указанный Абонентский номер. Вся информация внесена мной правильно.
-          </label>
-        </div>
-        <div class="input-line text-center">
-          <a href="#" class="button">Далее</a>
-        </div>
-      </fieldset>
-    </form>
-    
+        </a>
+      </div><div class="d1 l1-2">
+        <a href="#" class="box">
+          <div class="box-background"></div>
+          <div class="box-content">
+            <p class="plan-benefits text-center no-trailer">Через интернет-порталы банков.</p>
+          </div>
+        </a>
+      </div><div class="d1 l1-2">
+        <a href="#" class="box">
+          <div class="box-background"></div>
+          <div class="box-content">
+            <p class="plan-benefits text-center no-trailer">С помощью систем приема платежей и терминалов.</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+{% comment %}
+
+  <div class="d1-3 gutter">
+   
   </div><div class="d1-3 payment-options">
     <div class="drawer">
       <div class="drawer-background"></div>
       <div class="drawer-content">
         <a href="#" class="drawer-title">
-          Пополнение баланса картой <nobr>экспресс-оплаты</nobr>
+          
         </a>
         <form class="drawer-box">
           <fieldset>
@@ -109,6 +153,6 @@
         </div>
       </div>
     </div>
-  </div>
+  </div>{% endcomment %}
 
 {% endblock %}

@@ -12,6 +12,7 @@
   @include font($large-heading, $large-heading-line)
 
 %heading-settings
+  font-weight:    400
   display:        block
   margin:         0
 %small-heading-settings
@@ -19,6 +20,7 @@
   padding-top:    $baseline
   padding-bottom: $baseline
 %larger-heading-settings
+  font-weight:    300
   @extend %heading-settings
   padding-top:    2*$baseline
   padding-bottom: 2*$baseline
@@ -90,6 +92,15 @@ a
     color: $link-hover-color
 .active-link
   color: $link-hover-color
+.u-link
+  border-bottom: 1px solid $secondary-text-color
+.iu-link
+  color: white
+  border-bottom: 1px solid $bg-color
+  &:hover
+    color: $normal-text-color
+  &.active-link
+    font-weight: bold
 
 sup, sub
   @extend %small-text

@@ -1,46 +1,93 @@
+.dashboard-navigation-conatiner
+  // padding: $gutter
+
+.account-title-container
+  padding: $gutter 0
+.account-title
+  @extend %small-heading
+  padding: 0 0 $baseline
+.account-subtitle
+  padding: 0
+
 .account-info
-  left: 0
-  right: 0
   padding: $gutter
-  display: block
-  position: absolute
-  top: 50%
-  @include transform(translateY(-50%))
-  color: $secondary-text-color
-  @extend %small-text
+  // left: 0
+  // right: 0
+  // padding: $gutter
+  // display: block
+  // position: absolute
+  // top: 50%
+  // @include transform(translateY(-50%))
+  // color: $secondary-text-color
+  // @extend %small-text
 
 .current-balance-container
   text-align: center
 
-.current-balance
-  // color: $accent-color
-  padding: $baseline $gutter
-  display: inline-block
-  color: white
-  background-color: $accent-color
-  @extend %large-heading
+.account-balance
+  @extend %epic-heading
   font-weight: 400
-  text-transform: uppercase
-  text-align: center
-  margin-bottom: $small-line
-  border-radius: 18px
-  // text-shadow: 0 2px 1px darken($accent-color, 5%)
-  &:after
-    content: ""
-    width: 30px
-    width: calculateRem(30px)
-    height: 30px
-    height: calculateRem(30px)
-    display: inline-block
-    @include background-image("icons/icon-tenge")
-    background-position: 50% 50%
-    background-repeat: no-repeat
+  padding-bottom: $baseline - 2px
+  border-bottom: 2px solid $accent-color
+  color: $accent-color
+.account-balance-note
+  @extend %small-text
+
+// .current-balance
+//   // color: $accent-color
+//   padding: $baseline $gutter
+//   display: inline-block
+//   color: white
+//   background-color: $accent-color
+//   @extend %large-heading
+//   font-weight: 400
+//   text-transform: uppercase
+//   text-align: center
+//   margin-bottom: $small-line
+//   border-radius: 2px
+//   // text-shadow: 0 2px 1px darken($accent-color, 5%)
+//   &:after
+//     content: ""
+//     width: 30px
+//     width: calculateRem(30px)
+//     height: 30px
+//     height: calculateRem(30px)
+//     display: inline-block
+//     @include background-image("icons/icon-tenge")
+//     background-position: 50% 50%
+//     background-repeat: no-repeat
 
 .counter-group
-  padding-top:    $gutter
-  padding-bottom: $gutter
+  padding-top:    $baseline
+  padding-bottom: $small-line
+  .bonus &
+    padding-bottom: $gutter
+
+.bonus-container
+  padding: $baseline $gutter
+
+.bonus
+  color: lighten($normal-text-color, 10%)
+  background-color: transparent
+  padding: ($gutter - 1px)
+  border: 1px dashed $normal-text-color
 
 .account-additional-info
   @extend %small-text
-  color: white
-  background-color: $secondary-text-color
+  // color: white
+  // background-color: $secondary-text-color
+  padding: $gutter
+
+.charging-dates
+  color: $secondary-text-color
+  padding: 0 $gutter $small-line
+
+.additional-services
+  padding-top: $small-line
+  // color: $secondary-text-color
+  text-align: center
+  @include scut-list-unstyled
+  > li
+    padding: $baseline 0
+    &.active
+      color: $normal-text-color

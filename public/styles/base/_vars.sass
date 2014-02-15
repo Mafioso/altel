@@ -5,17 +5,23 @@ $retina-suffix: "@2x"
 // SIZING
 $gutter: 12px
 $baseline:                      6px
+
+$ms-base:                       16px
+$ms-ratio:                      $augmented-fourth
+
 $extra-small-text:              12px
 $small-text:                    14px
 $normal-text:                   18px
-$small-heading:                 24px
-$normal-heading:                34px
-$large-heading:                 48px
+
+$small-heading:                 floor(ms(1))
+$normal-heading:                floor(ms(2))
+$large-heading:                 floor(ms(3))
+
 $small-line:                    18px
 $normal-line:                   24px
-$small-heading-line:            30px
-$normal-heading-line:           36px
-$large-heading-line:            54px
+$small-heading-line:            ceil(ms(1) / $baseline)*$baseline
+$normal-heading-line:           ceil(ms(2) / $baseline)*$baseline
+$large-heading-line:            ceil(ms(3) / $baseline)*$baseline
 
 // COLORS
 $bg-color:              #D4D8D9

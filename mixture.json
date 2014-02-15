@@ -1,5 +1,5 @@
 {
-  "debug": false,
+  "debug": true,
   "domain": null,
   "lintScripts": false,
   "modelSource": null,
@@ -10,6 +10,9 @@
   "projectDescription": "Altel protal",
   "projectName": "Altel",
   "publishedId": "11526",
+  "sass": {
+    "precision": 14
+  },
   "serverHostname": null,
   "serverPort": null,
   "simpleModePartnerServer": null,

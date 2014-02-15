@@ -1,42 +1,20 @@
+{% model "plans.json" %}
+
 {% block content %}
-  
-  <div class="gutter">
-    <div class="d1-4">
-      <ul class="side-navigation">
-        {% for j in (1..3) %}
-          <li class="side-navigation-group-title">Group {{ j }}</li>
-          {% for i in (1..3) %}
-            <li><a href="/plan" class="side-navigation-item">Plan {{i}} A bit longer name than expected</a></li>
-          {% endfor %}
-        {% endfor %}
-        
-      </ul>
-    </div><div class="d3-4">
-      {% for j in (1..3) %}
-        <h1 class="gutter">Group {{j}}</h1>
-        {% for i in (1..3) %}<div class="d1-3">
-          <a href="/plan" class="box ratio-3-4">
-            <div class="box-background"></div>
-            <div class="box-content">
-              <h2 class="plan-title">
-                Plan {{i}} title
-              </h2>
-              <p class="plan-subtitle">
-                From <span class="price">{{ 'now' | date: "%j" }}</span> a month
-              </p>
-              <div class="plan-graphic">
-                <img src="/public/images/plan-icon-generic.svg" alt="plan {{ i }}">
-              </div>
-              <p class="plan-benefits hide-on-large">
-                {{ 1| lorem_ipsum | truncate:140 }}
-              </p>
-              <div class="box-footer plan-cta-container">
-                <div href="#" class="button">Read more</div>
-              </div>
-            </div>
-          </a>
-        </div>{% endfor%}
+
+<div class="gutter">
+  <div class="d1-4">
+    <ul class="side-navigation">
+      <li class="side-navigation-group-title">Тарифы GSM</li>
+      {% for plan in model.gsmPlans %}
+        <li><a href="{{ plan.url }}" class="side-navigation-item">{{ plan.name }}</a></li>
       {% endfor %}
-    </div>
+    </ul>
+  </div><div class="d3-4">
+    <h1 class="gutter">Тарифы GSM</h1>
+    {% for plan in model.gsmPlans %}<div class="d1-3 l1-2">
+      {% include "planbox" with plan %}
+    </div>{% endfor %}
   </div>
+</div>
 {% endblock %}

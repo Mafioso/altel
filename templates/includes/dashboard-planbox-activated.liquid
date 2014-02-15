@@ -1,0 +1,22 @@
+<a href="/dashboard-plans" class="box ratio-box ratio-2-3 {% if dashboard-planbox-activated.active %}active{% endif %}">
+  <div class="box-background"></div>
+  <div class="box-content plan-icon">
+    <h2 class="plan-title">
+      {{ dashboard-planbox-activated.name }}
+    </h2>
+    <p class="plan-subtitle">
+      {{ dashboard-planbox-activated.subtitle }}
+    </p>
+    <div class="box-footer plan-cta-container">
+      <p class="plan-benefits">
+        {{ dashboard-planbox-activated.benefits }}
+      </p>
+      {% if dashboard-planbox-activated.active %}
+        Текущий тариф
+      {% else %}
+        <div href="#" class="button">Подключить</div>
+      {% endif %}
+    </div>
+  </div>
+</a>
+<p class="gutter"><a class="iu-link" href="#">Условия подключения</a></p>

@@ -1,24 +1,21 @@
-<div class="d1 gutter">
-  <div class="d2-6 middle">
-    <h1><a href="/personal-settings" class="icon-edit">Kathryn Sims</a></h1>
-  </div><div class="d4-6 middle">
-    <nav class="navigation">
-      <ul class="navigation nav-level-0">
-        <li class="d1-4 middle">
-          <a href="/dashboard" class="nav-button {% if mixture.url != "new-number" %}active{% endif %}"><span class="icon-phone">708 1344515</span></a>
-        </li><li class="d1-4 middle">
-          <a href="#" class="nav-button"><span class="icon-lte">708 1344515</span></a>
-        </li><li class="d1-4 middle">
-          <a href="/new-number" class="nav-button {% if mixture.url == "new-number" %}active{% endif %}">
-            Добавить номер
-          </a>
-        </li>
-      </ul>
-    </nav>
+<div class="dashboard-navigation-conatiner">
+  <div class="d1-3 gutter middle">
+    {% comment %}<h1 class="account-title">Kathryn Sims</h1>{% endcomment %}
+    <div class="account-title-container">
+      <h1 class="account-title">
+        ТЕСТ\СИТ WEBразработчик ОСА\Помогалов Руслан Владимирович
+      </h1>
+      <p class="account-subtitle"><a href="/personal-settings" class="u-link -icon-edit">Настройки</a></p>
+    </div>
+  </div><div class="gutter d1-4 middle">
+    Ваш номер: 
+    <span class="icon-phone">708 1344515</span>
+  </div><div class="d5-12 middle">
+    <a href="#" class="box animated-box active">
+      <div class="box-background"></div>
+      <div class="box-content">
+        Take part in our questionnaire!
+      </div>
+    </a>
   </div>
 </div>
-{% if mixture.url != "dashboard" %}
-  <div class="d1 gutter back-button-container">
-    <a href="/dashboard" class="back-button"><span class="icon-back">Назад</span></a>
-  </div>
-{% endif %}

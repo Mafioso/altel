@@ -2,40 +2,40 @@
 
 {% include "dashboard-navigation" %}
 
-  <div class="d1 gutter">
-    <h2 class="page-title">
-      Детализация потребления
-    </h2>
-    <form>
+  <section class="section-container">
+    <div class="page-title-container">
+      <a href="/dashboard" class="back-button">Назад в кабинет</a>
+      <h2 class="page-title">
+        Детализация потребления
+      </h2>
+    </div>
+
+    <form class="d1">
       <div class="input-line">
-        <div class="d1-3 middle">
-          <a href="#">Этот месяц</a>
-          <span class="space"></span>
-          <a href="#" class="active-link">Предыдущий месяц</a>
-        </div><div class="d2-3 middle">
-          <span class="middle">или</span>
-          <select class="history-select" name="" id=""></select>
-          <a class="middle" href="#">сформировать детализацию</a>
-        </div>
+        <span class="middle">Выберите месяц:</span>
+        <select name="" id=""></select>
+        <span class="space"></span>
+        <a class="middle iu-link" href="#">сформировать детализацию</a>
       </div>
     </form>
-  </div>
+    
+    <div class="d1-6">
+      <a href="#" class="box ratio-box animated-box">
+        <div class="box-background"></div>
+        <div class="box-content box-icon-xls">XLS</div>
+      </a>
+    </div><div class="d1-6">
+      <a href="#" class="box ratio-box animated-box">
+        <div class="box-background"></div>
+        <div class="box-content box-icon-pdf">PDF</div>
+      </a>
+    </div><div class="d1-6">
+      <a href="#" class="box ratio-box animated-box">
+        <div class="box-background"></div>
+        <div class="box-content box-icon-html">HTML</div>
+      </a>
+    </div>
 
-  <div class="d1-6">
-    <a href="#" class="box">
-      <div class="box-background"></div>
-      <div class="box-content box-icon-xls">XLS</div>
-    </a>
-  </div><div class="d1-6">
-    <a href="#" class="box">
-      <div class="box-background"></div>
-      <div class="box-content box-icon-pdf">PDF</div>
-    </a>
-  </div><div class="d1-6">
-    <a href="#" class="box">
-      <div class="box-background"></div>
-      <div class="box-content box-icon-html">HTML</div>
-    </a>
-  </div>
+  </section>
 
 {% endblock %}

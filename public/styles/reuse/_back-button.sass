@@ -1,11 +1,36 @@
-.back-button-container
-  border-top: 1px solid $secondary-text-color
-  padding-top: ($baseline - 1px)
-  padding-bottom: $small-line
 .back-button
-  display: inline-block
-  @extend %large-text
-  padding: $baseline
-  color: $secondary-text-color
-  &:hover
-    color: $normal-text-color
+  @extend %button
+  padding: $baseline $gutter
+  background-color: $box-bg-color
+  position: relative
+  @include border-left-radius(0)
+  color: $normal-text-color
+  vertical-align: middle
+  &:before
+    content: ""
+    display: block
+    height: 0
+    width: 0
+    border: 15px solid transparent
+    border-right-color: $box-bg-color
+    position: absolute
+    left: -2*15px
+    top: 0
+  &:hover:before
+    border-right-color: $accent-color
+
+.page-title
+  @extend %column
+  vertical-align: middle
+  padding-left: $gutter
+  color: $box-bg-color
+  font-weight: bold
+
+.page-title-container
+  padding-left: $gutter
+  padding-bottom: $small-line
+  // margin-bottom: $small-line
+  // background-color: $secondary-text-color
+  // margin-left: $gutter
+  // margin-right: $gutter
+  // border-radius: 2px

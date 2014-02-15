@@ -25,13 +25,13 @@ legend
 label
   padding: 3px
   color: $secondary-text-color
-  @include inline-block
+  display: block
   @extend %strong
-  vertical-align: middle
   cursor: pointer
   @include user-select(none)
 
 .cr-label
+  @extend %column
   color: $normal-text-color
   padding: 3px $baseline
 
@@ -246,7 +246,7 @@ select
   @include inline-block
   min-height: $small-line
   line-height: inherit
-  padding: ($gutter) (2*$gutter)
+  padding: 9px 2*$gutter
   width: auto
   border: none
   border-radius: $radius
@@ -263,7 +263,8 @@ select
     text-transform: none
     @extend %extra-small-text
   &:hover
-    color: rgba(255,255,255, .9)
+    // color: rgba(255,255,255, .9)
+    color: white
     background-color: $accent-color
 
 .button, button, input[type="submit"]

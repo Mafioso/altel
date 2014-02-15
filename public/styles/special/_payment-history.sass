@@ -2,8 +2,6 @@
   @include scut-list-unstyled
   padding: $gutter $gutter
   background-color: $box-bg-color
-  @include bp-large
-    @include font($small-text, $small-line)
   .split-title
     font-weight: normal
   .split
@@ -17,12 +15,12 @@
 .hms-time
   color: $secondary-text-color
 .history-period
+  text-align: left
   @extend %small-heading
+  font-weight: bold
   padding: $gutter 0 ($baseline - 1px)
   margin-bottom: $baseline
   border-bottom: 1px solid $bg-color
-  @include bp-large
-    @include font($normal-text, $normal-line)
 
 .history-select
   vertical-align: middle
