@@ -1,5 +1,61 @@
 {% model "plans.json" %}
 
+{% block modal %}
+  <div class="modal" id="modal1">
+    <div class="container text-center">
+      <div class="d2-3">
+        <div class="box">
+          <div class="box-content epic-plan">
+            <h2 class="plan-title">UnlimLTE</h2>
+            <p class="plan-subtitle">4500 тенге в месяц</p>
+            <div class="epic-plan-graphics plan-icon"></div>
+            <p class="plan-benefits">
+              Удовольствие от потрясающей скорости загрузки видео-контента, музыки, приложений и серфинга на работе, дома, на даче и даже в автомобиле!
+            </p>
+            <table class="plan-table">
+              <thead>
+                <tr>
+                  <th colspan="2" class="plan-table-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for i in (1..2) %}
+                  <tr>
+                    <td class="plan-table-label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum, quisquam, ea non magni illum assumenda reprehenderit culpa laboriosam eveniet laudantium dicta iusto et possimus dolorem modi itaque adipisci laborum odio.</td><td></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li>List item 1</li>
+                      </ul>
+                    </td>
+                    <td class="plan-table-price">
+                      <strong>300</strong> тенге
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li>List item 1</li>
+                      </ul>
+                    </td>
+                    <td class="plan-table-price">
+                      <strong>300</strong> тенге
+                    </td>
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+            <div class="box-footer plan-cta-container">
+              Текущий план <span class="space">&middot;</span> <a href="#" class="u-link js-modal-close">Закрыть</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
 {% block content %}
   {% include "dashboard-navigation" %}
 

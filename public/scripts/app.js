@@ -27,29 +27,18 @@ require(['jquery'], function( $ ) {
         console.log('click!');
         $(this).parents('.drawer').toggleClass('active');
     });
+    $('.js-modal-close').bind('click', function(e) {
+        $('.modal.active').removeClass('active');
+        $('body').removeClass('modal-open');
+    });
+    $('.js-modal-open').bind('click', function(e) {
+        e.preventDefault();
+        // close previously opened modal
+        $('.modal.active').removeClass('active');
+
+        var tgt = '#'+$(this).attr("data-target");
+        $('body').toggleClass('modal-open');
+        $(tgt).toggleClass('active');
+        console.log(tgt);
+    });
 });
-
-// require.config({
-//     // Add this map config in addition to any baseUrl or
-//     // paths config you may already have in the project.
-//     map: {
-//       // '*' means all modules will get 'jquery-private'
-//       // for their 'jquery' dependency.
-//       '*': { 'jquery': 'jquery-private' },
-
-//       // 'jquery-private' wants the real jQuery module
-//       // though. If this line was not here, there would
-//       // be an unresolvable cyclic dependency.
-//       'jquery-private': { 'jquery': 'jquery' }
-//     }
-// });
-
-// // and the 'jquery-private' module, in the
-// // jquery-private.js file:
-// define(['jquery'], function (jq) {
-//     return jq.noConflict( true );
-// });
-
-// require(['jquery'], function( $ ) {
-//     console.log( $ ); // OK
-// });

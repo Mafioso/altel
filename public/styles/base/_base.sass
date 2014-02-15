@@ -14,10 +14,20 @@ body
 body
   color: $normal-text-color
   background-color: $bg-color
-  border-top: 3px solid $accent-color
   cursor: default
 
+.adventure-time
+  @extend %animation-hack
+  @include transition(opacity .3s ease-in-out)
+  position: absolute
+  overflow: auto
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
 .sticky-wrap
+  border-top: 3px solid $accent-color
   min-height: 100%
   margin-bottom: -78px
   margin-bottom: -1*calculateRem(78px)

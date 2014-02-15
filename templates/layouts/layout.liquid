@@ -12,19 +12,23 @@
   {{ "modernizr.min.js" | asset_url | script_tag }}
   <script data-main="/public/scripts/app" src="/public/scripts/require.min.js"></script>
 </head>
-<body>
+<body class="{% block body-class %}{% endblock %}">
   <!--[if lt IE 8]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <div class="sticky-wrap">
-    <div class="container">
-      {% include "navigation" %}
-      {% block content %}{% endblock %}
+  <div class="modal-overlay"></div>
+  {% block modal %}{% endblock %}
+  <div class="adventure-time">
+    <div class="sticky-wrap">
+      <div class="container">
+        {% include "navigation" %}
+        {% block content %}{% endblock %}
+      </div>
     </div>
-  </div>
-  <div class="sticky-footer">
-    <div class="container">
-      {% include "footer" %}
+    <div class="sticky-footer">
+      <div class="container">
+        {% include "footer" %}
+      </div>
     </div>
   </div>
 
