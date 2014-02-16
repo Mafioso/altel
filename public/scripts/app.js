@@ -41,4 +41,11 @@ require(['jquery'], function( $ ) {
         $(tgt).toggleClass('active');
         console.log(tgt);
     });
+    $(document).keyup(function(e){
+        var $bd = $("body");
+        if(e.keyCode === 27 && $bd.hasClass('modal-open')) {
+            $('.modal.active').removeClass('active');
+            $('body').removeClass('modal-open');
+        }
+    });
 });
