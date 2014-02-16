@@ -46,3 +46,13 @@ body
   box-shadow: 0 0 1px rgba(0, 0, 0, 0)
   @include backface-visibility(hidden)
   @include transform(translateZ(0))
+
+%visually-hidden
+  @extend %animation-hack
+  @include scut-hide-visually
+
+%reset-visually-hidden
+  height: auto
+  width: auto
+  margin: auto
+  clip: auto

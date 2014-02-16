@@ -43,7 +43,7 @@
   padding-top: ($normal-line - 1px)
   border-top: 1px solid $bg-color
 
-.plan-table
+.plan-table, .common-table
   text-align: left
   @extend %small-text
   border-top: 1px solid $bg-color
@@ -52,9 +52,20 @@
     padding-bottom: 0
   td
     padding: $baseline
-.plan-table-title
+.plan-table-title, .common-table-title
   padding: ($gutter - 1) $baseline $gutter
   text-align: left
+.common-table-title
+  padding: $gutter $baseline
+.common-table
+  border-top: none
+  td
+    padding: $baseline $baseline ($baseline - 1px)
+  tr
+    border-bottom: 1px solid $bg-color
+    &:last-child
+      border-bottom: transparent
+
 .plan-table-a
   padding: $baseline
   width: (3/4)*100%
