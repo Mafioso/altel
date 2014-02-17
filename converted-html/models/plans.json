@@ -1,0 +1,41 @@
+{
+  "gsmPlans": [
+    { 
+      "active": false,
+      "url": "/plan",
+      "name": "Beyond Talk Plans",
+      "subtitle": "From $35 per month",
+      "benefits": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, rerum, consectetur aspernatur quos autem inventore sunt facilis dicta similique natus deleniti asperiores. Obcaecati, mollitia, quidem praesentium nihil quisquam quas harum."
+    },
+    { 
+      "active": false,
+      "url": "/plan",
+      "name": "PayLo",
+      "subtitle": "From $20 per month",
+      "benefits": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, rerum, consectetur aspernatur quos autem inventore sunt facilis dicta similique natus deleniti asperiores. Obcaecati, mollitia, quidem praesentium nihil quisquam quas harum."
+    },
+    { 
+      "active": false,
+      "url": "/plan",
+      "name": "Broadband2Go",
+      "subtitle": "From $5 per day",
+      "benefits": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, rerum, consectetur aspernatur quos autem inventore sunt facilis dicta similique natus deleniti asperiores. Obcaecati, mollitia, quidem praesentium nihil quisquam quas harum."
+    }
+  ],
+  "ltePlans": [
+    { 
+      "active": true,
+      "url": "/plan",
+      "name": "UnlimLTE",
+      "subtitle": "4500 тенге в месяц",
+      "benefits": "Удовольствие от потрясающей скорости загрузки видео-контента, музыки, приложений и серфинга на работе, дома, на даче и даже в автомобиле!"
+    },
+    {
+      "active": false,
+      "url": "/plan",
+      "name": "Тарифная линейка «2ГБ» / «4ГБ» / «6ГБ»",
+      "subtitle": "От 900 тенге в месяц",
+      "benefits": "Индивидуальный выбор объема трафика, комфортный переход с одного тарифного плана на другой, потрясяющая скорость загрузки контента и интернет серфинга."
+    }
+  ]
+}
