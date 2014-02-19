@@ -1,12 +1,13 @@
 <nav class="nav-drawer" tabindex="-1">
   <div class="nav-drawer-content">
   <ul class="nav-drawer-list">
-    <li><a href="/dashboard" class="nav-drawer-list-item active">Личный кабинет</a></li>
-    <li><a href="/site-payment" class="nav-drawer-list-item">Оплата</a></li>
-    <li><a href="/site-plans" class="nav-drawer-list-item">Тарифы</a></li>
-    <li><a href="/site-internet" class="nav-drawer-list-item">Интернет 4G</a></li>
-    <li><a href="/site-services" class="nav-drawer-list-item">Услуги</a></li>
-    <li><a href="/business-index" class="nav-drawer-list-item">Бизнесу</a></li>
+    <li><a href="/" class="nav-drawer-list-item {% if mixture.url == "index" %}active{% endif %}">Главная</a></li>
+    <li><a href="/dashboard" class="nav-drawer-list-item {% if mixture.url == "dashboard" %}active{% endif %}">Личный кабинет</a></li>
+    <li><a href="/site-payment" class="nav-drawer-list-item {% if mixture.url == "site-payment" %}active{% endif %}">Оплата</a></li>
+    <li><a href="/site-plans" class="nav-drawer-list-item {% if mixture.url == "site-plans" %}active{% endif %}">Тарифы</a></li>
+    <li><a href="/site-internet" class="nav-drawer-list-item {% if mixture.url == "site-internet" %}active{% endif %}">Интернет 4G</a></li>
+    <li><a href="/site-services" class="nav-drawer-list-item {% if mixture.url == "site-plans" %}site-services{% endif %}">Услуги</a></li>
+    <li><a href="/business-index" class="nav-drawer-list-item {% if mixture.url == "business-index" %}active{% endif %}">Бизнесу</a></li>
   </ul>
   
   <ul class="nav-drawer-list">

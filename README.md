@@ -1,7 +1,17 @@
 # TODO
 
-* optimise for mobile screens
+30 chars for plan subtitle (цена)
 
+120 chars for plan benefits / short description (краткое описание)
+
+* ~~поменять местами кнопки и слайдер на бизнес-странице~~
+* исправить футер
+* ~~посчитать ограничение на количество символов для описания планов~~
+* ~~исправить размер кнопок на странице “оплата” для medium breakpoint~~
+* ~~добавить кнопку “главная” на offscreen navigation~~
+* ~~исправить модальное окно с описанием тарифа в личном кабинете на странице смены тарифа~~
+* страница “поддержка”
+* optimise for mobile screens
 * ~~optimisation for small screens~~ - done for tables
 * ~~offscreen navigation~~
 * ~~navigation submenu~~ - unnecessary
