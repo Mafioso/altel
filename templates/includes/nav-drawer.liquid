@@ -2,7 +2,11 @@
   <div class="nav-drawer-content">
   <ul class="nav-drawer-list">
     <li><a href="/" class="nav-drawer-list-item {% if mixture.url == "index" %}active{% endif %}">Главная</a></li>
-    <li><a href="/dashboard" class="nav-drawer-list-item {% if mixture.url == "dashboard" %}active{% endif %}">Личный кабинет</a></li>
+    <li>
+      <div class="d2-3">
+        <a href="/dashboard" class="nav-drawer-list-item {% if mixture.url == "dashboard" %}active{% endif %}">Личный кабинет</a>
+      </div><div class="d1-3"><a href="#" class="nav-drawer-list-item text-right">выйти</a></div>
+    </li>
     <li><a href="/site-payment" class="nav-drawer-list-item {% if mixture.url == "site-payment" %}active{% endif %}">Оплата</a></li>
     <li><a href="/site-plans" class="nav-drawer-list-item {% if mixture.url == "site-plans" %}active{% endif %}">Тарифы</a></li>
     <li><a href="/site-internet" class="nav-drawer-list-item {% if mixture.url == "site-internet" %}active{% endif %}">Интернет 4G</a></li>
@@ -19,13 +23,18 @@
       </div><div class="d1-3">
         <a href="#" class="nav-drawer-list-item">Рус</a>
       </div><div class="d1-3">
-        <a href="#" class="nav-drawer-list-item">Eng</a>
+        <a href="#" class="nav-drawer-list-item active">Eng</a>
       </div>
     </li>
   </ul>
 
   <ul class="nav-drawer-list">
-    <li><a href="#" class="nav-drawer-list-item">Выход</a></li>
+    <li><a href="#" class="nav-drawer-list-item">О компании</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Новости</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Пресс-центр</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Лицензии</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Закупки</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Вакансии</a></li>
   </ul>
   </div>
 </nav>

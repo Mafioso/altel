@@ -13,7 +13,7 @@
               Удовольствие от потрясающей скорости загрузки видео-контента, музыки, приложений и серфинга на работе, дома, на даче и даже в автомобиле!
             </p>
             <div class="plan-cta-container">
-              Текущий план <span class="space">&middot;</span> <a href="#" class="u-link js-modal-close">Закрыть</a>
+              <a href="#" class="u-link js-modal-close">Закрыть</a> <span class="space">&middot;</span> Текущий план
             </div>
             <div class="plan-description">
               <div class="d3-4 l1 text-left">
@@ -118,13 +118,41 @@
       </div>
     </div>
   </div>
-  <div class="modal" id="modal-connect">
+  <div class="modal" id="modal-connect-2gb-error">
     <div class="container text-center">
       <div class="d1-3 l2-3">
         <div class="box">
           <div class="box-content">
-            <p>Some message regarding connection&hellip;</p>
-            <p>Press [esc] to close this modal.</p>
+            <h2 class="plan-title">Подключение тарифа &laquo;2Гб&raquo;</h2>
+            <p class="plan-subtitle">900 тенге</p>
+            <div class="text-center">
+              <p>Вам не хватает 250 тенге</p>
+            </div>
+            <div class="plan-cta-container">
+              <a href="#" class="u-link js-modal-close">Закрыть</a>
+              <span class="space">&middot;</span>
+              <a class="button" href="/dashboard-payment">Пополнить счет</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-connect-4gb-normal">
+    <div class="container text-center">
+      <div class="d1-3 l2-3">
+        <div class="box">
+          <div class="box-content">
+            <h2 class="plan-title">Подключение тарифа &laquo;4Гб&raquo;</h2>
+            <p class="plan-subtitle">1200 тенге</p>
+            <div class="text-center">
+              <p>С Вашего счета будут списаны 1200 тенге</p>
+            </div>
+            <div class="plan-cta-container">
+              <a href="#" class="u-link js-modal-close">Закрыть</a>
+              <span class="space">&middot;</span> 
+              <a class="button" href="#" class="js-modal-close">Да, подключить</a> 
+            </div>
           </div>
         </div>
       </div>
@@ -150,7 +178,7 @@
       <ul class="side-navigation">
         <!-- <li class="side-navigation-group-title">Доступные планы</li> -->
         {% for plan in model.ltePlans %}
-          <li><a href="{{ plan.url }}" class="side-navigation-item">{{ plan.name }}</a></li>
+          <li><a href="{{ plan.url }}" class="side-navigation-item {% if plan.active %}active{% endif %}">{{ plan.name }}</a></li>
         {% endfor %}
       </ul>
     </div><div class="d5-6">

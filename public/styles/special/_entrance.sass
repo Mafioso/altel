@@ -1,5 +1,3 @@
-.entrance-body
-  background-color: $box-bg-color
 .entrance-logotype
   display: block
   width: 100%
@@ -9,23 +7,8 @@
     background-position: 50% 50%
 
 .entrance-container
-  position: relative
-  height: 100%
-  min-height: 46em
-  padding: 2*$gutter
-.entrance-alternative-path
-  position: absolute
-  bottom: 0
-  left: 0
-  right: 0
-
-
-.entrance-frame
-  z-index: 1
-  position: absolute
-  top: 50%
-  left: 50%
-  @include transform(translateY(-50%) translateX(-50%))
+  text-align: center
+  margin-top: 3em
 
 .entrance-title
   @extend %small-heading
@@ -51,3 +34,22 @@
 
 .captcha img
   display: block
+
+.pin-help-container
+  display: inline-block
+  position: relative
+.pin-help
+  position: absolute
+  z-index: 1
+  width: 330px
+  height: 296px
+  left: 2em
+  bottom: 2em
+.pin-image
+  width: 100%
+  height: 100%
+  background-position: 0 0
+  background-repeat: no-repeat
+  background-image: url(#{$image-path}/pin-help.png)
+  @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)
+    background-image: url(#{$image-path}/pin-help@2x.png)

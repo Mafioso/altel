@@ -101,6 +101,8 @@
 .side-navigation-item
   padding: $baseline
   display: block
+  &.active
+    font-weight: bold
   .section-container &
     color: white
     &:hover
@@ -112,11 +114,11 @@
     @extend %small-text
 
 // hide nav-cols on medium breakpoint
-.header
-  .nav-toggle-container
-    text-align: right
-    display: none
-    float: right
+.nav-toggle-container
+  text-align: right
+  display: none
+  float: right
+.header, footer
   .nav-col
     @include bp-medium
       display: none
