@@ -1,0 +1,60 @@
+{
+  "services": [
+    {
+      "active": false,
+      "url": "/site-service-example",
+      "name": "Вам звонили!",
+      "subtitle": "Бесплатно",
+      "benefits": "Будьте в курсе всех пропущенных звонков за последние 48 часов."
+    },
+    {
+      "active": false,
+      "url": "/site-service-example",
+      "name": "Ожидание и удержание вызова",
+      "subtitle": "Бесплатно",
+      "benefits": "Не пропускайте важный вызов! Если он поступает во время разговора с другим собеседником – вы сможете переключаться между обоими собеседниками, не прерывая разговора."
+    },
+    {
+      "active": false,
+      "url": "/site-service-example",
+      "name": "Конференц-связь",
+      "subtitle": "Бесплатно",
+      "benefits": "Организуйте разговор с несколькими собеседниками одновременно."
+    },
+    {
+      "active": false,
+      "url": "/site-service-example",
+      "name": "Переадресация вызова",
+      "subtitle": "Бесплатно",
+      "benefits": "Автоматическое перенаправление всех поступающих вызовов на любой другой номер."
+    },
+    {
+      "active": false,
+      "url": "/site-service-example",
+      "name": "Анти-АОН",
+      "subtitle": "Бесплатно",
+      "benefits": "Скройте свой номер при звонке на мобильные номера абонентов."
+    },
+    {
+      "active": false,
+      "url": "/site-service-example",
+      "name": "АОН",
+      "subtitle": "Бесплатно",
+      "benefits": "Услуга позволит вам видеть номер, с которого вам звонят или звонили - при условии, что вызывающий абонент не активировал услугу «Анти-АОН»"
+    },
+    {
+      "active": false,
+      "url": "/site-service-example",
+      "name": "Смена номера",
+      "subtitle": "",
+      "benefits": ""
+    },
+    {
+      "active": false,
+      "url": "/site-service-example",
+      "name": "Услуга Tonix",
+      "subtitle": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
+      "benefits": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+    }
+  ]
+}

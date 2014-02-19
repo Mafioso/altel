@@ -267,8 +267,17 @@ select
     color: white
     background-color: $accent-color
 
-.button, button, input[type="submit"]
+.button, button, input[type="submit"], .invisible-button
   @extend %button
+
+.invisible-button
+  color: inherit
+  background-color: transparent
+  border-radius: 0
+  &:hover, &:active
+    color: inherit
+    background-color: transparent
+
 
 // .button-important
 //   @extend %button

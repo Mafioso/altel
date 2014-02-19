@@ -48,19 +48,24 @@ require(['jquery'], function( $ ) {
         // close previously opened modal
         $('.modal.active').removeClass('active');
         // which modal to show?
-        var tgt = '#'+$(this).attr("data-target");
+        var tgt = '#'+$(this).attr('data-target');
         $('body').toggleClass('modal-open');
         $(tgt).toggleClass('active');
     });
     $(document).keyup(function(e){
-        var $bd = $("body");
+        var $bd = $('body');
         if(e.keyCode === 27 && $bd.hasClass('modal-open')) {
             closeModal();
         }
     });
 
-    $(".js-acc-list .acc-list-item").bind('click', function(e) {
+    $('.js-acc-list .acc-list-item').bind('click', function(e) {
         e.preventDefault();
         $(this).toggleClass('active');
+    });
+
+    $('.js-nav-drawer-toggle').bind('click', function(e) {
+        e.preventDefault();
+        $('body').toggleClass('nav-drawer-open');
     });
 });

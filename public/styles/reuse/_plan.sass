@@ -17,6 +17,7 @@
   .epic-plan &
     @extend %small-heading
 .plan-benefits
+  text-align: center
   @extend %small-text
   @extend %animation-hack
   @include transition(color .25s ease-in-out)
@@ -39,9 +40,23 @@
   background-position: 50% 50%
 
 .plan-description
-  text-align: left
+  text-align: center
   padding-top: ($normal-line - 1px)
   border-top: 1px solid $bg-color
+
+.cta-table
+  text-align: left
+  @extend %small-text
+  width: (3/4)*100%
+  margin: auto
+  background-color: $bg-color
+  border-radius: 2px
+  td
+    padding: $small-line $baseline $small-line
+  p
+    padding: 0
+  @include bp-large
+    width: 100%
 
 .plan-table, .common-table
   text-align: left

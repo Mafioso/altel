@@ -25,8 +25,10 @@
   @include background-image("icons/icon-wifi")
 .icon-lte:before
   @include background-image("icons/icon-lte")
-.icon-phone:before
-  @include background-image("icons/icon-phone")
+.icon-phone
+  white-space: nowrap
+  &:before
+    @include background-image("icons/icon-phone")
 .icon-back:before
   @include background-image("icons/icon-back")
 .icon-edit
@@ -39,3 +41,12 @@
   height: calculateRem(36px)
   width: calculateRem(36px)
   @include background-image("icons/icon-edit")
+.icon-dashboard-help
+  display: inline-block
+  padding: $baseline 0 $baseline $baseline
+  &:before
+    height: 24px
+    width: 24px
+    height: calculateRem(24px)
+    width: calculateRem(24px)
+    @include background-image("icons/icon-dashboard-help")

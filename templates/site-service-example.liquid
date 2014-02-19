@@ -1,0 +1,91 @@
+{% model "gsm-services.json" %}
+{% block content %}
+
+<div class="gutter">
+  <div class="d1-4 m1-6">
+    <ul class="side-navigation">
+      <li class="side-navigation-group-title">
+        <a href="/site-services" class="back-button">Дополнительные услуги</a>
+      </li>
+      {% for service in model.services %}
+        <li><a href="{{ service.url }}" class="side-navigation-item">{{ service.name }}</a></li>
+      {% endfor %}
+    </ul>
+
+  </div><div class="d3-4 m5-6">
+    <div class="box">
+      <div class="box-content epic-plan">
+        <h2 class="plan-title">Вам звонили!</h2>
+        <p class="plan-subtitle">Бесплатно</p>
+        <div class="epic-plan-graphics plan-icon"></div>
+        <p class="plan-benefits">
+          Будьте в курсе всех пропущенных звонков за последние 48 часов.
+        </p>
+        <div class="plan-cta-container">
+          <table class="cta-table">
+            <tbody>
+              <tr>
+                <td class="table-1-2">
+                  SMS-уведомление о возможности вызова
+                </td>
+                <td class="table-1-2">
+                  <p>
+                    <strong>Включить:</strong>
+                    *814*1#, или SMS <strong>on</strong> на номер 814
+                  </p>
+                  <p>
+                    <strong>Выключить:</strong>
+                    *814*2#, или SMS <strong>off</strong> на номер 814
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-1-2">
+                  SMS-уведомление о пропущенном звонке 
+                </td>
+                <td class="table-1-2">
+                  <p>
+                    <strong>Включить:</strong>
+                    *815*1#, или SMS <strong>on</strong> на номер 815
+                  </p>
+                  <p>
+                    <strong>Выключить:</strong>
+                    *815*2#, или SMS <strong>off</strong> на номер 815
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="table-1-2">
+                  SMS-уведомление о голосовом сообщении
+                </td>
+                <td class="table-1-2">
+                  <p>
+                    <strong>Включить:</strong>
+                    *816*1#, или SMS <strong>on</strong> на номер 816
+                  </p>
+                  <p>
+                    <strong>Выключить:</strong>
+                    *816*2#, или SMS <strong>off</strong> на номер 816
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="plan-description">
+          <div class="d3-4 l1 text-left">
+            <p>Услуга «Вам звонили» позволит вам быть в курсе всех пропущенных звонков за последние 48 часов и, в случае необходимости, оперативно установить нужный контакт.</p> 
+            <p>По факту каждого несостоявшегося разговора вам будет отправлено SMS со следующей информацией: номер звонившего, общее количество пропущенных вызовов и дата/время последнего вызова. Для удобства повторного набора в качестве номера отправителя сообщения будет указан номер звонившего.</p>
+            <p>В случае если вызывающий абонент оставил для вас голосовое сообщение, вам также будет отправлено SMS-уведомление с прямым номером дозвона, по которому можно прослушать оставленное сообщение. Как только ваш номер опять станет доступным для вызова, инициатор «неудачного звонка» будет уведомлен о соответствующей возможности.</p>
+          </div>
+        </div>
+        <div class="box-footer plan-cta-container">
+          <a href="/site-services" class="u-link">Другие услуги</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

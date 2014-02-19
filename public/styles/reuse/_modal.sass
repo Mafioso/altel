@@ -12,24 +12,29 @@
     height: 100%
 
 // DISABLE SCROLLING
-.modal-open .adventure-time
+.modal-open .adventure-time,
+.modal-open .nav-drawer
   overflow: hidden
   opacity: .2
 
 .modal
-  padding-top: $normal-line
-  padding-bottom: $normal-line
   display: block
   position: absolute
   top: 0
   left: 0
   right: 0
-  height: 100%
+  bottom: 0
+  overflow: hidden
   z-index: 1000
   @extend %visually-hidden
   &.active
     @extend %reset-visually-hidden
     @include animation(modal-appearance .4s $ease-in-out-sine)
+  .container
+    padding-top: $normal-line
+    padding-bottom: $normal-line
+    height: 100%
+    overflow-y: auto
 
 @include keyframes(modal-appearance)
   from

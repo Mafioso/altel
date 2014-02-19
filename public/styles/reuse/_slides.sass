@@ -35,21 +35,29 @@
 
 
 .slide-message
-  top: 50%
-  @include transform(translateY(-50%))
+  // top: 30%
+  // @include transform(translateY(-50%))
   bottom: auto
-  width: 50%
+  width: 100%
   padding-left: (1/12)*100%
+  padding-top: (1/24)*100%
+  @include bp-large
+    padding-top: (1/24)*100%
+  @include bp-medium
+    padding-top: (1/12)*100%
 
 .slide-visual
-  width: 50%
+  width: 100%
   left: auto
   text-align: right
   @include transform(translateX(100%))
   @include transition-timing-function($ease-in-out-expo)
+  img
+    height: 100%
   .active &
     @include transform(translateX(0))
 .slide-product
+  display: none
   @include transform(translateY(100%))
   .active &
     @include transform(translateY(0))

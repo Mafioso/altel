@@ -8,9 +8,12 @@
 .container
   @extend %container
   @include bp-xlarge
-    width: 82.5em
+    max-width: 82.5em
   @include bp-large
-    width: 60em
+    max-width: 60em
+  @include bp-medium
+    min-width: 40em
+    width: 100%
 
 %column
   @include inline-block
@@ -138,3 +141,6 @@
 
 @include bp-large
   @include grid-for("l")
+
+@include bp-medium
+  @include grid-for("m")

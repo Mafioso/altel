@@ -1,5 +1,7 @@
 .nav-container
   padding: $gutter
+  @include bp-medium
+    padding-bottom: 0
 
 .navigation,
 .nav-link
@@ -70,6 +72,7 @@
   width: 100%
   height: 18px
   @include background-image("logotype")
+  background-size: contain
   background-position: 0 50%
   background-repeat: no-repeat
 
@@ -90,11 +93,38 @@
 .side-navigation
   @include scut-list-unstyled
   // padding-top: $large-heading-line + 2*$baseline
+  @include bp-medium
+    @include font($small-text, $small-line)
+  .section-container &
+    @include bp-large
+      @include font($small-text, $small-line)
 .side-navigation-item
   padding: $baseline
   display: block
+  .section-container &
+    color: white
+    &:hover
+      color: $normal-text-color
 .side-navigation-group-title
   padding: $gutter $baseline $gutter 0
   @extend %normal-text
   .back-button
     @extend %small-text
+
+// hide nav-cols on medium breakpoint
+.header
+  .nav-toggle-container
+    text-align: right
+    display: none
+    float: right
+  .nav-col
+    @include bp-medium
+      display: none
+  .nav-toggle-container,
+  .nav-logotype-container
+    @include bp-medium
+      display: inline-block
+    
+.phone-container
+  @include bp-medium
+    text-align: right

@@ -3,7 +3,7 @@
 {% block modal %}
   <div class="modal active">
     <div class="container text-center">
-      <div class="d1-3 l1-2 text-left">
+      <div class="d1-3 m3-4 l1-2 text-left">
         <div class="box">
           <div class="box-content">
             <h2>Уведомление!</h2>
@@ -28,8 +28,8 @@
 {% block content %}
   {% include "dashboard-navigation" %}
 
-  <div class="d1-3">
-    <a href="/payment" class="box ratio-box ratio-8-9 l-ratio-2-3">
+  <div class="d1-3 m1-2">
+    <a href="/dashboard-payment" class="box ratio-box ratio-8-9 l-ratio-2-3 m-ratio-1">
       <div class="box-background"></div>
       <div class="box-content box-redeem box-icon-redeem">
         <h2 class="account-balance">
@@ -70,10 +70,10 @@
         8.1.2014
       </p>
     </div>
-  </div><div class="d1-4 l1-3">
+  </div><div class="d1-4 l1-3 m1-2">
     {% include "dashboard-planbox" with model.ltePlans[0] %}
-  </div><div class="d1-4 l1-3">
-    <a href="/additional-services" class="box ratio-box ratio-2-3">
+  </div><div class="d1-4 l1-3 m1-2">
+    <a href="/dashboard-additional-services" class="box ratio-box ratio-2-3 m-ratio-1">
       <div class="box-background"></div>
       <div class="box-content">
         <h2 class="plan-title">Дополнительные услуги</h2>
@@ -87,17 +87,17 @@
         </div>
       </div>
     </a>
-    <p class="gutter"><a href="/connected-services" class="u-link">Все подключенные услуги</a></p>
-  </div><div class="d1-6 l1">
-    <div class="d1 l1-2">
-      <a href="/payment-history" class="box ratio-box animated-box ratio-8-9 l-ratio-3-1">
+    <p class="gutter"><a href="/dashboard-connected-services" class="u-link">Все подключенные услуги</a></p>
+  </div><div class="d1-6 l1 m1-2">
+    <div class="d1 l1-2 m1">
+      <a href="/dashboard-payment-history" class="box ratio-box animated-box ratio-8-9 l-ratio-3-1 m-ratio-2-1">
         <div class="box-background"></div>
         <div class="box-content box-icon-payment-history">
           История платежей
         </div>
       </a>
-    </div><div class="d1 l1-2">
-      <a href="/consumption-details" class="box ratio-box animated-box ratio-8-9 l-ratio-3-1">
+    </div><div class="d1 l1-2 m1">
+      <a href="/dashboard-consumption-details" class="box ratio-box animated-box ratio-8-9 l-ratio-3-1 m-ratio-2-1">
         <div class="box-background"></div>
         <div class="box-content box-icon-consumption-details">
           Детализация потребления
@@ -105,62 +105,4 @@
       </a>
     </div>
   </div>
-
-    {% comment %}<div class="d1-2">
-      <a href="/dashboard-plans" class="box ratio-box ratio-2-1">
-        <div class="box-background"></div>
-        <div class="box-content">
-          <h2 class="plan-title">
-            Тарифная линейка «2ГБ» / «4ГБ» / «6ГБ»
-          </h2>
-          <p class="plan-subtitle">
-            900 тенге в месяц
-          </p>
-          <div class="box-footer plan-cta-container">
-            <div class="button">Сменить тариф</div>
-          </div>
-        </div>
-      </a>
-    </div><div class="d1-2">
-      <a href="/additional-services" class="box ratio-box ratio-2-1">
-        <div class="box-background"></div>
-        <div class="box-content">
-          Дополнительные услуги
-          <ul class="plan-benefits">
-            <li class="active">Additional service 1. Lorem ipsum dolor sit amet</li>
-            <li class="active">Additional service 2. Lorem ipsum dolor sit amet</li>
-            <li>Additional service 3. Lorem ipsum dolor sit amet</li>
-            <li>Additional service 4. Lorem ipsum dolor sit amet</li>
-            <li>Additional service 5. Lorem ipsum dolor sit amet</li>
-          </ul>
-          <div class="box-footer plan-cta-container">
-            <span class="plan-price">
-              200
-            </span>
-            <span class="plan-period">в месяц за всё</span>
-          </div>
-        </div>
-      </a>
-    </div>
-    <a href="/connected-services" class="box ratio-box animated-box ratio-8-1">
-      <div class="box-background"></div>
-      <div class="box-content">
-        Все подключенные услуги
-      </div>
-    </a>
-    <div class="d1-2">
-      <a href="/payment-history" class="box ratio-box animated-box ratio-4-1">
-        <div class="box-background"></div>
-        <div class="box-content">
-          История платежей
-        </div>
-      </a>
-    </div><div class="d1-2">
-      <a href="/consumption-details" class="box ratio-box animated-box ratio-4-1">
-        <div class="box-background"></div>
-        <div class="box-content">
-          Детализация потребления
-        </div>
-      </a>
-    </div>{% endcomment %}
 {% endblock %}

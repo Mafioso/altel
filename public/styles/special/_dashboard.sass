@@ -6,6 +6,9 @@
 .account-title
   @extend %small-heading
   padding: 0 0 $baseline
+  @include bp-medium
+    font-weight: normal
+    @include font($normal-text, $normal-line)
 .account-subtitle
   padding: 0
 

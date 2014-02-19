@@ -144,8 +144,17 @@
       </p>
     </div>
     
-    {% for plan in model.ltePlans %}<div class="d1-4 l1-3">
-      {% include "dashboard-planbox-activated" with plan %}
-    </div>{% endfor %}
+    <div class="d1-4 l1-6">
+      <ul class="side-navigation">
+        <!-- <li class="side-navigation-group-title">Доступные планы</li> -->
+        {% for plan in model.ltePlans %}
+          <li><a href="{{ plan.url }}" class="side-navigation-item">{{ plan.name }}</a></li>
+        {% endfor %}
+      </ul>
+    </div><div class="d3-4 l5-6">
+      {% for plan in model.ltePlans %}<div class="d1-3 l1-3 m1-2">
+        {% include "dashboard-planbox-activated" with plan %}
+      </div>{% endfor %}
+    </div>
   </section>
 {% endblock %}
