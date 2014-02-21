@@ -31,13 +31,13 @@
   {% include "dashboard-navigation" %}
 
   <div class="d1-3 m1-2">
-    <a href="/dashboard-payment" class="box ratio-box ratio-8-9 l-ratio-2-3 m-ratio-1">
+    <a href="/dashboard-payment" class="box ratio-box ratio-4-3 l-ratio-1 m-ratio-1">
       <div class="box-background"></div>
       <div class="box-content box-redeem box-icon-redeem">
-        <h2 class="account-balance">
-          1 235
+        <h2 class="account-balance split">
+          <span class="split-title">1 235</span>
+          <span class="account-balance-note">тенге на счете</span>
         </h2>
-        <p class="text-right account-balance-note">тенге на счете</p>
 
         <div class="box-footer plan-cta-container">
           <div class="account-additional-info">
@@ -58,11 +58,33 @@
         </div>
       </div>
     </a>
+    <div class="box ratio-box ratio-8-3 l-ratio-2-1">
+      <div class="box-content">
+        <h2 class="bonus-balance split">
+          <span class="split-title">350</span>
+          <span class="bonus-balance-note">бонус</span>
+        </h2>
+        <div class="bonus-counters">
+          <div class="counter-group">
+            <p class="d1-3 counter">
+              49
+              <span class="counter-title"><span class="icon-time">Мин.</span></span>
+            </p><p class="d1-3 counter">
+              240
+              <span class="counter-title"><span class="icon-message">СМС</span></span>
+            </p><p class="d1-3 counter">
+              2 048
+              <span class="counter-title"><span class="icon-wifi">Мб</span></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="account-additional-info no-leader">
-      <p class="no-trailer">
+      <!-- <p class="no-trailer">
         <strong>Бонусы:</strong>
         49 мин. | 240 СМС | 2 048 Мб 
-      </p>
+      </p> -->
       <p class="split no-trailer">
         <strong class="split-title">Последнее списание</strong>
         8.12.2013
