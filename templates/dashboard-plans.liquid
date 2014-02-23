@@ -3,7 +3,7 @@
 {% block modal %}
   <div class="modal" id="modal1">
     <div class="container text-center">
-      <div class="d2-3 l3-4 m1">
+      <div class="d2-3 l3-4 m1 s1">
         <div class="box">
           <div class="box-content epic-plan">
             <h2 class="plan-title">UnlimLTE</h2>
@@ -120,7 +120,7 @@
   </div>
   <div class="modal" id="modal-connect-2gb-error">
     <div class="container text-center">
-      <div class="d1-3 l2-3">
+      <div class="d1-3 l2-3 s1">
         <div class="box">
           <div class="box-content">
             <h2 class="plan-title">Подключение тарифа &laquo;2Гб&raquo;</h2>
@@ -140,7 +140,7 @@
   </div>
   <div class="modal" id="modal-connect-4gb-normal">
     <div class="container text-center">
-      <div class="d1-3 l2-3">
+      <div class="d1-3 l2-3 s1">
         <div class="box">
           <div class="box-content">
             <h2 class="plan-title">Подключение тарифа &laquo;4Гб&raquo;</h2>
@@ -174,15 +174,15 @@
       </p>
     </div>
     
-    <div class="d1-6">
+    <div class="d1-6 s1-3">
       <ul class="side-navigation">
         <!-- <li class="side-navigation-group-title">Доступные планы</li> -->
         {% for plan in model.ltePlans %}
           <li><a href="{{ plan.url }}" class="side-navigation-item {% if plan.active %}active{% endif %}">{{ plan.name }}</a></li>
         {% endfor %}
       </ul>
-    </div><div class="d5-6">
-      {% for plan in model.ltePlans %}<div class="d1-4 l1-3 m1-2">
+    </div><div class="d5-6 s2-3">
+      {% for plan in model.ltePlans %}<div class="d1-4 l1-3 m1-2 s1">
         {% include "dashboard-planbox-activated" with plan %}
       </div>{% endfor %}
     </div>

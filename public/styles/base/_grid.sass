@@ -12,8 +12,9 @@
   @include bp-large
     max-width: 60em
   @include bp-medium
-    min-width: 40em
     width: 100%
+  @include bp-small
+    min-width: 20em
 
 %column
   @include inline-block
@@ -144,3 +145,6 @@
 
 @include bp-medium
   @include grid-for("m")
+
+@include bp-small
+  @include grid-for("s")

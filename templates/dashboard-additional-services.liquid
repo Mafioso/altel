@@ -22,10 +22,10 @@
             <ul class="additional-services-setuplist">
               {% for service in model.services %}
               <li class="{% if service.active %}active{% endif %}">
-                <div class="d2-3 middle">
+                <div class="d2-3 s1 middle">
                   <p class="service-title">{{ service.name }}</p>
                   <p class="service-subtitle">{{ service.subtitle }}</p>
-                </div><p class="d1-3 middle no-trailer text-right">
+                </div><p class="d1-3 s1 middle no-trailer text-right">
                   {% if service.active %}
                     <a href="#" class="u-link">Отключить</a>
                   {% else %}

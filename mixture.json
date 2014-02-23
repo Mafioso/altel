@@ -3,6 +3,7 @@
   "domain": null,
   "lintScripts": false,
   "modelSource": null,
+  "optimiseSVG": true,
   "password": "ohmycss",
   "preprocessorLocations": "public",
   "preprocessorScriptOutput": "public/scripts",
@@ -20,6 +21,5 @@
   "templateDefaultPage": "index",
   "templateDirectory": "templates",
   "type": "mixture",
-  "useCompass": false,
-  "optimiseSVG": true
+  "useCompass": false
 }

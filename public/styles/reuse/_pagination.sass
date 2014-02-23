@@ -4,7 +4,13 @@
   text-align: center
   li
     padding: 0 $baseline
-    @extend %column
+    display: inline-block
+    @include bp-small
+      display: none
+    &:first-child,
+    &:last-child
+      @include bp-small
+        display: inline-block
   .pagination-link
     display: block
     padding: $baseline $gutter

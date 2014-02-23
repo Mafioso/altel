@@ -19,17 +19,27 @@
     margin-top: -15px
   &:hover:before
     border-right-color: $accent-color
+  @include bp-small
+    // display: block
+    text-align: left
+    margin-top: $normal-line
 
 .page-title
   @extend %column
   vertical-align: middle
   padding-left: $gutter
+  padding-right: $gutter
   color: $box-bg-color
   font-weight: bold
+  @include bp-small
+    display: block
+
 
 .page-title-container
-  padding-left: $gutter
+  padding: 0 $gutter
   padding-bottom: $small-line
+  @include bp-small
+  text-align: center
   // margin-bottom: $small-line
   // background-color: $secondary-text-color
   // margin-left: $gutter

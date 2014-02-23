@@ -1,4 +1,5 @@
 $nav-drawer-width: 280px
+$s-nav-drawer-width: 280px - 36px
 .nav-drawer
   display: none
   @extend %animation-hack
@@ -15,6 +16,8 @@ $nav-drawer-width: 280px
   overflow: hidden
   .nav-drawer-open &
     display: block
+  @include bp-small
+    width: $s-nav-drawer-width
 .nav-drawer-overlay
   @extend %visually-hidden
   display: block
@@ -27,10 +30,14 @@ $nav-drawer-width: 280px
   // @include transition(all .3s)
   .nav-drawer-open &
     @extend %reset-visually-hidden
+  @include bp-small
+    right: $s-nav-drawer-width
 .nav-drawer-open
   .adventure-time
     overflow: hidden
     @include transform(translate3d(-1*$nav-drawer-width,0,0))
+    @include bp-small
+      @include transform(translate3d(-1*$s-nav-drawer-width,0,0))
 
 .nav-drawer-toggle
   display: inline-block

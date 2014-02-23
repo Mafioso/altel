@@ -25,6 +25,9 @@
   padding-bottom: $baseline - 2px
   border-bottom: 2px solid $accent-color
   color: $accent-color
+  @include bp-small
+    padding-top: 0
+    @include font($normal-heading, $normal-heading-line)
 
 .bonus-balance
   @include font($small-heading, $small-heading-line)
@@ -42,6 +45,8 @@
   padding-top:    $baseline
   padding-bottom: $small-line
   .bonus &
+    padding-bottom: $gutter
+  @include bp-small
     padding-bottom: $gutter
 
 .bonus-container
