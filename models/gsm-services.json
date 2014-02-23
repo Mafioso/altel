@@ -1,5 +1,5 @@
 {
-  "services": [
+  "gsm-services": [
     {
       "active": false,
       "url": "/site-service-example",
@@ -55,6 +55,29 @@
       "name": "Услуга Tonix",
       "subtitle": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwww",
       "benefits": "wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww"
+    }
+  ],
+  "lte-services": [
+    {
+      "active": true,
+      "url": "#",
+      "name": "Уведомления по e-mail",
+      "subtitle": "Бесплатно",
+      "cta-message": "Подключить"
+    },
+    {
+      "active": false,
+      "url": "#",
+      "name": "Ежемесячная детализация вызовов по e-mail",
+      "subtitle": "Бесплатно",
+      "cta-message": "Подключить"
+    },
+    {
+      "active": false,
+      "url": "/consumption-details",
+      "name": "Разовая детализация",
+      "subtitle": "Бесплатно",
+      "cta-message": "Отобразить"
     }
   ]
 }

@@ -707,7 +707,7 @@ th {
   line-height: 1.125rem; }
 
 /* line 3, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_type.sass */
-sup, sub, legend, .agreement-label, .counter-title, .navigation, .side-navigation-group-title .back-button, .plan-benefits, .cta-table, .plan-table, .common-table, .account-balance-note, .account-additional-info, .service-subtitle {
+sup, sub, legend, .agreement-label, .counter-title, .navigation, .side-navigation-group-title .back-button, .plan-benefits, .cta-table, .plan-table, .common-table, .account-balance-note, .bonus-balance-note, .account-additional-info, .service-subtitle {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 18px;
@@ -721,7 +721,7 @@ h3, h4, h5, h6, .side-navigation-group-title, .box, .epic-plan .plan-benefits {
   line-height: 1.5rem; }
 
 /* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_type.sass */
-h2, .counter, .slide-heading .extra, .plan-title, .epic-plan .plan-subtitle, .account-title, .history-period, .entrance-title {
+h2, .counter, .slide-heading .extra, .plan-title, .epic-plan .plan-subtitle, .account-title, .bonus-balance, .history-period, .entrance-title {
   font-size: 22px;
   font-size: 1.375rem;
   line-height: 24px;
@@ -2044,32 +2044,44 @@ a.box {
 .ratio-8-9:before {
   padding-top: 112.5%; }
 
+/* line 106, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+.ratio-8-3:before {
+  padding-top: 37.5%; }
+
 @media only screen and (max-width: 72em) {
-  /* line 108, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 110, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  .l-ratio-2-1:before {
+    padding-top: 50%; }
+
+  /* line 112, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .l-ratio-2-3:before {
     padding-top: 150%; }
 
-  /* line 110, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
-  .l-ratio-3-1:before {
-    padding-top: 33.33333%; } }
-@media only screen and (max-width: 60em) {
   /* line 114, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  .l-ratio-3-1:before {
+    padding-top: 33.33333%; }
+
+  /* line 116, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  .l-ratio-1:before {
+    padding-top: 100%; } }
+@media only screen and (max-width: 60em) {
+  /* line 120, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .m-ratio-1:before {
     padding-top: 100%; }
 
-  /* line 116, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 122, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .m-ratio-3-4:before {
     padding-top: 133.33333%; }
 
-  /* line 118, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 124, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .m-ratio-4-3:before {
     padding-top: 75%; }
 
-  /* line 120, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 126, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .m-ratio-2-1:before {
     padding-top: 50%; }
 
-  /* line 122, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 128, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .m-ratio-1-2:before {
     padding-top: 200%; } }
 /* line 1, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_slides.sass */
@@ -2714,46 +2726,51 @@ a.box {
 .account-info {
   padding: 12px; }
 
-/* line 27, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+/* line 18, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
 .current-balance-container {
   text-align: center; }
 
-/* line 30, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+/* line 21, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
 .account-balance {
   font-weight: 400;
   padding-bottom: 4px;
   border-bottom: 2px solid #ed0088;
   color: #ed0088; }
 
-/* line 63, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+/* line 28, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+.account-balance-note, .bonus-balance-note {
+  font-weight: 400;
+  color: #a5acb0; }
+
+/* line 33, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
 .counter-group {
   padding-top: 6px;
   padding-bottom: 18px; }
-  /* line 66, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+  /* line 36, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
   .bonus .counter-group {
     padding-bottom: 12px; }
 
-/* line 69, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+/* line 39, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
 .bonus-container {
   padding: 6px 12px; }
 
-/* line 72, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+/* line 42, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
 .bonus {
   color: #6f6f76;
   background-color: transparent;
   padding: 11px;
   border: 1px dashed #56565c; }
 
-/* line 78, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+/* line 48, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
 .account-additional-info {
   padding: 12px; }
 
-/* line 84, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+/* line 54, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
 .charging-dates {
   color: #a5acb0;
   padding: 0 12px 18px; }
 
-/* line 88, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+/* line 58, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
 .additional-services {
   padding-top: 18px;
   text-align: center;
@@ -2761,12 +2778,27 @@ a.box {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0; }
-  /* line 93, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+  /* line 63, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
   .additional-services > li {
     padding: 6px 0; }
-    /* line 95, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+    /* line 65, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
     .additional-services > li.active {
       color: #56565c; }
+
+/* line 68, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+.bonus-balance {
+  color: #ed0088;
+  font-weight: 600;
+  padding-top: 0;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #ed0088;
+  color: #ed0088; }
+
+/* line 76, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+.bonus-counters {
+  padding: 6px;
+  color: #a5acb0;
+  text-align: center; }
 
 /* line 1, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_payment-options.sass */
 .payment-options {

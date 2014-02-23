@@ -1,4 +1,4 @@
-[class^="icon-"]
+%icon
   &:before
     content: ""
     height: 18px
@@ -11,42 +11,39 @@
     background-repeat: no-repeat
     margin-right: calculateRem(6px)
 
-.icon-map:before
-  @include background-image("icons/icon-map")
-.icon-support:before
-  @include background-image("icons/icon-support")
-.icon-search:before
-  @include background-image("icons/icon-search")
-.icon-time:before
-  @include background-image("icons/icon-time")
-.icon-message:before
-  @include background-image("icons/icon-message")
-.icon-wifi:before
-  @include background-image("icons/icon-wifi")
-.icon-lte:before
-  @include background-image("icons/icon-lte")
+.icon-dashboard-help
+  @include background-image('icons/button-icon-support')
+  background-position: $gutter 50%
+  background-repeat: no-repeat
+.dashboard-help
+  padding-left: $gutter + 18px
+
+.icon-special
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-special")
+.icon-support
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-support")
+.icon-search
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-search")
 .icon-phone
   white-space: nowrap
+  @extend %icon
   &:before
     @include background-image("icons/icon-phone")
-.icon-back:before
-  @include background-image("icons/icon-back")
-.icon-edit
-  color: $normal-text-color
-  &:hover
-    color: darken($normal-text-color, 10%)
-.icon-edit:before
-  height: 36px
-  width: 36px
-  height: calculateRem(36px)
-  width: calculateRem(36px)
-  @include background-image("icons/icon-edit")
-.icon-dashboard-help
-  display: inline-block
-  padding: $baseline 0 $baseline $baseline
+.icon-time
+  @extend %icon
   &:before
-    height: 24px
-    width: 24px
-    height: calculateRem(24px)
-    width: calculateRem(24px)
-    @include background-image("icons/icon-dashboard-help")
+    @include background-image("icons/icon-time")
+.icon-message
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-message")
+.icon-wifi
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-wifi")

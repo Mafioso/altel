@@ -1,8 +1,3 @@
-.plan-icon
-  @include background-size(50%)
-  background-position: 50% 33%
-  background-repeat: no-repeat
-  @include background-image("plan-icon-generic")
 .plan-title
   @extend %small-heading
   color: $normal-text-color
@@ -14,13 +9,14 @@
 .plan-subtitle
   color: $secondary-text-color
   text-align: center
+  padding-bottom: $baseline
   .epic-plan &
     @extend %small-heading
 .plan-benefits
   text-align: center
   @extend %small-text
   @extend %animation-hack
-  @include transition(color .25s ease-in-out)
+  // @include transition(color .25s ease-in-out)
   color: $secondary-text-color
   .box:hover &
     color: $normal-text-color

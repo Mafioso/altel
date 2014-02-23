@@ -10,3 +10,8 @@
   overflow: hidden
   white-space: nowrap
   text-overflow: ellipsis
+.counter-note
+  color: $secondary-text-color
+  @extend %small-text
+  @include bp-large
+    @include font($extra-small-text, $small-line)

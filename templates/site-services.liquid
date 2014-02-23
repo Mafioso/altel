@@ -5,7 +5,12 @@
   <h1>Дополнительные услуги</h1>
   <div class="d1-6">
     <ul class="side-navigation">
-      {% for service in model.services %}
+      <li class="side-navigation-group-title">Услуги GSM</li>
+      {% for service in model.gsm-services %}
+        <li><a href="{{ service.url }}" class="side-navigation-item">{{ service.name }}</a></li>
+      {% endfor %}
+      <li class="side-navigation-group-title">Услуги LTE</li>
+      {% for service in model.lte-services %}
         <li><a href="{{ service.url }}" class="side-navigation-item">{{ service.name }}</a></li>
       {% endfor %}
       <!-- <li><a href="#" class="side-navigation-item">Вам звонили!</a></li>
@@ -18,8 +23,13 @@
       <li><a href="#" class="side-navigation-item">Услуга Tonix</a></li> -->
     </ul>
   </div><div class="d5-6">
-    {% for plan in model.services %}<div class="d1-4 l1-3 m1-2">
+    <h2>Услуги GSM</h2>
+    {% for plan in model.gsm-services %}<div class="d1-4 l1-3 m1-2">
       {% include "planbox" with plan %}
+    </div>{% endfor %}
+    <h2>Услуги LTE</h2>
+    {% for plan in model.lte-services %}<div class="d1-4 l1-3 m1-2">
+      {% include "planbox-lte" with plan %}
     </div>{% endfor %}
   </div>
 </div>

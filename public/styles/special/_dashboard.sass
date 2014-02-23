@@ -18,12 +18,20 @@
 .current-balance-container
   text-align: center
 
-.account-balance
+.account-balance, 
+.bonus-balance
   @extend %epic-heading
   font-weight: 400
   padding-bottom: $baseline - 2px
   border-bottom: 2px solid $accent-color
   color: $accent-color
+
+.bonus-balance
+  @include font($small-heading, $small-heading-line)
+  padding-top: $baseline
+  // color: $normal-text-color
+  font-weight: 600
+  border-color: transparent
 
 .account-balance-note, .bonus-balance-note
   font-weight: 400
@@ -47,8 +55,6 @@
 
 .account-additional-info
   @extend %small-text
-  // color: white
-  // background-color: $secondary-text-color
   padding: $gutter
 
 .charging-dates
@@ -65,14 +71,6 @@
     &.active
       color: $normal-text-color
 
-.bonus-balance
-  @extend %small-heading
-  color: $accent-color
-  font-weight: 600
-  padding-top: 0
-  padding-bottom: $baseline - 2px
-  border-bottom: 2px solid $accent-color
-  color: $accent-color
 .bonus-counters
   padding: $baseline
   color: $secondary-text-color

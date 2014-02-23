@@ -1,6 +1,6 @@
 %box-animation-setup
   @extend %animation-hack
-  @include transition-property(transform opacity)
+  @include transition-property(transform)
   @include transition-duration(.25s)
   @include transition-timing-function($ease-in-out-sine)
 
@@ -30,6 +30,7 @@ a.box
   border-radius: 2px
   @extend %box-animation-setup
   @extend %box-content-setup
+  @include transition-property(transform opacity)
   margin: 18px 10px 9px
   background-color: $accent-color
   opacity: 0

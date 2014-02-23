@@ -1,0 +1,70 @@
+{% model "plans.json" %}
+{% block "body-class" %}modal-open{% endblock %}
+{% block modal %}
+  <div class="modal active">
+    <div class="container text-center">
+      <div class="d1-3 m3-4 l1-2 text-left">
+        <div class="box">
+          <div class="box-content">
+            <h2 class="plan-title">Уведомление!</h2>
+            <div class="fluffy">
+              <p class="wrong">E-mail адрес не зарегистрирован!</p>
+              <p>Уважаемый абонент, в Личном кабинете Вам необходимо зарегистрировать Ваш e-mail адрес.</p>
+              <p>E-mail адрес системой используется для восстановления пароля в том случае, если Вы забудете или потеряете пароль к Личному кабинету.</p>
+              <p>Для регистрации e-mail адреса пройдите по <a class="u-link" href="/personal-settings">ссылке</a>.</p>
+              <div class="input-line">
+                <label class="cr-label agreement-label" for="agreement">
+                  <input id="agreement" name="agreement" type="checkbox"> Я прочитал(-а) уведомление и понимаю, что при отсутствии регистрации e-mail адреса я не смогу воспользоваться услугой "Забыли пароль?" на странице входа в Личный кабинет.
+                </label>
+              </div>
+            </div>
+            <div class="box-cta-container text-center">
+              <a href="#" class="button js-modal-close">OK</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+{% block content %}
+  {% include "dashboard-navigation" %}
+
+  <div class="d1-3 m1-2">
+    {% include 'dashboard-paybox-type-c' %}
+  </div><div class="d1-4 l1-3 m1-2">
+    {% include "dashboard-planbox" with model.ltePlans[0] %}
+  </div><div class="d1-4 l1-3 m1-2">
+    <a href="/dashboard-additional-services" class="box ratio-box ratio-2-3 m-ratio-1">
+      <div class="box-background"></div>
+      <div class="box-content">
+        <h2 class="plan-title">Дополнительные услуги</h2>
+        <ul class="additional-services">
+          <li class="active">Уведомления по e-mail</li>
+          <li>Ежемесячная детализация вызовов по e-mail</li>
+          <li>Разовая детализация</li>
+        </ul>
+        <div class="box-footer plan-cta-container">
+          <div class="button">Подключить</div>
+        </div>
+      </div>
+    </a>
+    <p class="gutter"><a href="/dashboard-connected-services" class="u-link">Все подключенные услуги</a></p>
+  </div><div class="d1-6 l1 m1-2">
+    <div class="d1 l1-2 m1">
+      <a href="/dashboard-payment-history" class="box ratio-box animated-box ratio-8-9 l-ratio-3-1 m-ratio-2-1">
+        <div class="box-background"></div>
+        <div class="box-content box-icon-dashboard-payment-history">
+          История платежей
+        </div>
+      </a>
+    </div><div class="d1 l1-2 m1">
+      <a href="/dashboard-consumption-details" class="box ratio-box animated-box ratio-8-9 l-ratio-3-1 m-ratio-2-1">
+        <div class="box-background"></div>
+        <div class="box-content box-icon-dashboard-consumption">
+          Детализация потребления
+        </div>
+      </a>
+    </div>
+  </div>
+{% endblock %}

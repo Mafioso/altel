@@ -707,7 +707,7 @@ th {
   line-height: 1.125rem; }
 
 /* line 3, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_type.sass */
-sup, sub, legend, .agreement-label, .counter-title, .navigation, .side-navigation-group-title .back-button, .plan-benefits, .cta-table, .plan-table, .common-table, .account-balance-note, .bonus-balance-note, .account-additional-info, .service-subtitle {
+sup, sub, legend, .agreement-label, .counter-title, .counter-note, .navigation, .side-navigation-group-title .back-button, .plan-benefits, .cta-table, .plan-table, .common-table, .account-balance-note, .bonus-balance-note, .account-additional-info, .service-subtitle {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 18px;
@@ -721,7 +721,7 @@ h3, h4, h5, h6, .side-navigation-group-title, .box, .epic-plan .plan-benefits {
   line-height: 1.5rem; }
 
 /* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_type.sass */
-h2, .counter, .slide-heading .extra, .plan-title, .epic-plan .plan-subtitle, .account-title, .bonus-balance, .history-period, .entrance-title {
+h2, .counter, .slide-heading .extra, .plan-title, .epic-plan .plan-subtitle, .account-title, .history-period, .entrance-title {
   font-size: 22px;
   font-size: 1.375rem;
   line-height: 24px;
@@ -735,14 +735,16 @@ h1 {
   line-height: 2.25rem; }
 
 /* line 11, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_type.sass */
-.epic-heading, .slide-heading, .epic-plan .plan-title, .account-balance {
+.epic-heading, .slide-heading, .epic-plan .plan-title, .account-balance,
+.bonus-balance {
   font-size: 45px;
   font-size: 2.8125rem;
   line-height: 48px;
   line-height: 3rem; }
 
 /* line 14, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_type.sass */
-h2, h3, h4, h5, h6, .epic-heading, .slide-heading, .epic-plan .plan-title, .account-balance, h1 {
+h2, h3, h4, h5, h6, .epic-heading, .slide-heading, .epic-plan .plan-title, .account-balance,
+.bonus-balance, h1 {
   font-weight: 400;
   display: block;
   margin: 0; }
@@ -753,7 +755,8 @@ h2, h3, h4, h5, h6 {
   padding-bottom: 6px; }
 
 /* line 22, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_type.sass */
-.epic-heading, .slide-heading, .epic-plan .plan-title, .account-balance, h1 {
+.epic-heading, .slide-heading, .epic-plan .plan-title, .account-balance,
+.bonus-balance, h1 {
   font-weight: 300;
   padding-top: 12px;
   padding-bottom: 12px; }
@@ -1261,6 +1264,17 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis; }
 
+/* line 13, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_counter.sass */
+.counter-note {
+  color: #a5acb0; }
+  @media only screen and (max-width: 72em) {
+    /* line 13, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_counter.sass */
+    .counter-note {
+      font-size: 12px;
+      font-size: 0.75rem;
+      line-height: 18px;
+      line-height: 1.125rem; } }
+
 /* line 1, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_navigation.sass */
 .nav-container {
   padding: 12px; }
@@ -1511,15 +1525,15 @@ body {
     height: 24px;
     width: 1.5rem;
     height: 1.5rem;
-    background-image: url(/public/images/icons/icon-nav-drawer.svg);
+    background-image: url(/public/images/icons/button-icon-menu.svg);
     background-repeat: no-repeat; }
     /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
     .no-svg .nav-drawer-toggle img {
-      background-image: url(/public/images/icons/icon-nav-drawer.png); }
+      background-image: url(/public/images/icons/button-icon-menu.png); }
       @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
         /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
         .no-svg .nav-drawer-toggle img {
-          background-image: url(/public/images/icons/icon-nav-drawer@2x.png); } }
+          background-image: url(/public/images/icons/button-icon-menu@2x.png); } }
 
 /* line 48, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_nav-drawer.sass */
 .nav-drawer-content {
@@ -1574,7 +1588,7 @@ footer {
           background-image: url(/public/images/footer-logotype@2x.png); } }
 
 /* line 2, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
-[class^="icon-"]:before {
+.icon-special:before, .icon-support:before, .icon-search:before, .icon-phone:before, .icon-time:before, .icon-message:before, .icon-wifi:before {
   content: "";
   height: 18px;
   width: 18px;
@@ -1587,17 +1601,34 @@ footer {
   margin-right: 0.375rem; }
 
 /* line 14, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
-.icon-map:before {
-  background-image: url(/public/images/icons/icon-map.svg); }
+.icon-dashboard-help {
+  background-image: url(/public/images/icons/button-icon-support.svg);
+  background-position: 12px 50%;
+  background-repeat: no-repeat; }
   /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .icon-map:before {
-    background-image: url(/public/images/icons/icon-map.png); }
+  .no-svg .icon-dashboard-help {
+    background-image: url(/public/images/icons/button-icon-support.png); }
     @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .icon-map:before {
-        background-image: url(/public/images/icons/icon-map@2x.png); } }
+      .no-svg .icon-dashboard-help {
+        background-image: url(/public/images/icons/button-icon-support@2x.png); } }
 
-/* line 16, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
+/* line 18, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
+.dashboard-help {
+  padding-left: 30px; }
+
+/* line 23, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
+.icon-special:before {
+  background-image: url(/public/images/icons/icon-special.svg); }
+  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+  .no-svg .icon-special:before {
+    background-image: url(/public/images/icons/icon-special.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+      .no-svg .icon-special:before {
+        background-image: url(/public/images/icons/icon-special@2x.png); } }
+
+/* line 27, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
 .icon-support:before {
   background-image: url(/public/images/icons/icon-support.svg); }
   /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
@@ -1608,7 +1639,7 @@ footer {
       .no-svg .icon-support:before {
         background-image: url(/public/images/icons/icon-support@2x.png); } }
 
-/* line 18, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
+/* line 31, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
 .icon-search:before {
   background-image: url(/public/images/icons/icon-search.svg); }
   /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
@@ -1619,54 +1650,10 @@ footer {
       .no-svg .icon-search:before {
         background-image: url(/public/images/icons/icon-search@2x.png); } }
 
-/* line 20, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
-.icon-time:before {
-  background-image: url(/public/images/icons/icon-time.svg); }
-  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .icon-time:before {
-    background-image: url(/public/images/icons/icon-time.png); }
-    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .icon-time:before {
-        background-image: url(/public/images/icons/icon-time@2x.png); } }
-
-/* line 22, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
-.icon-message:before {
-  background-image: url(/public/images/icons/icon-message.svg); }
-  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .icon-message:before {
-    background-image: url(/public/images/icons/icon-message.png); }
-    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .icon-message:before {
-        background-image: url(/public/images/icons/icon-message@2x.png); } }
-
-/* line 24, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
-.icon-wifi:before {
-  background-image: url(/public/images/icons/icon-wifi.svg); }
-  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .icon-wifi:before {
-    background-image: url(/public/images/icons/icon-wifi.png); }
-    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .icon-wifi:before {
-        background-image: url(/public/images/icons/icon-wifi@2x.png); } }
-
-/* line 26, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
-.icon-lte:before {
-  background-image: url(/public/images/icons/icon-lte.svg); }
-  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .icon-lte:before {
-    background-image: url(/public/images/icons/icon-lte.png); }
-    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .icon-lte:before {
-        background-image: url(/public/images/icons/icon-lte@2x.png); } }
-
-/* line 28, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
+/* line 33, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
 .icon-phone {
   white-space: nowrap; }
-  /* line 30, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
+  /* line 36, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
   .icon-phone:before {
     background-image: url(/public/images/icons/icon-phone.svg); }
     /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
@@ -1677,190 +1664,539 @@ footer {
         .no-svg .icon-phone:before {
           background-image: url(/public/images/icons/icon-phone@2x.png); } }
 
-/* line 32, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
-.icon-back:before {
-  background-image: url(/public/images/icons/icon-back.svg); }
+/* line 40, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
+.icon-time:before {
+  background-image: url(/public/images/icons/icon-time.svg); }
   /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .icon-back:before {
-    background-image: url(/public/images/icons/icon-back.png); }
+  .no-svg .icon-time:before {
+    background-image: url(/public/images/icons/icon-time.png); }
     @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .icon-back:before {
-        background-image: url(/public/images/icons/icon-back@2x.png); } }
-
-/* line 34, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
-.icon-edit {
-  color: #56565c; }
-  /* line 36, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
-  .icon-edit:hover {
-    color: #3d3d42; }
-
-/* line 38, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
-.icon-edit:before {
-  height: 36px;
-  width: 36px;
-  height: 2.25rem;
-  width: 2.25rem;
-  background-image: url(/public/images/icons/icon-edit.svg); }
-  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .icon-edit:before {
-    background-image: url(/public/images/icons/icon-edit.png); }
-    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .icon-edit:before {
-        background-image: url(/public/images/icons/icon-edit@2x.png); } }
+      .no-svg .icon-time:before {
+        background-image: url(/public/images/icons/icon-time@2x.png); } }
 
 /* line 44, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
-.icon-dashboard-help {
-  display: inline-block;
-  padding: 6px 0 6px 6px; }
-  /* line 47, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
-  .icon-dashboard-help:before {
-    height: 24px;
-    width: 24px;
-    height: 1.5rem;
-    width: 1.5rem;
-    background-image: url(/public/images/icons/icon-dashboard-help.svg); }
-    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-    .no-svg .icon-dashboard-help:before {
-      background-image: url(/public/images/icons/icon-dashboard-help.png); }
-      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-        .no-svg .icon-dashboard-help:before {
-          background-image: url(/public/images/icons/icon-dashboard-help@2x.png); } }
+.icon-message:before {
+  background-image: url(/public/images/icons/icon-message.svg); }
+  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+  .no-svg .icon-message:before {
+    background-image: url(/public/images/icons/icon-message.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+      .no-svg .icon-message:before {
+        background-image: url(/public/images/icons/icon-message@2x.png); } }
+
+/* line 48, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_icons.sass */
+.icon-wifi:before {
+  background-image: url(/public/images/icons/icon-wifi.svg); }
+  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+  .no-svg .icon-wifi:before {
+    background-image: url(/public/images/icons/icon-wifi.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+      .no-svg .icon-wifi:before {
+        background-image: url(/public/images/icons/icon-wifi@2x.png); } }
 
 /* line 1, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
-[class*="box-icon-"] {
+.box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage {
   background-position: 50% 50%;
-  background-size: auto 33%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: auto 30%; }
 
-/* line 6, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
-.box-icon-redeem {
-  background-image: url(/public/images/icons/box-icon-payment.svg); }
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-feedback {
+  background-image: url(/public/images/icons/box-icon-feedback.svg); }
   /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .box-icon-redeem {
-    background-image: url(/public/images/icons/box-icon-payment.png); }
+  .no-svg .box-icon-feedback {
+    background-image: url(/public/images/icons/box-icon-feedback.png); }
     @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .box-icon-redeem {
-        background-image: url(/public/images/icons/box-icon-payment@2x.png); } }
+      .no-svg .box-icon-feedback {
+        background-image: url(/public/images/icons/box-icon-feedback@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-feedback {
+    background-image: url(/public/images/icons/box-icon-feedback-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-feedback {
+      background-image: url(/public/images/icons/box-icon-feedback-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-feedback {
+          background-image: url(/public/images/icons/box-icon-feedback-hover@2x.png); } }
 
-/* line 11, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
-.box-icon-global-coverage {
-  background-image: url(/public/images/icons/box-icon-planet.svg); }
-  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .box-icon-global-coverage {
-    background-image: url(/public/images/icons/box-icon-planet.png); }
-    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .box-icon-global-coverage {
-        background-image: url(/public/images/icons/box-icon-planet@2x.png); } }
-
-/* line 15, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
 .box-icon-dashboard {
-  background-image: url(/public/images/icons/person.svg); }
+  background-image: url(/public/images/icons/box-icon-dashboard.svg); }
   /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
   .no-svg .box-icon-dashboard {
-    background-image: url(/public/images/icons/person.png); }
+    background-image: url(/public/images/icons/box-icon-dashboard.png); }
     @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
       .no-svg .box-icon-dashboard {
-        background-image: url(/public/images/icons/person@2x.png); } }
+        background-image: url(/public/images/icons/box-icon-dashboard@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-dashboard {
+    background-image: url(/public/images/icons/box-icon-dashboard-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-dashboard {
+      background-image: url(/public/images/icons/box-icon-dashboard-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-dashboard {
+          background-image: url(/public/images/icons/box-icon-dashboard-hover@2x.png); } }
 
-/* line 17, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
-.box-icon-migration {
-  background-image: url(/public/images/icons/refresh.svg); }
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-dashboard-payment-history {
+  background-image: url(/public/images/icons/box-icon-dashboard-payment-history.svg); }
   /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .box-icon-migration {
-    background-image: url(/public/images/icons/refresh.png); }
+  .no-svg .box-icon-dashboard-payment-history {
+    background-image: url(/public/images/icons/box-icon-dashboard-payment-history.png); }
     @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .box-icon-migration {
-        background-image: url(/public/images/icons/refresh@2x.png); } }
+      .no-svg .box-icon-dashboard-payment-history {
+        background-image: url(/public/images/icons/box-icon-dashboard-payment-history@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-dashboard-payment-history {
+    background-image: url(/public/images/icons/box-icon-dashboard-payment-history-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-dashboard-payment-history {
+      background-image: url(/public/images/icons/box-icon-dashboard-payment-history-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-dashboard-payment-history {
+          background-image: url(/public/images/icons/box-icon-dashboard-payment-history-hover@2x.png); } }
 
-/* line 19, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
-.box-icon-plans {
-  background-image: url(/public/images/icons/mobiles.svg); }
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-dashboard-consumption {
+  background-image: url(/public/images/icons/box-icon-dashboard-consumption.svg); }
   /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .box-icon-plans {
-    background-image: url(/public/images/icons/mobiles.png); }
+  .no-svg .box-icon-dashboard-consumption {
+    background-image: url(/public/images/icons/box-icon-dashboard-consumption.png); }
     @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .box-icon-plans {
-        background-image: url(/public/images/icons/mobiles@2x.png); } }
+      .no-svg .box-icon-dashboard-consumption {
+        background-image: url(/public/images/icons/box-icon-dashboard-consumption@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-dashboard-consumption {
+    background-image: url(/public/images/icons/box-icon-dashboard-consumption-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-dashboard-consumption {
+      background-image: url(/public/images/icons/box-icon-dashboard-consumption-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-dashboard-consumption {
+          background-image: url(/public/images/icons/box-icon-dashboard-consumption-hover@2x.png); } }
 
-/* line 21, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
-.box-icon-internet {
-  background-image: url(/public/images/icons/box-icon-4g.svg); }
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-dashboard-bonus {
+  background-image: url(/public/images/icons/box-icon-dashboard-bonus.svg); }
   /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .box-icon-internet {
-    background-image: url(/public/images/icons/box-icon-4g.png); }
+  .no-svg .box-icon-dashboard-bonus {
+    background-image: url(/public/images/icons/box-icon-dashboard-bonus.png); }
     @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .box-icon-internet {
-        background-image: url(/public/images/icons/box-icon-4g@2x.png); } }
+      .no-svg .box-icon-dashboard-bonus {
+        background-image: url(/public/images/icons/box-icon-dashboard-bonus@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-dashboard-bonus {
+    background-image: url(/public/images/icons/box-icon-dashboard-bonus-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-dashboard-bonus {
+      background-image: url(/public/images/icons/box-icon-dashboard-bonus-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-dashboard-bonus {
+          background-image: url(/public/images/icons/box-icon-dashboard-bonus-hover@2x.png); } }
 
-/* line 23, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
-.box-icon-pdf {
-  background-image: url(/public/images/icons/box-icon-pdf.svg); }
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-payment {
+  background-image: url(/public/images/icons/box-icon-payment.svg); }
   /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .box-icon-pdf {
-    background-image: url(/public/images/icons/box-icon-pdf.png); }
+  .no-svg .box-icon-payment {
+    background-image: url(/public/images/icons/box-icon-payment.png); }
     @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .box-icon-pdf {
-        background-image: url(/public/images/icons/box-icon-pdf@2x.png); } }
+      .no-svg .box-icon-payment {
+        background-image: url(/public/images/icons/box-icon-payment@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-payment {
+    background-image: url(/public/images/icons/box-icon-payment-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-payment {
+      background-image: url(/public/images/icons/box-icon-payment-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-payment {
+          background-image: url(/public/images/icons/box-icon-payment-hover@2x.png); } }
 
-/* line 25, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
-.box-icon-xls {
-  background-image: url(/public/images/icons/box-icon-xls.svg); }
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-payment-pos {
+  background-image: url(/public/images/icons/box-icon-payment-pos.svg); }
   /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .box-icon-xls {
-    background-image: url(/public/images/icons/box-icon-xls.png); }
+  .no-svg .box-icon-payment-pos {
+    background-image: url(/public/images/icons/box-icon-payment-pos.png); }
     @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .box-icon-xls {
-        background-image: url(/public/images/icons/box-icon-xls@2x.png); } }
+      .no-svg .box-icon-payment-pos {
+        background-image: url(/public/images/icons/box-icon-payment-pos@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-payment-pos {
+    background-image: url(/public/images/icons/box-icon-payment-pos-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-payment-pos {
+      background-image: url(/public/images/icons/box-icon-payment-pos-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-payment-pos {
+          background-image: url(/public/images/icons/box-icon-payment-pos-hover@2x.png); } }
 
-/* line 27, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
-.box-icon-html {
-  background-image: url(/public/images/icons/box-icon-html.svg); }
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-payment-portal {
+  background-image: url(/public/images/icons/box-icon-payment-portal.svg); }
   /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .box-icon-html {
-    background-image: url(/public/images/icons/box-icon-html.png); }
+  .no-svg .box-icon-payment-portal {
+    background-image: url(/public/images/icons/box-icon-payment-portal.png); }
     @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .box-icon-html {
-        background-image: url(/public/images/icons/box-icon-html@2x.png); } }
+      .no-svg .box-icon-payment-portal {
+        background-image: url(/public/images/icons/box-icon-payment-portal@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-payment-portal {
+    background-image: url(/public/images/icons/box-icon-payment-portal-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-payment-portal {
+      background-image: url(/public/images/icons/box-icon-payment-portal-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-payment-portal {
+          background-image: url(/public/images/icons/box-icon-payment-portal-hover@2x.png); } }
 
-/* line 29, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
-.box-icon-payment-history {
-  background-image: url(/public/images/icons/box-icon-payment-history.svg); }
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-payment-express {
+  background-image: url(/public/images/icons/box-icon-payment-express.svg); }
   /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .box-icon-payment-history {
-    background-image: url(/public/images/icons/box-icon-payment-history.png); }
+  .no-svg .box-icon-payment-express {
+    background-image: url(/public/images/icons/box-icon-payment-express.png); }
     @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .box-icon-payment-history {
-        background-image: url(/public/images/icons/box-icon-payment-history@2x.png); } }
+      .no-svg .box-icon-payment-express {
+        background-image: url(/public/images/icons/box-icon-payment-express@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-payment-express {
+    background-image: url(/public/images/icons/box-icon-payment-express-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-payment-express {
+      background-image: url(/public/images/icons/box-icon-payment-express-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-payment-express {
+          background-image: url(/public/images/icons/box-icon-payment-express-hover@2x.png); } }
 
-/* line 31, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
-.box-icon-consumption-details {
-  background-image: url(/public/images/icons/box-icon-consumption-details.svg); }
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-payment-atm {
+  background-image: url(/public/images/icons/box-icon-payment-atm.svg); }
   /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .box-icon-consumption-details {
-    background-image: url(/public/images/icons/box-icon-consumption-details.png); }
+  .no-svg .box-icon-payment-atm {
+    background-image: url(/public/images/icons/box-icon-payment-atm.png); }
     @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .box-icon-consumption-details {
-        background-image: url(/public/images/icons/box-icon-consumption-details@2x.png); } }
+      .no-svg .box-icon-payment-atm {
+        background-image: url(/public/images/icons/box-icon-payment-atm@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-payment-atm {
+    background-image: url(/public/images/icons/box-icon-payment-atm-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-payment-atm {
+      background-image: url(/public/images/icons/box-icon-payment-atm-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-payment-atm {
+          background-image: url(/public/images/icons/box-icon-payment-atm-hover@2x.png); } }
+
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-business-devices {
+  background-image: url(/public/images/icons/box-icon-business-devices.svg); }
+  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-business-devices {
+    background-image: url(/public/images/icons/box-icon-business-devices.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-business-devices {
+        background-image: url(/public/images/icons/box-icon-business-devices@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-business-devices {
+    background-image: url(/public/images/icons/box-icon-business-devices-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-business-devices {
+      background-image: url(/public/images/icons/box-icon-business-devices-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-business-devices {
+          background-image: url(/public/images/icons/box-icon-business-devices-hover@2x.png); } }
+
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-business-informer {
+  background-image: url(/public/images/icons/box-icon-business-informer.svg); }
+  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-business-informer {
+    background-image: url(/public/images/icons/box-icon-business-informer.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-business-informer {
+        background-image: url(/public/images/icons/box-icon-business-informer@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-business-informer {
+    background-image: url(/public/images/icons/box-icon-business-informer-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-business-informer {
+      background-image: url(/public/images/icons/box-icon-business-informer-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-business-informer {
+          background-image: url(/public/images/icons/box-icon-business-informer-hover@2x.png); } }
+
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-business-internet {
+  background-image: url(/public/images/icons/box-icon-business-internet.svg); }
+  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-business-internet {
+    background-image: url(/public/images/icons/box-icon-business-internet.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-business-internet {
+        background-image: url(/public/images/icons/box-icon-business-internet@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-business-internet {
+    background-image: url(/public/images/icons/box-icon-business-internet-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-business-internet {
+      background-image: url(/public/images/icons/box-icon-business-internet-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-business-internet {
+          background-image: url(/public/images/icons/box-icon-business-internet-hover@2x.png); } }
+
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-business-plans {
+  background-image: url(/public/images/icons/box-icon-business-plans.svg); }
+  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-business-plans {
+    background-image: url(/public/images/icons/box-icon-business-plans.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-business-plans {
+        background-image: url(/public/images/icons/box-icon-business-plans@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-business-plans {
+    background-image: url(/public/images/icons/box-icon-business-plans-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-business-plans {
+      background-image: url(/public/images/icons/box-icon-business-plans-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-business-plans {
+          background-image: url(/public/images/icons/box-icon-business-plans-hover@2x.png); } }
+
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-business-services {
+  background-image: url(/public/images/icons/box-icon-business-services.svg); }
+  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-business-services {
+    background-image: url(/public/images/icons/box-icon-business-services.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-business-services {
+        background-image: url(/public/images/icons/box-icon-business-services@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-business-services {
+    background-image: url(/public/images/icons/box-icon-business-services-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-business-services {
+      background-image: url(/public/images/icons/box-icon-business-services-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-business-services {
+          background-image: url(/public/images/icons/box-icon-business-services-hover@2x.png); } }
+
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-business-special {
+  background-image: url(/public/images/icons/box-icon-business-special.svg); }
+  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-business-special {
+    background-image: url(/public/images/icons/box-icon-business-special.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-business-special {
+        background-image: url(/public/images/icons/box-icon-business-special@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-business-special {
+    background-image: url(/public/images/icons/box-icon-business-special-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-business-special {
+      background-image: url(/public/images/icons/box-icon-business-special-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-business-special {
+          background-image: url(/public/images/icons/box-icon-business-special-hover@2x.png); } }
+
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-site-internet, .plan-icon-lte {
+  background-image: url(/public/images/icons/box-icon-site-internet.svg); }
+  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-site-internet, .no-svg .plan-icon-lte {
+    background-image: url(/public/images/icons/box-icon-site-internet.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-site-internet, .no-svg .plan-icon-lte {
+        background-image: url(/public/images/icons/box-icon-site-internet@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-site-internet, .box:hover .plan-icon-lte {
+    background-image: url(/public/images/icons/box-icon-site-internet-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-site-internet, .no-svg .box:hover .plan-icon-lte {
+      background-image: url(/public/images/icons/box-icon-site-internet-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-site-internet, .no-svg .box:hover .plan-icon-lte {
+          background-image: url(/public/images/icons/box-icon-site-internet-hover@2x.png); } }
+
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-site-migration {
+  background-image: url(/public/images/icons/box-icon-site-migration.svg); }
+  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-site-migration {
+    background-image: url(/public/images/icons/box-icon-site-migration.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-site-migration {
+        background-image: url(/public/images/icons/box-icon-site-migration@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-site-migration {
+    background-image: url(/public/images/icons/box-icon-site-migration-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-site-migration {
+      background-image: url(/public/images/icons/box-icon-site-migration-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-site-migration {
+          background-image: url(/public/images/icons/box-icon-site-migration-hover@2x.png); } }
+
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-site-plans, .plan-icon-gsm {
+  background-image: url(/public/images/icons/box-icon-site-plans.svg); }
+  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-site-plans, .no-svg .plan-icon-gsm {
+    background-image: url(/public/images/icons/box-icon-site-plans.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-site-plans, .no-svg .plan-icon-gsm {
+        background-image: url(/public/images/icons/box-icon-site-plans@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-site-plans, .box:hover .plan-icon-gsm {
+    background-image: url(/public/images/icons/box-icon-site-plans-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-site-plans, .no-svg .box:hover .plan-icon-gsm {
+      background-image: url(/public/images/icons/box-icon-site-plans-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-site-plans, .no-svg .box:hover .plan-icon-gsm {
+          background-image: url(/public/images/icons/box-icon-site-plans-hover@2x.png); } }
+
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-site-roaming {
+  background-image: url(/public/images/icons/box-icon-site-roaming.svg); }
+  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-site-roaming {
+    background-image: url(/public/images/icons/box-icon-site-roaming.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-site-roaming {
+        background-image: url(/public/images/icons/box-icon-site-roaming@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-site-roaming {
+    background-image: url(/public/images/icons/box-icon-site-roaming-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-site-roaming {
+      background-image: url(/public/images/icons/box-icon-site-roaming-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-site-roaming {
+          background-image: url(/public/images/icons/box-icon-site-roaming-hover@2x.png); } }
+
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-sup-centres {
+  background-image: url(/public/images/icons/box-icon-sup-centres.svg); }
+  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-sup-centres {
+    background-image: url(/public/images/icons/box-icon-sup-centres.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-sup-centres {
+        background-image: url(/public/images/icons/box-icon-sup-centres@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-sup-centres {
+    background-image: url(/public/images/icons/box-icon-sup-centres-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-sup-centres {
+      background-image: url(/public/images/icons/box-icon-sup-centres-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-sup-centres {
+          background-image: url(/public/images/icons/box-icon-sup-centres-hover@2x.png); } }
+
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-sup-consultant {
+  background-image: url(/public/images/icons/box-icon-sup-consultant.svg); }
+  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-sup-consultant {
+    background-image: url(/public/images/icons/box-icon-sup-consultant.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-sup-consultant {
+        background-image: url(/public/images/icons/box-icon-sup-consultant@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-sup-consultant {
+    background-image: url(/public/images/icons/box-icon-sup-consultant-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-sup-consultant {
+      background-image: url(/public/images/icons/box-icon-sup-consultant-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-sup-consultant {
+          background-image: url(/public/images/icons/box-icon-sup-consultant-hover@2x.png); } }
+
+/* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-sup-coverage {
+  background-image: url(/public/images/icons/box-icon-sup-coverage.svg); }
+  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-sup-coverage {
+    background-image: url(/public/images/icons/box-icon-sup-coverage.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-sup-coverage {
+        background-image: url(/public/images/icons/box-icon-sup-coverage@2x.png); } }
+  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+  .box:hover .box-icon-sup-coverage {
+    background-image: url(/public/images/icons/box-icon-sup-coverage-hover.svg); }
+    /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+    .no-svg .box:hover .box-icon-sup-coverage {
+      background-image: url(/public/images/icons/box-icon-sup-coverage-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
+        .no-svg .box:hover .box-icon-sup-coverage {
+          background-image: url(/public/images/icons/box-icon-sup-coverage-hover@2x.png); } }
+
+/* line 43, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box-icons.sass */
+.plan-icon-gsm,
+.plan-icon-lte {
+  background-position: 50% 30%;
+  background-size: auto 20%; }
 
 /* line 1, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .box-background, .box-content {
-  -webkit-transition-property: transform opacity;
-  -moz-transition-property: transform opacity;
-  transition-property: transform opacity;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
   -webkit-transition-duration: 0.25s;
   -moz-transition-duration: 0.25s;
   transition-duration: 0.25s;
@@ -1903,6 +2239,9 @@ a.box {
 /* line 29, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .box-background {
   border-radius: 2px;
+  -webkit-transition-property: transform opacity;
+  -moz-transition-property: transform opacity;
+  transition-property: transform opacity;
   margin: 18px 10px 9px;
   background-color: #ed0088;
   opacity: 0;
@@ -1911,7 +2250,7 @@ a.box {
   -ms-transform: translateY(-12px);
   -o-transform: translateY(-12px);
   transform: translateY(-12px); }
-  /* line 37, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 38, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   a.box:hover .box-background, .active .box-background {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -1920,7 +2259,7 @@ a.box {
     -o-transform: translateY(0);
     transform: translateY(0); }
 
-/* line 42, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 43, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .box-content {
   border-radius: 2px;
   margin: 12px;
@@ -1928,14 +2267,14 @@ a.box {
   background-color: white;
   overflow: hidden;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
-  /* line 52, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 53, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   a.box:hover .box-content, .active .box-content {
     -webkit-transform: translateY(-6px);
     -moz-transform: translateY(-6px);
     -ms-transform: translateY(-6px);
     -o-transform: translateY(-6px);
     transform: translateY(-6px); }
-  /* line 55, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 56, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .animated-box:hover .box-content, .animated-box.active .box-content {
     -webkit-animation: box-hover 1.6s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
     -moz-animation: box-hover 1.6s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
@@ -1946,7 +2285,7 @@ a.box {
     -webkit-animation-direction: alternate;
     -moz-animation-direction: alternate;
     animation-direction: alternate; }
-  /* line 60, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 61, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   a.box:active .box-content {
     -webkit-transform: translateY(-2px);
     -moz-transform: translateY(-2px);
@@ -1960,128 +2299,128 @@ a.box {
     -moz-animation: none;
     animation: none; }
 
-/* line 65, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 66, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .box-redeem {
   background-position: 50% 33%; }
 
-/* line 68, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 69, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .box-footer {
   background-color: rgba(255, 255, 255, 0.5); }
-  /* line 70, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 71, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .ratio-box .box-footer {
     top: auto; }
 
-/* line 74, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 75, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-box:before {
   content: "";
   display: block;
   padding-top: 100%; }
 
 @-webkit-keyframes box-hover {
-  /* line 80, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 81, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   50% {
     -webkit-transform: translateY(-3px); }
 
-  /* line 82, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 83, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   100% {
     -webkit-transform: translateY(-6px); } }
 
 @-moz-keyframes box-hover {
-  /* line 80, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 81, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   50% {
     -moz-transform: translateY(-3px); }
 
-  /* line 82, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 83, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   100% {
     -moz-transform: translateY(-6px); } }
 
 @keyframes box-hover {
-  /* line 80, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 81, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   50% {
     transform: translateY(-3px); }
 
-  /* line 82, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 83, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   100% {
     transform: translateY(-6px); } }
 
-/* line 86, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 87, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-1-2:before {
   padding-top: 200%; }
 
-/* line 88, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 89, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-2-1:before {
   padding-top: 50%; }
 
-/* line 90, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 91, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-2-3:before {
   padding-top: 150%; }
 
-/* line 92, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 93, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-3-2:before {
   padding-top: 66.66667%; }
 
-/* line 94, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 95, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-3-4:before {
   padding-top: 133.33333%; }
 
-/* line 96, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 97, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-4-3:before {
   padding-top: 75%; }
 
-/* line 98, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 99, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-3-1:before {
   padding-top: 33.33333%; }
 
-/* line 100, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 101, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-4-1:before {
   padding-top: 25%; }
 
-/* line 102, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 103, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-8-1:before {
   padding-top: 12.5%; }
 
-/* line 104, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 105, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-8-9:before {
   padding-top: 112.5%; }
 
-/* line 106, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 107, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-8-3:before {
   padding-top: 37.5%; }
 
 @media only screen and (max-width: 72em) {
-  /* line 110, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 111, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .l-ratio-2-1:before {
     padding-top: 50%; }
 
-  /* line 112, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 113, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .l-ratio-2-3:before {
     padding-top: 150%; }
 
-  /* line 114, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 115, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .l-ratio-3-1:before {
     padding-top: 33.33333%; }
 
-  /* line 116, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 117, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .l-ratio-1:before {
     padding-top: 100%; } }
 @media only screen and (max-width: 60em) {
-  /* line 120, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 121, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .m-ratio-1:before {
     padding-top: 100%; }
 
-  /* line 122, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 123, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .m-ratio-3-4:before {
     padding-top: 133.33333%; }
 
-  /* line 124, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 125, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .m-ratio-4-3:before {
     padding-top: 75%; }
 
-  /* line 126, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 127, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .m-ratio-2-1:before {
     padding-top: 50%; }
 
-  /* line 128, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 129, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .m-ratio-1-2:before {
     padding-top: 200%; } }
 /* line 1, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_slides.sass */
@@ -2248,135 +2587,119 @@ a.box {
   padding-top: 24px; }
 
 /* line 1, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
-.plan-icon {
-  background-size: 50%;
-  background-position: 50% 33%;
-  background-repeat: no-repeat;
-  background-image: url(/public/images/plan-icon-generic.svg); }
-  /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-  .no-svg .plan-icon {
-    background-image: url(/public/images/plan-icon-generic.png); }
-    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
-      /* line 35, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_mixins.sass */
-      .no-svg .plan-icon {
-        background-image: url(/public/images/plan-icon-generic@2x.png); } }
-
-/* line 6, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-title {
   color: #56565c;
   text-align: center; }
-  /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 5, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .active .plan-title {
     color: #ed0088; }
 
-/* line 14, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 9, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-subtitle {
   color: #a5acb0;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 6px; }
 
-/* line 19, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 15, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-benefits {
   text-align: center;
-  -webkit-transition: color 0.25s ease-in-out;
-  -moz-transition: color 0.25s ease-in-out;
-  transition: color 0.25s ease-in-out;
   color: #a5acb0; }
-  /* line 25, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 21, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .box:hover .plan-benefits {
     color: #56565c; }
-  /* line 27, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 23, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .epic-plan .plan-benefits {
     padding: 0 12px 36px; }
 
-/* line 31, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 27, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-cta-container {
   text-align: center;
   padding: 18px 12px 24px; }
-  /* line 34, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 30, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .plan-cta-container .button {
     padding: 9px 24px; }
 
-/* line 37, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 33, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .epic-plan-graphics {
   height: 12em;
   background-size: contain;
   background-position: 50% 50%; }
 
-/* line 42, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 38, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-description {
   text-align: center;
   padding-top: 23px;
   border-top: 1px solid #d4d8d9; }
 
-/* line 47, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 43, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .cta-table {
   text-align: left;
   width: 75%;
   margin: auto;
   background-color: #d4d8d9;
   border-radius: 2px; }
-  /* line 54, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 50, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .cta-table td {
     padding: 18px 6px 18px; }
-  /* line 56, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 52, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .cta-table p {
     padding: 0; }
   @media only screen and (max-width: 72em) {
-    /* line 47, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+    /* line 43, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
     .cta-table {
       width: 100%; } }
 
-/* line 61, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 57, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-table, .common-table {
   text-align: left;
   border-top: 1px solid #d4d8d9;
   margin-bottom: 24px; }
-  /* line 66, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 62, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .plan-table ul, .common-table ul {
     padding-bottom: 0; }
-  /* line 68, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 64, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .plan-table td, .common-table td {
     padding: 6px; }
 
-/* line 70, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 66, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-table-title, .common-table-title {
   padding: 11px 6px 12px;
   text-align: left; }
 
-/* line 73, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 69, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .common-table-title {
   padding: 12px 6px; }
 
-/* line 75, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 71, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .common-table {
   border-top: none; }
-  /* line 77, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 73, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .common-table td {
     padding: 6px 6px 5px; }
-  /* line 79, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 75, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .common-table tr {
     border-bottom: 1px solid #d4d8d9; }
-    /* line 81, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+    /* line 77, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
     .common-table tr:last-child {
       border-bottom: transparent; }
 
-/* line 84, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 80, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-table-a {
   padding: 6px;
   width: 75%; }
 
-/* line 87, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 83, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-table-b {
   width: 25%;
   text-align: right; }
 
-/* line 90, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 86, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .footnotes {
   text-align: left;
   color: #a5acb0;
   padding: 12px; }
 
-/* line 95, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 91, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .footnote {
   position: relative;
   padding-left: 12px; }
@@ -2687,18 +3010,22 @@ a.box {
 .no-trailer {
   padding-bottom: 0 !important; }
 
-/* line 20, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_utils.sass */
+/* line 19, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_utils.sass */
+.gutter-trailer {
+  padding-bottom: 12px !important; }
+
+/* line 22, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_utils.sass */
 .space {
   text-align: center;
   display: inline-block;
   width: 2em; }
 
 @media only screen and (max-width: 72em) {
-  /* line 25, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_utils.sass */
+  /* line 27, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_utils.sass */
   .hide-on-large {
     display: none; } }
 
-/* line 29, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_utils.sass */
+/* line 31, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_utils.sass */
 .wrong {
   color: #ff4d4d; }
 
@@ -2731,46 +3058,57 @@ a.box {
   text-align: center; }
 
 /* line 21, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
-.account-balance {
+.account-balance,
+.bonus-balance {
   font-weight: 400;
   padding-bottom: 4px;
   border-bottom: 2px solid #ed0088;
   color: #ed0088; }
 
-/* line 28, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+/* line 29, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+.bonus-balance {
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 24px;
+  line-height: 1.5rem;
+  padding-top: 6px;
+  font-weight: 600;
+  border-color: transparent; }
+
+/* line 36, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
 .account-balance-note, .bonus-balance-note {
   font-weight: 400;
   color: #a5acb0; }
 
-/* line 33, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+/* line 41, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
 .counter-group {
   padding-top: 6px;
   padding-bottom: 18px; }
-  /* line 36, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+  /* line 44, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
   .bonus .counter-group {
     padding-bottom: 12px; }
 
-/* line 39, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+/* line 47, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
 .bonus-container {
   padding: 6px 12px; }
 
-/* line 42, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+/* line 50, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
 .bonus {
   color: #6f6f76;
   background-color: transparent;
   padding: 11px;
   border: 1px dashed #56565c; }
 
-/* line 48, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+/* line 56, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
 .account-additional-info {
   padding: 12px; }
 
-/* line 54, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+/* line 60, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
 .charging-dates {
   color: #a5acb0;
   padding: 0 12px 18px; }
 
-/* line 58, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+/* line 64, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
 .additional-services {
   padding-top: 18px;
   text-align: center;
@@ -2778,23 +3116,14 @@ a.box {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0; }
-  /* line 63, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+  /* line 69, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
   .additional-services > li {
     padding: 6px 0; }
-    /* line 65, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+    /* line 71, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
     .additional-services > li.active {
       color: #56565c; }
 
-/* line 68, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
-.bonus-balance {
-  color: #ed0088;
-  font-weight: 600;
-  padding-top: 0;
-  padding-bottom: 4px;
-  border-bottom: 2px solid #ed0088;
-  color: #ed0088; }
-
-/* line 76, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
+/* line 74, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_dashboard.sass */
 .bonus-counters {
   padding: 6px;
   color: #a5acb0;
