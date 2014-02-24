@@ -90,14 +90,37 @@
       color: inherit
       background-color: $box-bg-color
 
+.side-navigation-meta
+  padding-top: $gutter
+  padding-bottom: $gutter
+  @include bp-small
+    text-align: center
+
+.mobile-side-navigation
+  padding: $gutter
+  display: none
+  @include bp-small
+    display: block
+
+
+
 .side-navigation
   @include scut-list-unstyled
-  // padding-top: $large-heading-line + 2*$baseline
   @include bp-medium
     @include font($small-text, $small-line)
+  @include bp-small
+    display: none
   .section-container &
     @include bp-large
       @include font($small-text, $small-line)
+  .mobile-side-navigation &
+    background-color: $box-bg-color
+    border-radius: 2px
+    @include box-shadow(0 1px 2px rgba(0,0,0,.25))
+    padding-left: $gutter
+    @include bp-small
+      display: block
+
 .side-navigation-item
   padding: $baseline
   display: block
@@ -107,6 +130,9 @@
     color: white
     &:hover
       color: $normal-text-color
+  .mobile-side-navigation &
+    padding: $gutter $gutter ($gutter - 1px)
+    border-bottom: 1px solid $bg-color
 .side-navigation-group-title
   padding: $gutter $baseline $gutter 0
   @extend %normal-text

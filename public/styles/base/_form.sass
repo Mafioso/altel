@@ -270,6 +270,10 @@ select
 .button, button, input[type="submit"], .invisible-button
   @extend %button
 
+%small-button
+  @extend %button
+  padding: $baseline $gutter
+
 .invisible-button
   color: inherit
   background-color: transparent
