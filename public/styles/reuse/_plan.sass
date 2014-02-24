@@ -72,6 +72,10 @@
   padding: $gutter $baseline
 .common-table
   border-top: none
+  @include bp-small
+    @include font($extra-small-text, $small-line)
+    ul
+      padding-left: 0
   td
     padding: $baseline $baseline ($baseline - 1px)
   tr

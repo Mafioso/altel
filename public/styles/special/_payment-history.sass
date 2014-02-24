@@ -6,6 +6,8 @@
     font-weight: normal
   .split
     padding: $baseline 0
+  @include bp-small
+    @include font($extra-small-text, $small-line)
 .payment-history-header
   @extend %extra-small-text
   font-weight: 600
@@ -24,4 +26,4 @@
 
 .history-select
   vertical-align: middle
-  width: calculateRem(120px)
+  max-width: calculateRem(120px)

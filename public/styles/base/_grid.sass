@@ -17,8 +17,21 @@
     min-width: 20em
 
 %column
-  @include inline-block
+  display: inline-block
   vertical-align: top
+  @include bp-xlarge
+    display: inline-block
+    vertical-align: top
+  @include bp-large
+    display: inline-block
+    vertical-align: top
+  @include bp-medium
+    display: inline-block
+    vertical-align: top
+  @include bp-small
+    display: inline-block
+    vertical-align: top
+
 
 %gutter
   padding-left:  $gutter

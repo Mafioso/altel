@@ -2,6 +2,8 @@
   background-position: 50% 50%
   background-repeat: no-repeat
   @include background-size(auto 30%)
+  @include bp-small
+    @include background-size(auto 36%)
 
 @mixin box-icon($icon)
   .#{$icon}
@@ -40,10 +42,16 @@
 @include box-icon('box-icon-sup-consultant')
 @include box-icon('box-icon-sup-coverage')
 
+@include box-icon('box-icon-html')
+@include box-icon('box-icon-xls')
+@include box-icon('box-icon-pdf')
+
 .plan-icon-gsm,
 .plan-icon-lte
   background-position: 50% 30%
   @include background-size(auto 20%)
+  @include bp-small
+    @include background-size(auto 30%)
 
 .plan-icon-gsm
   @extend .box-icon-site-plans
