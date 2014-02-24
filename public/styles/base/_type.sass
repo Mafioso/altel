@@ -108,6 +108,20 @@ sup, sub
   line-height: 0
   position: relative
 
+blockquote
+  margin: 0
+  padding: 0 0 $normal-line 2*$gutter
+  p
+    padding-bottom: 0
+
+cite
+  padding-top: $baseline
+  display: block
+  @extend %small-text
+  &:before
+    content: "#{$scut-mdash}"
+    padding-right: $baseline
+
 table
   width: 100%
 

@@ -1,0 +1,59 @@
+{% block content %}
+  <div class="gutter">
+    <h1>Пресс-центр</h1>
+    <div class="d1-6">
+      <ul class="side-navigation">
+        {% for group in (1..4) %}
+          <li><a href="#" class="side-navigation-item">Month (23)</a></li>
+        {% endfor %}
+        <li><a href="#" class="side-navigation-item">Архив</a></li>
+      </ul>
+    </div><div class="d2-3 m5-6 s1">
+
+      <p>Уважаемые журналисты!</p>
+      <p>АО «АЛТЕЛ» в своей деятельности придерживается принципов информационной прозрачности.</p>
+      <p>Мы искренне ценим ваше внимание к нам, и всегда открыты к диалогу. Пожалуйста, обращайтесь &mdash; мы всегда готовы ответить на ваши вопросы.</p>
+      <p>Для контактов со СМИ: <a href="mailto:info@altel.kz">info@altel.kz</a></p>
+      
+      <header class="group-header">
+        <h2 class="group-title">Декабрь 2013</h2>
+        <section class="group-meta">
+          5 записей
+        </section>
+      </header>
+      
+      {% for i in (1..9) %}
+      <div class="box">
+        <div class="box-content">
+          <article class="post-preview">
+            <header class="post-header">
+              <section class="post-meta">
+                20 декабря 2013
+              </section>
+            </header>
+            <blockquote>
+              <p>Инновации на стабильно высокой скорости</p>
+              <cite>Новое поколение (Алматы), № 141 (1084)</cite>
+            </blockquote>
+            <footer class="post-links">
+              <p><a href="http://www.np.kz/2013/12/20/innovacii_na_ stabilno_vysokojj_skorosti.html">http://www.np.kz/2013/12/20/innovacii_na_ stabilno_vysokojj_skorosti.html</a></p>
+            </footer>
+          </article>
+        </div>
+      </div>
+      {% endfor %}
+      {% include "pagination" %}
+    </div>
+  
+    <nav class="mobile-side-navigation">
+      <h2><a href="/site-press">Пресс-центр</a></h2>
+      <ul class="side-navigation">
+        {% for group in (1..4) %}
+          <li><a href="#" class="side-navigation-item">Month (23)</a></li>
+        {% endfor %}
+        <li><a href="#" class="side-navigation-item">Архив</a></li>
+      </ul>
+    </nav>
+
+  </div>
+{% endblock %}
