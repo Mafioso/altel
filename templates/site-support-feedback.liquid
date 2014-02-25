@@ -1,0 +1,48 @@
+{% block content %}
+
+<div class="gutter">
+  <div class="d1-6 s1">
+    <section class="side-navigation-meta">
+      <a href="/site-support" class="back-button">Поддержка</a>
+    </section>
+  </div><div class="d2-3 m5-6 s1">
+    <div class="box">
+      <div class="box-content">
+        <form class="readable">
+          <h2>Обратная связь</h2>
+          <div class="input-line">
+            <label for="">Ваш вопрос: *</label>
+            <textarea class="input-d1" name="" id="" cols="30" rows="4"></textarea>
+          </div>
+
+          <div class="input-line">
+            <label for="">Автор: *</label>
+            <input type="text" class="input-d1">
+            <div class="extra">
+              <p class="no-trailer wrong">Something is wrong! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos perspiciatis est illo quia ea error ducimus. Iste, eveniet mollitia praesentium quasi saepe deleniti nobis sunt fuga possimus quos aut vitae.</p>
+            </div>
+          </div>
+          <div class="input-line">
+            <label for="">E-mail: *</label>
+            <input type="text" class="input-d1">
+          </div>
+          <div class="input-line">
+            <label for="">Код подтверждения: *</label>
+            <div class="d1-2 middle">
+              <input class="input-d1" type="text">
+            </div><div class="d1-2 text-center middle gutter captcha">
+            {{ "120x48" | placeholder:'FF6600','000000' | image_tag }}
+            </div>
+          </div>
+          <div class="input-line text-center">
+            <a href="/site-chairman-blog" class="u-link">Отменить</a>
+            <span class="space">&middot;</span>
+            <button>Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

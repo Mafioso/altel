@@ -1,19 +1,22 @@
 {% block content %}
 <div class="gutter">
   <h1>Блог Председателя Правления АО "АЛТЕЛ"</h1>
-  <div class="d1-6 s1">
+  <div class="d1-6 m1">
+    <section class="side-navigation-meta">
+      <a href="/site-about" class="back-button">О компании</a>
+    </section>
+
     <ul class="side-navigation">
-      <li><a href="/site-about" class="side-navigation-item">&larr; О компании</a></li>
       {% for group in (1..4) %}
         <li><a href="#" class="side-navigation-item">Month (23)</a></li>
       {% endfor %}
       <li><a href="#" class="side-navigation-item">Архив</a></li>
     </ul>
-  </div><div class="d2-3 m5-6 s1">
+  </div><div class="d2-3 m1">
     <div class="fluffy">
-      <div class="d1-4 text-center">
+      <div class="d1-4 m1 text-center">
         <img src="/public/images/other-images/chairman.png" alt="Chairman">
-      </div><div class="d3-4">
+      </div><div class="d3-4 m1">
         <blockquote>
           <p>Рад приветствовать вас в своем блоге, где вы можете задать любой интересующий вопрос или написать обращение.</p>
           <p>Постараюсь ответить на каждое из них.</p>

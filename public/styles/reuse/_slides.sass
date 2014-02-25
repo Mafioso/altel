@@ -35,32 +35,45 @@
 
 
 .slide-message
-  // top: 30%
-  // @include transform(translateY(-50%))
+  text-align: center
   bottom: auto
   width: 100%
-  padding-left: (1/12)*100%
-  padding-top: (1/24)*100%
-  @include bp-large
-    padding-top: (1/24)*100%
-  @include bp-medium
-    padding-top: (1/12)*100%
+  padding: $gutter 2*$gutter
+  .csstransforms &
+    @include transform(translateY(-50%))
+    top: 50%
+  // padding: (1/24)*100% (1/12)*100% 0
+  // @include bp-large
+  //   padding-top: (1/24)*100%
+  // @include bp-medium
+  //   padding-top: (1/12)*100%
 
 .slide-visual
   width: 100%
   left: auto
   text-align: right
-  @include transform(translateX(100%))
-  @include transition-timing-function($ease-in-out-expo)
-  img
-    height: 100%
+  // @include transform(translateX(100%))
+  // @include transition-timing-function($ease-in-out-expo)
+  @include transition-duration(5s)
+  @include transition-timing-function(ease-in-out)
+  background-repeat: no-repeat
+  // background-position: 100% 100%
+  background-position: 50% 50%
+  @include background-size(cover)
+  // @include background-size(contain)
   .active &
-    @include transform(translateX(0))
+    @include transform(scale(1.05))
+    // @include animation(hollywood 5s ease-in-out infinite)
+    // @include animation-direction(alternate)
+    // @include transform(translateX(0))
+  @include bp-medium
+    // background-position: 50% 100%
+    @include background-size(auto 100%)
 .slide-product
   display: none
-  @include transform(translateY(100%))
+  // @include transform(translateY(100%))
   .active &
-    @include transform(translateY(0))
+    // @include transform(translateY(0))
 
 .slide-heading
   padding: 0 0 $gutter
@@ -69,35 +82,36 @@
   font-weight: 400
   text-transform: uppercase
   opacity: 0
-  @include transition-delay(.2s)
-  @include transform(translateX(-100%))
+  // @include transition-delay(.2s)
+  // @include transform(translateX(-100%))
   .active &
     opacity: 1
-    @include transform(translateX(0))
+    // @include transform(translateX(0))
   .extra
     @extend %small-heading
     text-transform: none
     display: block
-
-// TODO: change this to a more robust button
-.cta-button
-  display: inline-block
-  padding: $gutter 2*$gutter
-  border-radius: $gutter
-  background-color: $accent-color
-  color: white
-  &:hover
-    color: white
   
 .slide-cta
   opacity: 0
-  @include transition-delay(.4s)
-  @include transform(translateX(-100%))
+  // @include transition-delay(.4s)
+  // @include transform(translateX(-100%))
   padding-bottom: $small-line
   .active &
-    @include transform(translateX(0))
+    // @include transform(translateX(0))
     opacity: 1
 
 .slide-product
   text-align: center
   padding-top: 24px
+
+.slide-heading,
+.slide-message,
+.slide-message .extra
+  color: $normal-text-color
+
+// @include keyframes(hollywood)
+//   0%
+//     @include transform(scale(1))
+//   100%
+//     @include transform(scale(1.05))

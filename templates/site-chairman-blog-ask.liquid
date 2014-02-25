@@ -11,8 +11,33 @@
         <form class="readable">
           <h2>Задать вопрос</h2>
           <div class="input-line">
+            <label for="">Ваш вопрос: *</label>
+            <textarea class="input-d1" name="" id="" cols="30" rows="4"></textarea>
+          </div>
+
+          <div class="input-line">
             <label for="">Автор: *</label>
             <input type="text" class="input-d1">
+            <div class="extra">
+              <p class="no-trailer wrong">Something is wrong! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos perspiciatis est illo quia ea error ducimus. Iste, eveniet mollitia praesentium quasi saepe deleniti nobis sunt fuga possimus quos aut vitae.</p>
+            </div>
+          </div>
+          <div class="input-line">
+            <label for="">E-mail: *</label>
+            <input type="text" class="input-d1">
+          </div>
+          <div class="input-line">
+            <label for="">Код подтверждения: *</label>
+            <div class="d1-2 middle">
+              <input class="input-d1" type="text">
+            </div><div class="d1-2 text-center middle gutter captcha">
+            {{ "120x48" | placeholder:'FF6600','000000' | image_tag }}
+            </div>
+          </div>
+          <div class="input-line text-center">
+            <a href="/site-chairman-blog" class="u-link">Отменить</a>
+            <span class="space">&middot;</span>
+            <button>Отправить</button>
           </div>
         </form>
       </div>

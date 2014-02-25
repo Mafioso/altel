@@ -134,10 +134,10 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 textarea
-  @include inline-block
-  padding: (2*$baseline - 1px) (1.5*$baseline - 1px)
+  display: inline-block
+  padding: (1.5*$baseline - 1px) (1.5*$baseline - 1px)
   border: $border
-  font-size: 100%
+  @extend %normal-text
   box-shadow: $shadow-inset
   border-radius: $radius
   -webkit-font-smoothing: antialiased
@@ -343,4 +343,4 @@ select
 // Fix the zoom problem with iphone
 @media screen and (-webkit-min-device-pixel-ratio: 0)
   select:focus, textarea:focus, input:focus
-    font-size: 16px
+    @extend %normal-text

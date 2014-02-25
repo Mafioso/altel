@@ -18,7 +18,12 @@
   color: $secondary-text-color
   padding-top: $normal-heading-line
   padding-bottom: $normal-heading-line
+  @include bp-small
+    @include font($normal-text, $normal-line)
 
 .readable
   max-width: 34em
   margin: auto
+  @include bp-large
+    padding-left: $gutter
+    padding-right: $gutter

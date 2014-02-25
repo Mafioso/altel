@@ -4,14 +4,14 @@
 
 <div class="gutter">
   <h1>Тарифы GSM</h1>
-  <div class="d1-6">
+  <div class="d1-6 m1">
     <ul class="side-navigation">
       <!-- <li class="side-navigation-group-title">Тарифы GSM</li> -->
       {% for plan in model.gsmPlans %}
         <li><a href="{{ plan.url }}" class="side-navigation-item">{{ plan.name }}</a></li>
       {% endfor %}
     </ul>
-  </div><div class="d5-6 s1">
+  </div><div class="d5-6 m1">
     {% for plan in model.gsmPlans %}<div class="d1-4 l1-3 m1-2 s1">
       {% include "planbox" with plan %}
     </div>{% endfor %}
