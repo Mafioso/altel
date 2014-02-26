@@ -1,0 +1,106 @@
+{% layout 'entrance-layout' %}
+
+{% block content %}
+  
+<div class="entrance-container">
+  <div class="container">
+    <div class="d2-3 m1 text-center">
+      <div class="box">
+        <div class="box-content epic-plan">
+          <div class="d2-3 middle">
+            <h1 class="title">On-line оплата</h1>
+          </div><div class="d1-3 gutter middle text-right">
+          <!-- TODO: fix logotype here -->
+            <a href="/" class="logotype">
+              <img class="logotype-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Altel">
+            </a>
+          </div>
+            
+          <div class="readable fluffy">
+            <form action="">
+              <div class="input-line">
+                <label for="">Абонентский номер</label>
+                <div class="d1-3 l1">
+                  <div class="phone-input">
+                    <input type="text" class="phone-input-code" maxlength="3">
+                    <input type="text" class="phone-input-number" maxlength="7">
+                  </div>
+                  <div class="extra">
+                    Phone codes: 777 or 708
+                  </div>
+                </div><div class="d2-3 l1">
+                  <!-- <ul class="provider-list">
+                    <li><a href="#" class="provider-list-item">Altel</a></li>
+                    <li><a href="#" class="provider-list-item active">Altel 4G</a></li>
+                    <li><a href="#" class="provider-list-item">Dalacom</a></li>
+                    <li><a href="#" class="provider-list-item">Pathword</a></li>
+                    <li><a href="#" class="provider-list-item">Jet</a></li>
+                  </ul> -->
+                </div>
+              </div>
+              <div class="input-line">
+                <label for="">E-mail</label>
+                <input type="text" class="input-d1">
+                <div class="extra">
+                  <p class="extra-small-text no-trailer">
+                    Введите Ваш e-mail для получения информации об оплате и/или уведомлениях об ошибках.
+                  </p>
+                </div>
+              </div>
+              <div class="input-line">
+                <label for="payment">Сумма в тенге</label>
+                <input class="input-d1" id="payment" name="payment" type="text">
+                <div class="extra">
+                  <p class="no-trailer extra-small-text">
+                    Введите сумму в тенге или выберите одну из сумм, указанных ниже, на которую вы желаете пополнить баланс.
+                  </p>
+                </div>
+              </div>
+              <div class="input-line text-center">
+                <label class="cr-label"><input type="radio" name="predefined-payment"> 200</label>
+                <label class="cr-label"><input type="radio" name="predefined-payment"> 500</label>
+                <label class="cr-label"><input type="radio" name="predefined-payment"> 1000</label>
+                <label class="cr-label"><input type="radio" name="predefined-payment"> 2000</label>
+                <label class="cr-label"><input type="radio" name="predefined-payment"> 5000</label>
+              </div>
+              <div class="input-line">
+                <label class="cr-label agreement-label" for="agreement">
+                  <input id="agreement" name="agreement" type="checkbox"> Я прочитал Правила, согласен и принимаю условия проведения Онлайн оплаты. Я проверил и подтверждаю, что намерен оплатить выбранную сумму на указанный Абонентский номер. Вся информация внесена мной правильно.
+                </label>
+              </div>
+              <div class="input-line">
+                <label for="">Введите секретный код</label>
+                <div class="d1-2 middle">
+                  <input class="input-d1" type="text">
+                </div><div class="d1-2 text-center middle gutter captcha">
+                {{ "120x48" | placeholder:'FF6600','000000' | image_tag }}
+                </div>
+              </div>
+              <div class="input-line text-center">
+                <a href="#" class="button" data-target="pay-online">Далее</a>
+              </div>
+            </form>
+          </div>
+
+
+        </div>
+      </div>
+    </div><div class="d1-3 m1">
+      <div class="aside-note readable fluffy text-left">
+        <h2>
+          Дорогой абонент, добро пожаловать в систему &laquo;Онлайн&nbsp;оплата&raquo;
+        </h2>
+        <p>Благодаря системе «Онлайн оплата» Вы можете пополнить свой баланс с помощью платежных банковских карт платежных систем:</p>
+        <ul>
+          <li>Visa</li>
+          <li>Master Card</li>
+          <li>American Express</li>
+        </ul>
+        <p>Оплата осуществляется через портал АО «Казкоммерцбанк».</p>
+        <p>Перед тем как осуществить Онлайн оплату, пожалуйста, ознакомьтесь с <a href="#" class="u-link">настоящими Правилами</a>.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

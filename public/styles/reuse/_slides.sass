@@ -54,16 +54,17 @@
   text-align: right
   // @include transform(translateX(100%))
   // @include transition-timing-function($ease-in-out-expo)
-  @include transition-duration(5s)
-  @include transition-timing-function(ease-in-out)
+  // @include transition-duration(5s)
+  // @include transition-timing-function(ease-in-out)
   background-repeat: no-repeat
   // background-position: 100% 100%
   background-position: 50% 50%
   @include background-size(cover)
+  @include transform(scale(1.05))
   // @include background-size(contain)
   .active &
-    @include transform(scale(1.05))
-    // @include animation(hollywood 5s ease-in-out infinite)
+    // @include transform(scale(1.05))
+    @include animation(hollywood 6s ease-out)
     // @include animation-direction(alternate)
     // @include transform(translateX(0))
   @include bp-medium
