@@ -5,13 +5,25 @@
   .active &
     color: $accent-color
   .epic-plan &
-    @extend %epic-heading
+    @extend %normal-heading
+    text-align: left
+    @extend %gutter
 .plan-subtitle
   color: $secondary-text-color
   text-align: center
   padding-bottom: $baseline
   .epic-plan &
     @extend %small-heading
+    text-align: left
+    @extend %gutter
+
+.connection-howto
+  // background-color: $bg-color
+  // radius: 2px
+  @extend %small-text
+  padding: $gutter
+  // margin: $gutter
+
 .plan-benefits
   text-align: center
   @extend %small-text
@@ -22,7 +34,9 @@
     color: $normal-text-color
   .epic-plan &
     @extend %normal-text
-    padding: 0 $gutter $normal-heading-line
+    text-align: left
+    border-top: 1px solid $bg-color
+    padding: ($normal-heading-line - 1px) $gutter $normal-heading-line
 
 .plan-cta-container
   text-align: center
@@ -42,7 +56,7 @@
 .epic-plan-graphics
   height: 12em
   @include background-size(contain)
-  background-position: 50% 50%
+  background-position: 0 50%
 
 .plan-description
   text-align: center
@@ -104,3 +118,16 @@
 .footnote
   position: relative
   padding-left: $gutter
+
+.phone-command
+  font-family: $monospace
+  display: block
+  border: 1px solid $bg-color
+  border-radius: 2px
+  padding: ($gutter - 1px)
+  margin-bottom: $baseline
+  @extend %normal-text
+  font-weight: bold
+  @include bp-small
+    padding: ($baseline - 1px)
+    @include font($small-text, $small-line)
