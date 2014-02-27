@@ -1,4 +1,5 @@
 %icon
+  display: inline-block
   &:before
     content: ""
     height: 18px
@@ -47,3 +48,19 @@
   @extend %icon
   &:before
     @include background-image("icons/icon-wifi")
+.icon-instagram
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-instagram")
+.icon-twitter
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-twitter")
+.icon-facebook
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-facebook")
+.icon-vkontakte
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-vkontakte")
