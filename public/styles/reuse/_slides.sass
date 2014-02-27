@@ -5,8 +5,15 @@
   right: 0
   bottom: 0
 
-.slider-container
+#carousel
+  padding: 0
+
+.slider-container,
 .slides
+  position: relative
+  height: 100%
+  width: 100%
+
 .item
   @extend %absolute-box
   @extend %animation-hack
@@ -49,21 +56,24 @@
   //   padding-top: (1/12)*100%
 
 .slide-visual
-  width: 100%
-  left: auto
-  text-align: right
+  text-align: center
   // @include transform(translateX(100%))
   // @include transition-timing-function($ease-in-out-expo)
-  @include transition-duration(5s)
-  @include transition-timing-function(ease-in-out)
+  // @include transition-duration(5s)
+  // @include transition-timing-function(ease-in-out)
   background-repeat: no-repeat
   // background-position: 100% 100%
   background-position: 50% 50%
+  // @include background-size(cover)
+  @include transform(scale(1.05))
   @include background-size(cover)
-  // @include background-size(contain)
+  img
+    width: auto
+    max-width: none
+    height: 100%
   .active &
-    @include transform(scale(1.05))
-    // @include animation(hollywood 5s ease-in-out infinite)
+    // @include transform(scale(1.05))
+    @include animation(hollywood 6s ease-out)
     // @include animation-direction(alternate)
     // @include transform(translateX(0))
   @include bp-medium

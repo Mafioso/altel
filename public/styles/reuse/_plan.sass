@@ -8,6 +8,12 @@
     @extend %normal-heading
     text-align: left
     @extend %gutter
+.title
+  @extend %normal-heading
+  font-weight: 600
+  color: $normal-text-color
+  .epic-plan &
+    @extend %gutter
 .plan-subtitle
   color: $secondary-text-color
   text-align: center
