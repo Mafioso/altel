@@ -1,3 +1,5 @@
+{% model "slides.json" %}
+
 {% block content %}
 
 <div class="d1">
@@ -5,36 +7,15 @@
     <div id="carousel" data-ride="carousel" class="box-content">
       <div class="slider-container">
         <div class="slides">
-          <div id="slide-1" class="item active">
-            <div class="slide-visual" style="background-image: url('/public/images/slides/pre-image-5.jpg');">
-              <img src="/public/images/slides/image-5.jpg" alt="">
-            </div>
-            <div class="slide-message">
-              <h1 class="slide-heading">
-                Самый<br>быстрый
-                <span class="extra">
-                  4G-интернет для<br>твоего Instagram
-                </span>
-              </h1>
-              <div class="slide-cta">
-                <a href="/site-plans" class="button">Выбрать тариф</a>
-              </div>
-            </div>
-          </div>
-          
-          <div id="slide-2" class="item">
-            <div class="slide-visual" style="background-image: url(/public/images/slides/pre-image-9.jpg);">
-              <img src="/public/images/slides/image-9.jpg" alt="">
-            </div>
-            <div class="slide-message text-left">
-              <div class="slide-heading">
-                  <img src="/public/images/logotype.svg" width="50%" height="32" alt="Altel 4G:GSM">
-              </div>
-              <a href="/site-plans" class="button">Call to action!</a>
-              <div class="slide-cta">
-              </div>
-            </div>
-          </div>
+          {% for slide in model.slides %}
+            {% if slide.type == "center" %}
+              {% include "carousel-item-center" with slide %}
+            {% elsif slide.type == "left" %}
+              {% include "carousel-item-left" with slide %}
+            {% elsif slide.type == "right" %}
+              {% include "carousel-item-right" with slide %}
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
     </div>

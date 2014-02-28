@@ -45,40 +45,49 @@
   text-align: center
   bottom: auto
   width: 100%
-  padding: $gutter 2*$gutter
+  padding: $gutter (1/12)*100%
   .csstransforms &
     @include transform(translateY(-50%))
     top: 50%
-  // padding: (1/24)*100% (1/12)*100% 0
-  // @include bp-large
-  //   padding-top: (1/24)*100%
-  // @include bp-medium
-  //   padding-top: (1/12)*100%
+  .item-type-center &
+    text-align: center
+  .item-type-right &
+    text-align: right
+  .item-type-left &
+    text-align: left
+  .item-type-left &, 
+  .item-type-center &, 
+  .item-type-right &
+    @include bp-medium
+      text-align: center
+
 
 .slide-visual
   text-align: center
-  // @include transform(translateX(100%))
-  // @include transition-timing-function($ease-in-out-expo)
-  // @include transition-duration(5s)
-  // @include transition-timing-function(ease-in-out)
   background-repeat: no-repeat
-  // background-position: 100% 100%
   background-position: 50% 50%
-  // @include background-size(cover)
   @include transform(scale(1.05))
   @include background-size(cover)
   img
-    width: auto
-    max-width: none
-    height: 100%
+    margin: auto
+    position: relative
+    display: block
+    width: 1272px
+
+    @include bp-medium
+      position: absolute
+      top: 50%
+      @include transform(translateY(-50%) scale(3.2))
+
+      // width: auto
+      // max-width: none
+      // height: 100%
+
   .active &
-    // @include transform(scale(1.05))
     @include animation(hollywood 6s ease-out)
-    // @include animation-direction(alternate)
-    // @include transform(translateX(0))
   @include bp-medium
-    // background-position: 50% 100%
     @include background-size(auto 100%)
+
 .slide-product
   display: none
   // @include transform(translateY(100%))

@@ -1,0 +1,39 @@
+{
+  "slides" : [
+    {
+      "default": true,
+      "id": "slide-1",
+      "pre-visual": "/public/images/slides/pre-slide-a.jpg",
+      "visual": "/public/images/slides/slide-a.jpg",
+      "type": "center"
+    },
+    {
+      "default": false,
+      "id": "slide-2",
+      "pre-visual": "/public/images/slides/pre-slide-b.jpg",
+      "visual": "/public/images/slides/slide-b.jpg",
+      "type": "left"
+    },
+    {
+      "default": false,
+      "id": "slide-3",
+      "pre-visual": "/public/images/slides/pre-slide-c.jpg",
+      "visual": "/public/images/slides/slide-c.jpg",
+      "type": "right"
+    },
+    {
+      "default": false,
+      "id": "slide-4",
+      "pre-visual": "/public/images/slides/pre-slide-d.jpg",
+      "visual": "/public/images/slides/slide-d.jpg",
+      "type": "left"
+    },
+    {
+      "default": false,
+      "id": "slide-5",
+      "pre-visual": "/public/images/slides/pre-slide-e.jpg",
+      "visual": "/public/images/slides/slide-e.jpg",
+      "type": "left"
+    }
+  ]
+}
