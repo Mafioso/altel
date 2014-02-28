@@ -4,6 +4,9 @@
 <div class="gutter">
   <h1>Новости</h1>
   <div class="d1-6 m1">
+    <section class="side-navigation-meta">
+        <a href="/site-about" class="back-button">О компании</a>
+      </section>
     <ul class="side-navigation">
       {% for group in model.groups %}
         <li><a href="#" class="side-navigation-item">{{ group.title }} ({{ group.news-quantity }})</a></li>
