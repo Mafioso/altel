@@ -34,6 +34,21 @@
       "pre-visual": "/public/images/slides/pre-slide-e.jpg",
       "visual": "/public/images/slides/slide-e.jpg",
       "type": "left"
+    },
+    {
+      "default": false,
+      "id": "slide-6",
+      "pre-visual": "/public/images/slides/pre-slide-f.jpg",
+      "visual": "/public/images/slides/slide-f.jpg",
+      "type": "left"
+    },
+    {
+      "default": false,
+      "id": "slide-7",
+      "pre-visual": "/public/images/slides/pre-slide-g.jpg",
+      "visual": "/public/images/slides/slide-g.jpg",
+      "type": "left"
     }
+
   ]
 }
