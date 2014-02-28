@@ -1,0 +1,54 @@
+{% model "news.json" %}
+{% block content %}
+<div class="gutter">
+  <div class="d1-6 m1">
+    <section class="side-navigation-meta">
+      <a href="/site-special-list" class="back-button">Акции</a>
+    </section>
+    <ul class="side-navigation">
+      {% for group in model.groups %}
+        <li><a href="#" class="side-navigation-item">{{ group.title }} ({{ group.news-quantity }})</a></li>
+      {% endfor %}
+      {% for i in (1..10) %}
+        <li><a href="#" class="side-navigation-item">Blah</a></li>
+      {% endfor %}
+      <li><a href="#" class="side-navigation-item">Архив</a></li>
+    </ul>
+  </div><div class="d2-3 m1">
+    <div class="box">
+      <div class="box-content">
+        <article class="readable fluffy">
+          <header class="post-header">
+            <h2>Какая-то акция</h2>
+            <section class="post-meta">
+              Дата проведения
+            </section>
+          </header>
+          <section>
+            <p>
+              {{ "776x300" | placeholder | image_tag }}
+            </p>
+            {{ 4 | lorem_ipsum:"p" }}
+          </section>
+          <footer class="post-links">
+
+          </footer>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <nav class="mobile-side-navigation">
+    <h2><a href="/site-news">Новости</a></h2>
+    <ul class="side-navigation">
+      {% for group in model.groups %}
+        <li><a href="#" class="side-navigation-item">{{ group.title }} ({{ group.news-quantity }})</a></li>
+      {% endfor %}
+      {% for i in (1..10) %}
+        <li><a href="#" class="side-navigation-item">Blah</a></li>
+      {% endfor %}
+      <li><a href="#" class="side-navigation-item">Архив</a></li>
+    </ul>
+  </nav>
+</div>
+{% endblock %}
