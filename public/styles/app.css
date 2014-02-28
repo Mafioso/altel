@@ -943,7 +943,7 @@ a {
 /* line 98, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_type.sass */
 .iu-link {
   color: white;
-  border-bottom: 1px solid #d4d8d9; }
+  border-bottom: 1px solid #f0f0f0; }
   /* line 101, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_type.sass */
   .iu-link:hover {
     color: #56565c; }
@@ -1286,6 +1286,10 @@ select {
   position: relative;
   padding-bottom: 18px; }
 
+/* line 340, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+.select-container {
+  padding: 6px 0; }
+
 /* line 10, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_base.sass */
 html,
 body {
@@ -1317,7 +1321,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #d4d8d9;
+  background-color: #f0f0f0;
   z-index: 100; }
 
 /* line 36, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_base.sass */
@@ -1527,7 +1531,7 @@ body {
 .logotype-image {
   display: block;
   width: 100%;
-  height: 24px;
+  height: 27px;
   background-image: url(/public/images/logotype.svg);
   background-size: contain;
   background-position: 0 50%;
@@ -1629,7 +1633,7 @@ body {
   /* line 149, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_navigation.sass */
   .mobile-side-navigation .side-navigation-item {
     padding: 12px 12px 11px;
-    border-bottom: 1px solid #d4d8d9; }
+    border-bottom: 1px solid #f0f0f0; }
 
 /* line 152, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_navigation.sass */
 .side-navigation-group-title {
@@ -3073,7 +3077,7 @@ a.box {
   /* line 41, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .epic-plan .plan-benefits {
     text-align: left;
-    border-top: 1px solid #d4d8d9;
+    border-top: 1px solid #f0f0f0;
     padding: 35px 12px 36px; }
 
 /* line 47, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
@@ -3104,14 +3108,14 @@ a.box {
 .plan-description {
   text-align: center;
   padding-top: 23px;
-  border-top: 1px solid #d4d8d9; }
+  border-top: 1px solid #f0f0f0; }
 
 /* line 72, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .cta-table {
   text-align: left;
   width: 75%;
   margin: auto;
-  background-color: #d4d8d9;
+  background-color: #f0f0f0;
   border-radius: 2px; }
   /* line 79, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .cta-table td {
@@ -3127,7 +3131,7 @@ a.box {
 /* line 86, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-table, .common-table {
   text-align: left;
-  border-top: 1px solid #d4d8d9;
+  border-top: 1px solid #f0f0f0;
   margin-bottom: 24px; }
   /* line 91, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .plan-table ul, .common-table ul {
@@ -3163,7 +3167,7 @@ a.box {
     padding: 6px 6px 5px; }
   /* line 108, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .common-table tr {
-    border-bottom: 1px solid #d4d8d9; }
+    border-bottom: 1px solid #f0f0f0; }
     /* line 110, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
     .common-table tr:last-child {
       border-bottom: transparent; }
@@ -3193,7 +3197,7 @@ a.box {
 .phone-command {
   font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
   display: block;
-  border: 1px solid #d4d8d9;
+  border: 1px solid #f0f0f0;
   border-radius: 2px;
   padding: 11px;
   margin-bottom: 6px;
@@ -3327,7 +3331,7 @@ a.box {
 .acc-list-item {
   display: block;
   padding: 12px 12px 11px;
-  border-bottom: 1px solid #d4d8d9; }
+  border-bottom: 1px solid #f0f0f0; }
   /* line 8, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_accordion-list.sass */
   .acc-list-item.active {
     color: #ed0088; }
@@ -3840,7 +3844,7 @@ a.box {
   font-weight: bold;
   padding: 12px 0 5px;
   margin-bottom: 6px;
-  border-bottom: 1px solid #d4d8d9; }
+  border-bottom: 1px solid #f0f0f0; }
 
 /* line 27, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_payment-history.sass */
 .history-select {
