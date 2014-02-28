@@ -23,7 +23,6 @@
       
   
 <div class="entrance-container">
-  <div class="container">
     <div class="d2-3 m1 text-center">
       <div class="box">
         <div class="box-content epic-plan">
@@ -42,23 +41,14 @@
             <form action="">
               <div class="input-line">
                 <label for="">Абонентский номер</label>
-                <div class="d1-3 l1">
-                  <div class="phone-input">
-                    <input type="text" class="phone-input-code" maxlength="3">
-                    <input type="text" class="phone-input-number" maxlength="7">
-                  </div>
-                  <div class="extra">
-                    Phone codes: 777 or 708
-                  </div>
-                </div><div class="d2-3 l1">
-                  <!-- <ul class="provider-list">
-                    <li><a href="#" class="provider-list-item">Altel</a></li>
-                    <li><a href="#" class="provider-list-item active">Altel 4G</a></li>
-                    <li><a href="#" class="provider-list-item">Dalacom</a></li>
-                    <li><a href="#" class="provider-list-item">Pathword</a></li>
-                    <li><a href="#" class="provider-list-item">Jet</a></li>
-                  </ul> -->
+                <div class="phone-input">
+                  <input type="text" class="phone-input-code" maxlength="3">
+                  <input type="text" class="phone-input-number" maxlength="7">
                 </div>
+                <div class="extra">
+                  <p class="extra-small-text no-trailer">Phone codes: 777 or 708</p>
+                </div>
+                
               </div>
               <div class="input-line">
                 <label for="">E-mail</label>
@@ -89,6 +79,11 @@
                 <label class="cr-label agreement-label" for="agreement">
                   <input id="agreement" name="agreement" type="checkbox"> Я прочитал Правила, согласен и принимаю условия проведения Онлайн оплаты. Я проверил и подтверждаю, что намерен оплатить выбранную сумму на указанный Абонентский номер. Вся информация внесена мной правильно.
                 </label>
+                <div class="extra">
+                  <p class="extra-small-text wrong no-trailer">
+                    Вы не подтвердили свое намерение оплатить выбранную сумму на указанный Абонентский номер
+                  </p>
+                </div>
               </div>
               <div class="input-line">
                 <label for="">Введите секретный код</label>
@@ -97,9 +92,14 @@
                 </div><div class="d1-2 text-center middle gutter captcha">
                 <img src="http://imgsrc.me/120x48/FF6600/000000" alt="" />
                 </div>
+                <div class="extra">
+                  <p class="extra-small-text wrong no-trailer">
+                    Введенный Вами секретный код неверен, повторите пожалуйста
+                  </p>
+                </div>
               </div>
               <div class="input-line text-center">
-                <a href="#" class="button" data-target="pay-online">Далее</a>
+                <a href="site-payment-online-confirm.html" class="button" data-target="pay-online">Далее</a>
               </div>
             </form>
           </div>
@@ -122,7 +122,6 @@
         <p>Перед тем как осуществить Онлайн оплату, пожалуйста, ознакомьтесь с <a href="#" class="u-link">настоящими Правилами</a>.</p>
       </div>
     </div>
-  </div>
 </div>
 
 

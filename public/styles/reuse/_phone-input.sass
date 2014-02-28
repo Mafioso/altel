@@ -1,15 +1,18 @@
 .phone-input
   position: relative
+  // margin-left: 1em
   &:before
     text-align: right
-    right: 100%
+    // right: 100%
     padding: 9px 3px
     @extend %normal-text
-    position: absolute
+    // position: absolute
     content: "+7"
-    display: block
-    @include bp-large
-      @include font($small-text, $normal-line)
+    // display: block
+    display: inline-block
+    vertical-align: middle
+    // @include bp-large
+    //   @include font($small-text, $normal-line)
 .phone-input-code
   width: 3em
   text-align: center

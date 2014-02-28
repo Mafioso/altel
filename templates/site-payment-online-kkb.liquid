@@ -1,0 +1,164 @@
+{% layout 'entrance-layout' %}
+
+{% block content %}
+  
+<div class="entrance-container">
+    <div class="d1-6">
+    </div><div class="d2-3 m1 text-center">
+      <div class="box">
+        <div class="box-content epic-plan">
+          
+          <div class="d1-3 s1">
+          </div><div class="d1-3 s1 fluffy">
+            <a href="/" class="logotype">
+              <img class="logotype-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Altel">
+            </a>
+          </div>
+          
+          <div class="fluffy">
+            <h1 class="group-title">On-line оплата</h1>
+          </div>
+
+          <div class="extend-both">
+            <div class="readable">
+              <h2>Информация о платеже</h2>
+              <ul class="list-unstyled">
+                <li class="split">
+                  <strong class="split-title">Абонентский номер</strong>
+                  +77071234587
+                </li>
+                <li class="split">
+                  <strong class="split-title">Сумма платежа</strong>
+                  200 KZT
+                </li>
+                <li class="split">
+                  <strong class="split-title">Номер заказа</strong>
+                  00245052
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="readable fluffy">
+            
+            <form action="">
+              <h2>Введите информацию о Вашей платежной карте</h2>
+              <div class="extra">
+                <p>Поля отмеченные звездочкой * — обязательны к заполнению</p>
+              </div>
+              <div class="input-line">
+                <label for="">Фамилия и имя на карте: *</label>
+                <input type="text" class="input-d1">
+                <div class="extra">
+                  <p class="no-trailer">
+                    Например, NURLAN AKHMETOV
+                  </p>
+                </div>
+              </div>
+              <div class="input-line">
+                <label for="">Номер карты: *</label>
+                <input type="text" class="input-d1">
+                <div class="extra">
+                  <p class="no-trailer">Вводится без пробелов</p>
+                </div>
+              </div>
+              <div class="input-line">
+                <label for="">Срок действия карты: *</label>
+                <div class="d1-4 s1-2 gutter-right">
+                  <select name="" id="" class="input-d1">
+                    <option value="">01</option>
+                    <option value="">02</option>
+                  </select>
+                </div><div class="d1-4 s1-2">
+                  <select name="" id="" class="input-d1">
+                    <option value="">2012</option>
+                    <option value="">2013</option>
+                  </select>
+                </div>
+              </div>
+              <div class="input-line">
+                <label for="">CVV2 / CVC2 / CID: *</label>
+                <input type="password" class="input-d1">
+                <div class="extra">
+                  <p class="no-trailer">
+                    CVV2 / CVC2 / CID &mdash; 3 (4 - American Express)
+                  </p>
+                  <p class="no-trailer">Дополнительные цифры на внешней или обратной стороне карты.</p>
+                </div>
+                <div class="d1-4 text-center">
+                  visa
+                </div><div class="d1-4 text-center">
+                  master card
+                </div><div class="d1-4 text-center">
+                  maestro
+                </div><div class="d1-4 text-center">
+                  amex
+                </div>
+              </div>
+              
+              <h2>Дополнительная информация:</h2>
+              <div class="input-line">
+                <label for="">Ваш действующий e-mail: *</label>
+                <input type="text" class="input-d1">
+                <div class="extra">
+                  <label class="cr-label agreement-label" for="agreement">
+                    <input id="agreement" name="agreement" type="checkbox"> Отправлять уведомления об ошибках на e-mail
+                  </label>
+                </div>
+              </div>
+
+              <div class="input-line">
+                <label for="">Ваш контактный телефон</label>
+                <input type="text" class="input-d1">
+              </div>
+              
+              <div class="input-line text-center">
+                <a href="/site-payment-online" class="u-link">Назад</a>
+                <span class="space cta-br">&middot;</span>
+                <a href="#" class="u-link">Очистить</a>
+                <span class="space cta-br">&middot;</span>
+                <a href="#" class="button">Оплатить</a>
+              </div>
+            </form>
+
+            <ul class="inline-list">
+              <li>
+                Visa electron
+              </li>
+              <li>
+                Visa
+              </li>
+              <li>
+                Master card
+              </li>
+              <li>
+                Amex
+              </li>
+              <li>
+                verified by visa
+              </li>
+              <li>
+                Master card secure code
+              </li>
+            </ul>
+
+            <div class="d1-3 middle">
+              epay
+            </div><div class="d2-3 text-right middle">
+              <div class="extra no-trailer">
+                <p class="no-trailer">
+                    Безопасность транзакций гарантирует
+                    kkb
+                </p>
+              </div>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </div><div class="d1-6">
+    </div>
+</div>
+
+{% endblock %}
