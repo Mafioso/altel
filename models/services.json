@@ -5,21 +5,24 @@
       "url": "#",
       "name": "Уведомления по e-mail",
       "subtitle": "Бесплатно",
-      "cta-message": "Подключить"
+      "cta-message": "Подключить",
+      "visual": "/public/images/plans/plan-10.jpg"
     },
     {
       "active": false,
       "url": "#",
       "name": "Ежемесячная детализация вызовов по e-mail",
       "subtitle": "Бесплатно",
-      "cta-message": "Подключить"
+      "cta-message": "Подключить",
+      "visual": "/public/images/plans/plan-11.jpg"
     },
     {
       "active": false,
       "url": "/consumption-details",
       "name": "Разовая детализация",
       "subtitle": "Бесплатно",
-      "cta-message": "Отобразить"
+      "cta-message": "Отобразить",
+      "visual": "/public/images/plans/plan-9.jpg"
     }
   ]
 }

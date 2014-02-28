@@ -1,7 +1,9 @@
 .plan-title
+  // font-weight: 400
   @extend %small-heading
   color: $normal-text-color
   text-align: center
+  // padding-bottom: $baseline - 2px
   .active &
     color: $accent-color
   .epic-plan &
@@ -15,8 +17,9 @@
   .epic-plan &
     @extend %gutter
 .plan-subtitle
-  color: $secondary-text-color
+  color: $normal-text-color
   text-align: center
+  // padding-top: $baseline
   padding-bottom: $baseline
   .epic-plan &
     @extend %small-heading
@@ -63,6 +66,25 @@
   height: 12em
   @include background-size(contain)
   background-position: 0 50%
+
+.epic-plan-visual
+  margin: -1*$gutter -1*$gutter 0
+  padding: 2*$gutter
+  position: relative
+  height: 24em
+  @include background-size(cover)
+  background-position: 50% 50%
+  background-repeat: no-repeat
+
+  .box-footer
+    color: $normal-text-color
+    border: none
+    @extend %box-content-setup
+    top: auto
+  @include bp-medium
+    height: auto
+    .box-footer
+      position: relative
 
 .plan-description
   text-align: center
@@ -137,3 +159,8 @@
   @include bp-small
     padding: ($baseline - 1px)
     @include font($small-text, $small-line)
+
+.planbox
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: 50% 50%
