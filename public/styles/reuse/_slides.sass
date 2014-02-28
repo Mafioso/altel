@@ -134,3 +134,27 @@
     @include transform(scale(1))
   100%
     @include transform(scale(1.05))
+
+.slide-indicators
+  position: absolute
+  width: 100%
+  bottom: 0
+  z-index: 200
+  @include scut-list-unstyled
+  text-align: center
+  padding-bottom: $gutter
+  > li
+    display: inline-block
+    padding: $baseline
+    vertical-align: middle
+    &:hover
+      cursor: pointer
+.s-circle
+  display: block
+  border-radius: 50%
+  width: .8em
+  height: .8em
+  background-color: $box-bg-color
+  opacity: .2
+  .active &
+    opacity: 1

@@ -17,6 +17,11 @@
             {% endif %}
           {% endfor %}
         </div>
+        <ul class="slide-indicators">
+        {% for slide in model.slides %}<li class="{% if slide.default %}active{% endif %}" data-target="#carousel" data-slide-to="{{ forloop.index0 }}">
+            <span class="s-circle"></span>
+          </li>{% endfor %}
+        </ul>
       </div>
     </div>
   </div>
