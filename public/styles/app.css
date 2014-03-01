@@ -4050,3 +4050,12 @@ a.box {
   /* line 12, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_site-payment-online.sass */
   .provider-list-item.active, .provider-list-item:hover {
     opacity: 1; }
+
+/* line 1, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_migration.sass */
+.transfer-image {
+  height: 6em;
+  text-align: center;
+  padding-bottom: 12px; }
+  /* line 5, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_migration.sass */
+  .transfer-image img {
+    max-height: 100%; }
