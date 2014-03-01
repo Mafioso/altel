@@ -77,6 +77,12 @@ a.box
     @include transition-duration(.12s)
     @include animation(none)
 
+.planbox-icon
+  padding: $gutter
+
+.ratio-box .planbox-icon
+  @extend %box-content-setup
+
 .box-redeem
   background-position: 50% 33%
 
