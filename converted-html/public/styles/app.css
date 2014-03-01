@@ -1221,6 +1221,7 @@ select {
   line-height: inherit;
   padding: 9px 24px;
   width: auto;
+  border: none;
   border-radius: 3px;
   text-decoration: none;
   cursor: pointer;
@@ -1232,60 +1233,60 @@ select {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
-  /* line 261, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+  /* line 262, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
   .button small, button small, input[type="submit"] small, .invisible-button small, .post-links .button small, .back-button small {
     display: block;
     text-transform: none; }
-  /* line 265, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+  /* line 266, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
   .button:hover, button:hover, input[type="submit"]:hover, .invisible-button:hover, .back-button:hover {
     color: white;
     background-color: #ed0088; }
 
-/* line 273, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 274, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .post-links .button {
   padding: 6px 12px; }
 
-/* line 277, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 278, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .invisible-button {
   color: inherit;
   background-color: transparent;
   border-radius: 0; }
-  /* line 281, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+  /* line 282, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
   .invisible-button:hover, .invisible-button:active {
     color: inherit;
     background-color: transparent; }
 
-/* line 320, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 321, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .input-d1 {
   width: 100%; }
 
-/* line 322, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 323, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .input-d2-3 {
   width: 66%; }
 
-/* line 324, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 325, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .input-d1-2 {
   width: 50%; }
 
-/* line 326, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 327, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .input-d1-3 {
   width: 33%; }
 
-/* line 328, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 329, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .input-d1-4 {
   width: 25%; }
 
-/* line 331, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 332, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .extra {
   color: #a5acb0;
   padding: 3px; }
 
-/* line 336, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 337, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .input-line {
   position: relative;
   padding-bottom: 18px; }
 
-/* line 340, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 341, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .select-container {
   padding: 6px 0; }
 
@@ -2645,7 +2646,7 @@ footer {
   transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95); }
 
 /* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
-.box-background, .ratio-box .box-content, .ratio-box .box-footer, .epic-plan-visual .box-footer {
+.box-background, .ratio-box .box-content, .planbox-icon, .ratio-box .box-footer, .epic-plan-visual .box-footer {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2740,136 +2741,140 @@ a.box {
     animation: none; }
 
 /* line 80, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+.planbox-icon {
+  padding: 12px; }
+
+/* line 84, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .box-redeem {
   background-position: 50% 33%; }
 
-/* line 84, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 88, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-box .box-footer {
   top: auto; }
 
-/* line 88, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 92, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-box:before {
   content: "";
   display: block;
   padding-top: 100%; }
 
 @-webkit-keyframes box-hover {
-  /* line 94, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 98, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   50% {
     -webkit-transform: translateY(-3px); }
 
-  /* line 96, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 100, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   100% {
     -webkit-transform: translateY(-6px); } }
 
 @-moz-keyframes box-hover {
-  /* line 94, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 98, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   50% {
     -moz-transform: translateY(-3px); }
 
-  /* line 96, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 100, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   100% {
     -moz-transform: translateY(-6px); } }
 
 @keyframes box-hover {
-  /* line 94, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 98, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   50% {
     transform: translateY(-3px); }
 
-  /* line 96, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 100, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   100% {
     transform: translateY(-6px); } }
 
-/* line 100, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 104, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-1-2:before {
   padding-top: 200%; }
 
-/* line 102, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 106, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-2-1:before {
   padding-top: 50%; }
 
-/* line 104, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 108, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-2-3:before {
   padding-top: 150%; }
 
-/* line 106, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 110, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-3-2:before {
   padding-top: 66.66667%; }
 
-/* line 108, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 112, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-3-4:before {
   padding-top: 133.33333%; }
 
-/* line 110, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 114, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-4-3:before {
   padding-top: 75%; }
 
-/* line 112, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 116, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-3-1:before {
   padding-top: 33.33333%; }
 
-/* line 114, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 118, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-4-1:before {
   padding-top: 25%; }
 
-/* line 116, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 120, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-8-1:before {
   padding-top: 12.5%; }
 
-/* line 118, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 122, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-8-9:before {
   padding-top: 112.5%; }
 
-/* line 120, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+/* line 124, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
 .ratio-8-3:before {
   padding-top: 37.5%; }
 
 @media only screen and (max-width: 72em) {
-  /* line 124, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 128, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .l-ratio-2-1:before {
     padding-top: 50%; }
 
-  /* line 126, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 130, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .l-ratio-2-3:before {
     padding-top: 150%; }
 
-  /* line 128, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 132, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .l-ratio-3-1:before {
     padding-top: 33.33333%; }
 
-  /* line 130, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 134, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .l-ratio-1:before {
     padding-top: 100%; } }
 @media only screen and (max-width: 60em) {
-  /* line 134, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 138, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .m-ratio-1:before {
     padding-top: 100%; }
 
-  /* line 136, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 140, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .m-ratio-3-4:before {
     padding-top: 133.33333%; }
 
-  /* line 138, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 142, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .m-ratio-4-3:before {
     padding-top: 75%; }
 
-  /* line 140, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 144, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .m-ratio-2-1:before {
     padding-top: 50%; }
 
-  /* line 142, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 146, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .m-ratio-1-2:before {
     padding-top: 200%; } }
 @media only screen and (max-width: 36em) {
-  /* line 146, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 150, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .s-ratio-1:before {
     padding-top: 100%; }
 
-  /* line 148, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 152, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .s-ratio-1-2:before {
     padding-top: 200%; }
 
-  /* line 150, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
+  /* line 154, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_box.sass */
   .s-ratio-2-1:before {
     padding-top: 50%; } }
 /* line 1, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_slides.sass */
@@ -3096,9 +3101,6 @@ a.box {
   /* line 7, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .active .plan-title {
     color: #ed0088; }
-  /* line 9, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
-  .epic-plan .plan-title {
-    text-align: left; }
 
 /* line 13, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .title {
@@ -3110,9 +3112,6 @@ a.box {
   color: #56565c;
   text-align: center;
   padding-bottom: 6px; }
-  /* line 24, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
-  .epic-plan .plan-subtitle {
-    text-align: left; }
 
 /* line 29, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .connection-howto {
@@ -3128,155 +3127,161 @@ a.box {
   /* line 44, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .epic-plan .plan-benefits {
     text-align: left;
-    border-top: 1px solid #f0f0f0;
-    padding: 35px 12px 36px; }
+    color: #56565c;
+    padding: 36px 12px 36px; }
 
-/* line 50, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 51, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-cta-container {
   text-align: center;
   padding: 18px 12px 24px; }
-  /* line 53, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 54, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .plan-cta-container .button {
     padding: 9px 24px; }
   @media only screen and (max-width: 36em) {
-    /* line 50, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+    /* line 51, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
     .plan-cta-container {
       padding-bottom: 18px; } }
 
 @media only screen and (max-width: 36em) {
-  /* line 58, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 59, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .cta-br {
     display: block !important;
     width: 100% !important; } }
 
-/* line 65, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 66, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .epic-plan-graphics {
   height: 12em;
   background-size: contain;
   background-position: 0 50%; }
 
-/* line 70, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 71, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+.epic-plan .planbox-icon {
+  background-position: 50% 40%;
+  background-size: auto 40%; }
+
+/* line 75, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .epic-plan-visual {
   margin: -12px -12px 0;
   padding: 24px;
   position: relative;
-  height: 24em;
+  min-height: 24em;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat; }
-  /* line 79, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 84, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .epic-plan-visual .box-footer {
     color: #56565c;
     border: none;
     top: auto; }
   @media only screen and (max-width: 60em) {
-    /* line 70, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+    /* line 75, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
     .epic-plan-visual {
       height: auto; }
-      /* line 86, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+      /* line 91, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
       .epic-plan-visual .box-footer {
         position: relative; } }
 
-/* line 89, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 94, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-description {
   text-align: center;
   padding-top: 23px;
   border-top: 1px solid #f0f0f0; }
 
-/* line 94, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 99, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .cta-table {
   text-align: left;
   width: 75%;
   margin: auto;
   background-color: #f0f0f0;
   border-radius: 2px; }
-  /* line 101, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 106, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .cta-table td {
     padding: 18px 6px 18px; }
-  /* line 103, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 108, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .cta-table p {
     padding: 0; }
   @media only screen and (max-width: 72em) {
-    /* line 94, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+    /* line 99, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
     .cta-table {
       width: 100%; } }
 
-/* line 108, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 113, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-table, .common-table {
   text-align: left;
   border-top: 1px solid #f0f0f0;
   margin-bottom: 24px; }
-  /* line 113, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 118, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .plan-table ul, .common-table ul {
     padding-bottom: 0; }
-  /* line 115, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 120, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .plan-table td, .common-table td {
     padding: 6px; }
 
-/* line 117, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 122, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-table-title, .common-table-title {
   padding: 11px 6px 12px;
   text-align: left; }
 
-/* line 120, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 125, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .common-table-title {
   padding: 12px 6px; }
 
-/* line 122, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 127, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .common-table {
   border-top: none; }
   @media only screen and (max-width: 36em) {
-    /* line 122, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+    /* line 127, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
     .common-table {
       font-size: 12px;
       font-size: 0.75rem;
       line-height: 18px;
       line-height: 1.125rem; }
-      /* line 126, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+      /* line 131, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
       .common-table ul {
         padding-left: 0; } }
-  /* line 128, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 133, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .common-table td {
     padding: 6px 6px 5px; }
-  /* line 130, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+  /* line 135, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
   .common-table tr {
     border-bottom: 1px solid #f0f0f0; }
-    /* line 132, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+    /* line 137, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
     .common-table tr:last-child {
       border-bottom: transparent; }
 
-/* line 135, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 140, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-table-a {
   padding: 6px;
   width: 75%; }
 
-/* line 138, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 143, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-table-b {
   width: 25%;
   text-align: right; }
 
-/* line 141, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 146, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .footnotes {
   text-align: left;
   color: #a5acb0;
   padding: 12px; }
 
-/* line 146, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 151, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .footnote {
   position: relative;
   padding-left: 12px; }
 
-/* line 150, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 155, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .phone-command {
   font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
   display: block;
-  border: 1px solid #f0f0f0;
+  border: 2px solid #ed0088;
   border-radius: 2px;
-  padding: 11px;
+  padding: 10px;
   margin-bottom: 6px;
+  background-color: rgba(255, 255, 255, 0.8);
   font-weight: bold; }
   @media only screen and (max-width: 36em) {
-    /* line 150, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+    /* line 155, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
     .phone-command {
       padding: 5px;
       font-size: 14px;
@@ -3284,7 +3289,7 @@ a.box {
       line-height: 18px;
       line-height: 1.125rem; } }
 
-/* line 163, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
+/* line 169, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .planbox {
   background-size: cover;
   background-repeat: no-repeat;
@@ -4050,3 +4055,12 @@ a.box {
   /* line 12, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_site-payment-online.sass */
   .provider-list-item.active, .provider-list-item:hover {
     opacity: 1; }
+
+/* line 1, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_migration.sass */
+.transfer-image {
+  height: 6em;
+  text-align: center;
+  padding-bottom: 12px; }
+  /* line 5, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/special/_migration.sass */
+  .transfer-image img {
+    max-height: 100%; }
