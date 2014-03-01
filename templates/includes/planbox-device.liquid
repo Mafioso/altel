@@ -1,0 +1,20 @@
+<a href="{{ planbox-device.url }}" class="box ratio-box ratio-2-3 m-ratio-3-4">
+  <div class="box-background"></div>
+  <div class="box-content planbox" style="background-image: url({{ planbox-device.visual }});">
+
+   
+    <h2 class="plan-title">
+      {{ planbox-device.name }}
+    </h2>
+    <p class="plan-subtitle">
+      {{ planbox-device.subtitle }}
+    </p>
+    <div class="fluffy text-center">
+      {{ "240x180" | placeholder:'FF6600','000000' | image_tag }}
+    </div>
+    <div class="box-footer plan-cta-container">
+      <div href="#" class="button">Подробнее</div>
+    </div>
+
+  </div>
+</a>
