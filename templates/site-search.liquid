@@ -1,0 +1,42 @@
+{% block content %}
+
+<div class="gutter">
+  <h1>Поиск</h1>
+  <div class="d1-6 m1">
+    <section class="side-navigation-meta">
+      <a href="/" class="back-button">Главная</a>
+    </section>
+  </div><div class="d2-3 m1">
+    
+    <div class="readable">
+      <form action="">
+        <div class="input-line">
+          <label for="">Поисковый запрос</label>
+          <input type="text" class="input-d1">
+        </div>
+      </form>
+    </div>
+    {% for post in (1..4) %}
+      <div class="box">
+        <div class="box-content">
+          <article class="post-preview">
+            <header class="post-header">
+              <h2>Found in somewhere</h2>
+            </header>
+            <section class="post-excerpt">
+              <p>
+                Excerpt
+              </p>
+            </section>
+            <footer class="post-links">
+              <a class="button" href="/site-special-list-item">Go to result</a>
+            </footer>
+          </article>
+        </div>
+      </div>
+    {% endfor %}
+    {% include "pagination" %}
+  </div>
+</div>
+
+{% endblock %}

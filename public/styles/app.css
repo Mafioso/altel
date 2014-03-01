@@ -1221,6 +1221,7 @@ select {
   line-height: inherit;
   padding: 9px 24px;
   width: auto;
+  border: none;
   border-radius: 3px;
   text-decoration: none;
   cursor: pointer;
@@ -1232,60 +1233,60 @@ select {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
-  /* line 261, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+  /* line 262, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
   .button small, button small, input[type="submit"] small, .invisible-button small, .post-links .button small, .back-button small {
     display: block;
     text-transform: none; }
-  /* line 265, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+  /* line 266, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
   .button:hover, button:hover, input[type="submit"]:hover, .invisible-button:hover, .back-button:hover {
     color: white;
     background-color: #ed0088; }
 
-/* line 273, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 274, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .post-links .button {
   padding: 6px 12px; }
 
-/* line 277, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 278, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .invisible-button {
   color: inherit;
   background-color: transparent;
   border-radius: 0; }
-  /* line 281, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+  /* line 282, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
   .invisible-button:hover, .invisible-button:active {
     color: inherit;
     background-color: transparent; }
 
-/* line 320, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 321, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .input-d1 {
   width: 100%; }
 
-/* line 322, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 323, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .input-d2-3 {
   width: 66%; }
 
-/* line 324, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 325, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .input-d1-2 {
   width: 50%; }
 
-/* line 326, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 327, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .input-d1-3 {
   width: 33%; }
 
-/* line 328, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 329, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .input-d1-4 {
   width: 25%; }
 
-/* line 331, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 332, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .extra {
   color: #a5acb0;
   padding: 3px; }
 
-/* line 336, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 337, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .input-line {
   position: relative;
   padding-bottom: 18px; }
 
-/* line 340, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
+/* line 341, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/base/_form.sass */
 .select-container {
   padding: 6px 0; }
 
