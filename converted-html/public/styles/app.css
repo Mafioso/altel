@@ -3176,10 +3176,7 @@ a.box {
   @media only screen and (max-width: 60em) {
     /* line 75, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
     .epic-plan-visual {
-      height: auto; }
-      /* line 91, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
-      .epic-plan-visual .box-footer {
-        position: relative; } }
+      height: auto; } }
 
 /* line 94, /Users/Vadim/Desktop/Altel GSM and LTE/altel/public/styles/reuse/_plan.sass */
 .plan-description {

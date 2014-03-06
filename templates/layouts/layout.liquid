@@ -10,7 +10,7 @@
   <!-- TODO: Place favicon.ico and apple-touch-icons in the root directory -->
   {{ "app.css" | asset_url | stylesheet_tag }}
   {{ "modernizr.min.js" | asset_url | script_tag }}
-  <script data-main="/public/scripts/app" src="/public/scripts/require.min.js"></script>
+  <!-- <script data-main="/public/scripts/app" src="/public/scripts/require.min.js"></script> -->
 </head>
 <body class="{% block body-class %}{% endblock %}">
   <!--[if lt IE 8]>
@@ -35,6 +35,9 @@
       </div>
     </div>
   </div>
-
+  
+  {{ "jquery.min.js" | asset_url |script_tag }}
+  {{ "bootstrap.min.js" | asset_url |script_tag }}
+  {{ "simple.js" | asset_url |script_tag }}
 </body>
 </html>
