@@ -72,9 +72,9 @@
   background-position: 50% 40%
   @include background-size(auto 40%)
 
+
+
 .epic-plan-visual
-  margin: -1*$gutter -1*$gutter 0
-  padding: 2*$gutter
   position: relative
   min-height: 24em
   @include background-size(cover)
@@ -166,7 +166,22 @@
     padding: ($baseline - 1px)
     @include font($small-text, $small-line)
 
-.planbox
+.planbox,
+.epic-plan-visual-hover
   background-size: cover
   background-repeat: no-repeat
   background-position: 50% 50%
+
+.epic-plan-visual-container
+  position: relative
+  overflow: hidden
+  margin: -1*$gutter -1*$gutter 0
+  // padding: 2*$gutter
+
+.epic-plan-visual-hover
+  @extend %box-animation-setup
+  @extend %box-content-setup
+  @include transition-property(opacity)
+  opacity: 0
+  .box:hover &
+    opacity: 1
