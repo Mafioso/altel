@@ -1559,7 +1559,7 @@ body {
 
 /* line 102, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_navigation.sass */
 .lang-switcher .active {
-  font-weight: 600; }
+  font-weight: bold; }
 
 /* line 106, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_navigation.sass */
 .nav-level-0 .nav-button {
