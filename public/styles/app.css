@@ -3130,10 +3130,6 @@ a.box {
   /* line 7, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
   .active .plan-title {
     color: #ed0088; }
-  /* line 13, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
-  .planbox .plan-title {
-    color: white;
-    font-weight: bold; }
   /* line 16, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
   .box:hover .epic-plan-visual-container .plan-title {
     color: white; }
@@ -3148,8 +3144,8 @@ a.box {
   color: #56565c;
   text-align: center;
   padding-bottom: 6px; }
-  /* line 33, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
-  .planbox .plan-subtitle, .box:hover .epic-plan-visual-container .plan-subtitle {
+  /* line 34, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+  .box:hover .epic-plan-visual-container .plan-subtitle {
     color: white; }
 
 /* line 37, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
@@ -3160,13 +3156,16 @@ a.box {
 .plan-benefits {
   text-align: center;
   color: #a5acb0; }
+  /* line 50, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+  .box:hover .plan-benefits {
+    color: #56565c; }
   /* line 52, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
   .epic-plan .plan-benefits {
     text-align: left;
     color: #56565c;
     padding: 36px 12px 36px; }
-  /* line 58, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
-  .planbox .plan-benefits, .box:hover .epic-plan-visual-container .plan-benefits {
+  /* line 59, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+  .box:hover .epic-plan-visual-container .plan-benefits {
     color: white; }
 
 /* line 62, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
@@ -3788,6 +3787,14 @@ a.box {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0; }
+
+/* line 40, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_utils.sass */
+.one-liner {
+  width: 100%;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 /* line 4, /Users/Vadim/Documents/work-altel/altel/public/styles/special/_dashboard.sass */
 .account-title-container {

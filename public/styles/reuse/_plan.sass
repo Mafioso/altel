@@ -10,9 +10,9 @@
     @extend %normal-heading
     // text-align: left
     @extend %gutter
-  .planbox &
-    color: white
-    font-weight: bold
+  // .planbox &
+  //   color: white
+  //   font-weight: bold
   .box:hover .epic-plan-visual-container &
     color: white
 .title
@@ -30,7 +30,7 @@
     @extend %small-heading
     // text-align: left
     @extend %gutter
-  .planbox &,
+  // .planbox &,
   .box:hover .epic-plan-visual-container &
     color: white
 
@@ -47,15 +47,15 @@
   @extend %animation-hack
   // @include transition(color .25s ease-in-out)
   color: $secondary-text-color
-  // .box:hover &
-  //   color: $normal-text-color
+  .box:hover &
+    color: $normal-text-color
   .epic-plan &
     @extend %normal-text
     text-align: left
     color: $normal-text-color
     // border-top: 1px solid $bg-color
     padding: ($normal-heading-line) $gutter $normal-heading-line
-  .planbox &,
+  // .planbox &,
   .box:hover .epic-plan-visual-container &
     color: white
 
