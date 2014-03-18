@@ -6,7 +6,7 @@
   <title>{% block title %}Altel{% endblock %}</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- TODO: Place favicon.ico and apple-touch-icons in the root directory -->
   {{ "app.css" | asset_url | stylesheet_tag }}
   {{ "modernizr.min.js" | asset_url | script_tag }}
@@ -19,7 +19,7 @@
   <div class="modal-overlay"></div>
   {% block modal %}{% endblock %}
   {% include "support-modal" %}
-  
+
   {% include "nav-drawer" %}
 
   <div class="adventure-time">
@@ -35,7 +35,7 @@
       </div>
     </div>
   </div>
-  
+
   {{ "jquery.min.js" | asset_url |script_tag }}
   {{ "bootstrap.min.js" | asset_url |script_tag }}
   {{ "simple.js" | asset_url |script_tag }}
