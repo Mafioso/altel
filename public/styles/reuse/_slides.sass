@@ -34,7 +34,8 @@
 .slide-visual,
 .slide-heading,
 .slide-product,
-.slide-cta
+.slide-cta,
+.slide-heading .extra
   @extend %animation-hack
   @include transition-property(transform, opacity)
   @include transition-duration(.8s)
@@ -55,8 +56,8 @@
     text-align: right
   .item-type-left &
     text-align: left
-  .item-type-left &, 
-  .item-type-center &, 
+  .item-type-left &,
+  .item-type-center &,
   .item-type-right &
     @include bp-medium
       text-align: center
@@ -73,7 +74,6 @@
     position: relative
     display: block
     width: 1272px
-
     @include bp-medium
       position: absolute
       top: 50%
@@ -87,12 +87,29 @@
     @include animation(hollywood 6s ease-out)
   @include bp-medium
     @include background-size(auto 100%)
+  .style-b &
+    @include transform(translateX(100%))
+  .active.style-b &
+    @include animation(none)
+    @include transform(translateX(0))
 
 .slide-product
-  display: none
-  // @include transform(translateY(100%))
+  opacity: 0
+  @include transform(translateY(100%))
+  img
+    display: block
+    margin: auto
+    @include bp-medium
+      position: absolute
+      top: 50%
+      width: auto
+      @include transform(translateY(-50%) scale(2))
   .active &
-    // @include transform(translateY(0))
+    opacity: 1
+    @include transform(translateY(0))
+    @include transition-duration(.2s)
+    @include transition-delay(.6s)
+    @include transition-timing-function(ease-in-out)
 
 .slide-heading
   padding: 0 0 $gutter
@@ -106,11 +123,21 @@
   .active &
     opacity: 1
     // @include transform(translateX(0))
+  .style-b &
+    @include transform(translateX(-100%))
+  .active.style-b &
+    @include transform(translateX(0))
+    @include transition-delay(.1s)
   .extra
     @extend %small-heading
     text-transform: none
     display: block
-  
+    .style-b &
+      @include transform(translateX(-100%))
+    .active.style-b &
+      @include transform(translateX(0))
+      @include transition-delay(.2s)
+
 .slide-cta
   opacity: 0
   // @include transition-delay(.4s)
@@ -119,10 +146,11 @@
   .active &
     // @include transform(translateX(0))
     opacity: 1
-
-.slide-product
-  text-align: center
-  padding-top: 24px
+  .style-b &
+    @include transform(translateX(-100%))
+  .active.style-b &
+    @include transform(translateX(0))
+    @include transition-delay(.3s)
 
 .slide-heading,
 .slide-message,
@@ -134,6 +162,22 @@
     @include transform(scale(1))
   100%
     @include transform(scale(1.05))
+
+@include keyframes(visual-slide-in)
+  0%
+    @include transform(translateX(100%))
+    opacity: 0
+  100%
+    @include transform(translateX(0%))
+    opacity: 1
+@include keyframes(product-slide-in)
+@include keyframes(message-slide-in)
+  0%
+    @include transform(translateX(-9999px))
+    opacity: 0
+  100%
+    @include transform(translateX(0))
+    opacity: 1
 
 .slide-indicators
   position: absolute

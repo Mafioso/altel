@@ -3,9 +3,10 @@
     {
       "default": true,
       "id": "slide-1",
-      "pre-visual": "/public/images/slides/pre-slide-a.jpg",
-      "visual": "/public/images/slides/slide-a.jpg",
-      "type": "center"
+      "pre-visual": "/public/images/slides/pre-slide-template-1.jpg",
+      "visual": "/public/images/slides/slide-template-1.jpg",
+      "product": "/public/images/slide-products/slide-product-1.png",
+      "type": "style-b"
     },
     {
       "default": false,

@@ -1,7 +1,12 @@
-<div id="{{ carousel-item-left.id }}" class="item {% if carousel-item-left.default %}active{% endif %} item-type-left">
-<div class="slide-visual" style="background-image: url('{{ carousel-item-left.pre-visual }}');">
-    <img src="{{ carousel-item-left.visual }}" alt="Carouse item title">
+<div id="{{ carousel-item-left.id }}" class="item {% if carousel-item-left.default %}active{% endif %} {% if carousel-item-left.type == 'style-b' %}style-b{% endif %} item-type-left">
+  <div class="slide-visual" style="background-image: url('{{ carousel-item-left.pre-visual }}');">
+    <img src="{{ carousel-item-left.visual }}" alt="Carousel item title">
   </div>
+  {% if carousel-item-left.type == 'style-b' %}
+  <div class="slide-product">
+    <img src="{{ carousel-item-left.product }}" alt="Product title">
+  </div>
+  {% endif %}
   <div class="slide-message">
     <h1 class="slide-heading">
       Default<br>phrase
