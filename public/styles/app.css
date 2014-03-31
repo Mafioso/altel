@@ -1363,8 +1363,8 @@ body {
 .sticky-wrap {
   border-top: 3px solid #ed0088;
   min-height: 100%;
-  margin-bottom: -78px;
-  margin-bottom: -4.875rem; }
+  margin-bottom: -96px;
+  margin-bottom: -6rem; }
   /* line 41, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_base.sass */
   .sticky-wrap:after {
     content: "";
@@ -1373,8 +1373,8 @@ body {
 /* line 44, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_base.sass */
 .sticky-wrap:after,
 .sticky-footer {
-  height: 78px;
-  height: 4.875rem; }
+  height: 96px;
+  height: 6rem; }
 
 /* line 49, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_base.sass */
 .sticky-footer {
@@ -1477,12 +1477,6 @@ body {
   .nav-button:hover,
   .nav-link:hover {
     color: inherit; }
-
-/* line 16, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_navigation.sass */
-.nav-button {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis; }
 
 /* line 21, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_navigation.sass */
 .nav-link {
