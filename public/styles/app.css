@@ -2116,13 +2116,13 @@ footer {
         background-image: url(/public/images/icons/icon-vkontakte@2x.png); } }
 
 /* line 1, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
-.box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs {
+.box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs, .box-icon-exchange, .box-icon-old-phone, .box-icon-altel, .box-icon-settings, .box-icon-unlock, .box-icon-block, .box-icon-missed-call {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto 40%; }
   @media only screen and (max-width: 60em) {
     /* line 1, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
-    .box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs {
+    .box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs, .box-icon-exchange, .box-icon-old-phone, .box-icon-altel, .box-icon-settings, .box-icon-unlock, .box-icon-block, .box-icon-missed-call {
       background-size: auto 50%;
       background-position: 100% 100%; } }
 
@@ -2846,13 +2846,181 @@ footer {
   .box-icon-docs:after {
     content: ""; }
 
-/* line 58, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+/* line 10, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-exchange {
+  background-image: url(/public/images/icons/box-icon-exchange.svg); }
+  /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-exchange {
+    background-image: url(/public/images/icons/box-icon-exchange.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-exchange {
+        background-image: url(/public/images/icons/box-icon-exchange@2x.png); } }
+  /* line 13, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+  .box-icon-exchange:after, .box:hover .box-icon-exchange {
+    background-image: url(/public/images/icons/box-icon-exchange-hover.svg); }
+    /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+    .no-svg .box-icon-exchange:after, .no-svg .box:hover .box-icon-exchange {
+      background-image: url(/public/images/icons/box-icon-exchange-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+        .no-svg .box-icon-exchange:after, .no-svg .box:hover .box-icon-exchange {
+          background-image: url(/public/images/icons/box-icon-exchange-hover@2x.png); } }
+  /* line 16, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+  .box-icon-exchange:after {
+    content: ""; }
+
+/* line 10, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-old-phone {
+  background-image: url(/public/images/icons/box-icon-old-phone.svg); }
+  /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-old-phone {
+    background-image: url(/public/images/icons/box-icon-old-phone.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-old-phone {
+        background-image: url(/public/images/icons/box-icon-old-phone@2x.png); } }
+  /* line 13, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+  .box-icon-old-phone:after, .box:hover .box-icon-old-phone {
+    background-image: url(/public/images/icons/box-icon-old-phone-hover.svg); }
+    /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+    .no-svg .box-icon-old-phone:after, .no-svg .box:hover .box-icon-old-phone {
+      background-image: url(/public/images/icons/box-icon-old-phone-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+        .no-svg .box-icon-old-phone:after, .no-svg .box:hover .box-icon-old-phone {
+          background-image: url(/public/images/icons/box-icon-old-phone-hover@2x.png); } }
+  /* line 16, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+  .box-icon-old-phone:after {
+    content: ""; }
+
+/* line 10, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-altel {
+  background-image: url(/public/images/icons/box-icon-altel.svg); }
+  /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-altel {
+    background-image: url(/public/images/icons/box-icon-altel.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-altel {
+        background-image: url(/public/images/icons/box-icon-altel@2x.png); } }
+  /* line 13, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+  .box-icon-altel:after, .box:hover .box-icon-altel {
+    background-image: url(/public/images/icons/box-icon-altel-hover.svg); }
+    /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+    .no-svg .box-icon-altel:after, .no-svg .box:hover .box-icon-altel {
+      background-image: url(/public/images/icons/box-icon-altel-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+        .no-svg .box-icon-altel:after, .no-svg .box:hover .box-icon-altel {
+          background-image: url(/public/images/icons/box-icon-altel-hover@2x.png); } }
+  /* line 16, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+  .box-icon-altel:after {
+    content: ""; }
+
+/* line 10, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-settings {
+  background-image: url(/public/images/icons/box-icon-settings.svg); }
+  /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-settings {
+    background-image: url(/public/images/icons/box-icon-settings.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-settings {
+        background-image: url(/public/images/icons/box-icon-settings@2x.png); } }
+  /* line 13, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+  .box-icon-settings:after, .box:hover .box-icon-settings {
+    background-image: url(/public/images/icons/box-icon-settings-hover.svg); }
+    /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+    .no-svg .box-icon-settings:after, .no-svg .box:hover .box-icon-settings {
+      background-image: url(/public/images/icons/box-icon-settings-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+        .no-svg .box-icon-settings:after, .no-svg .box:hover .box-icon-settings {
+          background-image: url(/public/images/icons/box-icon-settings-hover@2x.png); } }
+  /* line 16, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+  .box-icon-settings:after {
+    content: ""; }
+
+/* line 10, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-unlock {
+  background-image: url(/public/images/icons/box-icon-unlock.svg); }
+  /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-unlock {
+    background-image: url(/public/images/icons/box-icon-unlock.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-unlock {
+        background-image: url(/public/images/icons/box-icon-unlock@2x.png); } }
+  /* line 13, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+  .box-icon-unlock:after, .box:hover .box-icon-unlock {
+    background-image: url(/public/images/icons/box-icon-unlock-hover.svg); }
+    /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+    .no-svg .box-icon-unlock:after, .no-svg .box:hover .box-icon-unlock {
+      background-image: url(/public/images/icons/box-icon-unlock-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+        .no-svg .box-icon-unlock:after, .no-svg .box:hover .box-icon-unlock {
+          background-image: url(/public/images/icons/box-icon-unlock-hover@2x.png); } }
+  /* line 16, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+  .box-icon-unlock:after {
+    content: ""; }
+
+/* line 10, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-block {
+  background-image: url(/public/images/icons/box-icon-block.svg); }
+  /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-block {
+    background-image: url(/public/images/icons/box-icon-block.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-block {
+        background-image: url(/public/images/icons/box-icon-block@2x.png); } }
+  /* line 13, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+  .box-icon-block:after, .box:hover .box-icon-block {
+    background-image: url(/public/images/icons/box-icon-block-hover.svg); }
+    /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+    .no-svg .box-icon-block:after, .no-svg .box:hover .box-icon-block {
+      background-image: url(/public/images/icons/box-icon-block-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+        .no-svg .box-icon-block:after, .no-svg .box:hover .box-icon-block {
+          background-image: url(/public/images/icons/box-icon-block-hover@2x.png); } }
+  /* line 16, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+  .box-icon-block:after {
+    content: ""; }
+
+/* line 10, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-missed-call {
+  background-image: url(/public/images/icons/box-icon-missed-call.svg); }
+  /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-missed-call {
+    background-image: url(/public/images/icons/box-icon-missed-call.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-missed-call {
+        background-image: url(/public/images/icons/box-icon-missed-call@2x.png); } }
+  /* line 13, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+  .box-icon-missed-call:after, .box:hover .box-icon-missed-call {
+    background-image: url(/public/images/icons/box-icon-missed-call-hover.svg); }
+    /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+    .no-svg .box-icon-missed-call:after, .no-svg .box:hover .box-icon-missed-call {
+      background-image: url(/public/images/icons/box-icon-missed-call-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+        .no-svg .box-icon-missed-call:after, .no-svg .box:hover .box-icon-missed-call {
+          background-image: url(/public/images/icons/box-icon-missed-call-hover@2x.png); } }
+  /* line 16, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+  .box-icon-missed-call:after {
+    content: ""; }
+
+/* line 65, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
 .plan-icon-gsm,
 .plan-icon-lte {
   background-position: 50% 30%;
   background-size: auto 20%; }
   @media only screen and (max-width: 36em) {
-    /* line 58, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+    /* line 65, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
     .plan-icon-gsm,
     .plan-icon-lte {
       background-size: auto 30%; } }
@@ -4111,6 +4279,14 @@ a.box:hover .button {
     /* line 11, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_notification.sass */
     .notification a:hover {
       color: white; }
+
+/* line 1, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_cover.sass */
+.cover {
+  overflow: hidden;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-clip: padding-box; }
 
 /* line 1, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_utils.sass */
 .text-left {
