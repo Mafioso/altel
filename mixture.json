@@ -12,7 +12,8 @@
   "projectName": "Altel",
   "publishedId": "11526",
   "sass": {
-    "precision": 14
+    "precision": 14,
+    "useLibSass": false
   },
   "serverHostname": null,
   "serverPort": null,

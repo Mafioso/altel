@@ -24,14 +24,15 @@ body
   @include transition-duration(.3s)
   @include transition-timing-function(ease-in-out)
   position: absolute
-  overflow: auto
-  -webkit-overflow-scrolling: touch
   top: 0
+  -webkit-overflow-scrolling: touch
   left: 0
+  z-index: 100
   width: 100%
   height: 100%
+  // background-color: $secondary-text-color
   background-color: $bg-color
-  z-index: 100
+  overflow: auto
 
 .sticky-wrap
   border-top: 3px solid $accent-color

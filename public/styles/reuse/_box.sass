@@ -23,7 +23,7 @@
     @include font($small-text, $small-line)
 a.box
   color: $secondary-text-color
-  
+
   // .button
   //   padding: (9px - 2px) (2*$gutter - 2px)
   //   width: auto
@@ -88,6 +88,11 @@ a.box
   .ratio-box &
     @extend %box-content-setup
     top: auto
+  .button
+    background-color: $secondary-text-color
+a.box:hover
+  .button
+    background-color: $accent-color
 
 .ratio-box:before
   content: ""
