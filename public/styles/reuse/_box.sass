@@ -67,6 +67,8 @@ a.box
   a.box:hover &,
   .active &
     @include transform(translateY(-6px))
+  .animated-box &
+    @include animation(none)
   .animated-box:hover &,
   .animated-box.active &
     @include animation(box-hover 1.6s $ease-in-out-sine infinite)
@@ -89,9 +91,11 @@ a.box
     @extend %box-content-setup
     top: auto
   .button
-    background-color: $secondary-text-color
+    color: $normal-text-color
+    background-color: $bg-color
 a.box:hover
   .button
+    color: white
     background-color: $accent-color
 
 .ratio-box:before
