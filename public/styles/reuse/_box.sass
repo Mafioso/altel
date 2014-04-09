@@ -67,17 +67,17 @@ a.box
   a.box:hover &,
   .active &
     @include transform(translateY(-6px))
-  .animated-box &
-    @include animation(none)
-  .animated-box:hover &,
-  .animated-box.active &
-    @include animation(box-hover 1.6s $ease-in-out-sine infinite)
-    @include animation-delay(.25s)
-    @include animation-direction(alternate)
+  // .animated-box &
+  //   @include animation(none)
+  // .animated-box:hover &,
+  // .animated-box.active &
+    // @include animation(box-hover 1.6s $ease-in-out-sine infinite)
+    // @include animation-delay(.25s)
+    // @include animation-direction(alternate)
   a.box:active &
     @include transform(translateY(-2px))
     @include transition-duration(.12s)
-    @include animation(none)
+    // @include animation(none)
 
 .planbox-icon
   padding: $gutter

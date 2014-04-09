@@ -11,8 +11,8 @@
     {
       "default": false,
       "id": "slide-2",
-      "pre-visual": "/public/images/slides/pre-slide-b.jpg",
-      "visual": "/public/images/slides/slide-b.jpg",
+      "pre-visual": "/public/images/slides/pre-slide-a.jpg",
+      "visual": "/public/images/slides/slide-a.jpg",
       "type": "left"
     },
     {
