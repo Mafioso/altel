@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="438px" height="196px" viewBox="0 0 438 196" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg px" px" viewBox="0 0 438 196" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
     <title>epic-lines</title>
     <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="epic-lines" sketch:type="MSArtboardGroup" stroke-width="2" stroke="#FFFFFF">
-            <g sketch:type="MSLayerGroup">
-                <path d="M402.258,98 L304.677,195.581 L207.097,98 L304.677,0.419" id="Path-copy" sketch:type="MSShapeGroup"></path>
-                <path d="M340.839,0.419 L438.419,98 L340.839,195.581 L243.258,98" id="Path-copy" sketch:type="MSShapeGroup"></path>
-                <path d="M223.613,0.419 L321.193,98 L223.613,195.581" id="Path-copy" sketch:type="MSShapeGroup"></path>
-                <path d="M109.58,195.581 L12,98 L109.58,0.42 L207.161,98" id="Path-copy" sketch:type="MSShapeGroup"></path>
-                <path d="M-0.032,98 L97.549,0.419" id="Path" sketch:type="MSShapeGroup"></path>
-                <path d="M49.968,98 L147.549,0.419" id="Path-copy" sketch:type="MSShapeGroup"></path>
-                <path d="M60.968,98 L158.549,0.419" id="Path-copy-2" sketch:type="MSShapeGroup"></path>
-                <path d="M195.129,98 L97.549,195.581" id="Path" sketch:type="MSShapeGroup"></path>
-                <path d="M197.516,0.419 L295.097,97.999 L197.516,195.58 L99.936,97.999" id="Path-copy" sketch:type="MSShapeGroup"></path>
-                <path d="M268.483,0.419 L366.065,98 L268.483,195.581" id="Path-copy" sketch:type="MSShapeGroup"></path>
-                <path d="M232.451,0.419 L330.032,98" id="Path" sketch:type="MSShapeGroup"></path>
-                <path d="M232.451,195.581 L134.871,98" id="Path" sketch:type="MSShapeGroup"></path>
-                <path d="M184.419,195.662 L86.839,98.081" id="Path-copy" sketch:type="MSShapeGroup"></path>
-                <path d="M256.354,0.5 L353.936,98.081 L256.354,195.662" id="Path-copy" sketch:type="MSShapeGroup"></path>
-                <path d="M340.8385,98 L438.4185,0.419" id="Path-copy" sketch:type="MSShapeGroup"></path>
-                <path d="M227.871,97.999 L130.291,195.58" id="Path-copy" sketch:type="MSShapeGroup"></path>
-                <path d="M219.2255,98 L121.6455,195.581" id="Path-copy-2" sketch:type="MSShapeGroup"></path>
+    <g id="Page-1" stroke="none" stroke- fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="epic-lines"  stroke- stroke="#FFFFFF">
+            <g >
+                <path d="M402.258,98 L304.677,195.581 L207.097,98 L304.677,0.419" id="Path-copy" ></path>
+                <path d="M340.839,0.419 L438.419,98 L340.839,195.581 L243.258,98" id="Path-copy" ></path>
+                <path d="M223.613,0.419 L321.193,98 L223.613,195.581" id="Path-copy" ></path>
+                <path d="M109.58,195.581 L12,98 L109.58,0.42 L207.161,98" id="Path-copy" ></path>
+                <path d="M-0.032,98 L97.549,0.419" id="Path" ></path>
+                <path d="M49.968,98 L147.549,0.419" id="Path-copy" ></path>
+                <path d="M60.968,98 L158.549,0.419" id="Path-copy-2" ></path>
+                <path d="M195.129,98 L97.549,195.581" id="Path" ></path>
+                <path d="M197.516,0.419 L295.097,97.999 L197.516,195.58 L99.936,97.999" id="Path-copy" ></path>
+                <path d="M268.483,0.419 L366.065,98 L268.483,195.581" id="Path-copy" ></path>
+                <path d="M232.451,0.419 L330.032,98" id="Path" ></path>
+                <path d="M232.451,195.581 L134.871,98" id="Path" ></path>
+                <path d="M184.419,195.662 L86.839,98.081" id="Path-copy" ></path>
+                <path d="M256.354,0.5 L353.936,98.081 L256.354,195.662" id="Path-copy" ></path>
+                <path d="M340.8385,98 L438.4185,0.419" id="Path-copy" ></path>
+                <path d="M227.871,97.999 L130.291,195.58" id="Path-copy" ></path>
+                <path d="M219.2255,98 L121.6455,195.581" id="Path-copy-2" ></path>
             </g>
         </g>
     </g>

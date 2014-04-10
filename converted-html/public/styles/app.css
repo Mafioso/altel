@@ -932,7 +932,7 @@ th {
   line-height: 1.125rem; }
 
 /* line 3, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_type.sass */
-sup, sub, cite, legend, .agreement-label, .counter-title, .counter-note, .navigation, .side-navigation-group-title .back-button, .connection-howto, .plan-benefits, .cta-table, .plan-table, .common-table, .post-meta, .post-links, .notification a, .account-balance-note, .bonus-balance-note, .account-additional-info, .service-subtitle {
+sup, sub, cite, legend, .agreement-label, .counter-title, .counter-note, .navigation, .side-navigation-group-title .back-button, .connection-howto, .plan-benefits, .plan-table, .cta-table, .common-table, .post-meta, .post-links, .notification a, .account-balance-note, .bonus-balance-note, .account-additional-info, .service-subtitle {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 18px;
@@ -2116,13 +2116,13 @@ footer {
         background-image: url(../images/icons/icon-vkontakte@2x.png); } }
 
 /* line 1, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
-.box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs, .box-icon-exchange, .box-icon-old-phone, .box-icon-altel, .box-icon-settings, .box-icon-unlock, .box-icon-block, .box-icon-missed-call {
+.box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs, .box-icon-exchange, .box-icon-old-phone, .box-icon-altel, .box-icon-settings, .box-icon-unlock, .box-icon-block, .box-icon-missed-call, .box-icon-aon {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto 40%; }
   @media only screen and (max-width: 60em) {
     /* line 1, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
-    .box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs, .box-icon-exchange, .box-icon-old-phone, .box-icon-altel, .box-icon-settings, .box-icon-unlock, .box-icon-block, .box-icon-missed-call {
+    .box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs, .box-icon-exchange, .box-icon-old-phone, .box-icon-altel, .box-icon-settings, .box-icon-unlock, .box-icon-block, .box-icon-missed-call, .box-icon-aon {
       background-size: auto 50%;
       background-position: 100% 100%; } }
 
@@ -3014,13 +3014,37 @@ footer {
   .box-icon-missed-call:after {
     content: ""; }
 
-/* line 65, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+/* line 10, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+.box-icon-aon {
+  background-image: url(../images/icons/box-icon-aon.svg); }
+  /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+  .no-svg .box-icon-aon {
+    background-image: url(../images/icons/box-icon-aon.png); }
+    @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+      /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+      .no-svg .box-icon-aon {
+        background-image: url(../images/icons/box-icon-aon@2x.png); } }
+  /* line 13, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+  .box-icon-aon:after, .box:hover .box-icon-aon {
+    background-image: url(../images/icons/box-icon-aon-hover.svg); }
+    /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+    .no-svg .box-icon-aon:after, .no-svg .box:hover .box-icon-aon {
+      background-image: url(../images/icons/box-icon-aon-hover.png); }
+      @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+        /* line 39, /Users/Vadim/Documents/work-altel/altel/public/styles/base/_mixins.sass */
+        .no-svg .box-icon-aon:after, .no-svg .box:hover .box-icon-aon {
+          background-image: url(../images/icons/box-icon-aon-hover@2x.png); } }
+  /* line 16, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+  .box-icon-aon:after {
+    content: ""; }
+
+/* line 66, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
 .plan-icon-gsm,
 .plan-icon-lte {
-  background-position: 50% 30%;
+  background-position: 50% 40%;
   background-size: auto 20%; }
   @media only screen and (max-width: 36em) {
-    /* line 65, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
+    /* line 66, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box-icons.sass */
     .plan-icon-gsm,
     .plan-icon-lte {
       background-size: auto 30%; } }
@@ -3107,22 +3131,6 @@ a.box {
     -ms-transform: translateY(-6px);
     -o-transform: translateY(-6px);
     transform: translateY(-6px); }
-  /* line 70, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box.sass */
-  .animated-box .box-content {
-    -webkit-animation: none;
-    -moz-animation: none;
-    animation: none; }
-  /* line 72, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box.sass */
-  .animated-box:hover .box-content, .animated-box.active .box-content {
-    -webkit-animation: box-hover 1.6s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
-    -moz-animation: box-hover 1.6s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
-    animation: box-hover 1.6s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite;
-    -webkit-animation-delay: 0.25s;
-    -moz-animation-delay: 0.25s;
-    animation-delay: 0.25s;
-    -webkit-animation-direction: alternate;
-    -moz-animation-direction: alternate;
-    animation-direction: alternate; }
   /* line 77, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box.sass */
   a.box:active .box-content {
     -webkit-transform: translateY(-2px);
@@ -3132,10 +3140,7 @@ a.box {
     transform: translateY(-2px);
     -webkit-transition-duration: 0.12s;
     -moz-transition-duration: 0.12s;
-    transition-duration: 0.12s;
-    -webkit-animation: none;
-    -moz-animation: none;
-    animation: none; }
+    transition-duration: 0.12s; }
 
 /* line 82, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_box.sass */
 .planbox-icon {
@@ -3317,7 +3322,7 @@ a.box:hover .button {
   /* line 25, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   .item.active {
     opacity: 1;
-    z-index: 1; }
+    z-index: 2; }
 
 /* line 34, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
 .slide-visual,
@@ -3363,25 +3368,27 @@ a.box:hover .button {
     .item-type-left .slide-message, .item-type-center .slide-message, .item-type-right .slide-message {
       text-align: center; } }
 
-/* line 66, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+/* line 64, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+.slide-message-body {
+  display: inline-block; }
+  /* line 67, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  .slide-message-body.background--dark {
+    color: white; }
+
+/* line 70, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
 .slide-visual {
   text-align: center;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05);
   background-size: cover; }
-  /* line 72, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 75, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   .slide-visual img {
     margin: auto;
     position: relative;
     display: block;
     width: 1272px; }
     @media only screen and (max-width: 60em) {
-      /* line 72, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+      /* line 75, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
       .slide-visual img {
         position: absolute;
         top: 50%;
@@ -3390,23 +3397,18 @@ a.box:hover .button {
         -ms-transform: translateY(-50%) scale(3.2);
         -o-transform: translateY(-50%) scale(3.2);
         transform: translateY(-50%) scale(3.2); } }
-  /* line 86, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
-  .active .slide-visual {
-    -webkit-animation: hollywood 6s ease-out;
-    -moz-animation: hollywood 6s ease-out;
-    animation: hollywood 6s ease-out; }
   @media only screen and (max-width: 60em) {
-    /* line 66, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+    /* line 70, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
     .slide-visual {
       background-size: auto 100%; } }
-  /* line 90, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 93, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   .style-b .slide-visual {
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
     -o-transform: translateX(100%);
     transform: translateX(100%); }
-  /* line 92, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 95, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   .active.style-b .slide-visual {
     -webkit-animation: none;
     -moz-animation: none;
@@ -3417,7 +3419,7 @@ a.box:hover .button {
     -o-transform: translateX(0);
     transform: translateX(0); }
 
-/* line 96, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+/* line 99, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
 .slide-product {
   opacity: 0;
   -webkit-transform: translateY(100%);
@@ -3425,12 +3427,12 @@ a.box:hover .button {
   -ms-transform: translateY(100%);
   -o-transform: translateY(100%);
   transform: translateY(100%); }
-  /* line 99, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 102, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   .slide-product img {
     display: block;
     margin: auto; }
     @media only screen and (max-width: 60em) {
-      /* line 99, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+      /* line 102, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
       .slide-product img {
         position: absolute;
         top: 50%;
@@ -3440,7 +3442,7 @@ a.box:hover .button {
         -ms-transform: translateY(-50%) scale(2);
         -o-transform: translateY(-50%) scale(2);
         transform: translateY(-50%) scale(2); } }
-  /* line 107, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 110, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   .active .slide-product {
     opacity: 1;
     -webkit-transform: translateY(0);
@@ -3458,24 +3460,24 @@ a.box:hover .button {
     -moz-transition-timing-function: ease-in-out;
     transition-timing-function: ease-in-out; }
 
-/* line 114, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+/* line 117, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
 .slide-heading {
   padding: 0 0 12px;
   display: block;
   font-weight: 400;
   text-transform: uppercase;
   opacity: 0; }
-  /* line 123, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 126, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   .active .slide-heading {
     opacity: 1; }
-  /* line 126, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 129, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   .style-b .slide-heading {
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     -o-transform: translateX(-100%);
     transform: translateX(-100%); }
-  /* line 128, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 131, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   .active.style-b .slide-heading {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -3485,18 +3487,18 @@ a.box:hover .button {
     -webkit-transition-delay: 0.1s;
     -moz-transition-delay: 0.1s;
     transition-delay: 0.1s; }
-  /* line 131, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 134, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   .slide-heading .extra {
     text-transform: none;
     display: block; }
-    /* line 135, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+    /* line 138, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
     .style-b .slide-heading .extra {
       -webkit-transform: translateX(-100%);
       -moz-transform: translateX(-100%);
       -ms-transform: translateX(-100%);
       -o-transform: translateX(-100%);
       transform: translateX(-100%); }
-    /* line 137, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+    /* line 140, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
     .active.style-b .slide-heading .extra {
       -webkit-transform: translateX(0);
       -moz-transform: translateX(0);
@@ -3507,21 +3509,21 @@ a.box:hover .button {
       -moz-transition-delay: 0.2s;
       transition-delay: 0.2s; }
 
-/* line 141, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+/* line 144, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
 .slide-cta {
   opacity: 0;
   padding-bottom: 18px; }
-  /* line 146, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 149, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   .active .slide-cta {
     opacity: 1; }
-  /* line 149, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 152, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   .style-b .slide-cta {
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     -o-transform: translateX(-100%);
     transform: translateX(-100%); }
-  /* line 151, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 154, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   .active.style-b .slide-cta {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -3532,63 +3534,63 @@ a.box:hover .button {
     -moz-transition-delay: 0.3s;
     transition-delay: 0.3s; }
 
-/* line 155, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+/* line 158, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
 .slide-heading,
 .slide-message,
 .slide-message .extra {
   color: #56565c; }
 
 @-webkit-keyframes hollywood {
-  /* line 161, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 164, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   0% {
     -webkit-transform: scale(1); }
 
-  /* line 163, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 166, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   100% {
     -webkit-transform: scale(1.05); } }
 @-moz-keyframes hollywood {
-  /* line 161, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 164, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   0% {
     -moz-transform: scale(1); }
 
-  /* line 163, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 166, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   100% {
     -moz-transform: scale(1.05); } }
 @keyframes hollywood {
-  /* line 161, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 164, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   0% {
     transform: scale(1); }
 
-  /* line 163, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 166, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   100% {
     transform: scale(1.05); } }
 @-webkit-keyframes visual-slide-in {
-  /* line 167, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 170, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   0% {
     -webkit-transform: translateX(100%);
     opacity: 0; }
 
-  /* line 170, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 173, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   100% {
     -webkit-transform: translateX(0%);
     opacity: 1; } }
 @-moz-keyframes visual-slide-in {
-  /* line 167, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 170, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   0% {
     -moz-transform: translateX(100%);
     opacity: 0; }
 
-  /* line 170, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 173, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   100% {
     -moz-transform: translateX(0%);
     opacity: 1; } }
 @keyframes visual-slide-in {
-  /* line 167, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 170, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   0% {
     transform: translateX(100%);
     opacity: 0; }
 
-  /* line 170, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 173, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   100% {
     transform: translateX(0%);
     opacity: 1; } }
@@ -3596,36 +3598,36 @@ a.box:hover .button {
 @-moz-keyframes product-slide-in {}
 @keyframes product-slide-in {}
 @-webkit-keyframes message-slide-in {
-  /* line 175, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 178, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   0% {
     -webkit-transform: translateX(-9999px);
     opacity: 0; }
 
-  /* line 178, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 181, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   100% {
     -webkit-transform: translateX(0);
     opacity: 1; } }
 @-moz-keyframes message-slide-in {
-  /* line 175, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 178, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   0% {
     -moz-transform: translateX(-9999px);
     opacity: 0; }
 
-  /* line 178, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 181, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   100% {
     -moz-transform: translateX(0);
     opacity: 1; } }
 @keyframes message-slide-in {
-  /* line 175, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 178, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   0% {
     transform: translateX(-9999px);
     opacity: 0; }
 
-  /* line 178, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 181, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   100% {
     transform: translateX(0);
     opacity: 1; } }
-/* line 182, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+/* line 185, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
 .slide-indicators {
   position: absolute;
   width: 100%;
@@ -3637,16 +3639,16 @@ a.box:hover .button {
   margin-bottom: 0;
   text-align: center;
   padding-bottom: 12px; }
-  /* line 190, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 193, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   .slide-indicators > li {
     display: inline-block;
     padding: 6px;
     vertical-align: middle; }
-    /* line 194, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+    /* line 197, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
     .slide-indicators > li:hover {
       cursor: pointer; }
 
-/* line 196, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+/* line 199, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
 .s-circle {
   display: block;
   border-radius: 50%;
@@ -3654,7 +3656,7 @@ a.box:hover .button {
   height: 0.8em;
   background-color: white;
   opacity: 0.2; }
-  /* line 203, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
+  /* line 206, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_slides.sass */
   .active .s-circle {
     opacity: 1; }
 
@@ -3756,89 +3758,78 @@ a.box:hover .button {
   border-top: 1px solid #d3d5d4; }
 
 /* line 110, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
-.cta-table {
-  text-align: left;
-  width: 75%;
-  margin: auto;
-  background-color: #d3d5d4;
-  border-radius: 2px; }
-  /* line 117, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
-  .cta-table td {
-    padding: 18px 6px 18px; }
-  /* line 119, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
-  .cta-table p {
-    padding: 0; }
-  @media only screen and (max-width: 72em) {
-    /* line 110, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
-    .cta-table {
-      width: 100%; } }
-
-/* line 124, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
-.plan-table, .common-table {
+.plan-table, .cta-table, .common-table {
   text-align: left;
   border-top: 1px solid #d3d5d4;
   margin-bottom: 24px; }
-  /* line 129, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
-  .plan-table ul, .common-table ul {
+  /* line 115, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+  .plan-table ul, .cta-table ul, .common-table ul {
     padding-bottom: 0; }
-  /* line 131, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
-  .plan-table td, .common-table td {
+  /* line 117, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+  .plan-table td, .cta-table td, .common-table td {
     padding: 6px; }
 
-/* line 133, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 119, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .plan-table-title, .common-table-title {
   padding: 11px 6px 12px;
   text-align: left; }
 
-/* line 136, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 122, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .common-table-title {
   padding: 12px 6px; }
 
-/* line 138, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 124, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .common-table {
   border-top: none; }
   @media only screen and (max-width: 36em) {
-    /* line 138, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+    /* line 124, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
     .common-table {
       font-size: 12px;
       font-size: 0.75rem;
       line-height: 18px;
       line-height: 1.125rem; }
-      /* line 142, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+      /* line 128, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
       .common-table ul {
         padding-left: 0; } }
-  /* line 144, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+  /* line 130, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
   .common-table td {
     padding: 6px 6px 5px; }
-  /* line 146, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+  /* line 132, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
   .common-table tr {
     border-bottom: 1px solid #d3d5d4; }
-    /* line 148, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+    /* line 134, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
     .common-table tr:last-child {
       border-bottom: transparent; }
 
-/* line 151, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 137, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .plan-table-a {
   padding: 6px;
   width: 75%; }
 
-/* line 154, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 140, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .plan-table-b {
   width: 25%;
   text-align: right; }
 
-/* line 157, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 144, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+.cta-table {
+  border-top: 0; }
+  /* line 147, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+  .cta-table p {
+    padding: 0; }
+
+/* line 150, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .footnotes {
   text-align: left;
   color: #a5acb0;
   padding: 12px; }
 
-/* line 162, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 155, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .footnote {
   position: relative;
   padding-left: 12px; }
 
-/* line 166, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 159, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .phone-command {
   font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
   display: block;
@@ -3849,7 +3840,7 @@ a.box:hover .button {
   background-color: rgba(255, 255, 255, 0.8);
   font-weight: bold; }
   @media only screen and (max-width: 36em) {
-    /* line 166, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+    /* line 159, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
     .phone-command {
       padding: 5px;
       font-size: 14px;
@@ -3857,26 +3848,26 @@ a.box:hover .button {
       line-height: 18px;
       line-height: 1.125rem; } }
 
-/* line 180, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 173, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .planbox,
 .epic-plan-visual-hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
 
-/* line 186, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 179, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .epic-plan-visual-container {
   position: relative;
   overflow: hidden;
   margin: -12px -12px 0; }
 
-/* line 192, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 185, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .epic-plan-visual-hover {
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
   transition-property: opacity;
   opacity: 0; }
-  /* line 197, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+  /* line 190, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
   .box:hover .epic-plan-visual-hover {
     opacity: 1; }
 
