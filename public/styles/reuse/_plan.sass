@@ -71,7 +71,7 @@
   @include bp-small
     display: block !important
     width: 100% !important
-    // text-align: 
+    // text-align:
 
 
 .epic-plan-graphics
@@ -107,20 +107,6 @@
   padding-top: ($normal-line - 1px)
   border-top: 1px solid $bg-color
 
-.cta-table
-  text-align: left
-  @extend %small-text
-  width: (3/4)*100%
-  margin: auto
-  background-color: $bg-color
-  border-radius: 2px
-  td
-    padding: $small-line $baseline $small-line
-  p
-    padding: 0
-  @include bp-large
-    width: 100%
-
 .plan-table, .common-table
   text-align: left
   @extend %small-text
@@ -154,6 +140,13 @@
 .plan-table-b
   width: (1/4)*100%
   text-align: right
+
+.cta-table
+  @extend .plan-table
+  border-top: 0
+  p
+    padding: 0
+
 .footnotes
   text-align: left
   color: $secondary-text-color
