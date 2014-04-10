@@ -2,6 +2,11 @@
   padding: $gutter
   @include bp-medium
     padding-bottom: 0
+  .sticky-footer &
+    position: absolute
+    right: 0
+    bottom: 0
+    left: 0
 
 .navigation,
 .nav-link
@@ -12,11 +17,6 @@
   color: inherit
   &:hover
     color: inherit
-
-// .nav-button
-//   white-space: nowrap
-//   overflow: hidden
-//   text-overflow: ellipsis
 
 .nav-link
   display: inline-block
@@ -43,6 +43,8 @@
     padding: $gutter
   .logotype
     padding-left: 0
+  .sticky-footer &
+    padding-bottom: 0
 .nav-level-1, .nav-level-0
   .nav-button
     display: block
@@ -128,8 +130,7 @@
 
 .side-navigation
   @include scut-list-unstyled
-  @include bp-medium
-    @include font($small-text, $small-line)
+  @extend %normal-text
   @include bp-medium
     display: none
   .section-container &
