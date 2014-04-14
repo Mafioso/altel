@@ -12,7 +12,18 @@
       {% endfor %}
     </ul>
   </div><div class="d5-6 m1">
-    {% for plan in model.gsmPlans %}<div class="d1-4 l1-3 m1-2 s1">
+    <div class="d1">
+      <a class="box ratio-box ratio-3-1 m-ratio-4-3" href="#">
+        <div class="box-background"></div>
+        <div class="box-content cover" style="background-image: url({{ 'eg.png' | asset_url }});"></div>
+      </a>
+    </div><div class="d1-2 l2-3 m1">
+      <a class="box ratio-box ratio-4-3 m-ratio-4-3" href="#">
+        <div class="box-background"></div>
+        <div class="box-content cover" style="background-image: url({{ 'eg.png' | asset_url }});"></div>
+      </a>
+
+    </div>{% for plan in model.gsmPlans %}<div class="d1-4 l1-3 m1-2 s1">
       {% include "planbox" with plan %}
     </div>{% endfor %}
   </div>
