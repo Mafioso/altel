@@ -3799,67 +3799,71 @@ a.box:hover .button {
   .plan-table td, .cta-table td, .common-table td {
     padding: 6px; }
 
-/* line 119, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 120, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+.plan-table--alternate tr:nth-child(2n) {
+  background-color: #d3d5d4; }
+
+/* line 123, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .plan-table-title, .common-table-title {
   padding: 11px 6px 12px;
   text-align: left; }
 
-/* line 122, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 126, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .common-table-title {
   padding: 12px 6px; }
 
-/* line 124, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 128, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .common-table {
   border-top: none; }
   @media only screen and (max-width: 36em) {
-    /* line 124, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+    /* line 128, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
     .common-table {
       font-size: 12px;
       font-size: 0.75rem;
       line-height: 18px;
       line-height: 1.125rem; }
-      /* line 128, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+      /* line 132, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
       .common-table ul {
         padding-left: 0; } }
-  /* line 130, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+  /* line 134, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
   .common-table td {
     padding: 6px 6px 5px; }
-  /* line 132, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+  /* line 136, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
   .common-table tr {
     border-bottom: 1px solid #d3d5d4; }
-    /* line 134, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+    /* line 138, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
     .common-table tr:last-child {
       border-bottom: transparent; }
 
-/* line 137, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 141, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .plan-table-a {
   padding: 6px;
   width: 75%; }
 
-/* line 140, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 144, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .plan-table-b {
   width: 25%;
   text-align: right; }
 
-/* line 144, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 148, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .cta-table {
   border-top: 0; }
-  /* line 147, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+  /* line 151, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
   .cta-table p {
     padding: 0; }
 
-/* line 150, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 154, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .footnotes {
   text-align: left;
   color: #a5acb0;
   padding: 12px; }
 
-/* line 155, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 159, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .footnote {
   position: relative;
   padding-left: 12px; }
 
-/* line 159, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 163, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .phone-command {
   font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
   display: block;
@@ -3870,7 +3874,7 @@ a.box:hover .button {
   background-color: rgba(255, 255, 255, 0.8);
   font-weight: bold; }
   @media only screen and (max-width: 36em) {
-    /* line 159, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+    /* line 163, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
     .phone-command {
       padding: 5px;
       font-size: 14px;
@@ -3878,26 +3882,26 @@ a.box:hover .button {
       line-height: 18px;
       line-height: 1.125rem; } }
 
-/* line 173, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 177, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .planbox,
 .epic-plan-visual-hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
 
-/* line 179, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 183, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .epic-plan-visual-container {
   position: relative;
   overflow: hidden;
   margin: -12px -12px 0; }
 
-/* line 185, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+/* line 189, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
 .epic-plan-visual-hover {
   -webkit-transition-property: opacity;
   -moz-transition-property: opacity;
   transition-property: opacity;
   opacity: 0; }
-  /* line 190, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
+  /* line 194, /Users/Vadim/Documents/work-altel/altel/public/styles/reuse/_plan.sass */
   .box:hover .epic-plan-visual-hover {
     opacity: 1; }
 
