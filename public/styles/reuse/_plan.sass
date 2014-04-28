@@ -1,18 +1,12 @@
 .plan-title
-  // font-weight: 400
   @extend %small-heading
   color: $normal-text-color
   text-align: center
-  // padding-bottom: $baseline - 2px
   .active &
     color: $accent-color
   .epic-plan &
     @extend %normal-heading
-    // text-align: left
     @extend %gutter
-  // .planbox &
-  //   color: white
-  //   font-weight: bold
   .box:hover .epic-plan-visual-container &
     color: white
 .title
@@ -76,19 +70,19 @@
 
 .epic-plan-graphics
   height: 12em
-  @include background-size(contain)
+  background-size: contain
   background-position: 0 50%
 
 .epic-plan .planbox-icon
   background-position: 50% 40%
-  @include background-size(auto 40%)
+  background-size: auto 40%
 
 
 
 .epic-plan-visual
   position: relative
   min-height: 24em
-  @include background-size(cover)
+  background-size: cover
   background-position: 50% 50%
   background-repeat: no-repeat
 

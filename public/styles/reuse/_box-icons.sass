@@ -1,9 +1,9 @@
 %box-icon
   background-position: 50% 50%
   background-repeat: no-repeat
-  @include background-size(auto 40%)
+  background-size: auto 40%
   @include bp-medium
-    @include background-size(auto 50%)
+    background-size: auto 50%
     background-position: 100% 100%
 
 @mixin box-icon($icon)
@@ -68,9 +68,9 @@
 .plan-icon-gsm,
 .plan-icon-lte
   background-position: 50% 40%
-  @include background-size(auto 20%)
+  background-size: auto 20%
   @include bp-small
-    @include background-size(auto 30%)
+    background-size: auto 30%
 
 .plan-icon-gsm
   @extend .box-icon-site-plans

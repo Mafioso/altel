@@ -1,4 +1,6 @@
 {
+  "customRuby": true,
+  "customRubyPath": "/Users/Vadim/.rvm/rubies/ruby-2.1.1|/Users/Vadim/.rvm/gems/ruby-2.1.1",
   "debug": true,
   "domain": null,
   "lintScripts": false,
@@ -22,5 +24,5 @@
   "templateDefaultPage": "index",
   "templateDirectory": "templates",
   "type": "mixture",
-  "useCompass": false
+  "useCompass": true
 }

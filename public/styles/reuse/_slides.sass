@@ -63,7 +63,7 @@
       text-align: center
 .slide-message-body
   display: inline-block
-  &.background--light
+  // &.background--light
   &.background--dark
     color: white
 
@@ -71,7 +71,7 @@
   text-align: center
   background-repeat: no-repeat
   background-position: 50% 50%
-  @include background-size(cover)
+  background-size: cover
   img
     margin: auto
     position: relative
@@ -89,7 +89,7 @@
   // .active &
   //   @include animation(hollywood 6s ease-out)
   @include bp-medium
-    @include background-size(auto 100%)
+    background-size: auto 100%
   .style-b &
     @include transform(translateX(100%))
   .active.style-b &
