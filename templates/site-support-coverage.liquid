@@ -14,10 +14,19 @@
       <div class="d1-4 gutter">
         <div class="box">
           <div class="box-content">
-            <ul class="list-unstyled no-trailer">
-              <li><a href="#">Link 1</a></li>
-              <li><a href="#">Link 2</a></li>
-              <li><a href="#">Link 3</a></li>
+            <ul class="acc-list js-acc-list">
+              {% for i in (1..10) %}
+              <li>
+                <a href="#" class="acc-list-item">Link 1</a>
+                <div class="acc-list-content">
+                  <ul class="list-unstyled">
+                    {% for i in (1..10) %}
+                      <li><a href="#">Something</a></li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              </li>
+              {% endfor %}
             </ul>
           </div>
         </div>

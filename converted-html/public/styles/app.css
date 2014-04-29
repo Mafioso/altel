@@ -1852,14 +1852,14 @@ body {
 }
 
 /* line 1, reuse/_box-icons.sass */
-.box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs, .box-icon-exchange, .box-icon-old-phone, .box-icon-altel, .box-icon-settings, .box-icon-unlock, .box-icon-block, .box-icon-missed-call, .box-icon-aon, .box-icon-order, .box-icon-pay-mobile {
+.box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs, .box-icon-exchange, .box-icon-old-phone, .box-icon-altel, .box-icon-settings, .box-icon-unlock, .box-icon-block, .box-icon-missed-call, .box-icon-aon, .box-icon-order, .box-icon-pay-mobile, .box-icon-faq, .box-icon-mifi, .box-icon-usb-modem {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto 40%;
 }
 @media only screen and (max-width: 60em) {
   /* line 1, reuse/_box-icons.sass */
-  .box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs, .box-icon-exchange, .box-icon-old-phone, .box-icon-altel, .box-icon-settings, .box-icon-unlock, .box-icon-block, .box-icon-missed-call, .box-icon-aon, .box-icon-order, .box-icon-pay-mobile {
+  .box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs, .box-icon-exchange, .box-icon-old-phone, .box-icon-altel, .box-icon-settings, .box-icon-unlock, .box-icon-block, .box-icon-missed-call, .box-icon-aon, .box-icon-order, .box-icon-pay-mobile, .box-icon-faq, .box-icon-mifi, .box-icon-usb-modem {
     background-size: auto 50%;
     background-position: 100% 100%;
   }
@@ -3185,14 +3185,113 @@ body {
   content: "";
 }
 
-/* line 68, reuse/_box-icons.sass */
+/* line 10, reuse/_box-icons.sass */
+.box-icon-faq {
+  background-image: url(../images/icons/box-icon-faq.svg);
+}
+/* line 39, base/_mixins.sass */
+.no-svg .box-icon-faq {
+  background-image: url(../images/icons/box-icon-faq.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 39, base/_mixins.sass */
+  .no-svg .box-icon-faq {
+    background-image: url(../images/icons/box-icon-faq@2x.png);
+  }
+}
+/* line 13, reuse/_box-icons.sass */
+.box-icon-faq:after, .box:hover .box-icon-faq {
+  background-image: url(../images/icons/box-icon-faq-hover.svg);
+}
+/* line 39, base/_mixins.sass */
+.no-svg .box-icon-faq:after, .no-svg .box:hover .box-icon-faq {
+  background-image: url(../images/icons/box-icon-faq-hover.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 39, base/_mixins.sass */
+  .no-svg .box-icon-faq:after, .no-svg .box:hover .box-icon-faq {
+    background-image: url(../images/icons/box-icon-faq-hover@2x.png);
+  }
+}
+/* line 16, reuse/_box-icons.sass */
+.box-icon-faq:after {
+  content: "";
+}
+
+/* line 10, reuse/_box-icons.sass */
+.box-icon-mifi {
+  background-image: url(../images/icons/box-icon-mifi.svg);
+}
+/* line 39, base/_mixins.sass */
+.no-svg .box-icon-mifi {
+  background-image: url(../images/icons/box-icon-mifi.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 39, base/_mixins.sass */
+  .no-svg .box-icon-mifi {
+    background-image: url(../images/icons/box-icon-mifi@2x.png);
+  }
+}
+/* line 13, reuse/_box-icons.sass */
+.box-icon-mifi:after, .box:hover .box-icon-mifi {
+  background-image: url(../images/icons/box-icon-mifi-hover.svg);
+}
+/* line 39, base/_mixins.sass */
+.no-svg .box-icon-mifi:after, .no-svg .box:hover .box-icon-mifi {
+  background-image: url(../images/icons/box-icon-mifi-hover.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 39, base/_mixins.sass */
+  .no-svg .box-icon-mifi:after, .no-svg .box:hover .box-icon-mifi {
+    background-image: url(../images/icons/box-icon-mifi-hover@2x.png);
+  }
+}
+/* line 16, reuse/_box-icons.sass */
+.box-icon-mifi:after {
+  content: "";
+}
+
+/* line 10, reuse/_box-icons.sass */
+.box-icon-usb-modem {
+  background-image: url(../images/icons/box-icon-usb-modem.svg);
+}
+/* line 39, base/_mixins.sass */
+.no-svg .box-icon-usb-modem {
+  background-image: url(../images/icons/box-icon-usb-modem.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 39, base/_mixins.sass */
+  .no-svg .box-icon-usb-modem {
+    background-image: url(../images/icons/box-icon-usb-modem@2x.png);
+  }
+}
+/* line 13, reuse/_box-icons.sass */
+.box-icon-usb-modem:after, .box:hover .box-icon-usb-modem {
+  background-image: url(../images/icons/box-icon-usb-modem-hover.svg);
+}
+/* line 39, base/_mixins.sass */
+.no-svg .box-icon-usb-modem:after, .no-svg .box:hover .box-icon-usb-modem {
+  background-image: url(../images/icons/box-icon-usb-modem-hover.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 39, base/_mixins.sass */
+  .no-svg .box-icon-usb-modem:after, .no-svg .box:hover .box-icon-usb-modem {
+    background-image: url(../images/icons/box-icon-usb-modem-hover@2x.png);
+  }
+}
+/* line 16, reuse/_box-icons.sass */
+.box-icon-usb-modem:after {
+  content: "";
+}
+
+/* line 71, reuse/_box-icons.sass */
 .plan-icon-gsm,
 .plan-icon-lte {
   background-position: 50% 40%;
   background-size: auto 20%;
 }
 @media only screen and (max-width: 36em) {
-  /* line 68, reuse/_box-icons.sass */
+  /* line 71, reuse/_box-icons.sass */
   .plan-icon-gsm,
   .plan-icon-lte {
     background-size: auto 30%;

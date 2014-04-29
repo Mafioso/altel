@@ -2,6 +2,36 @@
 
 {% block content %}
 
+
+<div class="d1-3">
+  <a href="#" class="box ratio-box ratio-4-3 m-ratio-3-4">
+    <div class="box-background"></div>
+    <div class="box-content box-icon-business-devices">
+      Телефоны
+    </div>
+  </a>
+</div><div class="d1-3">
+  <a href="#" class="box ratio-box ratio-4-3 m-ratio-3-4">
+    <div class="box-background"></div>
+    <div class="box-content box-icon-usb-modem">
+      USB-модемы
+    </div>
+  </a>
+</div><div class="d1-3">
+  <a href="#" class="box ratio-box ratio-4-3 m-ratio-3-4">
+    <div class="box-background"></div>
+    <div class="box-content box-icon-mifi">
+      Мобильные Wi-Fi роутеры (MiFi)
+    </div>
+  </a>
+</div>
+
+{% for plan in model.gsmPlans %}<div class="d1-4 l1-3 m1-2 s1">
+  {% include "planbox-device" with plan %}
+</div>{% endfor %}
+
+{% comment %}
+
 <div class="gutter">
   <div class="d1-2 m1 middle">
     <h1 class="page-title">Устройства</h1>
@@ -36,6 +66,9 @@
       {% endfor %} -->
     </ul>
   </div><div class="d5-6 m1">
+
+
+
     {% for plan in model.gsmPlans %}<div class="d1-4 l1-3 m1-2 s1">
       {% include "planbox-device" with plan %}
     </div>{% endfor %}
@@ -51,4 +84,7 @@
     </ul>
   </nav>
 </div>
+
+{% endcomment %}
+
 {% endblock %}
