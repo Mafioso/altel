@@ -1,0 +1,30 @@
+.btn,%btn
+  position: relative
+  display: inline-block
+  min-width: 6em
+  padding: 0 1rem
+  line-height: 3rem
+  color: white
+  text-align: center
+  text-decoration: none
+  text-shadow: none
+  cursor: pointer
+  background-color: $viewport-background
+  border-radius: $r
+  outline: none
+  &:hover
+    color: white
+.btn--compact
+  @extend %c-caption
+  padding: 0 .5rem
+  line-height: (2rem - $px)
+.btn--fill
+  width: 100%
+.btn--cta
+  color: white
+  background-color: $accent
+  border-color: $accent
+  &:hover
+    background-color: darken($accent, 10%)
+.btn--no-trailer
+  margin-bottom: 0

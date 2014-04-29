@@ -1,6 +1,6 @@
 <nav class="nav-container header">
   <ul class="navigation nav-level-2">
-    <li class="nav-col nav-logotype-container d1-3 m2-3 s2-3">
+    <li class="nav-col d-nav d2-3 m1-3 gutter-right">
       <a href="/" class="logotype">
         <img class="logotype-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Altel">
       </a>
@@ -10,32 +10,32 @@
       <a href="/site-support" class="icon-support nav-link">Поддержка</a>
     </li><li class="nav-col d1-6">
       <a href="/site-search" class="icon-search nav-link">Поиск</a>
-    </li><li class="nav-col d1-6 split">
-      <div class="split-title lang-switcher">
-        <a href="#" class="nav-link">Қаз</a> |
-        <a href="#" class="nav-link">Рус</a> |
+    </li><li class="nav-col d1-6">
+      <div class="lang-switcher">
+        <a href="#" class="nav-link">Қаз</a>
+        <a href="#" class="nav-link">Рус</a>
         <a href="#" class="nav-link active">En</a>
       </div>
-      <a href="/" class="nav-link">Выход</a>
-    </li><li class="nav-col nav-toggle-container d1-6 m1-3 s1-3">
+      <span class="split-value"><a href="/" class="nav-link">Выход</a></span>
+    </li><li class="nav-col d-nav--invert d1-3 m2-3 text-right">
       <a href="#" class="nav-drawer-toggle js-nav-drawer-toggle"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Menu"></a>
     </li>
   </ul>
   <ul class="navigation nav-level-1">
-    <li class="nav-col d1-7">
-      <a href="/site-plans" class="nav-button {% if mixture.url == "site-plans" %}active{% endif %}">Тарифы</a>
-    </li><li class="nav-col d1-7">
-      <a href="/site-internet" class="nav-button {% if mixture.url == "site-internet" %}active{% endif %}" class="nav-button">Интернет 4G</a>
-    </li><li class="nav-col d1-7">
-      <a href="/site-devices" class="nav-button {% if mixture.url == "site-devices" %}active{% endif %}" class="nav-button">Устройства</a>
-    </li><li class="nav-col d1-7">
-      <a href="/site-services" class="nav-button {% if mixture.url == "site-services" %}active{% endif %}">Услуги</a>
-    </li><li class="nav-col d1-7">
-      <a href="/site-payment" class="nav-button {% if mixture.url == "site-payment" %}active{% endif %}">Оплата</a>
-    </li><li class="nav-col d1-7">
-      <a href="/business-index" class="nav-button {% if mixture.url == "business-index" %}active{% endif %}">Бизнесу</a>
-    </li><li class="nav-col d1-7">
-      <a href="/dashboard-entrance" class="nav-button {% if mixture.url == "dashboard" %}active{% endif %}">Кабинет</a>
+    <li class="nav-col d1-7 {% if mixture.url == "site-plans" %}active{% endif %}">
+      <a href="/site-plans" class="nav-button">Тарифы</a>
+    </li><li class="nav-col d1-7 {% if mixture.url == "site-internet" %}active{% endif %}">
+      <a href="/site-internet" class="nav-button" class="nav-button">Интернет 4G</a>
+    </li><li class="nav-col d1-7 {% if mixture.url == "site-devices" %}active{% endif %}">
+      <a href="/site-devices" class="nav-button" class="nav-button">Устройства</a>
+    </li><li class="nav-col d1-7 {% if mixture.url == "site-services" %}active{% endif %}">
+      <a href="/site-services" class="nav-button">Услуги</a>
+    </li><li class="nav-col d1-7 {% if mixture.url == "site-payment" %}active{% endif %}">
+      <a href="/site-payment" class="nav-button">Оплата</a>
+    </li><li class="nav-col d1-7 {% if mixture.url == "business-index" %}active{% endif %}">
+      <a href="/business-index" class="nav-button">Бизнес-клиентам</a>
+    </li><li class="nav-col d1-7 {% if mixture.url == "dashboard" %}active{% endif %}">
+      <a href="/dashboard-entrance" class="nav-button">Мой Алтел</a>
     </li>
   </ul>
 </nav>

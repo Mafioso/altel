@@ -1,9 +1,9 @@
 jQuery(document).ready(function ($) {
 
-  $('[data-ride="carousel"]').each(function () {
-    var $carousel = $(this);
-    $carousel.carousel($carousel.data());
-  });
+  // $('[data-ride="carousel"]').each(function () {
+  //   var $carousel = $(this);
+  //   $carousel.carousel($carousel.data());
+  // });
 
   $('.drawer-title').bind('click', function(e) {
     e.preventDefault();

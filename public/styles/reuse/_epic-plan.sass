@@ -1,0 +1,42 @@
+.epic-plan-header
+  position: relative
+  margin-bottom: 1rem
+  .cover-media,
+  .cover-overlay--spread
+    border-radius: $r
+
+
+.epic-plan-header-body
+  position: relative
+  min-height: 30rem
+  overflow: hidden
+  color: white
+  background-position: 50% 50%
+
+.epic-plan-title
+  @extend %c-upper
+  position: relative
+  padding-top: 2rem
+  text-align: center
+  padding-bottom: 1rem
+  margin-bottom: 1rem
+  &:after
+    position: absolute
+    left: 50%
+    margin-left: -2rem
+    bottom: 0
+    display: block
+    width: 4rem
+    height: 3*$px
+    background-color: white
+    content: ''
+.epic-plan-subtitle
+  text-align: center
+
+.epic-plan-cta-container
+  color: $secondary-text
+  text-align: center
+  padding-top: 1rem
+  padding-bottom: 2rem - $px
+  border-bottom: $px solid $secondary-text
+  margin-bottom: 2rem

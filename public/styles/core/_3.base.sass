@@ -1,0 +1,101 @@
+//
+// Core - Base sets any base-level styles for tags, such as p or blockquote, beyond what's included in the reset or normalize. Text styles set here reflect the most common appearance of that tag in the design.
+//
+
+*, *:before, *:after
+  // -moz-box-sizing: border-box
+  box-sizing: border-box
+
+html,
+body
+  height: 100%
+  overflow: hidden
+  -webkit-overflow-scrolling: none
+
+html
+  // root 12
+  font-size: nth($rootsizes, 1)/16*100%
+  // everything bigger than $break-1; root 14
+  @media only screen and (min-width: #{($break-1)/16*1em})
+    font-size: nth($rootsizes, 2)/16*100%
+  // everything bigger than $break-2; root 17
+  @media only screen and (min-width: #{($break-2)/16*1em})
+    font-size: nth($rootsizes, 3)/16*100%
+  // everything bigger than $break-3; root 21
+  @media only screen and (min-width: #{($break-3)/16*1em})
+    font-size: nth($rootsizes, 4)/16*100%
+  // everything bigger than $break-4; just fixes the size
+  // @media only screen and (min-width: #{($break-4 + 1)/16*1em})
+
+
+body
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-size: $body
+  line-height: 2rem
+  color: $primary-text
+  cursor: default
+
+p
+  padding: 0
+  margin: 0 0 2rem
+  font-feature-settings: "kern" 1, "onum" 1, "liga" 1
+
+h1,h2,h3,h4,h5,h6
+  padding: 1rem 0 0
+  margin: 0
+  font-style: normal
+  letter-spacing: -.1rem
+  font-feature-settings: "dlig" 1, "liga" 1, "lnum" 1, "kern" 1
+
+ul,ol
+  padding: 0
+  margin: 0 0 2rem
+  li
+    margin-left: 2rem
+    font-feature-settings: "kern" 1, "onum" 1, "liga" 1
+
+b,strong,.bold
+  font-weight: bold
+
+em,i,.italic
+  font-style: italic
+
+// spacing for captions
+// h1, .c-h1, h2, .c-h2, h3, .c-h3, img
+//   + .caption
+//     margin-top: 0
+
+a
+  color: inherit
+  text-decoration: none
+  &:hover
+    color: $accent
+
+blockquote
+  margin: 2rem 0 0 0
+  p
+    padding-left: 2rem
+    font-style: italic
+    border-left: .5rem solid
+
+hr
+  margin: 1rem 0 (1rem - $px)
+  border: 0
+  border-bottom: $px solid
+
+// code, pre
+// TODO: Style code and pre tags
+
+img
+  display: inline-block
+  height: auto
+  max-width: 100%
+  padding: 0
+  margin: 0
+  line-height: 0
+
+figure
+  margin: 0
+
+// Credits:
+// https://github.com/designbyjake/sassline

@@ -1,26 +1,26 @@
 .pagination
-  @include scut-list-unstyled
-  padding: $gutter
+  list-style-type: none
+  padding: 1rem
   text-align: center
   li
-    padding: 0 $baseline
+    padding: 0 .5rem
     display: inline-block
-    @include bp-medium
-      display: none
-    &:first-child,
-    &:last-child
-      @include bp-medium
-        display: inline-block
+    // @include bp-medium
+    //   display: none
+    // &:first-child,
+    // &:last-child
+    //   @include bp-medium
+    //     display: inline-block
   .pagination-link
     display: block
-    padding: $baseline $gutter
-    background-color: $box-bg-color
+    padding: .5rem 1rem
+    background-color: $box-background
     box-shadow: 0 1px 2px rgba(0,0,0,.25)
-    border-radius: $radius
-    color: $normal-text-color
+    border-radius: $r
+    color: $primary-text
     &.active,
     &:hover
-      background-color: $accent-color
+      background-color: $accent
       color: white
     &.unavailable
       opacity: .3

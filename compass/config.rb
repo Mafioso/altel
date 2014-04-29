@@ -18,9 +18,11 @@ images_dir = "public/images" # update to the path of your image files.
 
 javascripts_dir = "public/scripts" # update to the path of your script files.
 
-line_comments = true
+line_comments = false
 
 cache = true
+
+# output_style = :compressed
 
 Sass::Script::Number.precision = 14
 

@@ -1,0 +1,55 @@
+//
+// Core - Content and Core - Layout are the bridge between base-level tags and modules. They give you the ability to set up abstractions that make contextual tweaks easier.
+//
+// The difference between Core - Content and Core - Layout is that Core - Content applies mainly to typography (fonts, colors), while Core - Layout applies to just that, layout (margin, padding, sizing, positioning).
+//
+// Note: The c- prefix is an implicit module. There is no c base module; it's only used as a prefix for the content modules.
+//
+
+h1,.c-h1,%c-h1
+  font-size: $h1
+  line-height: 3rem
+
+h2,.c-h2,%c-h2
+  font-size: $h2
+  line-height: 3rem
+
+h3,.c-h3,%c-h3
+  font-size: $h3
+  line-height: 2rem
+
+h4,h5,h6,p,%c-body,.c-body,ul,ol
+  font-size: $body
+  line-height: 2rem
+  letter-spacing: 0
+
+caption, .caption, %c-caption,.c-caption
+  font-size: $caption
+  line-height: 2rem
+
+h1,.c-h1,%c-h1,h2,.c-h2,%c-h2,img
+  p,ol,ul,blockquote p,pre
+    margin-bottom: 2rem
+
+%c-upper,.c-upper
+  text-transform: uppercase
+  letter-spacing: $px
+
+.c-small-caps
+  letter-spacing: $px
+  // font-feature-settings: "smcp" 1, "kern" 1
+
+.text-center
+  text-align: center
+
+.text-left
+  text-align: left
+
+.text-right
+  text-align: right
+
+.c-accent
+  color: $accent
+
+// Credits:
+// https://github.com/designbyjake/sassline

@@ -1,0 +1,37 @@
+.page-header
+  @extend %c-h2
+  position: relative
+  padding-top: 0
+  padding-bottom: 1rem
+  margin-bottom: 1rem
+  font-weight: normal
+  &:after
+    position: absolute
+    bottom: 0
+    display: block
+    width: 2rem
+    height: 3*$px
+    background-color: $primary-text
+    content: ''
+
+.back-button
+  @extend %btn
+  display: block
+  margin-bottom: 1rem
+  color: $primary-text
+  background-color: white
+  &:hover
+    color: $accent
+  &:before
+    position: absolute
+    top: 50%
+    left: -.5rem
+    display: inline-block
+    width: 0
+    height: 0
+    margin-top: -.5rem
+    margin-right: .5rem
+    margin-left: -.5rem
+    border: .5rem solid transparent
+    border-right-color: white
+    content: ''

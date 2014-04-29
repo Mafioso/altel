@@ -1,0 +1,67 @@
+//
+// Core - Settings centers on two things:
+// 1) @font-face declarations
+// 2) Variables
+//
+
+// BREAKPOINTS, up to some device width. http://screensiz.es/
+// 320px, iPhone 4/5 max (mobile)
+$break-1:       320
+// +448, 768px, iPad 3/4 max (tablet)
+$break-2:       768
+// +512, 1280px, MBP-12 13-inch (desktop)
+$break-3:       1280
+// +320, 1600px, Dell Inspirion (large desktop)
+$break-4:       1600
+
+// SIZES
+// Grid
+$grid-cols: 12 !default
+
+// half of desired line-height
+$rootsizes: 12, 12, 14, 14
+
+$caption:   14/14 * 1rem
+$body:      16/14 * 1rem
+$h3:        22/14 * 1rem
+$h2:        32/14 * 1rem
+$h1:        36/14 * 1rem
+// 1px would be defined as 1/10 in order to display as 1px on the smallest screen
+$px:        1/10 * 1rem
+$r:         3*$px
+
+// COLORS
+// normal text
+$primary-text: #56565c
+$secondary-text: #a5acb0
+$accent: #ed0088
+// secondary text
+// warning text
+// error text
+// ok text
+// link
+// link-hover
+// link-active
+// a number of backgrounds
+$viewport-background: #d3d5d4
+$sidebar-background: #fff
+$box-background: #fff
+
+// LAYERS
+$layer-1:     100
+$layer-2:     200
+$layer-3:     300
+$layer-4:     400
+$layer-0:     900
+
+// OTHER VARS
+$image-path:            "/public/images" !default
+$fallback-extension:    "png" !default
+$retina-suffix:         "@2x"
+$footer-height:         6rem
+$sidebar-width:         20rem
+$sidebar-header-height: 6rem
+$sidebar-footer-height: 4rem
+
+// Credits:
+// https://github.com/designbyjake/sassline

@@ -2,6 +2,31 @@
 
 {% block content %}
 
+
+<div class="box ratio-box ratio-3-4 m-ratio-2-1 l-ratio-3-1" id="carousel" data-ride="carousel">
+  <div class="box-content carousel">
+    {% for slide in model.slides %}
+    <div class="item cover-media carousel-item-type-{{slide.type}} {% if slide.default %}active{% endif %}" style="background-image: url({{ slide.visual }});">
+      <div class="center-this">
+        <div class="this">
+          <h1>{{ slide.title }}</h1>
+          <p>{{ slide.caption }}</p>
+          <a href="#" class="btn btn--cta">Something</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="box-footer">
+    <ul class="carousel-indicators">
+      {% for slide in model.slides %}<li class="{% if slide.default %}active{%  endif %}" data-target="#carousel" data-slide-to="{{ forloop.index0 }}">
+        <span class="circle"></span>
+      </li>{% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% comment %}
 <div class="d1">
   <div class="box ratio-box ratio-3-1 m-ratio-4-3 s-ratio-1">
     <div id="carousel" data-ride="carousel" class="box-content">
@@ -29,37 +54,39 @@
   </div>
 </div>
 
-<div class="d1-3 m1-2 s1">
+{% endcomment %}
+
+<div class="d1 m1-2 l1-3">
   <div class="d1-2">
-    <a href="/site-payment" class="box ratio-box animated-box">
+    <a href="/site-payment" class="box ratio-box">
       <div class="box-background"></div>
       <div class="box-content box-icon-payment">Оплата</div>
     </a>
   </div><div class="d1-2">
-    <a href="#" class="box ratio-box animated-box">
+    <a href="#" class="box ratio-box">
       <div class="box-background"></div>
       <div class="box-content box-icon-site-roaming">Роуминг</div>
     </a>
   </div>
   <div class="d1">
-    <a href="/site-internet" class="box ratio-box animated-box ratio-2-1">
+    <a href="/site-internet" class="box ratio-box ratio-2-1">
       <div class="box-background"></div>
       <div class="box-content box-icon-site-internet">Интернет 4G</div>
     </a>
   </div>
-</div><div class="d1-3 m1-2 s1">
-  <a href="/site-devices" class="box ratio-box animated-box s-ratio-2-1">
+</div><div class="d1 m1-2 l1-3">
+  <a href="/site-devices" class="box ratio-box ratio-2-1 m-ratio-1">
     <div class="box-background"></div>
     <div class="box-content box-icon-business-devices">Устройства</div>
   </a>
-</div><div class="d1-3 m1">
+</div><div class="d1 l1-3">
   <div class="d1-2">
-    <a href="/site-migration" class="box ratio-box animated-box ratio-1-2 m-ratio-2-1 s-ratio-1">
+    <a href="/site-migration" class="box ratio-box m-ratio-2-1 l-ratio-1-2">
       <div class="box-background"></div>
       <div class="box-content box-icon-site-migration">Миграция с CDMA</div>
     </a>
   </div><div class="d1-2">
-    <a href="/dashboard" class="box ratio-box animated-box ratio-1-2 m-ratio-2-1 s-ratio-1">
+    <a href="/dashboard" class="box ratio-box m-ratio-2-1 l-ratio-1-2">
       <div class="box-background"></div>
       <div class="box-content box-icon-dashboard">
         Личный кабинет
@@ -68,4 +95,21 @@
   </div>
 </div>
 
+{% endblock %}
+
+{% block scripts %}
+<script type="text/javascript">
+  jQuery(document).ready(function ($) {
+
+    BackgroundCheck.init({
+      targets: '.carousel .item .this, .carousel-indicators .circle',
+      images: '.carousel .item'
+    })
+    BackgroundCheck.refresh();
+
+    $('#carousel').on('slid.bs.carousel', function(e) {
+      BackgroundCheck.refresh();
+    });
+  });
+</script>
 {% endblock %}

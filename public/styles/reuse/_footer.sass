@@ -1,8 +1,16 @@
-.sticky-footer footer
-  @extend %animation-hack
-  position: relative
-  color: $secondary-text-color
-  // remember the border!
-  height: 93px
-  .logotype-image
-    @include background-image("logotype")
+.general-footer
+  @extend %abs
+  @extend %accelerate
+  top: auto
+  border-bottom: 3*$px solid $accent
+  .inline-list
+    margin-bottom: 0
+    >li
+      margin-right: 1rem
+  .nav-link
+    color: inherit
+    text-decoration: none
+  .social-set
+    text-align: right
+    >li:last-child
+      margin-right: 0

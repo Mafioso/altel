@@ -2,17 +2,18 @@
 
 {% block content %}
 
-<div class="gutter">
-  <h1 class="page-title">Интернет 4G</h1>
-  <div class="d1-6 m1">
+
+  <h1 class="page-header gutter">Интернет 4G</h1>
+
+  <div class="d1 l1-6 side-nav-container">
     <ul class="side-navigation">
       <!-- <li class="side-navigation-group-title">Интернет 4G</li> -->
       {% for plan in model.ltePlans %}
         <li><a href="{{ plan.url }}" class="side-navigation-item">{{ plan.name }}</a></li>
       {% endfor %}
     </ul>
-  </div><div class="d5-6 m1">
-    {% for plan in model.ltePlans %}<div class="d1-4 l1-3 m1-2 s1">
+  </div><div class="d1 l5-6">
+    {% for plan in model.ltePlans %}<div class="d1 m1-3 l1-4">
       {% include "planbox-lte" with plan %}
     </div>{% endfor %}
   </div>
@@ -26,5 +27,5 @@
     </ul>
   </nav>
 
-</div>
+
 {% endblock %}

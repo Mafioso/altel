@@ -1,0 +1,21 @@
+.breadcrumbs-list
+  @extend %c-caption
+  margin: 0
+  padding-top: 1rem
+  list-style-type: none
+  li
+    margin: 0
+    padding-right: .5rem
+    display: inline-block
+    &:last-child .breadcrumbs-list-item:after
+      display: none
+    &:last-child .breadcrumbs-list-item
+      // font-weight: bold
+      color: $primary-text
+.breadcrumbs-list-item
+  display: block
+  color: $secondary-text
+  text-decoration: none
+  &:after
+    margin-left: .5rem
+    content: '/'

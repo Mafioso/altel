@@ -6,49 +6,63 @@
       "pre-visual": "/public/images/slides/pre-slide-template-1.jpg",
       "visual": "/public/images/slides/slide-template-1.jpg",
       "product": "/public/images/slide-products/slide-product-1.png",
-      "type": "style-b"
+      "type": "left",
+      "caption": "Aenean lacinia bibendum nulla sed consectetur.",
+      "title": "Ligula Lorem"
     },
     {
       "default": false,
       "id": "slide-2",
       "pre-visual": "/public/images/slides/pre-slide-a.jpg",
       "visual": "/public/images/slides/slide-a.jpg",
-      "type": "left"
+      "type": "left",
+      "caption": "Nulla vitae elit libero, a pharetra augue.",
+      "title": "Dolor Vulputate Pharetra"
     },
     {
       "default": false,
       "id": "slide-3",
       "pre-visual": "/public/images/slides/pre-slide-c.jpg",
       "visual": "/public/images/slides/slide-c.jpg",
-      "type": "right"
+      "type": "right",
+      "caption": "Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.",
+      "title": "Magna Sit"
     },
     {
       "default": false,
       "id": "slide-4",
       "pre-visual": "/public/images/slides/pre-slide-d.jpg",
       "visual": "/public/images/slides/slide-d.jpg",
-      "type": "left"
+      "type": "center",
+      "caption": "Cras justo odio, dapibus ac facilisis in, egestas eget quam.",
+      "title": "Ultricies Porta Consectetur"
     },
     {
       "default": false,
       "id": "slide-5",
       "pre-visual": "/public/images/slides/pre-slide-e.jpg",
       "visual": "/public/images/slides/slide-e.jpg",
-      "type": "left"
+      "type": "left",
+      "caption": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet.",
+      "title": "Tellus Ligula"
     },
     {
       "default": false,
       "id": "slide-6",
       "pre-visual": "/public/images/slides/pre-slide-f.jpg",
       "visual": "/public/images/slides/slide-f.jpg",
-      "type": "left"
+      "type": "left",
+      "caption": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et.",
+      "title": "Aenean Commodo"
     },
     {
       "default": false,
       "id": "slide-7",
       "pre-visual": "/public/images/slides/pre-slide-z.jpg",
       "visual": "/public/images/slides/slide-z.jpg",
-      "type": "left"
+      "type": "left",
+      "caption": "Donec ullamcorper nulla non metus auctor fringilla.",
+      "title": "Condimentum Ullamcorper Quam"
     }
 
   ]

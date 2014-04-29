@@ -1,44 +1,16 @@
-@import "bourbon/bourbon"
-@import "bower_components/scut/dist/scut"
-@import "bower_components/modular-scale/stylesheets/modular-scale"
-@import "bower_components/normalize-css/normalize"
-
-@import "base/base"
+@import "components/normalize"
+@import "core/*"
 @import "reuse/*"
-// @import "reuse/split"
-// @import "reuse/counter"
-// @import "reuse/navigation"
-// @import "reuse/nav-drawer"
-// @import "reuse/inline-list"
-// @import "reuse/phone-input"
-// @import "reuse/footer"
-// @import "reuse/icons"
-// @import "reuse/box-icons"
-// @import "reuse/box"
-// @import "reuse/slides"
-// @import "reuse/plan"
-// @import "reuse/back-button"
-// @import "reuse/aside-note"
-// @import "reuse/drawer"
-// @import "reuse/pagination"
-// @import "reuse/accordion-list"
-// @import "reuse/loader"
-// @import "reuse/group"
-// @import "reuse/post"
-// @import "reuse/section-container"
-// @import "reuse/modal"
-// @import "reuse/notification"
-// @import "reuse/cover"
-// @import "reuse/page-commons"
-// @import "reuse/utils"
 
-
-@import "special/dashboard"
-@import "special/dashboard-personal-settings"
-@import "special/payment-options"
-@import "special/payment-history"
-@import "special/entrance"
-@import "special/plan"
-@import "special/additional-services"
-@import "special/site-payment-online"
-@import "special/migration"
+// a[href='#']
+//   text-decoration: line-through
+.dev-grid
+  // display: none
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 900
+  background-image: linear-gradient(bottom, rgba(255,0,0,0.5) 1px, rgba(255,0,0,0) 1px)
+  background-size: 100% 1rem

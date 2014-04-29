@@ -1,185 +1,98 @@
+
 .nav-container
-  padding: $gutter
-  @include bp-medium
-    padding-bottom: 0
-  .sticky-footer &
-    position: absolute
-    right: 0
-    bottom: 0
-    left: 0
-
-.navigation,
-.nav-link
-  @include scut-list-unstyled
-
-.nav-button,
-.nav-link
-  color: inherit
-  &:hover
-    color: inherit
-
-.nav-link
-  display: inline-block
-
-.nav-link:hover
-  color: $accent-color
-  text-decoration: underline
+  padding: 0 .5rem
 
 .navigation
-  color: $normal-text-color
-  padding: 0
-  @extend %small-text
-  @include bp-large
-    @include font($extra-small-text, $small-line)
-  .nav-col
-    position: relative
-    vertical-align: middle
+  list-style-type: none
+  >li
+    margin: 0
 
 .nav-level-2
-  padding-bottom: 12px
-  .nav-button,
-  .logotype
-    display: block
-    padding: $gutter
-  .logotype
-    padding-left: 0
-  .sticky-footer &
-    padding-bottom: 0
-.nav-level-1, .nav-level-0
-  .nav-button
-    display: block
-    padding: $gutter $gutter ($gutter - 2px)
-    background-color: $box-bg-color
-    text-transform: uppercase
-    border-bottom: 2px solid transparent
-    // border-radius: 2px
-    // border-left: 1px solid $bg-color
-    @extend %animation-hack
-    @include transition-property(border-color)
-    @include transition-duration(.25s)
-    @include transition-timing-function(ease-in-out)
-    &:hover
-      border-color: $accent-color
-    &:active, &.active
-      color: $box-bg-color
-      background-color: $accent-color
-      // border-right-color: $accent-color
-  .nav-col:first-child .nav-button
-    @include border-left-radius(2px)
-  .nav-col:last-child .nav-button
-    @include border-right-radius(2px)
+  @extend %c-caption
+  margin-bottom: 1rem
+
+.nav-level-2 .nav-col
+  display: none
+  @media only screen and (min-width: #{($break-3)/16*1em})
+    display: inline-block
+
+.nav-col.d-nav
+  display: inline-block
+  @media only screen and (min-width: #{($break-1)/16*1em})
+    display: inline-block
+
+.nav-col.d-nav--invert
+  display: inline-block
+  @media only screen and (min-width: #{($break-3)/16*1em})
+    display: none
+
+.nav-col
+  vertical-align: middle
 
 .nav-level-1
-  @extend %shadow
-  width: 100%
-  font-weight: bold
-  color: #6c717a
-  text-align: justify
-  background-color: white
-  border-radius: 2px
-  .nav-button
-    text-align: center
-
-.nav-logotype-container
-  vertical-align: middle
-  padding-right: $gutter
-
-.logotype
-  display: block
-  overflow: hidden
-
-// TODO: potential weakness (background-size: contain) doesn't work in IE8
-// Potential fix: https://github.com/louisremi/background-size-polyfill
-// Another fix is to provide smallest png to ie8 as background image
-.logotype-image
-  display: block
-  width: 100%
-  height: 27px
-  @include background-image("logotype")
-  background-size: contain
-  background-position: 0 50%
-  background-repeat: no-repeat
-  footer &
-    height: 18px
-
-.lang-switcher
-  font-weight: normal
-
-.lang-switcher .active
-  font-weight: bold
-
-.nav-level-0
-  .nav-button
-    background-color: transparent
-    font-weight: 600
-    &:active, &.active
-      color: inherit
-      background-color: $box-bg-color
-
-.side-navigation-meta
-  padding-top: $gutter
-  padding-bottom: $gutter
-  @include bp-medium
-    text-align: center
-
-.mobile-side-navigation
-  padding: $gutter
+  @extend %c-caption
+  @extend %c-upper
   display: none
-  @include bp-medium
+  width: 100%
+  margin-bottom: 1rem
+  overflow: hidden
+  background-color: $box-background
+  border-radius: $r
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.2)
+  .nav-col
+    position: relative
+    text-align: center
+    &.active:before
+      @extend %abs
+      top: -2rem
+      bottom: -2rem
+      display: block
+      background-color: $accent
+      content: ''
+  .nav-button
+    position: relative
+    display: block
+    height: 100%
+    padding: 1rem 0
+    line-height: 1.5rem
+    &:hover
+      color: $accent
+
+  @media only screen and (min-width: #{($break-3)/16*1em})
     display: block
 
+.active .nav-button, .active .nav-button:hover
+  color: white
 
+.nav-link
+  position: relative
+  display: inline-block
+  &:hover
+    color: $accent
+    text-decoration: underline
+
+.side-nav-container
+  padding: 0 1rem
+  margin: 0
+  display: none
+  @media only screen and (min-width: #{($break-3)/16*1em})
+    display: inline-block
 
 .side-navigation
-  @include scut-list-unstyled
-  @extend %normal-text
-  @include bp-medium
+  list-style-type: none
+  >li
+    margin: 0
+
+.mobile-side-navigation
+  padding: 1rem 1rem 0
+  @media only screen and (min-width: #{($break-3)/16*1em})
     display: none
-  .section-container &
-    @include bp-large
-      @include font($small-text, $small-line)
-  .mobile-side-navigation &
-    background-color: $box-bg-color
-    border-radius: 2px
-    box-shadow: 0 1px 2px rgba(0,0,0,.25)
-    padding-left: $gutter
-    @include bp-medium
-      display: block
+
+.side-navigation-meta
+  display: block
+  padding: .5rem .5rem 0
 
 .side-navigation-item
-  padding: $baseline
   display: block
-  &.active
-    font-weight: bold
-  .section-container &
-    color: white
-    &:hover
-      color: $normal-text-color
-  .mobile-side-navigation &
-    padding: $gutter $gutter ($gutter - 1px)
-    border-bottom: 1px solid $bg-color
-.side-navigation-group-title
-  padding: $gutter $baseline $gutter 0
-  @extend %normal-text
-  .back-button
-    @extend %small-text
-
-// hide nav-cols on medium breakpoint
-.nav-toggle-container
-  text-align: right
-  display: none
-  vertical-align: middle
-.header, footer
-  .nav-col
-    @include bp-medium
-      display: none
-  .nav-toggle-container,
-  .nav-logotype-container
-    @include bp-medium
-      display: inline-block
-
-.phone-container
-  @include bp-medium
-    text-align: right
-  @include bp-small
-    text-align: left
+  line-height: 1.5rem
+  margin-bottom: 1rem

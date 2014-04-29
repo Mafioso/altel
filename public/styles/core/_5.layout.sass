@@ -1,0 +1,64 @@
+//
+// Just like Core - Content, the Core - Layout gives you a higher level of abstraction for your modules.
+//
+// Note: The l- prefix is an implicit module. There is no l base module; it's only used as a prefix for the layout modules. This is borrowed from SMACSS, which uses the l- convention in its layout section.
+//
+
+%l-container
+  position: relative
+  width: 100%
+  padding-left: 1rem
+  padding-right: 1rem
+  margin: auto
+
+.container
+  @extend %l-container
+  @media only screen and (min-width: #{($break-3)/16*1em})
+    max-width: 82em
+
+%l-col, .l-col
+  display: inline-block
+  vertical-align: top
+
+
+%gutter-left, .gutter-left
+  padding-left: 1rem
+%gutter-right, .gutter-right
+  padding-right: 1rem
+%gutter, .gutter
+  padding-right: 1rem
+  padding-left: 1rem
+
+%l-bleed-l, .l-bleed-l
+  margin-left: -1rem
+%l-bleed-r, .l-bleed-r
+  margin-right: -1rem
+%l-bleed-both, .l-bleed
+  margin-right: -1rem
+  margin-left: -1rem
+
+%fluffy, .fluffy
+  padding: 1rem
+%fluffy-tiny, .fluffy-tiny
+  padding: 1rem .5rem
+%fluffy-vertical, .fluffy-vertical
+  padding: 1rem 0
+
+.zoom
+  width: 100%
+
+%l-middle, .l-middle
+  vertical-align: middle
+
+@include grid-namespace()
+
+@include grid("d")
+.d1-7
+  @extend %l-col
+  width: (1/7)*100%
+@media only screen and (min-width: #{($break-1)/16*1em})
+  @include grid("s")
+@media only screen and (min-width: #{($break-2)/16*1em})
+  @include grid("m")
+@media only screen and (min-width: #{($break-3)/16*1em})
+  @include grid("l")

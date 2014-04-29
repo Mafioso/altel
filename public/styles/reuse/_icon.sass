@@ -1,0 +1,65 @@
+%icon
+  display: inline-block
+  &:before
+    display: inline-block
+    width: 1.2rem
+    height: 1.2rem
+    margin-right: 0.35em
+    vertical-align: text-bottom
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: cover
+    content: ''
+
+// .icon-dashboard-help
+//   @include background-image('icons/button-icon-support')
+//   background-position: $gutter 50%
+//   background-repeat: no-repeat
+// .dashboard-help
+//   padding-left: $gutter + 18px
+
+.icon-special
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-special")
+.icon-support
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-support")
+.icon-search
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-search")
+.icon-phone
+  white-space: nowrap
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-phone")
+.icon-time
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-time")
+.icon-message
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-message")
+.icon-wifi
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-wifi")
+.icon-instagram
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-instagram")
+.icon-twitter
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-twitter")
+.icon-facebook
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-facebook")
+.icon-vkontakte
+  @extend %icon
+  &:before
+    @include background-image("icons/icon-vkontakte")

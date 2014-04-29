@@ -5,7 +5,7 @@
   "domain": null,
   "lintScripts": false,
   "modelSource": null,
-  "optimiseSVG": true,
+  "optimiseSVG": false,
   "password": "ohmycss",
   "preprocessorLocations": "public",
   "preprocessorScriptOutput": "public/scripts",

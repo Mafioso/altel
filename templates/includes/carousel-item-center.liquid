@@ -1,3 +1,11 @@
+<div id="{{carousel-item-center.id}}" class="item cover-media {% if carousel-item-center.default %}active{% endif %}" style="background-image: url('{{ carousel-item-center.visual }}')">
+  <div class="carousel-item-caption">
+    <h1>Fringilla Lorem Consectetur</h1>
+  </div>
+</div>
+
+{% comment %}
+
 <div id="{{ carousel-item-center.id }}" class="item {% if carousel-item-center.default %}active{% endif %} item-type-center">
 <div class="slide-visual" style="background-image: url('{{ carousel-item-center.pre-visual }}');">
     <img src="{{ carousel-item-center.visual }}" alt="Carouse item title">
@@ -16,3 +24,5 @@
     </div>
   </div>
 </div>
+
+{% endcomment %}
