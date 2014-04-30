@@ -35,14 +35,16 @@ a.box
     //   background-color: transparent
 
 .box-background
-  border-radius: 2px
   @extend %box-animation-setup
   @extend %box-content-setup
   @include transition-property(transform opacity)
+  @include transform(translateY(-12px))
+
   margin: 18px 10px 9px
   background-color: $accent-color
+  border-radius: 2px
   opacity: 0
-  @include transform(translateY(-12px))
+
   a.box:hover &,
   .active &
     opacity: 1
