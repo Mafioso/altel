@@ -1095,7 +1095,7 @@ th {
 }
 
 /* line 3, base/_type.sass */
-sup, sub, cite, legend, .agreement-label, .counter-title, .counter-note, .navigation, .side-navigation-group-title .back-button, .notification a, .connection-howto, .plan-benefits, .plan-table, .cta-table, .common-table, .post-meta, .post-links, .account-balance-note, .bonus-balance-note, .account-additional-info, .service-subtitle {
+sup, sub, cite, .caption, legend, .agreement-label, .counter-title, .counter-note, .navigation, .side-navigation-group-title .back-button, .notification a, .connection-howto, .plan-benefits, .plan-table, .cta-table, .common-table, .post-meta, .post-links, .account-balance-note, .bonus-balance-note, .account-additional-info, .service-subtitle {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 18px;
