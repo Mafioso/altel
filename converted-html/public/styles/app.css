@@ -1095,7 +1095,7 @@ th {
 }
 
 /* line 3, base/_type.sass */
-sup, sub, cite, legend, .agreement-label, .counter-title, .counter-note, .navigation, .side-navigation-group-title .back-button, .notification a, .connection-howto, .plan-benefits, .plan-table, .cta-table, .common-table, .post-meta, .post-links, .account-balance-note, .bonus-balance-note, .account-additional-info, .service-subtitle {
+sup, sub, cite, .caption, legend, .agreement-label, .counter-title, .counter-note, .navigation, .side-navigation-group-title .back-button, .notification a, .connection-howto, .plan-benefits, .plan-table, .cta-table, .common-table, .post-meta, .post-links, .account-balance-note, .bonus-balance-note, .account-additional-info, .service-subtitle {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 18px;
@@ -3349,17 +3349,17 @@ a.box:hover {
 
 /* line 37, reuse/_box.sass */
 .box-background {
-  border-radius: 2px;
   -webkit-transition-property: -webkit-transform opacity;
           transition-property: transform opacity;
-  margin: 18px 10px 9px;
-  background-color: #ed0088;
-  opacity: 0;
   -webkit-transform: translateY(-12px);
   -ms-transform: translateY(-12px);
           transform: translateY(-12px);
+  margin: 18px 10px 9px;
+  background-color: #ed0088;
+  border-radius: 2px;
+  opacity: 0;
 }
-/* line 46, reuse/_box.sass */
+/* line 48, reuse/_box.sass */
 a.box:hover .box-background, .active .box-background {
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -3367,7 +3367,7 @@ a.box:hover .box-background, .active .box-background {
           transform: translateY(0);
 }
 
-/* line 51, reuse/_box.sass */
+/* line 53, reuse/_box.sass */
 .box-content {
   border-radius: 2px;
   margin: 12px;
@@ -3376,13 +3376,13 @@ a.box:hover .box-background, .active .box-background {
   overflow: hidden;
   background-clip: padding-box;
 }
-/* line 67, reuse/_box.sass */
+/* line 69, reuse/_box.sass */
 a.box:hover .box-content, .active .box-content {
   -webkit-transform: translateY(-6px);
   -ms-transform: translateY(-6px);
           transform: translateY(-6px);
 }
-/* line 77, reuse/_box.sass */
+/* line 79, reuse/_box.sass */
 a.box:active .box-content {
   -webkit-transform: translateY(-2px);
   -ms-transform: translateY(-2px);
@@ -3391,33 +3391,33 @@ a.box:active .box-content {
           transition-duration: 0.12s;
 }
 
-/* line 82, reuse/_box.sass */
+/* line 84, reuse/_box.sass */
 .planbox-icon {
   padding: 12px;
 }
 
-/* line 86, reuse/_box.sass */
+/* line 88, reuse/_box.sass */
 .box-redeem {
   background-position: 50% 33%;
 }
 
-/* line 90, reuse/_box.sass */
+/* line 92, reuse/_box.sass */
 .ratio-box .box-footer {
   top: auto;
 }
-/* line 93, reuse/_box.sass */
+/* line 95, reuse/_box.sass */
 .box-footer .button {
   color: white;
   background-color: #d3d5d4;
 }
 
-/* line 97, reuse/_box.sass */
+/* line 99, reuse/_box.sass */
 a.box:hover .button {
   color: white;
   background-color: #ed0088;
 }
 
-/* line 101, reuse/_box.sass */
+/* line 103, reuse/_box.sass */
 .ratio-box:before {
   content: "";
   display: block;
@@ -3425,145 +3425,145 @@ a.box:hover .button {
 }
 
 @-webkit-keyframes box-hover {
-  /* line 107, reuse/_box.sass */
+  /* line 109, reuse/_box.sass */
   50% {
     -webkit-transform: translateY(-3px);
   }
 
-  /* line 109, reuse/_box.sass */
+  /* line 111, reuse/_box.sass */
   100% {
     -webkit-transform: translateY(-6px);
   }
 }
 
 @keyframes box-hover {
-  /* line 107, reuse/_box.sass */
+  /* line 109, reuse/_box.sass */
   50% {
     -webkit-transform: translateY(-3px);
             transform: translateY(-3px);
   }
 
-  /* line 109, reuse/_box.sass */
+  /* line 111, reuse/_box.sass */
   100% {
     -webkit-transform: translateY(-6px);
             transform: translateY(-6px);
   }
 }
 
-/* line 113, reuse/_box.sass */
+/* line 115, reuse/_box.sass */
 .ratio-1-2:before {
   padding-top: 200%;
 }
 
-/* line 115, reuse/_box.sass */
+/* line 117, reuse/_box.sass */
 .ratio-2-1:before {
   padding-top: 50%;
 }
 
-/* line 117, reuse/_box.sass */
+/* line 119, reuse/_box.sass */
 .ratio-2-3:before {
   padding-top: 150%;
 }
 
-/* line 119, reuse/_box.sass */
+/* line 121, reuse/_box.sass */
 .ratio-3-2:before {
   padding-top: 66.66666666666666%;
 }
 
-/* line 121, reuse/_box.sass */
+/* line 123, reuse/_box.sass */
 .ratio-3-4:before {
   padding-top: 133.33333333333331%;
 }
 
-/* line 123, reuse/_box.sass */
+/* line 125, reuse/_box.sass */
 .ratio-4-3:before {
   padding-top: 75%;
 }
 
-/* line 125, reuse/_box.sass */
+/* line 127, reuse/_box.sass */
 .ratio-3-1:before {
   padding-top: 33.33333333333333%;
 }
 
-/* line 127, reuse/_box.sass */
+/* line 129, reuse/_box.sass */
 .ratio-4-1:before {
   padding-top: 25%;
 }
 
-/* line 129, reuse/_box.sass */
+/* line 131, reuse/_box.sass */
 .ratio-8-1:before {
   padding-top: 12.5%;
 }
 
-/* line 131, reuse/_box.sass */
+/* line 133, reuse/_box.sass */
 .ratio-8-9:before {
   padding-top: 112.5%;
 }
 
-/* line 133, reuse/_box.sass */
+/* line 135, reuse/_box.sass */
 .ratio-8-3:before {
   padding-top: 37.5%;
 }
 
 @media only screen and (max-width: 72em) {
-  /* line 137, reuse/_box.sass */
+  /* line 139, reuse/_box.sass */
   .l-ratio-2-1:before {
     padding-top: 50%;
   }
 
-  /* line 139, reuse/_box.sass */
+  /* line 141, reuse/_box.sass */
   .l-ratio-2-3:before {
     padding-top: 150%;
   }
 
-  /* line 141, reuse/_box.sass */
+  /* line 143, reuse/_box.sass */
   .l-ratio-3-1:before {
     padding-top: 33.33333333333333%;
   }
 
-  /* line 143, reuse/_box.sass */
+  /* line 145, reuse/_box.sass */
   .l-ratio-1:before {
     padding-top: 100%;
   }
 }
 @media only screen and (max-width: 60em) {
-  /* line 147, reuse/_box.sass */
+  /* line 149, reuse/_box.sass */
   .m-ratio-1:before {
     padding-top: 100%;
   }
 
-  /* line 149, reuse/_box.sass */
+  /* line 151, reuse/_box.sass */
   .m-ratio-3-4:before {
     padding-top: 133.33333333333331%;
   }
 
-  /* line 151, reuse/_box.sass */
+  /* line 153, reuse/_box.sass */
   .m-ratio-4-3:before {
     padding-top: 75%;
   }
 
-  /* line 153, reuse/_box.sass */
+  /* line 155, reuse/_box.sass */
   .m-ratio-2-1:before {
     padding-top: 50%;
   }
 
-  /* line 155, reuse/_box.sass */
+  /* line 157, reuse/_box.sass */
   .m-ratio-1-2:before {
     padding-top: 200%;
   }
 }
 @media only screen and (max-width: 36em) {
-  /* line 159, reuse/_box.sass */
+  /* line 161, reuse/_box.sass */
   .s-ratio-1:before {
     padding-top: 100%;
   }
 
-  /* line 161, reuse/_box.sass */
+  /* line 163, reuse/_box.sass */
   .s-ratio-1-2:before {
     padding-top: 200%;
   }
 
-  /* line 163, reuse/_box.sass */
+  /* line 165, reuse/_box.sass */
   .s-ratio-2-1:before {
     padding-top: 50%;
   }
