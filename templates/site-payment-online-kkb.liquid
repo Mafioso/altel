@@ -1,20 +1,20 @@
 {% layout 'entrance-layout' %}
 
 {% block content %}
-  
+
 <div class="entrance-container">
     <div class="d1-6">
     </div><div class="d2-3 m1 text-center">
       <div class="box">
         <div class="box-content epic-plan">
-          
+
           <div class="d1-3 s1">
           </div><div class="d1-3 s1 fluffy">
             <a href="/" class="logotype">
               <img class="logotype-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Altel">
             </a>
           </div>
-          
+
           <div class="fluffy">
             <h1 class="group-title">On-line оплата</h1>
           </div>
@@ -40,8 +40,8 @@
           </div>
 
           <div class="readable fluffy">
-            
-            <form action="">
+
+            <form action="" class="gutter-trailer">
               <h2>Введите информацию о Вашей платежной карте</h2>
               <div class="extra">
                 <p>Поля отмеченные звездочкой * — обязательны к заполнению</p>
@@ -85,17 +85,28 @@
                   </p>
                   <p class="no-trailer">Дополнительные цифры на внешней или обратной стороне карты.</p>
                 </div>
-                <div class="d1-4 text-center">
-                  visa
-                </div><div class="d1-4 text-center">
-                  master card
-                </div><div class="d1-4 text-center">
-                  maestro
-                </div><div class="d1-4 text-center">
-                  amex
+                <div class="d1-4 middle text-center">
+                  <figure class="icon-visa">
+                    <!-- Note: card type is determined by its number
+                      illustration image changes to [type]-active.svg
+                     -->
+                    <img src="{{ 'visa-active.svg' | asset_url }}" alt="Visa" />
+                  </figure>
+                </div><div class="d1-4 middle text-center">
+                  <figure class="icon-mastercard">
+                    <img src="{{ 'mastercard.svg' | asset_url }}" alt="Visa" />
+                  </figure>
+                </div><div class="d1-4 middle text-center">
+                  <figure class="icon-maestro">
+                    <img src="{{ 'maestro.svg' | asset_url }}" alt="Visa" />
+                  </figure>
+                </div><div class="d1-4 middle text-center">
+                  <figure class="icon-amex">
+                    <img src="{{ 'amex.svg' | asset_url }}" alt="Visa" />
+                  </figure>
                 </div>
               </div>
-              
+
               <h2>Дополнительная информация:</h2>
               <div class="input-line">
                 <label for="">Ваш действующий e-mail: *</label>
@@ -111,7 +122,7 @@
                 <label for="">Ваш контактный телефон</label>
                 <input type="text" class="input-d1">
               </div>
-              
+
               <div class="input-line text-center">
                 <a href="/site-payment-online" class="u-link">Назад</a>
                 <span class="space cta-br">&middot;</span>
@@ -121,40 +132,25 @@
               </div>
             </form>
 
-            <ul class="inline-list">
-              <li>
-                Visa electron
-              </li>
-              <li>
-                Visa
-              </li>
-              <li>
-                Master card
-              </li>
-              <li>
-                Amex
-              </li>
-              <li>
-                verified by visa
-              </li>
-              <li>
-                Master card secure code
-              </li>
-            </ul>
+            <figure class="text-center gutter-trailer">
+              {{ "verified.png" | asset_url | image_tag }}
+            </figure>
 
-            <div class="d1-3 middle">
-              epay
-            </div><div class="d2-3 text-right middle">
+            <div class="d2-3 middle">
               <div class="extra no-trailer">
-                <p class="no-trailer">
+                <p class="gutter-trailer">
                     Безопасность транзакций гарантирует
-                    kkb
+                    Казкоммерцбанк
                 </p>
               </div>
+            </div><div class="d1-3 text-right middle">
+              <a class="column" href="https://epay.kkb.kz/jsp/about/index.jsp">
+                {{ "epay.png" | asset_url | image_tag }}
+              </a>
             </div>
 
           </div>
-          
+
         </div>
       </div>
     </div><div class="d1-6">

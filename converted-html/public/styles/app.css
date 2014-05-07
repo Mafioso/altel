@@ -1754,6 +1754,11 @@ body {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
+/* line 69, base/_base.sass */
+figure {
+  margin: 0;
+}
+
 /* line 1, reuse/_accordion-list.sass */
 .acc-list {
   list-style-type: none;
@@ -3990,6 +3995,21 @@ a.box:hover .button {
   .no-svg .icon-madeby:before {
     background-image: url(../images/madeby@2x.png);
   }
+}
+
+/* line 93, reuse/_icons.sass */
+.icon-visa,
+.icon-mastercard,
+.icon-maestro,
+.icon-amex {
+  padding-top: 12px;
+}
+/* line 98, reuse/_icons.sass */
+.icon-visa img,
+.icon-mastercard img,
+.icon-maestro img,
+.icon-amex img {
+  max-height: 24px;
 }
 
 /* line 2, reuse/_inline-list.sass */
