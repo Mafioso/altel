@@ -1862,14 +1862,14 @@ figure {
 }
 
 /* line 1, reuse/_box-icons.sass */
-.box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-sup-coverage-lte, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs, .box-icon-exchange, .box-icon-old-phone, .box-icon-altel, .box-icon-settings, .box-icon-unlock, .box-icon-block, .box-icon-missed-call, .box-icon-aon, .box-icon-order, .box-icon-pay-mobile, .box-icon-faq, .box-icon-mifi, .box-icon-usb-modem {
+.box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-sup-coverage-lte, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs, .box-icon-exchange, .box-icon-old-phone, .box-icon-altel, .box-icon-settings, .box-icon-settings-auto, .box-icon-unlock, .box-icon-block, .box-icon-missed-call, .box-icon-aon, .box-icon-order, .box-icon-pay-mobile, .box-icon-faq, .box-icon-mifi, .box-icon-usb-modem {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto 40%;
 }
 @media only screen and (max-width: 60em) {
   /* line 1, reuse/_box-icons.sass */
-  .box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-sup-coverage-lte, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs, .box-icon-exchange, .box-icon-old-phone, .box-icon-altel, .box-icon-settings, .box-icon-unlock, .box-icon-block, .box-icon-missed-call, .box-icon-aon, .box-icon-order, .box-icon-pay-mobile, .box-icon-faq, .box-icon-mifi, .box-icon-usb-modem {
+  .box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-sup-coverage-lte, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs, .box-icon-exchange, .box-icon-old-phone, .box-icon-altel, .box-icon-settings, .box-icon-settings-auto, .box-icon-unlock, .box-icon-block, .box-icon-missed-call, .box-icon-aon, .box-icon-order, .box-icon-pay-mobile, .box-icon-faq, .box-icon-mifi, .box-icon-usb-modem {
     background-size: auto 50%;
     background-position: 100% 100%;
   }
@@ -3031,6 +3031,39 @@ figure {
 }
 
 /* line 10, reuse/_box-icons.sass */
+.box-icon-settings-auto {
+  background-image: url(../images/icons/box-icon-settings-auto.svg);
+}
+/* line 39, base/_mixins.sass */
+.no-svg .box-icon-settings-auto {
+  background-image: url(../images/icons/box-icon-settings-auto.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 39, base/_mixins.sass */
+  .no-svg .box-icon-settings-auto {
+    background-image: url(../images/icons/box-icon-settings-auto@2x.png);
+  }
+}
+/* line 13, reuse/_box-icons.sass */
+.box-icon-settings-auto:after, .box:hover .box-icon-settings-auto {
+  background-image: url(../images/icons/box-icon-settings-auto-hover.svg);
+}
+/* line 39, base/_mixins.sass */
+.no-svg .box-icon-settings-auto:after, .no-svg .box:hover .box-icon-settings-auto {
+  background-image: url(../images/icons/box-icon-settings-auto-hover.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 39, base/_mixins.sass */
+  .no-svg .box-icon-settings-auto:after, .no-svg .box:hover .box-icon-settings-auto {
+    background-image: url(../images/icons/box-icon-settings-auto-hover@2x.png);
+  }
+}
+/* line 16, reuse/_box-icons.sass */
+.box-icon-settings-auto:after {
+  content: "";
+}
+
+/* line 10, reuse/_box-icons.sass */
 .box-icon-unlock {
   background-image: url(../images/icons/box-icon-unlock.svg);
 }
@@ -3327,14 +3360,14 @@ figure {
   content: "";
 }
 
-/* line 72, reuse/_box-icons.sass */
+/* line 73, reuse/_box-icons.sass */
 .plan-icon-gsm,
 .plan-icon-lte {
   background-position: 50% 40%;
   background-size: auto 20%;
 }
 @media only screen and (max-width: 36em) {
-  /* line 72, reuse/_box-icons.sass */
+  /* line 73, reuse/_box-icons.sass */
   .plan-icon-gsm,
   .plan-icon-lte {
     background-size: auto 30%;
