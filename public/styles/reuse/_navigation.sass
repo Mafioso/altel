@@ -31,9 +31,16 @@
   @extend %small-text
   @include bp-large
     @include font($extra-small-text, $small-line)
-  .nav-col
-    position: relative
-    vertical-align: middle
+.nav-col
+  position: relative
+  vertical-align: middle
+.nav-col--footer
+  vertical-align: bottom
+.nav-col--footer:first-child
+  vertical-align: top
+
+.nav-col--linked-list
+  border-left: 1px solid
 
 .nav-level-2
   padding-bottom: 12px

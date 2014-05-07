@@ -1,16 +1,14 @@
 %icon
   display: inline-block
   &:before
-    content: ""
-    height: 18px
-    width: 18px
-    height: calculateRem(18px)
-    width: calculateRem(18px)
     display: inline-block
+    width: calculateRem(18px)
+    height: calculateRem(18px)
+    margin-right: calculateRem(6px)
     vertical-align: text-bottom
     background-position: 50% 50%
     background-repeat: no-repeat
-    margin-right: calculateRem(6px)
+    content: ""
 
 .icon-dashboard-help
   @include background-image('icons/button-icon-support')
@@ -48,19 +46,40 @@
   @extend %icon
   &:before
     @include background-image("icons/icon-wifi")
+
+// %footer-icon
+//   @extend %icon
+//   &:before
+//     width: 1.4em
+//     height: 1.4em
+    // background-size: 80%
+
 .icon-instagram
   @extend %icon
   &:before
+    vertical-align: top
     @include background-image("icons/icon-instagram")
 .icon-twitter
   @extend %icon
   &:before
+    vertical-align: top
     @include background-image("icons/icon-twitter")
 .icon-facebook
   @extend %icon
   &:before
+    vertical-align: top
     @include background-image("icons/icon-facebook")
 .icon-vkontakte
   @extend %icon
   &:before
+    vertical-align: top
     @include background-image("icons/icon-vkontakte")
+.icon-madeby
+  @extend %icon
+  &:before
+    vertical-align: top
+    margin-top: 18px - 24px
+    @include background-image("madeby")
+    background-size: contain
+    height: 24px
+    width: 135px
