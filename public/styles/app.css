@@ -1695,7 +1695,7 @@ body {
 .sticky-wrap {
   border-top: 3px solid #ed0088;
   min-height: 100%;
-  margin-bottom: -96px;
+  margin-bottom: -228px;
 }
 /* line 41, base/_base.sass */
 .sticky-wrap:after {
@@ -1706,7 +1706,7 @@ body {
 /* line 44, base/_base.sass */
 .sticky-wrap:after,
 .sticky-footer {
-  height: 96px;
+  height: 228px;
 }
 
 /* line 48, base/_base.sass */
@@ -1714,7 +1714,7 @@ body {
   border-bottom: 3px solid #ed0088;
 }
 
-/* line 51, base/_base.sass */
+/* line 52, base/_base.sass */
 .adventure-time, .modal-overlay, .modal, .nav-drawer-overlay, .box-background, .box-content, .epic-plan-visual-hover, .sticky-footer footer, .loader, .nav-drawer, .nav-level-1 .nav-button, .nav-level-0 .nav-button, .plan-benefits, .section-container, .item, .slide-visual,
 .slide-heading,
 .slide-product,
@@ -1729,7 +1729,7 @@ body {
           transform: translateZ(0);
 }
 
-/* line 56, base/_base.sass */
+/* line 57, base/_base.sass */
 .modal-overlay, .modal, .nav-drawer-overlay {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1741,7 +1741,7 @@ body {
   width: 1px;
 }
 
-/* line 60, base/_base.sass */
+/* line 61, base/_base.sass */
 .modal-open .modal-overlay, .modal.active, .nav-drawer-open .nav-drawer-overlay {
   height: auto;
   width: auto;
@@ -1749,12 +1749,12 @@ body {
   clip: auto;
 }
 
-/* line 66, base/_base.sass */
+/* line 67, base/_base.sass */
 .box-content, .nav-level-1 {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* line 69, base/_base.sass */
+/* line 70, base/_base.sass */
 figure {
   margin: 0;
 }
@@ -1866,16 +1866,18 @@ figure {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto 40%;
+  -ms-behavior: url(/public/backgroundsize.min.htc);
 }
 @media only screen and (max-width: 60em) {
   /* line 1, reuse/_box-icons.sass */
   .box-icon-feedback, .box-icon-dashboard, .box-icon-dashboard-payment-history, .box-icon-dashboard-consumption, .box-icon-dashboard-bonus, .box-icon-payment, .box-icon-payment-pos, .box-icon-payment-portal, .box-icon-payment-express, .box-icon-payment-atm, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-sup-coverage-lte, .box-icon-html, .box-icon-xls, .box-icon-pdf, .box-icon-star, .box-icon-tick, .box-icon-handshake, .box-icon-docs, .box-icon-exchange, .box-icon-old-phone, .box-icon-altel, .box-icon-settings, .box-icon-settings-auto, .box-icon-unlock, .box-icon-block, .box-icon-missed-call, .box-icon-aon, .box-icon-order, .box-icon-pay-mobile, .box-icon-faq, .box-icon-mifi, .box-icon-usb-modem {
-    background-size: auto 50%;
     background-position: 100% 100%;
+    background-size: auto 50%;
+    -ms-behavior: url(/public/backgroundsize.min.htc);
   }
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-feedback {
   background-image: url(/public/images/icons/box-icon-feedback.svg);
 }
@@ -1889,7 +1891,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-feedback@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-feedback:after, .box:hover .box-icon-feedback {
   background-image: url(/public/images/icons/box-icon-feedback-hover.svg);
 }
@@ -1903,12 +1905,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-feedback-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-feedback:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-dashboard {
   background-image: url(/public/images/icons/box-icon-dashboard.svg);
 }
@@ -1922,7 +1924,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-dashboard@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-dashboard:after, .box:hover .box-icon-dashboard {
   background-image: url(/public/images/icons/box-icon-dashboard-hover.svg);
 }
@@ -1936,12 +1938,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-dashboard-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-dashboard:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-dashboard-payment-history {
   background-image: url(/public/images/icons/box-icon-dashboard-payment-history.svg);
 }
@@ -1955,7 +1957,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-dashboard-payment-history@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-dashboard-payment-history:after, .box:hover .box-icon-dashboard-payment-history {
   background-image: url(/public/images/icons/box-icon-dashboard-payment-history-hover.svg);
 }
@@ -1969,12 +1971,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-dashboard-payment-history-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-dashboard-payment-history:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-dashboard-consumption {
   background-image: url(/public/images/icons/box-icon-dashboard-consumption.svg);
 }
@@ -1988,7 +1990,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-dashboard-consumption@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-dashboard-consumption:after, .box:hover .box-icon-dashboard-consumption {
   background-image: url(/public/images/icons/box-icon-dashboard-consumption-hover.svg);
 }
@@ -2002,12 +2004,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-dashboard-consumption-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-dashboard-consumption:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-dashboard-bonus {
   background-image: url(/public/images/icons/box-icon-dashboard-bonus.svg);
 }
@@ -2021,7 +2023,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-dashboard-bonus@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-dashboard-bonus:after, .box:hover .box-icon-dashboard-bonus {
   background-image: url(/public/images/icons/box-icon-dashboard-bonus-hover.svg);
 }
@@ -2035,12 +2037,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-dashboard-bonus-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-dashboard-bonus:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-payment {
   background-image: url(/public/images/icons/box-icon-payment.svg);
 }
@@ -2054,7 +2056,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-payment@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-payment:after, .box:hover .box-icon-payment {
   background-image: url(/public/images/icons/box-icon-payment-hover.svg);
 }
@@ -2068,12 +2070,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-payment-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-payment:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-payment-pos {
   background-image: url(/public/images/icons/box-icon-payment-pos.svg);
 }
@@ -2087,7 +2089,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-payment-pos@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-payment-pos:after, .box:hover .box-icon-payment-pos {
   background-image: url(/public/images/icons/box-icon-payment-pos-hover.svg);
 }
@@ -2101,12 +2103,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-payment-pos-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-payment-pos:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-payment-portal {
   background-image: url(/public/images/icons/box-icon-payment-portal.svg);
 }
@@ -2120,7 +2122,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-payment-portal@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-payment-portal:after, .box:hover .box-icon-payment-portal {
   background-image: url(/public/images/icons/box-icon-payment-portal-hover.svg);
 }
@@ -2134,12 +2136,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-payment-portal-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-payment-portal:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-payment-express {
   background-image: url(/public/images/icons/box-icon-payment-express.svg);
 }
@@ -2153,7 +2155,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-payment-express@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-payment-express:after, .box:hover .box-icon-payment-express {
   background-image: url(/public/images/icons/box-icon-payment-express-hover.svg);
 }
@@ -2167,12 +2169,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-payment-express-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-payment-express:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-payment-atm {
   background-image: url(/public/images/icons/box-icon-payment-atm.svg);
 }
@@ -2186,7 +2188,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-payment-atm@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-payment-atm:after, .box:hover .box-icon-payment-atm {
   background-image: url(/public/images/icons/box-icon-payment-atm-hover.svg);
 }
@@ -2200,12 +2202,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-payment-atm-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-payment-atm:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-business-devices {
   background-image: url(/public/images/icons/box-icon-business-devices.svg);
 }
@@ -2219,7 +2221,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-business-devices@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-business-devices:after, .box:hover .box-icon-business-devices {
   background-image: url(/public/images/icons/box-icon-business-devices-hover.svg);
 }
@@ -2233,12 +2235,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-business-devices-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-business-devices:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-business-informer {
   background-image: url(/public/images/icons/box-icon-business-informer.svg);
 }
@@ -2252,7 +2254,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-business-informer@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-business-informer:after, .box:hover .box-icon-business-informer {
   background-image: url(/public/images/icons/box-icon-business-informer-hover.svg);
 }
@@ -2266,12 +2268,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-business-informer-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-business-informer:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-business-internet {
   background-image: url(/public/images/icons/box-icon-business-internet.svg);
 }
@@ -2285,7 +2287,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-business-internet@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-business-internet:after, .box:hover .box-icon-business-internet {
   background-image: url(/public/images/icons/box-icon-business-internet-hover.svg);
 }
@@ -2299,12 +2301,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-business-internet-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-business-internet:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-business-plans {
   background-image: url(/public/images/icons/box-icon-business-plans.svg);
 }
@@ -2318,7 +2320,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-business-plans@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-business-plans:after, .box:hover .box-icon-business-plans {
   background-image: url(/public/images/icons/box-icon-business-plans-hover.svg);
 }
@@ -2332,12 +2334,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-business-plans-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-business-plans:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-business-services {
   background-image: url(/public/images/icons/box-icon-business-services.svg);
 }
@@ -2351,7 +2353,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-business-services@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-business-services:after, .box:hover .box-icon-business-services {
   background-image: url(/public/images/icons/box-icon-business-services-hover.svg);
 }
@@ -2365,12 +2367,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-business-services-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-business-services:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-business-special {
   background-image: url(/public/images/icons/box-icon-business-special.svg);
 }
@@ -2384,7 +2386,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-business-special@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-business-special:after, .box:hover .box-icon-business-special {
   background-image: url(/public/images/icons/box-icon-business-special-hover.svg);
 }
@@ -2398,12 +2400,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-business-special-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-business-special:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-site-internet, .plan-icon-lte {
   background-image: url(/public/images/icons/box-icon-site-internet.svg);
 }
@@ -2417,7 +2419,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-site-internet@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-site-internet:after, .plan-icon-lte:after, .box:hover .box-icon-site-internet, .box:hover .plan-icon-lte {
   background-image: url(/public/images/icons/box-icon-site-internet-hover.svg);
 }
@@ -2431,12 +2433,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-site-internet-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-site-internet:after, .plan-icon-lte:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-site-migration {
   background-image: url(/public/images/icons/box-icon-site-migration.svg);
 }
@@ -2450,7 +2452,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-site-migration@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-site-migration:after, .box:hover .box-icon-site-migration {
   background-image: url(/public/images/icons/box-icon-site-migration-hover.svg);
 }
@@ -2464,12 +2466,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-site-migration-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-site-migration:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-site-plans, .plan-icon-gsm {
   background-image: url(/public/images/icons/box-icon-site-plans.svg);
 }
@@ -2483,7 +2485,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-site-plans@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-site-plans:after, .plan-icon-gsm:after, .box:hover .box-icon-site-plans, .box:hover .plan-icon-gsm {
   background-image: url(/public/images/icons/box-icon-site-plans-hover.svg);
 }
@@ -2497,12 +2499,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-site-plans-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-site-plans:after, .plan-icon-gsm:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-site-roaming {
   background-image: url(/public/images/icons/box-icon-site-roaming.svg);
 }
@@ -2516,7 +2518,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-site-roaming@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-site-roaming:after, .box:hover .box-icon-site-roaming {
   background-image: url(/public/images/icons/box-icon-site-roaming-hover.svg);
 }
@@ -2530,12 +2532,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-site-roaming-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-site-roaming:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-sup-centres {
   background-image: url(/public/images/icons/box-icon-sup-centres.svg);
 }
@@ -2549,7 +2551,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-sup-centres@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-sup-centres:after, .box:hover .box-icon-sup-centres {
   background-image: url(/public/images/icons/box-icon-sup-centres-hover.svg);
 }
@@ -2563,12 +2565,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-sup-centres-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-sup-centres:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-sup-consultant {
   background-image: url(/public/images/icons/box-icon-sup-consultant.svg);
 }
@@ -2582,7 +2584,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-sup-consultant@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-sup-consultant:after, .box:hover .box-icon-sup-consultant {
   background-image: url(/public/images/icons/box-icon-sup-consultant-hover.svg);
 }
@@ -2596,12 +2598,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-sup-consultant-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-sup-consultant:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-sup-coverage {
   background-image: url(/public/images/icons/box-icon-sup-coverage.svg);
 }
@@ -2615,7 +2617,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-sup-coverage@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-sup-coverage:after, .box:hover .box-icon-sup-coverage {
   background-image: url(/public/images/icons/box-icon-sup-coverage-hover.svg);
 }
@@ -2629,12 +2631,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-sup-coverage-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-sup-coverage:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-sup-coverage-lte {
   background-image: url(/public/images/icons/box-icon-sup-coverage-lte.svg);
 }
@@ -2648,7 +2650,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-sup-coverage-lte@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-sup-coverage-lte:after, .box:hover .box-icon-sup-coverage-lte {
   background-image: url(/public/images/icons/box-icon-sup-coverage-lte-hover.svg);
 }
@@ -2662,12 +2664,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-sup-coverage-lte-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-sup-coverage-lte:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-html {
   background-image: url(/public/images/icons/box-icon-html.svg);
 }
@@ -2681,7 +2683,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-html@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-html:after, .box:hover .box-icon-html {
   background-image: url(/public/images/icons/box-icon-html-hover.svg);
 }
@@ -2695,12 +2697,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-html-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-html:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-xls {
   background-image: url(/public/images/icons/box-icon-xls.svg);
 }
@@ -2714,7 +2716,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-xls@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-xls:after, .box:hover .box-icon-xls {
   background-image: url(/public/images/icons/box-icon-xls-hover.svg);
 }
@@ -2728,12 +2730,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-xls-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-xls:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-pdf {
   background-image: url(/public/images/icons/box-icon-pdf.svg);
 }
@@ -2747,7 +2749,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-pdf@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-pdf:after, .box:hover .box-icon-pdf {
   background-image: url(/public/images/icons/box-icon-pdf-hover.svg);
 }
@@ -2761,12 +2763,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-pdf-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-pdf:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-star {
   background-image: url(/public/images/icons/box-icon-star.svg);
 }
@@ -2780,7 +2782,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-star@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-star:after, .box:hover .box-icon-star {
   background-image: url(/public/images/icons/box-icon-star-hover.svg);
 }
@@ -2794,12 +2796,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-star-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-star:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-tick {
   background-image: url(/public/images/icons/box-icon-tick.svg);
 }
@@ -2813,7 +2815,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-tick@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-tick:after, .box:hover .box-icon-tick {
   background-image: url(/public/images/icons/box-icon-tick-hover.svg);
 }
@@ -2827,12 +2829,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-tick-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-tick:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-handshake {
   background-image: url(/public/images/icons/box-icon-handshake.svg);
 }
@@ -2846,7 +2848,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-handshake@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-handshake:after, .box:hover .box-icon-handshake {
   background-image: url(/public/images/icons/box-icon-handshake-hover.svg);
 }
@@ -2860,12 +2862,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-handshake-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-handshake:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-docs {
   background-image: url(/public/images/icons/box-icon-docs.svg);
 }
@@ -2879,7 +2881,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-docs@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-docs:after, .box:hover .box-icon-docs {
   background-image: url(/public/images/icons/box-icon-docs-hover.svg);
 }
@@ -2893,12 +2895,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-docs-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-docs:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-exchange {
   background-image: url(/public/images/icons/box-icon-exchange.svg);
 }
@@ -2912,7 +2914,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-exchange@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-exchange:after, .box:hover .box-icon-exchange {
   background-image: url(/public/images/icons/box-icon-exchange-hover.svg);
 }
@@ -2926,12 +2928,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-exchange-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-exchange:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-old-phone {
   background-image: url(/public/images/icons/box-icon-old-phone.svg);
 }
@@ -2945,7 +2947,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-old-phone@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-old-phone:after, .box:hover .box-icon-old-phone {
   background-image: url(/public/images/icons/box-icon-old-phone-hover.svg);
 }
@@ -2959,12 +2961,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-old-phone-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-old-phone:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-altel {
   background-image: url(/public/images/icons/box-icon-altel.svg);
 }
@@ -2978,7 +2980,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-altel@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-altel:after, .box:hover .box-icon-altel {
   background-image: url(/public/images/icons/box-icon-altel-hover.svg);
 }
@@ -2992,12 +2994,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-altel-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-altel:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-settings {
   background-image: url(/public/images/icons/box-icon-settings.svg);
 }
@@ -3011,7 +3013,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-settings@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-settings:after, .box:hover .box-icon-settings {
   background-image: url(/public/images/icons/box-icon-settings-hover.svg);
 }
@@ -3025,12 +3027,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-settings-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-settings:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-settings-auto {
   background-image: url(/public/images/icons/box-icon-settings-auto.svg);
 }
@@ -3044,7 +3046,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-settings-auto@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-settings-auto:after, .box:hover .box-icon-settings-auto {
   background-image: url(/public/images/icons/box-icon-settings-auto-hover.svg);
 }
@@ -3058,12 +3060,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-settings-auto-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-settings-auto:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-unlock {
   background-image: url(/public/images/icons/box-icon-unlock.svg);
 }
@@ -3077,7 +3079,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-unlock@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-unlock:after, .box:hover .box-icon-unlock {
   background-image: url(/public/images/icons/box-icon-unlock-hover.svg);
 }
@@ -3091,12 +3093,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-unlock-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-unlock:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-block {
   background-image: url(/public/images/icons/box-icon-block.svg);
 }
@@ -3110,7 +3112,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-block@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-block:after, .box:hover .box-icon-block {
   background-image: url(/public/images/icons/box-icon-block-hover.svg);
 }
@@ -3124,12 +3126,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-block-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-block:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-missed-call {
   background-image: url(/public/images/icons/box-icon-missed-call.svg);
 }
@@ -3143,7 +3145,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-missed-call@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-missed-call:after, .box:hover .box-icon-missed-call {
   background-image: url(/public/images/icons/box-icon-missed-call-hover.svg);
 }
@@ -3157,12 +3159,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-missed-call-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-missed-call:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-aon {
   background-image: url(/public/images/icons/box-icon-aon.svg);
 }
@@ -3176,7 +3178,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-aon@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-aon:after, .box:hover .box-icon-aon {
   background-image: url(/public/images/icons/box-icon-aon-hover.svg);
 }
@@ -3190,12 +3192,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-aon-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-aon:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-order {
   background-image: url(/public/images/icons/box-icon-order.svg);
 }
@@ -3209,7 +3211,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-order@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-order:after, .box:hover .box-icon-order {
   background-image: url(/public/images/icons/box-icon-order-hover.svg);
 }
@@ -3223,12 +3225,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-order-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-order:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-pay-mobile {
   background-image: url(/public/images/icons/box-icon-pay-mobile.svg);
 }
@@ -3242,7 +3244,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-pay-mobile@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-pay-mobile:after, .box:hover .box-icon-pay-mobile {
   background-image: url(/public/images/icons/box-icon-pay-mobile-hover.svg);
 }
@@ -3256,12 +3258,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-pay-mobile-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-pay-mobile:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-faq {
   background-image: url(/public/images/icons/box-icon-faq.svg);
 }
@@ -3275,7 +3277,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-faq@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-faq:after, .box:hover .box-icon-faq {
   background-image: url(/public/images/icons/box-icon-faq-hover.svg);
 }
@@ -3289,12 +3291,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-faq-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-faq:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-mifi {
   background-image: url(/public/images/icons/box-icon-mifi.svg);
 }
@@ -3308,7 +3310,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-mifi@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-mifi:after, .box:hover .box-icon-mifi {
   background-image: url(/public/images/icons/box-icon-mifi-hover.svg);
 }
@@ -3322,12 +3324,12 @@ figure {
     background-image: url(/public/images/icons/box-icon-mifi-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-mifi:after {
   content: "";
 }
 
-/* line 10, reuse/_box-icons.sass */
+/* line 12, reuse/_box-icons.sass */
 .box-icon-usb-modem {
   background-image: url(/public/images/icons/box-icon-usb-modem.svg);
 }
@@ -3341,7 +3343,7 @@ figure {
     background-image: url(/public/images/icons/box-icon-usb-modem@2x.png);
   }
 }
-/* line 13, reuse/_box-icons.sass */
+/* line 15, reuse/_box-icons.sass */
 .box-icon-usb-modem:after, .box:hover .box-icon-usb-modem {
   background-image: url(/public/images/icons/box-icon-usb-modem-hover.svg);
 }
@@ -3355,22 +3357,24 @@ figure {
     background-image: url(/public/images/icons/box-icon-usb-modem-hover@2x.png);
   }
 }
-/* line 16, reuse/_box-icons.sass */
+/* line 18, reuse/_box-icons.sass */
 .box-icon-usb-modem:after {
   content: "";
 }
 
-/* line 73, reuse/_box-icons.sass */
+/* line 75, reuse/_box-icons.sass */
 .plan-icon-gsm,
 .plan-icon-lte {
   background-position: 50% 40%;
   background-size: auto 20%;
+  -ms-behavior: url(/public/backgroundsize.min.htc);
 }
 @media only screen and (max-width: 36em) {
-  /* line 73, reuse/_box-icons.sass */
+  /* line 75, reuse/_box-icons.sass */
   .plan-icon-gsm,
   .plan-icon-lte {
     background-size: auto 30%;
+    -ms-behavior: url(/public/backgroundsize.min.htc);
   }
 }
 
@@ -3680,6 +3684,7 @@ a.box:hover .button {
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: padding-box;
+  -ms-behavior: url(/public/backgroundsize.min.htc);
 }
 
 /* line 1, reuse/_drawer.sass */
@@ -3696,11 +3701,12 @@ a.box:hover .button {
 .sticky-footer footer {
   position: relative;
   color: #a5acb0;
-  height: 93px;
+  height: 228px;
 }
 /* line 7, reuse/_footer.sass */
 .sticky-footer footer .logotype-image {
   background-image: url(/public/images/logotype.svg);
+  background-position: 50% 50%;
 }
 /* line 39, base/_mixins.sass */
 .no-svg .sticky-footer footer .logotype-image {
@@ -3713,34 +3719,69 @@ a.box:hover .button {
   }
 }
 
-/* line 10, reuse/_footer.sass */
+/* line 11, reuse/_footer.sass */
 .footer-primary {
   overflow: hidden;
 }
 
-/* line 12, reuse/_footer.sass */
+/* line 13, reuse/_footer.sass */
 .footer-secondary {
   float: right;
 }
-/* line 14, reuse/_footer.sass */
+/* line 15, reuse/_footer.sass */
 .footer-secondary .nav-button {
   padding-right: 0 !important;
 }
 
-/* line 17, reuse/_footer.sass */
+/* line 18, reuse/_footer.sass */
 .footer-primary-logotype {
   float: left;
 }
 
-/* line 19, reuse/_footer.sass */
+/* line 20, reuse/_footer.sass */
 .footer-primary-body {
   overflow: hidden;
 }
 @media only screen and (max-width: 60em) {
-  /* line 19, reuse/_footer.sass */
+  /* line 20, reuse/_footer.sass */
   .footer-primary-body {
     display: none;
   }
+}
+
+/* line 25, reuse/_footer.sass */
+.fpb-list {
+  display: inline-block;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+/* line 1601, bower_components/scut/dist/_scut.scss */
+.fpb-list:before, .fpb-list:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 50%;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #a5acb0;
+}
+/* line 1629, bower_components/scut/dist/_scut.scss */
+.fpb-list:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+/* line 1633, bower_components/scut/dist/_scut.scss */
+.fpb-list:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+/* line 29, reuse/_footer.sass */
+.fpb-list .nav-button {
+  max-width: 80%;
+  display: inline-block !important;
 }
 
 /* line 1, reuse/_group.sass */
@@ -4016,6 +4057,7 @@ a.box:hover .button {
   margin-top: -6px;
   background-image: url(/public/images/madeby.svg);
   background-size: contain;
+  -ms-behavior: url(/public/backgroundsize.min.htc);
   height: 24px;
   width: 135px;
 }
@@ -4030,14 +4072,14 @@ a.box:hover .button {
   }
 }
 
-/* line 93, reuse/_icons.sass */
+/* line 94, reuse/_icons.sass */
 .icon-visa,
 .icon-mastercard,
 .icon-maestro,
 .icon-amex {
   padding-top: 12px;
 }
-/* line 98, reuse/_icons.sass */
+/* line 99, reuse/_icons.sass */
 .icon-visa img,
 .icon-mastercard img,
 .icon-maestro img,
@@ -4330,7 +4372,7 @@ a.box:hover .button {
 .sticky-footer .nav-container {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 12px;
   left: 0;
 }
 
@@ -4484,6 +4526,7 @@ a.box:hover .button {
   background-size: contain;
   background-position: 0 50%;
   background-repeat: no-repeat;
+  -ms-behavior: url(/public/backgroundsize.min.htc);
 }
 /* line 39, base/_mixins.sass */
 .no-svg .logotype-image {
@@ -4495,57 +4538,57 @@ a.box:hover .button {
     background-image: url(/public/images/logotype@2x.png);
   }
 }
-/* line 106, reuse/_navigation.sass */
+/* line 107, reuse/_navigation.sass */
 footer .logotype-image {
   height: 18px;
 }
 
-/* line 109, reuse/_navigation.sass */
+/* line 110, reuse/_navigation.sass */
 .lang-switcher {
   font-weight: normal;
 }
 
-/* line 112, reuse/_navigation.sass */
+/* line 113, reuse/_navigation.sass */
 .lang-switcher .active {
   font-weight: bold;
 }
 
-/* line 116, reuse/_navigation.sass */
+/* line 117, reuse/_navigation.sass */
 .nav-level-0 .nav-button {
   background-color: transparent;
   font-weight: 600;
 }
-/* line 119, reuse/_navigation.sass */
+/* line 120, reuse/_navigation.sass */
 .nav-level-0 .nav-button:active, .nav-level-0 .nav-button.active {
   color: inherit;
   background-color: white;
 }
 
-/* line 123, reuse/_navigation.sass */
+/* line 124, reuse/_navigation.sass */
 .side-navigation-meta {
   padding-top: 12px;
   padding-bottom: 12px;
 }
 @media only screen and (max-width: 60em) {
-  /* line 123, reuse/_navigation.sass */
+  /* line 124, reuse/_navigation.sass */
   .side-navigation-meta {
     text-align: center;
   }
 }
 
-/* line 129, reuse/_navigation.sass */
+/* line 130, reuse/_navigation.sass */
 .mobile-side-navigation {
   padding: 12px;
   display: none;
 }
 @media only screen and (max-width: 60em) {
-  /* line 129, reuse/_navigation.sass */
+  /* line 130, reuse/_navigation.sass */
   .mobile-side-navigation {
     display: block;
   }
 }
 
-/* line 137, reuse/_navigation.sass */
+/* line 138, reuse/_navigation.sass */
 .side-navigation {
   list-style-type: none;
   padding-left: 0;
@@ -4553,13 +4596,13 @@ footer .logotype-image {
   margin-bottom: 0;
 }
 @media only screen and (max-width: 60em) {
-  /* line 137, reuse/_navigation.sass */
+  /* line 138, reuse/_navigation.sass */
   .side-navigation {
     display: none;
   }
 }
 @media only screen and (max-width: 72em) {
-  /* line 142, reuse/_navigation.sass */
+  /* line 143, reuse/_navigation.sass */
   .section-container .side-navigation {
     font-size: 14px;
     font-size: 0.875rem;
@@ -4567,7 +4610,7 @@ footer .logotype-image {
     line-height: 1.125rem;
   }
 }
-/* line 145, reuse/_navigation.sass */
+/* line 146, reuse/_navigation.sass */
 .mobile-side-navigation .side-navigation {
   background-color: white;
   border-radius: 2px;
@@ -4575,41 +4618,41 @@ footer .logotype-image {
   padding-left: 12px;
 }
 @media only screen and (max-width: 60em) {
-  /* line 145, reuse/_navigation.sass */
+  /* line 146, reuse/_navigation.sass */
   .mobile-side-navigation .side-navigation {
     display: block;
   }
 }
 
-/* line 153, reuse/_navigation.sass */
+/* line 154, reuse/_navigation.sass */
 .side-navigation-item {
   padding: 6px;
   display: block;
 }
-/* line 156, reuse/_navigation.sass */
+/* line 157, reuse/_navigation.sass */
 .side-navigation-item.active {
   font-weight: bold;
 }
-/* line 158, reuse/_navigation.sass */
+/* line 159, reuse/_navigation.sass */
 .section-container .side-navigation-item {
   color: white;
 }
-/* line 160, reuse/_navigation.sass */
+/* line 161, reuse/_navigation.sass */
 .section-container .side-navigation-item:hover {
   color: #56565c;
 }
-/* line 162, reuse/_navigation.sass */
+/* line 163, reuse/_navigation.sass */
 .mobile-side-navigation .side-navigation-item {
   padding: 12px 12px 11px;
   border-bottom: 1px solid #d3d5d4;
 }
 
-/* line 165, reuse/_navigation.sass */
+/* line 166, reuse/_navigation.sass */
 .side-navigation-group-title {
   padding: 12px 6px 12px 0;
 }
 
-/* line 172, reuse/_navigation.sass */
+/* line 173, reuse/_navigation.sass */
 .nav-toggle-container {
   text-align: right;
   display: none;
@@ -4617,13 +4660,13 @@ footer .logotype-image {
 }
 
 @media only screen and (max-width: 60em) {
-  /* line 177, reuse/_navigation.sass */
+  /* line 178, reuse/_navigation.sass */
   .header .nav-col, footer .nav-col {
     display: none;
   }
 }
 @media only screen and (max-width: 60em) {
-  /* line 180, reuse/_navigation.sass */
+  /* line 181, reuse/_navigation.sass */
   .header .nav-toggle-container,
   .header .nav-logotype-container, footer .nav-toggle-container,
   footer .nav-logotype-container {
@@ -4632,13 +4675,13 @@ footer .logotype-image {
 }
 
 @media only screen and (max-width: 60em) {
-  /* line 185, reuse/_navigation.sass */
+  /* line 186, reuse/_navigation.sass */
   .phone-container {
     text-align: right;
   }
 }
 @media only screen and (max-width: 36em) {
-  /* line 185, reuse/_navigation.sass */
+  /* line 186, reuse/_navigation.sass */
   .phone-container {
     text-align: left;
   }
@@ -4825,138 +4868,141 @@ footer .logotype-image {
   height: 12em;
   background-size: contain;
   background-position: 0 50%;
+  -ms-behavior: url(/public/backgroundsize.min.htc);
 }
 
-/* line 76, reuse/_plan.sass */
+/* line 77, reuse/_plan.sass */
 .epic-plan .planbox-icon {
   background-position: 50% 40%;
   background-size: auto 40%;
+  -ms-behavior: url(/public/backgroundsize.min.htc);
 }
 
-/* line 82, reuse/_plan.sass */
+/* line 84, reuse/_plan.sass */
 .epic-plan-visual {
   position: relative;
   min-height: 24em;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  -ms-behavior: url(/public/backgroundsize.min.htc);
 }
-/* line 89, reuse/_plan.sass */
+/* line 92, reuse/_plan.sass */
 .epic-plan-visual .box-footer {
   color: #56565c;
   border: none;
   top: auto;
 }
 @media only screen and (max-width: 60em) {
-  /* line 82, reuse/_plan.sass */
+  /* line 84, reuse/_plan.sass */
   .epic-plan-visual {
     height: auto;
   }
 }
 
-/* line 99, reuse/_plan.sass */
+/* line 102, reuse/_plan.sass */
 .plan-description {
   text-align: center;
   padding-top: 23px;
   border-top: 1px solid #d3d5d4;
 }
 
-/* line 104, reuse/_plan.sass */
+/* line 107, reuse/_plan.sass */
 .plan-table, .cta-table, .common-table {
   text-align: left;
   border-top: 1px solid #d3d5d4;
   margin-bottom: 24px;
 }
-/* line 109, reuse/_plan.sass */
+/* line 112, reuse/_plan.sass */
 .plan-table ul, .cta-table ul, .common-table ul {
   padding-bottom: 0;
 }
-/* line 111, reuse/_plan.sass */
+/* line 114, reuse/_plan.sass */
 .plan-table td, .cta-table td, .common-table td {
   padding: 6px;
 }
 
-/* line 114, reuse/_plan.sass */
+/* line 117, reuse/_plan.sass */
 .plan-table--alternate tr:nth-child(2n) {
   background-color: #d3d5d4;
 }
 
-/* line 117, reuse/_plan.sass */
+/* line 120, reuse/_plan.sass */
 .plan-table-title, .common-table-title {
   padding: 11px 6px 12px;
   text-align: left;
 }
 
-/* line 120, reuse/_plan.sass */
+/* line 123, reuse/_plan.sass */
 .common-table-title {
   padding: 12px 6px;
 }
 
-/* line 122, reuse/_plan.sass */
+/* line 125, reuse/_plan.sass */
 .common-table {
   border-top: none;
 }
 @media only screen and (max-width: 36em) {
-  /* line 122, reuse/_plan.sass */
+  /* line 125, reuse/_plan.sass */
   .common-table {
     font-size: 12px;
     font-size: 0.75rem;
     line-height: 18px;
     line-height: 1.125rem;
   }
-  /* line 126, reuse/_plan.sass */
+  /* line 129, reuse/_plan.sass */
   .common-table ul {
     padding-left: 0;
   }
 }
-/* line 128, reuse/_plan.sass */
+/* line 131, reuse/_plan.sass */
 .common-table td {
   padding: 6px 6px 5px;
 }
-/* line 130, reuse/_plan.sass */
+/* line 133, reuse/_plan.sass */
 .common-table tr {
   border-bottom: 1px solid #d3d5d4;
 }
-/* line 132, reuse/_plan.sass */
+/* line 135, reuse/_plan.sass */
 .common-table tr:last-child {
   border-bottom: transparent;
 }
 
-/* line 135, reuse/_plan.sass */
+/* line 138, reuse/_plan.sass */
 .plan-table-a {
   padding: 6px;
   width: 75%;
 }
 
-/* line 138, reuse/_plan.sass */
+/* line 141, reuse/_plan.sass */
 .plan-table-b {
   width: 25%;
   text-align: right;
 }
 
-/* line 142, reuse/_plan.sass */
+/* line 145, reuse/_plan.sass */
 .cta-table {
   border-top: 0;
 }
-/* line 145, reuse/_plan.sass */
+/* line 148, reuse/_plan.sass */
 .cta-table p {
   padding: 0;
 }
 
-/* line 148, reuse/_plan.sass */
+/* line 151, reuse/_plan.sass */
 .footnotes {
   text-align: left;
   color: #a5acb0;
   padding: 12px;
 }
 
-/* line 153, reuse/_plan.sass */
+/* line 156, reuse/_plan.sass */
 .footnote {
   position: relative;
   padding-left: 12px;
 }
 
-/* line 157, reuse/_plan.sass */
+/* line 160, reuse/_plan.sass */
 .phone-command {
   font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
   display: block;
@@ -4968,7 +5014,7 @@ footer .logotype-image {
   font-weight: bold;
 }
 @media only screen and (max-width: 36em) {
-  /* line 157, reuse/_plan.sass */
+  /* line 160, reuse/_plan.sass */
   .phone-command {
     padding: 5px;
     font-size: 14px;
@@ -4978,28 +5024,29 @@ footer .logotype-image {
   }
 }
 
-/* line 171, reuse/_plan.sass */
+/* line 174, reuse/_plan.sass */
 .planbox,
 .epic-plan-visual-hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  -ms-behavior: url(/public/backgroundsize.min.htc);
 }
 
-/* line 177, reuse/_plan.sass */
+/* line 181, reuse/_plan.sass */
 .epic-plan-visual-container {
   position: relative;
   overflow: hidden;
   margin: -12px -12px 0;
 }
 
-/* line 183, reuse/_plan.sass */
+/* line 187, reuse/_plan.sass */
 .epic-plan-visual-hover {
   -webkit-transition-property: opacity;
           transition-property: opacity;
   opacity: 0;
 }
-/* line 188, reuse/_plan.sass */
+/* line 192, reuse/_plan.sass */
 .box:hover .epic-plan-visual-hover {
   opacity: 1;
 }
@@ -5194,8 +5241,9 @@ footer .logotype-image {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  -ms-behavior: url(/public/backgroundsize.min.htc);
 }
-/* line 75, reuse/_slides.sass */
+/* line 76, reuse/_slides.sass */
 .slide-visual img {
   margin: auto;
   position: relative;
@@ -5203,7 +5251,7 @@ footer .logotype-image {
   width: 1272px;
 }
 @media only screen and (max-width: 60em) {
-  /* line 75, reuse/_slides.sass */
+  /* line 76, reuse/_slides.sass */
   .slide-visual img {
     position: absolute;
     top: 50%;
@@ -5216,15 +5264,16 @@ footer .logotype-image {
   /* line 70, reuse/_slides.sass */
   .slide-visual {
     background-size: auto 100%;
+    -ms-behavior: url(/public/backgroundsize.min.htc);
   }
 }
-/* line 93, reuse/_slides.sass */
+/* line 95, reuse/_slides.sass */
 .style-b .slide-visual {
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
           transform: translateX(100%);
 }
-/* line 95, reuse/_slides.sass */
+/* line 97, reuse/_slides.sass */
 .active.style-b .slide-visual {
   -webkit-animation: none;
           animation: none;
@@ -5233,20 +5282,20 @@ footer .logotype-image {
           transform: translateX(0);
 }
 
-/* line 99, reuse/_slides.sass */
+/* line 101, reuse/_slides.sass */
 .slide-product {
   opacity: 0;
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
           transform: translateY(100%);
 }
-/* line 102, reuse/_slides.sass */
+/* line 104, reuse/_slides.sass */
 .slide-product img {
   display: block;
   margin: auto;
 }
 @media only screen and (max-width: 60em) {
-  /* line 102, reuse/_slides.sass */
+  /* line 104, reuse/_slides.sass */
   .slide-product img {
     position: absolute;
     top: 50%;
@@ -5256,7 +5305,7 @@ footer .logotype-image {
             transform: translateY(-50%) scale(2);
   }
 }
-/* line 110, reuse/_slides.sass */
+/* line 112, reuse/_slides.sass */
 .active .slide-product {
   opacity: 1;
   -webkit-transform: translateY(0);
@@ -5270,7 +5319,7 @@ footer .logotype-image {
           transition-timing-function: ease-in-out;
 }
 
-/* line 117, reuse/_slides.sass */
+/* line 119, reuse/_slides.sass */
 .slide-heading {
   padding: 0 0 12px;
   display: block;
@@ -5278,17 +5327,17 @@ footer .logotype-image {
   text-transform: uppercase;
   opacity: 0;
 }
-/* line 126, reuse/_slides.sass */
+/* line 128, reuse/_slides.sass */
 .active .slide-heading {
   opacity: 1;
 }
-/* line 129, reuse/_slides.sass */
+/* line 131, reuse/_slides.sass */
 .style-b .slide-heading {
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
           transform: translateX(-100%);
 }
-/* line 131, reuse/_slides.sass */
+/* line 133, reuse/_slides.sass */
 .active.style-b .slide-heading {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -5296,18 +5345,18 @@ footer .logotype-image {
   -webkit-transition-delay: 0.1s;
           transition-delay: 0.1s;
 }
-/* line 134, reuse/_slides.sass */
+/* line 136, reuse/_slides.sass */
 .slide-heading .extra {
   text-transform: none;
   display: block;
 }
-/* line 138, reuse/_slides.sass */
+/* line 140, reuse/_slides.sass */
 .style-b .slide-heading .extra {
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
           transform: translateX(-100%);
 }
-/* line 140, reuse/_slides.sass */
+/* line 142, reuse/_slides.sass */
 .active.style-b .slide-heading .extra {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -5316,22 +5365,22 @@ footer .logotype-image {
           transition-delay: 0.2s;
 }
 
-/* line 144, reuse/_slides.sass */
+/* line 146, reuse/_slides.sass */
 .slide-cta {
   opacity: 0;
   padding-bottom: 18px;
 }
-/* line 149, reuse/_slides.sass */
+/* line 151, reuse/_slides.sass */
 .active .slide-cta {
   opacity: 1;
 }
-/* line 152, reuse/_slides.sass */
+/* line 154, reuse/_slides.sass */
 .style-b .slide-cta {
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
           transform: translateX(-100%);
 }
-/* line 154, reuse/_slides.sass */
+/* line 156, reuse/_slides.sass */
 .active.style-b .slide-cta {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -5340,7 +5389,7 @@ footer .logotype-image {
           transition-delay: 0.3s;
 }
 
-/* line 158, reuse/_slides.sass */
+/* line 160, reuse/_slides.sass */
 .slide-heading,
 .slide-message,
 .slide-message .extra {
@@ -5348,25 +5397,25 @@ footer .logotype-image {
 }
 
 @-webkit-keyframes hollywood {
-  /* line 164, reuse/_slides.sass */
+  /* line 166, reuse/_slides.sass */
   0% {
     -webkit-transform: scale(1);
   }
 
-  /* line 166, reuse/_slides.sass */
+  /* line 168, reuse/_slides.sass */
   100% {
     -webkit-transform: scale(1.05);
   }
 }
 
 @keyframes hollywood {
-  /* line 164, reuse/_slides.sass */
+  /* line 166, reuse/_slides.sass */
   0% {
     -webkit-transform: scale(1);
             transform: scale(1);
   }
 
-  /* line 166, reuse/_slides.sass */
+  /* line 168, reuse/_slides.sass */
   100% {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
@@ -5374,13 +5423,13 @@ footer .logotype-image {
 }
 
 @-webkit-keyframes visual-slide-in {
-  /* line 170, reuse/_slides.sass */
+  /* line 172, reuse/_slides.sass */
   0% {
     -webkit-transform: translateX(100%);
     opacity: 0;
   }
 
-  /* line 173, reuse/_slides.sass */
+  /* line 175, reuse/_slides.sass */
   100% {
     -webkit-transform: translateX(0%);
     opacity: 1;
@@ -5388,14 +5437,14 @@ footer .logotype-image {
 }
 
 @keyframes visual-slide-in {
-  /* line 170, reuse/_slides.sass */
+  /* line 172, reuse/_slides.sass */
   0% {
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     opacity: 0;
   }
 
-  /* line 173, reuse/_slides.sass */
+  /* line 175, reuse/_slides.sass */
   100% {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
@@ -5406,13 +5455,13 @@ footer .logotype-image {
 @-webkit-keyframes product-slide-in {}
 @keyframes product-slide-in {}
 @-webkit-keyframes message-slide-in {
-  /* line 178, reuse/_slides.sass */
+  /* line 180, reuse/_slides.sass */
   0% {
     -webkit-transform: translateX(-9999px);
     opacity: 0;
   }
 
-  /* line 181, reuse/_slides.sass */
+  /* line 183, reuse/_slides.sass */
   100% {
     -webkit-transform: translateX(0);
     opacity: 1;
@@ -5420,14 +5469,14 @@ footer .logotype-image {
 }
 
 @keyframes message-slide-in {
-  /* line 178, reuse/_slides.sass */
+  /* line 180, reuse/_slides.sass */
   0% {
     -webkit-transform: translateX(-9999px);
             transform: translateX(-9999px);
     opacity: 0;
   }
 
-  /* line 181, reuse/_slides.sass */
+  /* line 183, reuse/_slides.sass */
   100% {
     -webkit-transform: translateX(0);
             transform: translateX(0);
@@ -5435,7 +5484,7 @@ footer .logotype-image {
   }
 }
 
-/* line 185, reuse/_slides.sass */
+/* line 187, reuse/_slides.sass */
 .slide-indicators {
   position: absolute;
   width: 100%;
@@ -5448,18 +5497,18 @@ footer .logotype-image {
   text-align: center;
   padding-bottom: 12px;
 }
-/* line 193, reuse/_slides.sass */
+/* line 195, reuse/_slides.sass */
 .slide-indicators > li {
   display: inline-block;
   padding: 6px;
   vertical-align: middle;
 }
-/* line 197, reuse/_slides.sass */
+/* line 199, reuse/_slides.sass */
 .slide-indicators > li:hover {
   cursor: pointer;
 }
 
-/* line 199, reuse/_slides.sass */
+/* line 201, reuse/_slides.sass */
 .s-circle {
   display: block;
   border-radius: 50%;
@@ -5468,7 +5517,7 @@ footer .logotype-image {
   background-color: white;
   opacity: 0.2;
 }
-/* line 206, reuse/_slides.sass */
+/* line 208, reuse/_slides.sass */
 .active .s-circle {
   opacity: 1;
 }
