@@ -3817,6 +3817,13 @@ a.box:hover .button {
   text-align: center;
 }
 
+/* line 1, reuse/_callout.sass */
+.callout {
+  background-color: #d3d5d4;
+  padding: 24px;
+  border-radius: 2px;
+}
+
 /* line 1, reuse/_center.sass */
 .center-this {
   position: absolute;
