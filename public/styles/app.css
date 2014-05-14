@@ -5233,32 +5233,24 @@ footer .logotype-image {
 }
 
 /* line 7, reuse/_side-navigation.sass */
-.mobile-side-navigation {
-  padding: 12px;
-  display: none;
-}
-@media only screen and (max-width: 60em) {
-  /* line 7, reuse/_side-navigation.sass */
-  .mobile-side-navigation {
-    display: block;
-  }
-}
-
-/* line 14, reuse/_side-navigation.sass */
 .side-navigation {
   list-style-type: none;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
+/* line 10, reuse/_side-navigation.sass */
+.side-navigation .side-navigation {
+  padding-left: 12px;
+}
 @media only screen and (max-width: 60em) {
-  /* line 14, reuse/_side-navigation.sass */
+  /* line 7, reuse/_side-navigation.sass */
   .side-navigation {
     display: none;
   }
 }
 @media only screen and (max-width: 72em) {
-  /* line 20, reuse/_side-navigation.sass */
+  /* line 15, reuse/_side-navigation.sass */
   .section-container .side-navigation {
     font-size: 14px;
     font-size: 0.875rem;
@@ -5266,47 +5258,48 @@ footer .logotype-image {
     line-height: 1.125rem;
   }
 }
-/* line 24, reuse/_side-navigation.sass */
-.mobile-side-navigation .side-navigation {
-  background-color: white;
-  border-radius: 2px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  padding-left: 12px;
-}
-@media only screen and (max-width: 60em) {
-  /* line 24, reuse/_side-navigation.sass */
-  .mobile-side-navigation .side-navigation {
-    display: block;
-  }
-}
 
-/* line 32, reuse/_side-navigation.sass */
+/* line 19, reuse/_side-navigation.sass */
 .side-navigation-item {
   padding: 6px;
   display: block;
   border-bottom: 1px solid #a5acb0;
 }
-/* line 36, reuse/_side-navigation.sass */
+/* line 23, reuse/_side-navigation.sass */
 .side-navigation-item.active {
   font-weight: bold;
 }
-/* line 39, reuse/_side-navigation.sass */
+/* line 26, reuse/_side-navigation.sass */
 .section-container .side-navigation-item {
   color: white;
 }
-/* line 41, reuse/_side-navigation.sass */
+/* line 28, reuse/_side-navigation.sass */
 .section-container .side-navigation-item:hover {
   color: #56565c;
 }
-/* line 44, reuse/_side-navigation.sass */
-.mobile-side-navigation .side-navigation-item {
-  padding: 12px 12px 11px;
-  border-bottom: 1px solid #d3d5d4;
-}
 
-/* line 48, reuse/_side-navigation.sass */
+/* line 31, reuse/_side-navigation.sass */
 .side-navigation-group-title {
   padding: 12px 6px 12px 0;
+}
+
+/* line 37, reuse/_side-navigation.sass */
+.mobile-side-navigation {
+  padding: 12px;
+  display: none;
+}
+@media only screen and (max-width: 60em) {
+  /* line 37, reuse/_side-navigation.sass */
+  .mobile-side-navigation {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 60em) {
+  /* line 43, reuse/_side-navigation.sass */
+  .mobile-side-navigation .side-navigation {
+    display: block;
+  }
 }
 
 /* line 1, reuse/_slides.sass */
@@ -5802,11 +5795,6 @@ footer .logotype-image {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-/* line 1, reuse/_ymaps.sass */
-ymaps {
-  max-width: 100%;
 }
 
 /* line 4, special/_dashboard.sass */
