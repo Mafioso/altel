@@ -80,21 +80,25 @@
   font-weight: bold
   color: #6c717a
   text-align: justify
-  background-color: white
-  border-radius: 2px
   display: table
+  overflow: hidden
+  border-radius: 2px
   .nav-button
     vertical-align: middle
     position: relative
     text-align: center
     display: table-cell
+    &:first-child
+      border-radius: 2px 0 0 2px
+    &:last-child
+      border-radius: 0 2px 2px 0
 
 
-// .navigation.nav-level-1
-//   @include bp-medium
-//     display: none
-  // @include bp-large
-  //   display: block
+.navigation.nav-level-1
+  @include bp-large
+    display: table
+  @include bp-medium
+    display: none
 
 .nav-logotype-container
   vertical-align: middle

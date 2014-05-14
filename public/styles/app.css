@@ -4688,9 +4688,9 @@ a.box:hover .button {
   font-weight: bold;
   color: #6c717a;
   text-align: justify;
-  background-color: white;
-  border-radius: 2px;
   display: table;
+  overflow: hidden;
+  border-radius: 2px;
 }
 /* line 86, reuse/_navigation.sass */
 .nav-level-1 .nav-button {
@@ -4699,20 +4699,41 @@ a.box:hover .button {
   text-align: center;
   display: table-cell;
 }
+/* line 91, reuse/_navigation.sass */
+.nav-level-1 .nav-button:first-child {
+  border-radius: 2px 0 0 2px;
+}
+/* line 93, reuse/_navigation.sass */
+.nav-level-1 .nav-button:last-child {
+  border-radius: 0 2px 2px 0;
+}
 
-/* line 99, reuse/_navigation.sass */
+@media only screen and (max-width: 72em) {
+  /* line 97, reuse/_navigation.sass */
+  .navigation.nav-level-1 {
+    display: table;
+  }
+}
+@media only screen and (max-width: 60em) {
+  /* line 97, reuse/_navigation.sass */
+  .navigation.nav-level-1 {
+    display: none;
+  }
+}
+
+/* line 103, reuse/_navigation.sass */
 .nav-logotype-container {
   vertical-align: middle;
   padding-right: 12px;
 }
 
-/* line 103, reuse/_navigation.sass */
+/* line 107, reuse/_navigation.sass */
 .logotype {
   display: block;
   overflow: hidden;
 }
 
-/* line 110, reuse/_navigation.sass */
+/* line 114, reuse/_navigation.sass */
 .logotype-image {
   display: block;
   width: 100%;
@@ -4733,33 +4754,33 @@ a.box:hover .button {
     background-image: url(/public/images/logotype@2x.png);
   }
 }
-/* line 119, reuse/_navigation.sass */
+/* line 123, reuse/_navigation.sass */
 footer .logotype-image {
   height: 18px;
 }
 
-/* line 122, reuse/_navigation.sass */
+/* line 126, reuse/_navigation.sass */
 .lang-switcher {
   font-weight: normal;
 }
 
-/* line 125, reuse/_navigation.sass */
+/* line 129, reuse/_navigation.sass */
 .lang-switcher .active {
   font-weight: bold;
 }
 
-/* line 129, reuse/_navigation.sass */
+/* line 133, reuse/_navigation.sass */
 .nav-level-0 .nav-button {
   background-color: transparent;
   font-weight: 600;
 }
-/* line 132, reuse/_navigation.sass */
+/* line 136, reuse/_navigation.sass */
 .nav-level-0 .nav-button:active, .nav-level-0 .nav-button.active {
   color: inherit;
   background-color: white;
 }
 
-/* line 138, reuse/_navigation.sass */
+/* line 142, reuse/_navigation.sass */
 .nav-toggle-container {
   text-align: right;
   display: none;
@@ -4767,13 +4788,13 @@ footer .logotype-image {
 }
 
 @media only screen and (max-width: 60em) {
-  /* line 143, reuse/_navigation.sass */
+  /* line 147, reuse/_navigation.sass */
   .header .nav-col, footer .nav-col {
     display: none;
   }
 }
 @media only screen and (max-width: 60em) {
-  /* line 146, reuse/_navigation.sass */
+  /* line 150, reuse/_navigation.sass */
   .header .nav-toggle-container,
   .header .nav-logotype-container, footer .nav-toggle-container,
   footer .nav-logotype-container {
@@ -4782,13 +4803,13 @@ footer .logotype-image {
 }
 
 @media only screen and (max-width: 60em) {
-  /* line 151, reuse/_navigation.sass */
+  /* line 155, reuse/_navigation.sass */
   .phone-container {
     text-align: right;
   }
 }
 @media only screen and (max-width: 36em) {
-  /* line 151, reuse/_navigation.sass */
+  /* line 155, reuse/_navigation.sass */
   .phone-container {
     text-align: left;
   }
