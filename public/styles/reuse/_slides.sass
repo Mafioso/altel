@@ -17,9 +17,9 @@
 .item
   @extend %absolute-box
   @extend %animation-hack
-  @include transition-property(opacity)
-  @include transition-duration(.3s)
-  @include transition-timing-function($ease-in-out-sine)
+  transition-property: opacity
+  transition-duration: .3s
+  transition-timing-function: $ease-in-out-sine
   overflow: hidden
   opacity: 0
   &.active
@@ -37,9 +37,9 @@
 .slide-cta,
 .slide-heading .extra
   @extend %animation-hack
-  @include transition-property(transform, opacity)
-  @include transition-duration(.8s)
-  @include transition-timing-function($ease-in-out-sine)
+  transition-property: transform, opacity
+  transition-duration: .8s
+  transition-timing-function: $ease-in-out-sine
 
 
 .slide-message
@@ -48,7 +48,7 @@
   width: 100%
   padding: $gutter (1/12)*100%
   .csstransforms &
-    @include transform(translateY(-50%))
+    transform: translateY(-50%)
     top: 50%
   .item-type-center &
     text-align: center
@@ -81,7 +81,7 @@
     @include bp-medium
       position: absolute
       top: 50%
-      @include transform(translateY(-50%) scale(3.2))
+      transform: translateY(-50%) scale(3.2)
 
       // width: auto
       // max-width: none
@@ -93,14 +93,14 @@
     background-size: auto 100%
     -ms-behavior: url(/public/backgroundsize.min.htc)
   .style-b &
-    @include transform(translateX(100%))
+    transform: translateX(100%)
   .active.style-b &
-    @include animation(none)
-    @include transform(translateX(0))
+    animation: none
+    transform: translateX(0)
 
 .slide-product
   opacity: 0
-  @include transform(translateY(100%))
+  transform: translateY(100%)
   img
     display: block
     margin: auto
@@ -108,13 +108,13 @@
       position: absolute
       top: 50%
       width: auto
-      @include transform(translateY(-50%) scale(2))
+      transform: translateY(-50%) scale(2)
   .active &
     opacity: 1
-    @include transform(translateY(0))
-    @include transition-duration(.2s)
-    @include transition-delay(.6s)
-    @include transition-timing-function(ease-in-out)
+    transform: translateY(0)
+    transition-duration: .2s
+    transition-delay: .6s
+    transition-timing-function: ease-in-out
 
 .slide-heading
   padding: 0 0 $gutter
@@ -129,19 +129,19 @@
     opacity: 1
     // @include transform(translateX(0))
   .style-b &
-    @include transform(translateX(-100%))
+    transform: translateX(-100%)
   .active.style-b &
-    @include transform(translateX(0))
-    @include transition-delay(.1s)
+    transform: translateX(0)
+    transition-delay: .1s
   .extra
     @extend %small-heading
     text-transform: none
     display: block
     .style-b &
-      @include transform(translateX(-100%))
+      transform: translateX(-100%)
     .active.style-b &
-      @include transform(translateX(0))
-      @include transition-delay(.2s)
+      transform: translateX(0)
+      transition-delay: .2s
 
 .slide-cta
   opacity: 0
@@ -152,36 +152,36 @@
     // @include transform(translateX(0))
     opacity: 1
   .style-b &
-    @include transform(translateX(-100%))
+    transform: translateX(-100%)
   .active.style-b &
-    @include transform(translateX(0))
-    @include transition-delay(.3s)
+    transform: translateX(0)
+    transition-delay: .3s
 
 .slide-heading,
 .slide-message,
 .slide-message .extra
   color: $normal-text-color
 
-@include keyframes(hollywood)
+@keyframes hollywood
   0%
-    @include transform(scale(1))
+    transform: scale(1)
   100%
-    @include transform(scale(1.05))
+    transform: scale(1.05)
 
-@include keyframes(visual-slide-in)
+@keyframes: visual-slide-in
   0%
-    @include transform(translateX(100%))
+    transform: translateX(100%)
     opacity: 0
   100%
-    @include transform(translateX(0%))
+    transform: translateX(0%)
     opacity: 1
-@include keyframes(product-slide-in)
-@include keyframes(message-slide-in)
+
+@keyframes message-slide-in
   0%
-    @include transform(translateX(-9999px))
+    transform: translateX(-9999px)
     opacity: 0
   100%
-    @include transform(translateX(0))
+    transform: translateX(0)
     opacity: 1
 
 .slide-indicators

@@ -59,9 +59,9 @@
     // border-radius: 2px
     // border-left: 1px solid $bg-color
     @extend %animation-hack
-    @include transition-property(border-color)
-    @include transition-duration(.25s)
-    @include transition-timing-function(ease-in-out)
+    transition-property: border-color
+    transition-duration: .25s
+    transition-timing-function: ease-in-out
     &:hover
       border-color: $accent-color
     &:active, &.active

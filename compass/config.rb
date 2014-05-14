@@ -27,6 +27,6 @@ Sass::Script::Number.precision = 14
 on_stylesheet_saved do |file|
   css = File.read(file)
   File.open(file, 'w') do |io|
-    io << AutoprefixerRails.process(css, browsers: ["last 2 versions", "> 5%", "ie 9"])
+    io << AutoprefixerRails.process(css, browsers: ["last 2 versions", "> 5%", "ie 9", "ie 8"])
   end
 end

@@ -3,9 +3,9 @@ $s-nav-drawer-width: 280px - 36px
 .nav-drawer
   display: none
   @extend %animation-hack
-  @include transition-property(opacity)
-  @include transition-duration(.3s)
-  @include transition-timing-function(ease-in-out)
+  transition-property: opacity
+  transition-duration: .3s
+  transition-timing-function: ease-in-out
   position: absolute
   top: 0
   right: 0
@@ -35,9 +35,9 @@ $s-nav-drawer-width: 280px - 36px
 .nav-drawer-open
   .adventure-time
     overflow: hidden
-    @include transform(translate3d(-1*$nav-drawer-width,0,0))
+    transform: translate3d(-1*$nav-drawer-width,0,0)
     @include bp-small
-      @include transform(translate3d(-1*$s-nav-drawer-width,0,0))
+      transform: translate3d(-1*$s-nav-drawer-width,0,0)
 
 .nav-drawer-toggle
   display: inline-block
