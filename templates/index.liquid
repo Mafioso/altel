@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="d1">
-  <div class="box ratio-box ratio-3-1 m-ratio-4-3 s-ratio-1">
+  <div class="box ratio-box ratio-3-1">
     <div id="carousel" data-ride="carousel" class="box-content">
       <div class="slider-container">
         <div class="slides">
@@ -16,6 +16,8 @@
               {% include "carousel-item-right" with slide %}
             {% elsif slide.type == "style-b" %}
               {% include "carousel-item-left" with slide %}
+            {% elsif slide.type == "default" %}
+              {% include "carousel-item-default" with slide %}
             {% endif %}
           {% endfor %}
         </div>
