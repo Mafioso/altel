@@ -18,12 +18,12 @@
 %small-heading-settings
   @extend %heading-settings
   padding-top:    $baseline
-  padding-bottom: $baseline
+  margin-bottom: $baseline
 %larger-heading-settings
   font-weight:    300
   @extend %heading-settings
   padding-top:    2*$baseline
-  padding-bottom: 2*$baseline
+  margin-bottom: 2*$baseline
 
 %epic-heading
   @extend %large-heading
@@ -49,9 +49,9 @@ h3,h4,h5,h6
 %text-rhythm-settings
   margin:           0
   padding-top:      0
-  padding-bottom:   $normal-line
+  margin-bottom:   $normal-line
   &.small-text, .small-text &
-    padding-bottom: $small-line
+    margin-bottom: $small-line
 
 p, ul, ol, dl
   @extend %text-rhythm-settings
@@ -84,7 +84,7 @@ hr
   margin: 0
   border: 0
   border-top: 1px solid $border-color
-  padding-bottom: 2*$baseline - 1
+  margin-bottom: 2*$baseline - 1
 
 // Links
 a
@@ -115,7 +115,7 @@ blockquote
   margin: 0
   padding: 0 0 $normal-line 2*$gutter
   p
-    padding-bottom: 0
+    margin-bottom: 0
 
 cite
   padding-top: $baseline

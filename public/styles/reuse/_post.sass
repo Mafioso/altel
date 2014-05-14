@@ -13,6 +13,7 @@
 
 .post-links
   border-top: 1px solid $bg-color
+  padding-top: 10px
   @extend %small-text
   .button
     @extend %small-button
@@ -24,10 +25,3 @@
   padding-bottom: $normal-heading-line
   @include bp-small
     @include font($normal-text, $normal-line)
-
-.readable
-  max-width: 34em
-  margin: auto
-  @include bp-large
-    padding-left: $gutter
-    padding-right: $gutter

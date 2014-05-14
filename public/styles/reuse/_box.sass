@@ -54,16 +54,16 @@ a.box
   border-radius: 2px
   @extend %box-animation-setup
   margin: $gutter
-  // padding: ($gutter - 1px)
-  // border: 1px solid $box-bg-color
   padding: $gutter
   background-color: $box-bg-color
   overflow: hidden
   background-clip: padding-box
-
-  // @include box-shadow(0 1px 2px rgba(0,0,0,.25))
-  // @include box-shadow(0 3px 0 rgba(0,0,0,.1))
   @extend %shadow
+  .box--common &
+    padding: 6*$gutter 4*$gutter
+    >:last-child
+      margin-bottom: 0
+      padding-bottom: 0
   .ratio-box &
     @extend %box-content-setup
   a.box:hover &,
@@ -80,6 +80,9 @@ a.box
     transform: translateY(-2px)
     transition-duration: .12s
     // @include animation(none)
+
+.box--common .post-subtitle
+  padding-top: 0
 
 .planbox-icon
   padding: $gutter
