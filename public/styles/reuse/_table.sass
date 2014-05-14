@@ -8,3 +8,15 @@
 
 .table3-5
   width: (3/5)*100%
+
+table tr.tr--highlighted:nth-child(n)
+  color: white
+  background-color: $accent-color
+
+#zone1,
+#zone2,
+#zone3,
+#zone4
+  display: none
+  &.tr--highlighted
+    display: table-row

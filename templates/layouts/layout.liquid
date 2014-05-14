@@ -67,5 +67,6 @@
   {{ "jquery.min.js" | asset_url |script_tag }}
   {{ "bootstrap.min.js" | asset_url |script_tag }}
   {{ "simple.js" | asset_url |script_tag }}
+  {% block js %}{% endblock %}
 </body>
 </html>

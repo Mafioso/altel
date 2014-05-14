@@ -5827,6 +5827,27 @@ footer .logotype-image {
   width: 60%;
 }
 
+/* line 12, reuse/_table.sass */
+table tr.tr--highlighted:nth-child(n) {
+  color: white;
+  background-color: #ed0088;
+}
+
+/* line 16, reuse/_table.sass */
+#zone1,
+#zone2,
+#zone3,
+#zone4 {
+  display: none;
+}
+/* line 21, reuse/_table.sass */
+#zone1.tr--highlighted,
+#zone2.tr--highlighted,
+#zone3.tr--highlighted,
+#zone4.tr--highlighted {
+  display: table-row;
+}
+
 /* line 1, reuse/_utils.sass */
 .text-left {
   text-align: left;
