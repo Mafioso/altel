@@ -75,14 +75,26 @@
 
 .nav-level-1
   @extend %shadow
+  @extend %small-text
   width: 100%
   font-weight: bold
   color: #6c717a
   text-align: justify
   background-color: white
   border-radius: 2px
+  display: table
   .nav-button
+    vertical-align: middle
+    position: relative
     text-align: center
+    display: table-cell
+
+
+// .navigation.nav-level-1
+//   @include bp-medium
+//     display: none
+  // @include bp-large
+  //   display: block
 
 .nav-logotype-container
   vertical-align: middle

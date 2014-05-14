@@ -22,19 +22,23 @@
       <a href="#" class="nav-drawer-toggle js-nav-drawer-toggle"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Menu"></a>
     </li>
   </ul>
-  <ul class="navigation nav-level-1">
-    <li class="nav-col d1-7">
-      <a href="/site-plans" class="nav-button {% if mixture.url == "site-plans" %}active{% endif %}">Тарифы</a>
-    </li><li class="nav-col d1-6">
-      <a href="/site-internet" class="nav-button {% if mixture.url == "site-internet" %}active{% endif %}" class="nav-button">Интернет 4G</a>
-    </li><li class="nav-col d1-6">
-      <a href="/site-devices" class="nav-button {% if mixture.url == "site-devices" %}active{% endif %}" class="nav-button">Устройства</a>
-    </li><li class="nav-col d1-6">
-      <a href="/site-services" class="nav-button {% if mixture.url == "site-services" %}active{% endif %}">Услуги</a>
-    </li><li class="nav-col d1-6">
-      <a href="/site-payment" class="nav-button {% if mixture.url == "site-payment" %}active{% endif %}">Оплата</a>
-    </li><li class="nav-col d1-6">
-      <a href="/business-index" class="nav-button {% if mixture.url == "business-index" %}active{% endif %}">Бизнесу</a>
-    </li>
-  </ul>
+
+
+
+  <div class="nav-level-1">
+    <a href="/site-plans" class="nav-button d1-6 {% if mixture.url == "site-plans" %}active{% endif %}">
+      Тарифы
+    </a><a href="/site-internet" class="nav-button d1-6 {% if mixture.url == "site-internet" %}active{% endif %}" class="nav-button">
+      Интернет 4G
+    </a><a href="/site-devices" class="nav-button d1-6 {% if mixture.url == "site-devices" %}active{% endif %}" class="nav-button">
+      Устройства
+    </a><a href="/site-services" class="nav-button d1-6 {% if mixture.url == "site-services" %}active{% endif %}">
+      Услуги
+    </a><a href="/site-payment" class="nav-button d1-6 {% if mixture.url == "site-payment" %}active{% endif %}">
+      Оплата
+    </a><a href="/business-index" class="nav-button d1-6 {% if mixture.url == "business-index" %}active{% endif %}">
+      Бизнесу
+    </a>
+  </div>
+
 </nav>
