@@ -3451,7 +3451,7 @@ figure {
   content: "";
 }
 
-/* line 71, reuse/_box-icons.sass */
+/* line 70, reuse/_box-icons.sass */
 .plan-icon-gsm,
 .plan-icon-lte {
   background-position: 50% 40%;
@@ -3459,7 +3459,7 @@ figure {
   -ms-behavior: url(/public/backgroundsize.min.htc);
 }
 @media only screen and (max-width: 36em) {
-  /* line 71, reuse/_box-icons.sass */
+  /* line 70, reuse/_box-icons.sass */
   .plan-icon-gsm,
   .plan-icon-lte {
     background-size: auto 30%;
