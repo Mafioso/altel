@@ -111,8 +111,11 @@
   margin-bottom: $normal-line
   ul
     padding-bottom: 0
-  td
+  td,
+  th
     padding: $baseline
+  th
+    vertical-align: bottom
 .plan-table--alternate
   tr:nth-child(2n)
     background-color: $bg-color
@@ -128,6 +131,7 @@
     @include font($extra-small-text, $small-line)
     ul
       padding-left: 0
+  th,
   td
     padding: $baseline $baseline ($baseline - 1px)
   tr
