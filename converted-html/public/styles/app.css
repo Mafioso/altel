@@ -1100,7 +1100,7 @@ th {
 }
 
 /* line 3, base/_type.sass */
-sup, sub, cite, .caption, legend, .agreement-label, .counter-title, .counter-note, .navigation, .side-navigation-group-title .back-button, .notification a, .connection-howto, .plan-benefits, .plan-table, .cta-table, .common-table, .post-meta, .post-links, .account-balance-note, .bonus-balance-note, .account-additional-info, .service-subtitle {
+sup, sub, cite, .caption, legend, .agreement-label, .counter-title, .counter-note, .navigation, .side-navigation-group-title .back-button, .notification a, .connection-howto, .plan-benefits, .plan-table, .cta-table, .common-table, .post-meta, .readmore, .post-links, .account-balance-note, .bonus-balance-note, .account-additional-info, .service-subtitle {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 18px;
@@ -3451,7 +3451,7 @@ figure {
   content: "";
 }
 
-/* line 71, reuse/_box-icons.sass */
+/* line 70, reuse/_box-icons.sass */
 .plan-icon-gsm,
 .plan-icon-lte {
   background-position: 50% 40%;
@@ -3459,7 +3459,7 @@ figure {
   -ms-behavior: url(../backgroundsize.min.htc);
 }
 @media only screen and (max-width: 36em) {
-  /* line 71, reuse/_box-icons.sass */
+  /* line 70, reuse/_box-icons.sass */
   .plan-icon-gsm,
   .plan-icon-lte {
     background-size: auto 30%;
@@ -5189,14 +5189,24 @@ footer .logotype-image {
   padding-bottom: 18px;
 }
 
-/* line 16, reuse/_post.sass */
+/* line 10, reuse/_post.sass */
+.readmore {
+  padding-bottom: 24px;
+}
+
+/* line 14, reuse/_post.sass */
+.post-links {
+  border-top: 1px solid #d3d5d4;
+}
+
+/* line 20, reuse/_post.sass */
 .post-subtitle {
   color: #a5acb0;
   padding-top: 36px;
   padding-bottom: 36px;
 }
 @media only screen and (max-width: 36em) {
-  /* line 16, reuse/_post.sass */
+  /* line 20, reuse/_post.sass */
   .post-subtitle {
     font-size: 18px;
     font-size: 1.125rem;
@@ -5205,13 +5215,13 @@ footer .logotype-image {
   }
 }
 
-/* line 24, reuse/_post.sass */
+/* line 28, reuse/_post.sass */
 .readable {
   max-width: 34em;
   margin: auto;
 }
 @media only screen and (max-width: 72em) {
-  /* line 24, reuse/_post.sass */
+  /* line 28, reuse/_post.sass */
   .readable {
     padding-left: 12px;
     padding-right: 12px;
