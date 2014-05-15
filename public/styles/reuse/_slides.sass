@@ -47,6 +47,8 @@
   bottom: auto
   width: 100%
   padding: $gutter (1/12)*100%
+  &.slide-message--empty
+    padding: 0
   .csstransforms &
     transform: translateY(-50%)
     top: 50%
@@ -102,11 +104,12 @@
   img
     display: block
     margin: auto
-    @include bp-medium
-      position: absolute
-      top: 50%
-      width: auto
-      transform: translateY(-50%) scale(2)
+    width: 100%
+    // @include bp-medium
+    //   position: absolute
+    //   top: 50%
+    //   width: auto
+    //   transform: translateY(-50%) scale(2)
   .active &
     opacity: 1
     transform: translateY(0)
@@ -115,7 +118,7 @@
     transition-timing-function: ease-in-out
 
 .slide-heading
-  padding: 0 0 $gutter
+  // padding: 0 0 $gutter
   display: block
   @extend %epic-heading
   font-weight: 400
@@ -123,6 +126,9 @@
   opacity: 0
   // @include transition-delay(.2s)
   // @include transform(translateX(-100%))
+  img
+    display: block
+    width: 100%
   .active &
     opacity: 1
     // @include transform(translateX(0))

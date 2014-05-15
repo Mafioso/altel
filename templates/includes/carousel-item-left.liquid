@@ -1,3 +1,23 @@
+<div id="{{ carousel-item-left.id }}" class="item {% if carousel-item-left.type == 'style-b' %}style-b{% endif %} {% if carousel-item-left.default %}active{% endif %} item-type-left">
+  <a href="#">
+  <div class="slide-visual">
+    {{ 'base.jpg' | asset_url | image_tag }}
+  </div>
+  <div class="slide-product">
+    {{ 'product.png' | asset_url | image_tag }}
+  </div>
+  <div class="slide-message slide-message--empty">
+    <div class="slide-message-body">
+      <div class="slide-heading">
+        {{ 'message.png' | asset_url | image_tag }}
+      </div>
+    </div>
+  </div>
+  </a>
+</div>
+
+{% comment %}
+
 <div id="{{ carousel-item-left.id }}" class="item {% if carousel-item-left.default %}active{% endif %} {% if carousel-item-left.type == 'style-b' %}style-b{% endif %} item-type-left">
   <div class="slide-visual" style="background-image: url('{{ carousel-item-left.pre-visual }}');">
     <img src="{{ carousel-item-left.visual }}" alt="Carousel item title">
@@ -21,3 +41,5 @@
     </div>
   </div>
 </div>
+
+{% endcomment %}
