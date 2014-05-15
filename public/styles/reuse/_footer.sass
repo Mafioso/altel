@@ -23,9 +23,13 @@
   @include bp-medium
     display: none
 .fpb-list
-  display: inline-block
+  display: block
   position: relative
   @include scut-side-lined($color: $secondary-text-color)
+  @include bp-large
+    display: block
+  @include bp-medium
+    display: none
   .nav-button
     max-width: 80%
     display: inline-block !important

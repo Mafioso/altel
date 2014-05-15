@@ -3996,7 +3996,7 @@ a.box:hover .button {
 
 /* line 25, reuse/_footer.sass */
 .fpb-list {
-  display: inline-block;
+  display: block;
   position: relative;
   display: block;
   overflow: hidden;
@@ -4023,7 +4023,19 @@ a.box:hover .button {
   left: 0.5em;
   margin-right: -50%;
 }
-/* line 29, reuse/_footer.sass */
+@media only screen and (max-width: 72em) {
+  /* line 25, reuse/_footer.sass */
+  .fpb-list {
+    display: block;
+  }
+}
+@media only screen and (max-width: 60em) {
+  /* line 25, reuse/_footer.sass */
+  .fpb-list {
+    display: none;
+  }
+}
+/* line 33, reuse/_footer.sass */
 .fpb-list .nav-button {
   max-width: 80%;
   display: inline-block !important;
