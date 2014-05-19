@@ -1683,30 +1683,43 @@ body {
   overflow: auto;
 }
 
-/* line 37, base/_base.sass */
+/* line 38, base/_base.sass */
+.no-overflowscrolling .adventure-time {
+  position: relative;
+  overflow: auto;
+}
+
+/* line 41, base/_base.sass */
+html.no-overflowscrolling,
+.no-overflowscrolling body {
+  height: auto;
+  overflow: auto;
+}
+
+/* line 46, base/_base.sass */
 .sticky-wrap {
   border-top: 3px solid #ed0088;
   min-height: 100%;
   margin-bottom: -228px;
 }
-/* line 41, base/_base.sass */
+/* line 50, base/_base.sass */
 .sticky-wrap:after {
   content: "";
   display: block;
 }
 
-/* line 44, base/_base.sass */
+/* line 53, base/_base.sass */
 .sticky-wrap:after,
 .sticky-footer {
   height: 228px;
 }
 
-/* line 48, base/_base.sass */
+/* line 57, base/_base.sass */
 .sticky-footer {
   border-bottom: 3px solid #ed0088;
 }
 
-/* line 52, base/_base.sass */
+/* line 61, base/_base.sass */
 .adventure-time, .modal-overlay, .modal, .nav-drawer-overlay, .box-background, .box-content, .epic-plan-visual-hover, .sticky-footer footer, .loader, .nav-drawer, .nav-level-1 .nav-button, .nav-level-0 .nav-button, .plan-benefits, .section-container, .item, .slide-visual,
 .slide-heading,
 .slide-product,
@@ -1721,7 +1734,7 @@ body {
           transform: translateZ(0);
 }
 
-/* line 57, base/_base.sass */
+/* line 66, base/_base.sass */
 .modal-overlay, .modal, .nav-drawer-overlay {
   border: 0;
   clip: rect(0 0 0 0);
@@ -1733,7 +1746,7 @@ body {
   width: 1px;
 }
 
-/* line 61, base/_base.sass */
+/* line 70, base/_base.sass */
 .modal-open .modal-overlay, .modal.active, .nav-drawer-open .nav-drawer-overlay {
   height: auto;
   width: auto;
@@ -1741,12 +1754,12 @@ body {
   clip: auto;
 }
 
-/* line 67, base/_base.sass */
+/* line 76, base/_base.sass */
 .box-content, .nav-level-1 {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
-/* line 70, base/_base.sass */
+/* line 79, base/_base.sass */
 figure {
   margin: 0;
 }
