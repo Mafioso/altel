@@ -34,6 +34,15 @@ body
   background-color: $bg-color
   overflow: auto
 
+.no-overflowscrolling
+  .adventure-time
+    position: relative
+    overflow: auto
+html.no-overflowscrolling,
+.no-overflowscrolling body
+  height: auto
+  overflow: auto
+
 .sticky-wrap
   border-top: 3px solid $accent-color
   min-height: 100%
