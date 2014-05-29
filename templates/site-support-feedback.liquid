@@ -1,83 +1,111 @@
-{% block content %}
+{% block modal %}
+<div id="feedback-success" class="modal">
+    <div class="container text-center">
+        <div class="d1-3 m3-4 l1-2 s1 text-left">
+            <div class="box">
+                <div class="box-content">
+                    <h2 class="plan-title">Уведомление!</h2>
+                    <div class="fluffy">
+                        <p>Ваше обращение принято в работу.</p>
+                        <p>Для информации: Запросы обрабатываются с 9-00 до 18-00 в рабочие дни. Ответ на обращение, сформированное в выходные или праздничные дни будет обработано в первый рабочий день.</p>
+                    </div>
+                    <div class="box-cta-container text-center">
+                        <a href="#" class="button js-modal-close">OK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} {% block content %}
 
 <div class="gutter">
-  <h1 class="page-title">Обратная связь</h1>
-  <div class="d1-6 s1">
-    <section class="side-navigation-meta">
-      <a href="/site-support" class="back-button">Поддержка</a>
-    </section>
-    <ul class="side-navigation">
-      <li><a href="/site-support-coverage" class="side-navigation-item">Зона покрытия</a></li>
-      <li><a href="/site-support-service-centres" class="side-navigation-item">Сервис центры на карте</a></li>
-      <li><a href="/site-support-feedback" class="side-navigation-item">Обратная связь</a></li>
-      <li><a href="#" class="side-navigation-item">Онлайн консультант</a></li>
-    </ul>
-  </div><div class="d2-3 m5-6 s1">
-    <div class="box">
-      <div class="box-content">
-        <form class="readable">
-          <h2>Обращение к службе поддержки</h2>
-          <div class="d1-2 s1">
-            <div class="input-line">
-              <label for="">Тема обращения: *</label>
-              <input type="text" class="input-d1">
-            </div>
-          </div><div class="gutter-left d1-2 s1">
-            <div class="input-line">
-            <label for="">Бренд:</label>
-            <div class="select-container">
-              <select name="" id="" class="input-d1">
-                <option value="">Altel</option>
-                <option value="">Altel 4G</option>
-                <option value="">Pathword</option>
-                <option value="">Dalacom</option>
-                <option value="">Jet</option>
-              </select>
-            </div>
-            </div>
-          </div>
-
-          <div class="input-line">
-            <label for="">Ваш вопрос: *</label>
-            <textarea class="input-d1" name="" id="" cols="30" rows="4"></textarea>
-          </div>
-
-          <div class="d1-2 s1">
-            <div class="input-line">
-              <label for="">Автор: *</label>
-              <input type="text" class="input-d1">
-              <div class="extra">
-                <p class="no-trailer wrong">Something is wrong! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos perspiciatis est illo quia ea error ducimus. Iste, eveniet mollitia praesentium quasi saepe deleniti nobis sunt fuga possimus quos aut vitae.</p>
-              </div>
-            </div>
-          </div><div class="d1-2 s1 gutter-left">
-            <div class="input-line">
-              <label for="">Город: *</label>
-              <input type="text" class="input-d1">
-            </div>
-          </div>
-
-          <div class="input-line">
-            <label for="">E-mail: *</label>
-            <input type="text" class="input-d1">
-          </div>
-          <div class="input-line">
-            <label for="">Код подтверждения: *</label>
-            <div class="d1-2 middle">
-              <input class="input-d1" type="text">
-            </div><div class="d1-2 text-center middle gutter captcha">
-            {{ "120x48" | placeholder:'FF6600','000000' | image_tag }}
-            </div>
-          </div>
-          <div class="input-line text-center">
-            <a href="/site-chairman-blog" class="u-link">Отменить</a>
-            <span class="space">&middot;</span>
-            <button>Отправить</button>
-          </div>
-        </form>
-      </div>
+    <h1 class="page-title">Обратная связь</h1>
+    <div class="d1-6 s1">
+        <section class="side-navigation-meta">
+            <a href="/site-support" class="back-button">Поддержка</a>
+        </section>
+        <ul class="side-navigation">
+            <li><a href="/site-support-coverage" class="side-navigation-item">Зона покрытия</a>
+            </li>
+            <li><a href="/site-support-service-centres" class="side-navigation-item">Сервис центры на карте</a>
+            </li>
+            <li><a href="/site-support-feedback" class="side-navigation-item">Обратная связь</a>
+            </li>
+            <li><a href="#" class="side-navigation-item">Онлайн консультант</a>
+            </li>
+        </ul>
     </div>
-  </div>
+    <div class="d2-3 m5-6 s1">
+        <div class="box">
+            <div class="box-content">
+                <form class="readable">
+                    <h2>Обращение к службе поддержки</h2>
+                    <div class="d1-2 s1">
+                        <div class="input-line">
+                            <label for="">Тема обращения: *</label>
+                            <input type="text" class="input-d1">
+                        </div>
+                    </div>
+                    <div class="gutter-left d1-2 s1">
+                        <div class="input-line">
+                            <label for="">Бренд:</label>
+                            <div class="select-container">
+                                <select name="" id="" class="input-d1">
+                                    <option value="">Altel</option>
+                                    <option value="">Altel 4G</option>
+                                    <option value="">Pathword</option>
+                                    <option value="">Dalacom</option>
+                                    <option value="">Jet</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-line">
+                        <label for="">Ваш вопрос: *</label>
+                        <textarea class="input-d1" name="" id="" cols="30" rows="4"></textarea>
+                    </div>
+
+                    <div class="d1-2 s1">
+                        <div class="input-line">
+                            <label for="">Автор: *</label>
+                            <input type="text" class="input-d1">
+                            <div class="extra">
+                                <p class="no-trailer wrong">Something is wrong! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos perspiciatis est illo quia ea error ducimus. Iste, eveniet mollitia praesentium quasi saepe deleniti nobis sunt fuga possimus quos
+                                    aut vitae.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d1-2 s1 gutter-left">
+                        <div class="input-line">
+                            <label for="">Город: *</label>
+                            <input type="text" class="input-d1">
+                        </div>
+                    </div>
+
+                    <div class="input-line">
+                        <label for="">E-mail: *</label>
+                        <input type="text" class="input-d1">
+                    </div>
+                    <div class="input-line">
+                        <label for="">Код подтверждения: *</label>
+                        <div class="d1-2 middle">
+                            <input class="input-d1" type="text">
+                        </div>
+                        <div class="d1-2 text-center middle gutter captcha">
+                            {{ "120x48" | placeholder:'FF6600','000000' | image_tag }}
+                        </div>
+                    </div>
+                    <div class="input-line text-center">
+                        <a href="/site-chairman-blog" class="u-link">Отменить</a>
+                        <span class="space">&middot;</span>
+                        <button class="js-modal-open" data-target="feedback-success">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
 
 {% endblock %}
