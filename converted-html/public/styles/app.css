@@ -4096,11 +4096,11 @@ a.box:hover .button {
 }
 
 /* line 1, reuse/_icons.sass */
-.icon-special, .icon-support, .icon-search, .icon-phone, .icon-time, .icon-message, .icon-wifi, .icon-cabinet, .icon-instagram, .icon-twitter, .icon-facebook, .icon-vkontakte, .icon-madeby {
+.icon-consultant, .icon-special, .icon-support, .icon-search, .icon-phone, .icon-time, .icon-message, .icon-wifi, .icon-cabinet, .icon-instagram, .icon-twitter, .icon-facebook, .icon-vkontakte, .icon-madeby {
   display: inline-block;
 }
 /* line 3, reuse/_icons.sass */
-.icon-special:before, .icon-support:before, .icon-search:before, .icon-phone:before, .icon-time:before, .icon-message:before, .icon-wifi:before, .icon-cabinet:before, .icon-instagram:before, .icon-twitter:before, .icon-facebook:before, .icon-vkontakte:before, .icon-madeby:before {
+.icon-consultant:before, .icon-special:before, .icon-support:before, .icon-search:before, .icon-phone:before, .icon-time:before, .icon-message:before, .icon-wifi:before, .icon-cabinet:before, .icon-instagram:before, .icon-twitter:before, .icon-facebook:before, .icon-vkontakte:before, .icon-madeby:before {
   display: inline-block;
   width: 1.125rem;
   height: 1.125rem;
@@ -4111,7 +4111,22 @@ a.box:hover .button {
   content: "";
 }
 
-/* line 13, reuse/_icons.sass */
+/* line 15, reuse/_icons.sass */
+.icon-consultant:before {
+  background-image: url(../images/icons/icon-consultant.svg);
+}
+/* line 39, base/_mixins.sass */
+.no-svg .icon-consultant:before {
+  background-image: url(../images/icons/icon-consultant.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 39, base/_mixins.sass */
+  .no-svg .icon-consultant:before {
+    background-image: url(../images/icons/icon-consultant@2x.png);
+  }
+}
+
+/* line 18, reuse/_icons.sass */
 .icon-dashboard-help {
   background-image: url(../images/icons/button-icon-support.svg);
   background-position: 12px 50%;
@@ -4128,12 +4143,12 @@ a.box:hover .button {
   }
 }
 
-/* line 17, reuse/_icons.sass */
+/* line 22, reuse/_icons.sass */
 .dashboard-help {
   padding-left: 30px;
 }
 
-/* line 22, reuse/_icons.sass */
+/* line 27, reuse/_icons.sass */
 .icon-special:before {
   background-image: url(../images/icons/icon-special.svg);
 }
@@ -4148,7 +4163,7 @@ a.box:hover .button {
   }
 }
 
-/* line 26, reuse/_icons.sass */
+/* line 31, reuse/_icons.sass */
 .icon-support:before {
   background-image: url(../images/icons/icon-support.svg);
 }
@@ -4163,7 +4178,7 @@ a.box:hover .button {
   }
 }
 
-/* line 30, reuse/_icons.sass */
+/* line 35, reuse/_icons.sass */
 .icon-search:before {
   background-image: url(../images/icons/icon-search.svg);
 }
@@ -4178,11 +4193,11 @@ a.box:hover .button {
   }
 }
 
-/* line 32, reuse/_icons.sass */
+/* line 37, reuse/_icons.sass */
 .icon-phone {
   white-space: nowrap;
 }
-/* line 35, reuse/_icons.sass */
+/* line 40, reuse/_icons.sass */
 .icon-phone:before {
   background-image: url(../images/icons/icon-phone.svg);
 }
@@ -4197,7 +4212,7 @@ a.box:hover .button {
   }
 }
 
-/* line 39, reuse/_icons.sass */
+/* line 44, reuse/_icons.sass */
 .icon-time:before {
   background-image: url(../images/icons/icon-time.svg);
 }
@@ -4212,7 +4227,7 @@ a.box:hover .button {
   }
 }
 
-/* line 43, reuse/_icons.sass */
+/* line 48, reuse/_icons.sass */
 .icon-message:before {
   background-image: url(../images/icons/icon-message.svg);
 }
@@ -4227,7 +4242,7 @@ a.box:hover .button {
   }
 }
 
-/* line 47, reuse/_icons.sass */
+/* line 52, reuse/_icons.sass */
 .icon-wifi:before {
   background-image: url(../images/icons/icon-wifi.svg);
 }
@@ -4242,7 +4257,7 @@ a.box:hover .button {
   }
 }
 
-/* line 51, reuse/_icons.sass */
+/* line 56, reuse/_icons.sass */
 .icon-cabinet:before {
   background-image: url(../images/icons/icon-cabinet.svg);
 }
@@ -4257,7 +4272,7 @@ a.box:hover .button {
   }
 }
 
-/* line 64, reuse/_icons.sass */
+/* line 69, reuse/_icons.sass */
 .icon-instagram:before {
   vertical-align: top;
   background-image: url(../images/icons/icon-instagram.svg);
@@ -4273,7 +4288,7 @@ a.box:hover .button {
   }
 }
 
-/* line 69, reuse/_icons.sass */
+/* line 74, reuse/_icons.sass */
 .icon-twitter:before {
   vertical-align: top;
   background-image: url(../images/icons/icon-twitter.svg);
@@ -4289,7 +4304,7 @@ a.box:hover .button {
   }
 }
 
-/* line 74, reuse/_icons.sass */
+/* line 79, reuse/_icons.sass */
 .icon-facebook:before {
   vertical-align: top;
   background-image: url(../images/icons/icon-facebook.svg);
@@ -4305,7 +4320,7 @@ a.box:hover .button {
   }
 }
 
-/* line 79, reuse/_icons.sass */
+/* line 84, reuse/_icons.sass */
 .icon-vkontakte:before {
   vertical-align: top;
   background-image: url(../images/icons/icon-vkontakte.svg);
@@ -4321,7 +4336,7 @@ a.box:hover .button {
   }
 }
 
-/* line 84, reuse/_icons.sass */
+/* line 89, reuse/_icons.sass */
 .icon-madeby:before {
   vertical-align: top;
   margin-top: -6px;
@@ -4342,14 +4357,14 @@ a.box:hover .button {
   }
 }
 
-/* line 94, reuse/_icons.sass */
+/* line 99, reuse/_icons.sass */
 .icon-visa,
 .icon-mastercard,
 .icon-maestro,
 .icon-amex {
   padding-top: 12px;
 }
-/* line 99, reuse/_icons.sass */
+/* line 104, reuse/_icons.sass */
 .icon-visa img,
 .icon-mastercard img,
 .icon-maestro img,
