@@ -11,13 +11,11 @@ $s-nav-drawer-width: 280px - 36px
   width: $nav-drawer-width
   overflow: hidden
   background-color: $nav-drawer-bg-color
-  transform: translateX($nav-drawer-width)
   transition-property: transform opacity
   transition-duration: .3s
   transition-timing-function: ease-in-out
   .nav-drawer-open &
     display: block
-    transform: translateX(0)
   @include bp-small
     width: $s-nav-drawer-width
 .nav-drawer-overlay
