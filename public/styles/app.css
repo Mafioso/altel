@@ -1721,7 +1721,7 @@ html.no-overflowscrolling,
 }
 
 /* line 62, base/_base.sass */
-.adventure-time, .modal-overlay, .modal, .nav-drawer-overlay, .box-background, .box-content, .epic-plan-visual-hover, .sticky-footer footer, .loader, .nav-drawer, .nav-level-1 .nav-button, .nav-level-0 .nav-button, .plan-benefits, .section-container, .item, .slide-visual,
+.adventure-time, .modal-overlay, .modal, .nav-drawer-overlay, .box-background, .box-content, .epic-plan-visual-hover, .plan-device-price-bg, .plan-device-price-body, .sticky-footer footer, .loader, .nav-drawer, .nav-level-1 .nav-button, .nav-level-0 .nav-button, .plan-benefits, .section-container, .item, .slide-visual,
 .slide-heading,
 .slide-product,
 .slide-cta,
@@ -3548,7 +3548,7 @@ figure {
 }
 
 /* line 1, reuse/_box.sass */
-.box-background, .box-content, .epic-plan-visual-hover {
+.box-background, .box-content, .epic-plan-visual-hover, .plan-device-price-bg, .plan-device-price-body {
   -webkit-transition-property: -webkit-transform;
           transition-property: transform;
   -webkit-transition-duration: 0.25s;
@@ -5322,6 +5322,44 @@ footer .logotype-image {
 /* line 196, reuse/_plan.sass */
 .box:hover .epic-plan-visual-hover {
   opacity: 1;
+}
+
+/* line 199, reuse/_plan.sass */
+.plan-device-price {
+  position: relative;
+  margin: 0 -12px 0 0;
+  padding: 6px 0;
+  color: #a5acb0;
+  overflow: hidden;
+}
+
+/* line 205, reuse/_plan.sass */
+.plan-device-price-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background-color: #ed0088;
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+/* line 215, reuse/_plan.sass */
+.box:hover .plan-device-price-bg {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+/* line 217, reuse/_plan.sass */
+.plan-device-price-body {
+  position: relative;
+}
+/* line 220, reuse/_plan.sass */
+.box:hover .plan-device-price-body {
+  color: white;
 }
 
 /* line 1, reuse/_post.sass */

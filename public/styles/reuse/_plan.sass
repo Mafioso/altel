@@ -195,3 +195,27 @@
   opacity: 0
   .box:hover &
     opacity: 1
+
+.plan-device-price
+  position: relative
+  margin: 0 -1*$gutter 0 0
+  padding: $baseline 0
+  color: $secondary-text-color
+  overflow: hidden
+.plan-device-price-bg
+  @extend %box-animation-setup
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  display: block
+  background-color: $accent-color
+  transform: translateX(100%)
+  .box:hover &
+    transform: translateX(0)
+.plan-device-price-body
+  @extend %box-animation-setup
+  position: relative
+  .box:hover &
+    color: white
