@@ -1094,7 +1094,8 @@ th {
 }
 
 /* line 3, base/_type.sass */
-sup, sub, cite, .caption, legend, .agreement-label, .counter-title, .counter-note, .navigation, .nav-level-1, .notification a, .connection-howto, .plan-benefits, .plan-table, .cta-table, .common-table, .post-meta, .readmore, .post-links, .side-navigation-group-title .back-button, .account-balance-note, .bonus-balance-note, .account-additional-info, .service-subtitle {
+sup, sub, cite, .caption,
+.timebound, legend, .agreement-label, .counter-title, .counter-note, .navigation, .nav-level-1, .notification a, .connection-howto, .plan-benefits, .plan-table, .cta-table, .common-table, .post-meta, .readmore, .post-links, .side-navigation-group-title .back-button, .account-balance-note, .bonus-balance-note, .account-additional-info, .service-subtitle {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 18px;
@@ -5930,6 +5931,20 @@ table tr.tr--highlighted:nth-child(n) {
 #zone3.tr--highlighted,
 #zone4.tr--highlighted {
   display: table-row;
+}
+
+/* line 1, reuse/_timebound.sass */
+.timebound {
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+
+/* line 5, reuse/_timebound.sass */
+.timebound-span {
+  background-color: rgba(211, 213, 212, 0.5);
+  margin-right: 6px;
+  padding: 6px;
+  height: 48px;
 }
 
 /* line 1, reuse/_utils.sass */
