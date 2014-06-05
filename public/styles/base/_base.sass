@@ -10,39 +10,31 @@
 html,
 body
   height: 100%
-  overflow: hidden
-  -webkit-overflow-scrolling: none
 
 body
   color: $normal-text-color
-  background-color: $nav-drawer-bg-color
+  background-color: $bg-color
   cursor: default
   font-family: $helvetica
 
 .adventure-time
   @extend %animation-hack
-
   transition-property: transform opacity
   transition-duration: .3s
   transition-timing-function: ease-in-out
-  position: absolute
-  top: 0
-  -webkit-overflow-scrolling: touch
-  left: 0
+  position: relative
   z-index: 100
-  width: 100%
   height: 100%
-  background-color: $bg-color
-  overflow: auto
 
-.no-overflowscrolling
-  .adventure-time
-    position: relative
-    overflow: auto
-html.no-overflowscrolling,
-.no-overflowscrolling body
-  height: auto
-  overflow: auto
+
+// .no-overflowscrolling
+//   .adventure-time
+//     position: relative
+//     overflow: auto
+// html.no-overflowscrolling,
+// .no-overflowscrolling body
+//   height: auto
+//   overflow: auto
 
 .sticky-wrap
   border-top: 3px solid $accent-color

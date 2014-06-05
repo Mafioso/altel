@@ -1,21 +1,23 @@
 $nav-drawer-width: 280px
 $s-nav-drawer-width: 280px - 36px
 .nav-drawer
-  display: none
   @extend %animation-hack
-  transition-property: opacity
-  transition-duration: .3s
-  transition-timing-function: ease-in-out
   position: absolute
   top: 0
   right: 0
   bottom: 0
-  width: $nav-drawer-width
   z-index: 1
-  background-color: $nav-drawer-bg-color
+  display: block
+  width: $nav-drawer-width
   overflow: hidden
+  background-color: $nav-drawer-bg-color
+  transform: translateX($nav-drawer-width)
+  transition-property: transform opacity
+  transition-duration: .3s
+  transition-timing-function: ease-in-out
   .nav-drawer-open &
     display: block
+    transform: translateX(0)
   @include bp-small
     width: $s-nav-drawer-width
 .nav-drawer-overlay
