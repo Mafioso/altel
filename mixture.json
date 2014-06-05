@@ -16,7 +16,7 @@
   "sass": {
     "useLibSass": false
   },
-  "serverHostname": null,
+  "serverHostname": "altel.local",
   "serverPort": null,
   "simpleModePartnerServer": null,
   "templateDefaultLayout": "layout",
