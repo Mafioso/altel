@@ -4090,9 +4090,9 @@ input.chat-ctrls-write:focus {
 
 /* line 128, reuse/_chat.sass */
 .chat-msg--my {
-  -webkit-transform-origin: right bottom;
-      -ms-transform-origin: right bottom;
-          transform-origin: right bottom;
+  -webkit-transform-origin: center bottom;
+      -ms-transform-origin: center bottom;
+          transform-origin: center bottom;
   -webkit-animation: myMsgPopIn 0.2s ease-in-out;
           animation: myMsgPopIn 0.2s ease-in-out;
 }
@@ -4132,15 +4132,15 @@ input.chat-ctrls-write:focus {
   /* line 149, reuse/_chat.sass */
   from {
     opacity: 0;
-    -webkit-transform: translateY(10%) scale(0.98);
-            transform: translateY(10%) scale(0.98);
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
   }
 
   /* line 152, reuse/_chat.sass */
   to {
     opacity: 1;
-    -webkit-transform: translateY(0) scale(1);
-            transform: translateY(0) scale(1);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -4148,15 +4148,15 @@ input.chat-ctrls-write:focus {
   /* line 149, reuse/_chat.sass */
   from {
     opacity: 0;
-    -webkit-transform: translateY(10%) scale(0.98);
-            transform: translateY(10%) scale(0.98);
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
   }
 
   /* line 152, reuse/_chat.sass */
   to {
     opacity: 1;
-    -webkit-transform: translateY(0) scale(1);
-            transform: translateY(0) scale(1);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 

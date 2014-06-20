@@ -92,7 +92,7 @@
 <script id="chat-msg--their" type="text/x-handlebars-template">
     <li class="chat-msg chat-msg--their">
         <figure class="chat-msg-pic">
-            <img src="/public/images/chat/{{{ img }}}" alt="{{ name }}" />
+            <img src="{{{ img }}}" alt="{{ name }}" />
             <span class="chat-msg-pic-caption">
                 {{ name }}
             </span>
@@ -120,13 +120,13 @@
         theirMsgTemplate = Handlebars.compile(theirMsgSource);
 
     var msgs = [
-        ['they', 'bot.jpg', 'Altelbot', 'Hi, Altelbot here! While we waiting for support team member to connect, can I ask you some personal details?'],
+        ['they', '/public/images/chat/bot.jpg', 'Altelbot', 'Hi, Altelbot here! While we waiting for support team member to connect, can I ask you some personal details?'],
         ['me', '', '', 'Yes'],
-        ['they', 'bot.jpg', 'Altelbot', 'What is your name?'],
+        ['they', '/public/images/chat/bot.jpg', 'Altelbot', 'What is your name?'],
         ['me', '', '', 'IronMan'],
-        ['they', 'bot.jpg', 'Altelbot', 'Nice to meet you, <strong>IronMan</strong>!'],
-        ['they', 'bot.jpg', 'Altelbot', 'Seems like <strong>Jack Sparrow</strong> is here! He will help you out.'],
-        ['they', 'jack.jpg', 'Jack Sparrow', 'Hi, IronMan! How can I help you?']
+        ['they', 'bot.jpg', 'Altelbot', 'Nice to meet you, <strong>IronMan</s/public/images/chat/trong>!'],
+        ['they', '/public/images/chat/bot.jpg', 'Altelbot', 'Seems like <strong>Jack Sparrow</strong> is here! He will help you out.'],
+        ['they', '/public/images/chat/jack.jpg', 'Jack Sparrow', 'Hi, IronMan! How can I help you?']
     ],
         index = 0,
         speed = 2500,
