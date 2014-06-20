@@ -1,4 +1,7 @@
 {
+  "convertHtml": {
+    "relativePaths": false
+  },
   "customRuby": true,
   "customRubyPath": "/Users/Vadim/.rvm/rubies/ruby-2.1.1|/Users/Vadim/.rvm/gems/ruby-2.1.1",
   "debug": true,
@@ -7,7 +10,9 @@
   "modelSource": null,
   "optimiseSVG": true,
   "password": "ohmycss",
-  "preprocessorLocations": "public",
+  "preprocessorLocations": [
+    "public"
+  ],
   "preprocessorScriptOutput": "public/scripts",
   "preprocessorStyleOutput": "public/styles",
   "projectDescription": "Altel protal",
