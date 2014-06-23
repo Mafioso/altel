@@ -1842,6 +1842,19 @@ figure {
   }
 }
 
+/* line 1, reuse/_block-list.sass */
+.block-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 5, reuse/_block-list.sass */
+.block-list > li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
 /* line 1, reuse/_box-icons.sass */
 .box-icon-altel, .box-icon-aon, .box-icon-block, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-dashboard, .box-icon-dashboard-bonus, .box-icon-dashboard-consumption, .box-icon-dashboard-payment-history, .box-icon-docs, .box-icon-exchange, .box-icon-faq, .box-icon-feedback, .box-icon-handshake, .box-icon-html, .box-icon-mifi, .box-icon-missed-call, .box-icon-old-phone, .box-icon-order, .box-icon-pay-mobile, .box-icon-payment, .box-icon-payment-atm, .box-icon-payment-express, .box-icon-payment-portal, .box-icon-payment-pos, .box-icon-pdf, .box-icon-settings, .box-icon-settings-auto, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-star, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-sup-coverage-lte, .box-icon-tick, .box-icon-tonix, .box-icon-unlock, .box-icon-usb-modem, .box-icon-xls, .box-icon-lang, .box-icon-apn, .box-icon-addressbook {
   background-position: 50% 50%;
@@ -6223,9 +6236,10 @@ footer .logotype-image {
 .split {
   text-align: right;
   vertical-align: baseline;
+  overflow: hidden;
 }
 
-/* line 4, reuse/_split.sass */
+/* line 5, reuse/_split.sass */
 .split-title {
   text-align: left;
   float: left;
