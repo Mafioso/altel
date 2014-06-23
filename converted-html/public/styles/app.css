@@ -1222,7 +1222,7 @@ hr {
   padding: 0;
   margin: 0;
   border: 0;
-  border-top: 1px solid red;
+  border-top: 1px solid #a5acb0;
   margin-bottom: 11px;
 }
 
@@ -1733,7 +1733,7 @@ body {
 }
 
 /* line 71, base/_base.sass */
-.box-content, .nav-level-1 {
+.box-content, .nav-level-1, .tt-dropdown-menu {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -1840,6 +1840,19 @@ figure {
   .page-title-container {
     text-align: center;
   }
+}
+
+/* line 1, reuse/_block-list.sass */
+.block-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 5, reuse/_block-list.sass */
+.block-list > li {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 /* line 1, reuse/_box-icons.sass */
@@ -6223,9 +6236,10 @@ footer .logotype-image {
 .split {
   text-align: right;
   vertical-align: baseline;
+  overflow: hidden;
 }
 
-/* line 4, reuse/_split.sass */
+/* line 5, reuse/_split.sass */
 .split-title {
   text-align: left;
   float: left;
@@ -6286,6 +6300,31 @@ table tr.tr--highlighted:nth-child(n) {
   margin-right: 6px;
   padding: 6px;
   height: 48px;
+}
+
+/* line 1, reuse/_typeahead.sass */
+.twitter-typeahead {
+  width: 100%;
+}
+
+/* line 3, reuse/_typeahead.sass */
+.tt-dropdown-menu {
+  width: 100%;
+  max-height: 6.5em;
+  overflow-y: auto;
+  background-color: white;
+  border-radius: 3px;
+  padding: 0.25em 12px;
+}
+
+/* line 12, reuse/_typeahead.sass */
+.tt-suggestion {
+  padding: 6px 0;
+  border-bottom: 1px solid #d3d5d4;
+}
+/* line 15, reuse/_typeahead.sass */
+.tt-suggestion p {
+  margin: 0;
 }
 
 /* line 1, reuse/_utils.sass */

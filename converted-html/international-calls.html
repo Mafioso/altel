@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Altel</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- TODO: Place favicon.ico and apple-touch-icons in the root directory -->
+  <link href="/public/styles/app.min.css" rel="stylesheet" type="text/css" media="all"/>
+  <script src="/public/scripts/bower_components/modernizr.min.js"></script>
+  <!-- <script data-main="/public/scripts/app" src="/public/scripts/require.min.js"></script> -->
+</head>
+<body class="">
+  <!--[if lt IE 8]>
+
+    <div class="browsehappy">
+      <div class="browsehappy-body">
+        <p>К сожалению Ваш браузер устарел.
+        Чтобы использовать все возможности сайта, загрузите и установите один из этих браузеров:</p>
+        <div id="browsers">
+          <a class="column gutter" href="http://www.apple.com/safari/" target="_blank">
+            <img src="/public/images/browsehappy/safari.png" alt="" />
+            <div>Safari</div>
+          </a>
+          <a class="column gutter" href="http://www.google.com/chrome/" target="_blank">
+            <img src="/public/images/browsehappy/chrome.png" alt="" />
+            <div>Chrome</div>
+          </a>
+          <a class="column gutter" href="http://www.mozilla-europe.org/" target="_blank">
+            <img src="/public/images/browsehappy/firefox.png" alt="" />
+            <div>Firefox</div>
+          </a>
+          <a class="column gutter" href="http://www.opera.com/" target="_blank">
+            <img src="/public/images/browsehappy/opera.png" alt="" />
+            <div>Opera</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  <![endif]-->
+
+
+
+  <div class="modal-overlay"></div>
+  
+  <div id="support-modal" class="modal">
+  <div class="container text-center">
+    <div class="d1-3 l2-3 s1">
+      <div class="box">
+        <div class="box-content">
+          <h2 class="plan-title">
+            Поддержка
+          </h2>
+          <ul class="acc-list">
+            <li>
+              <a href="/dashboard-faq" class="acc-list-item">Часто задаваемые вопросы (FAQ)</a>
+            </li>
+            <li>
+              <a href="/dashboard-where-to-buy" class="acc-list-item">Где купить?</a>
+            </li>
+            <li>
+              <a href="/dashboard-contacts" class="acc-list-item">Контакты</a>
+            </li>
+            <li>
+              <a href="#" class="acc-list-item">Онлайн-консультант</a>
+            </li>
+          </ul>
+          <div class="box-footer plan-cta-container">
+            <a href="#" class="u-link js-modal-close">Закрыть</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <nav class="nav-drawer" tabindex="-1">
+  <div class="nav-drawer-content">
+  <ul class="nav-drawer-list">
+    <li><a href="/" class="nav-drawer-list-item ">Главная</a></li>
+    <li>
+      <div class="d2-3">
+        <a href="/dashboard-entrance" class="nav-drawer-list-item ">Личный кабинет</a>
+      </div><div class="d1-3"><a href="#" class="nav-drawer-list-item text-right">выйти</a></div>
+    </li>
+    <li><a href="/site-payment" class="nav-drawer-list-item ">Оплата</a></li>
+    <li><a href="/site-plans" class="nav-drawer-list-item ">Тарифы</a></li>
+    <li><a href="/site-internet" class="nav-drawer-list-item ">Интернет 4G</a></li>
+    <li><a href="/site-services" class="nav-drawer-list-item ">Услуги</a></li>
+    <li><a href="/business-index" class="nav-drawer-list-item ">Бизнесу</a></li>
+  </ul>
+  
+  <ul class="nav-drawer-list">
+    <li><a href="#" class="nav-drawer-list-item">Ваш регион</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Поддержка</a></li>
+    <li>
+      <div class="d1-3">
+        <a href="#" class="nav-drawer-list-item">Қаз</a>
+      </div><div class="d1-3">
+        <a href="#" class="nav-drawer-list-item">Рус</a>
+      </div><div class="d1-3">
+        <a href="#" class="nav-drawer-list-item active">Eng</a>
+      </div>
+    </li>
+  </ul>
+
+  <ul class="nav-drawer-list">
+    <li><a href="#" class="nav-drawer-list-item">О компании</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Новости</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Пресс-центр</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Лицензии</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Закупки</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Вакансии</a></li>
+  </ul>
+  </div>
+</nav>
+<div class="nav-drawer-overlay js-nav-drawer-toggle"></div>
+
+  <div class="adventure-time">
+    <div class="sticky-wrap">
+      <div class="container">
+        
+
+<nav class="nav-container header">
+    <ul class="navigation nav-level-2">
+        <li class="nav-col nav-logotype-container d1-3 m2-3 s2-3">
+            <a href="http://altel.kz" class="logotype">
+                <img class="logotype-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Altel">
+            </a>
+        </li><li class="nav-col d1-6 text-right">
+            <a href="http://altel.kz/support/" class="icon-support nav-link">Поддержка</a>
+        </li><li class="nav-col d1-6 text-right">
+            <a href="https://cabinet.altel.kz/" class="icon-cabinet nav-link">Личный кабинет</a>
+        </li><li class="nav-col d1-6 text-right">
+            <a class="icon-consultant nav-link" href="https://cabinet.altel.kz/webim/client.php?locale=ru" onclick="if(navigator.userAgent.toLowerCase().indexOf('opera') != -1 &amp;&amp; window.event.preventDefault) window.event.preventDefault();this.newWindow = window.open('https://cabinet.altel.kz/webim/client.php?locale=ru&amp;url='+escape(document.location.href)+'&amp;referrer='+escape(document.referrer), 'webim', 'toolbar=0,scrollbars=0,location=0,status=1,menubar=0,width=640,height=480,resizable=1');this.newWindow.focus();this.newWindow.opener=window;return false;"
+            target="_blank">Онлайн-консультант</a>
+        </li><li class="nav-col d1-6 text-right">
+            <div class="lang-switcher">
+                <a href="/?lang=kz&amp;path=/" class="nav-link">Қаз</a> |
+                <a href="/?lang=ru&amp;path=/" class="nav-link active">Рус</a>
+            </div>
+            <a href="/?logout=1" class="nav-link">Выход</a>
+        </li><li class="nav-col nav-toggle-container d1-6 m1-3 s1-3">
+            <a href="#" class="nav-drawer-toggle js-nav-drawer-toggle">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Menu">
+            </a>
+        </li>
+    </ul>
+
+    <div class="navigation nav-level-1"><a class="nav-button d1-7" href="http://altel.kz/tariffs/">Тарифы GSM</a><a class="nav-button d1-7" href="http://altel.kz/internet/">Интернет 4G</a><a class="nav-button d1-7" href="http://altel.kz/devices/">Устройства</a><a class="nav-button d1-7" href="http://altel.kz/services/">Услуги</a><a class="nav-button d1-7"
+        href="http://altel.kz/payment/">Оплата</a><a class="nav-button d1-7" href="http://altel.kz/business/">Бизнес-клиентам</a><a class="nav-button d1-7" href="http://altel.kz/support/service-map/">Где купить?</a>
+    </div>
+</nav>
+
+        
+<ul class="breadcrumbs">
+  <li class="breadcrumbs-item">
+    <a class="breadcrumbs-item-link" href="/" title="Главная">Главная</a>
+  </li>
+  <li class="breadcrumbs-item">
+    <a class="breadcrumbs-item-link" href="/services/" title="Услуги">Услуги</a>
+  </li>
+  <li class="breadcrumbs-item">Международные звонки</li>
+</ul>
+<div class="d1-6 l1-6 m1">
+  <section class="side-navigation-meta">
+    <h1 class="page-title"></h1>
+    <ul class="side-navigation"></ul>
+  </section>
+</div><div class="d2-3 l5-6 m1">
+  <div class="box box--common">
+    <div class="box-content">
+      <div class="readable">
+        <div id="bloodhound" class="input-line">
+          <label for="js-country">Выберите страну</label>
+          <input id="js-country" class="input-d1 typeahead" type="text" placeholder="Введите название страны" autocomplete="off" autofocus />
+          <p class="caption">Например: <a href="#" class="js-fill-input">Турция</a></p>
+        </div>
+        <div class="input-line">
+          <ul class="block-list">
+            <li>
+              <div class="input-line split">
+                <div class="split-title"><strong>Код страны</strong></div>
+                <span id="js-code" class="js-cleanup"></span>
+              </div>
+            </li>
+            <li>
+              <div class="input-line split">
+                <div class="split-title"><strong>Стоимость звонков</strong></div>
+                <span id="js-call-price" class="js-cleanup"></span>
+              </div>
+            </li>
+            <li>
+              <div class="input-line split">
+                <div class="split-title"><strong>Стоимость SMS</strong></div>
+                <span id="js-sms-price" class="js-cleanup"></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <hr />
+        <h2>Дополнительная информация</h2>
+        <p>Чтобы осуществить международный звонок с мобильного телефона сети ALTEL 4G:GSM наберите:</p>
+        <ul class="caption">
+          <li>
+            [+] - [код&nbsp;страны] - [код&nbsp;мобильного&nbsp;оператора/код&nbsp;города] - [номер&nbsp;вызываемого&nbsp;абонента]
+          </li>
+          <li>
+            [810] - [код&nbsp;страны] - [код&nbsp;мобильного&nbsp;оператора/код&nbsp;города] - [номер&nbsp;вызываемого&nbsp;абонента]
+          </li>
+          <li>Оплачиваются только исходящие звонки и SMS-сообщения.</li>
+          <li>Услуга международных звонков доступна при наличии любого положительного баланса.</li>
+        </ul>
+        <p class="caption">* Шаг округления &mdash; 1 сек</p>
+        <p class="caption">** Тарифы указаны за минуту разговора, в тенге с учетом НДС
+</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <div class="sticky-footer">
+      <div class="container">
+        <footer>
+
+<nav class="nav-container">
+  <div class="navigation nav-level-2 text-center">
+
+    <div class="fpb-list">
+      <ul class="nav-button inline-list">
+        <li><a href="/site-about" class="nav-link">О компании</a></li>
+        <li><a href="/site-news" class="nav-link">Новости</a></li>
+        <li><a href="/site-press" class="nav-link">Пресс-центр</a></li>
+        <li><a href="/business-partners" class="nav-link">Партнерам</a></li>
+        <li><a href="/site-licenses" class="nav-link">Лицензии</a></li>
+        <li><a href="/site-buying" class="nav-link">Закупки</a></li>
+        <li><a href="/site-vacancies" class="nav-link">Вакансии</a></li>
+        <li><a href="/site-contacts" class="nav-link">Контакты</a></li>
+        <li><a href="/site-search" class="nav-link">Поиск</a></li>
+      </ul>
+    </div>
+
+    <div class="d1-4 m1">
+      <a href="/" class="logotype">
+        <img class="logotype-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Altel">
+      </a>
+      <ul class="nav-button inline-list">
+        <li><a href="http://instagram.com/altel4g" class="nav-link"><span class="icon-instagram"></span></a></li>
+        <li><a href="https://twitter.com/ALTEL4G" class="nav-link"><span class="icon-twitter"></span></a></li>
+        <li><a href="https://www.facebook.com/ALTEL4G" class="nav-link"><span class="icon-facebook"></span></a></li>
+        <li><a href="https://vk.com/altel4g" class="nav-link"><span class="icon-vkontakte"></span></a></li>
+      </ul>
+    </div>
+
+    <ul class="nav-button inline-list">
+      <li><a href="http://v3na.com/about/"><span class="icon-madeby"></span></a></li>
+    </ul>
+
+  </div>
+</nav>
+
+</footer>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/public/scripts/bower_components/jquery/jquery.min.js"></script>
+  <script src="/public/scripts/app/bootstrap.min.js"></script>
+  <script src="/public/scripts/simple.min.js"></script>
+  
+<script type="text/json" id="js-data-prices">
+  {
+    "турция": {
+      "code": "+734",
+      "call-price": "100 тенге",
+      "sms-price": "200 тенге"
+    }
+  }
+</script>
+<script type="text/json" id="js-data-countries">
+  ["Турция", "Country-1","Country-2","Country-3","Country-4","Country-5","Country-6","Country-7","Country-8","Country-9","Country-10","Country-11","Country-12","Country-13","Country-14","Country-15","Country-16","Country-17","Country-18","Country-19","Country-20","Country-21","Country-22","Country-23","Country-24","Country-25","Country-26","Country-27","Country-28","Country-29","Country-30","Country-31","Country-32","Country-33","Country-34","Country-35","Country-36","Country-37","Country-38","Country-39","Country-40","Country-41","Country-42","Country-43","Country-44","Country-45","Country-46","Country-47","Country-48","Country-49","Country-50","Country-51","Country-52","Country-53","Country-54","Country-55","Country-56","Country-57","Country-58","Country-59","Country-60","Country-61","Country-62","Country-63","Country-64","Country-65","Country-66","Country-67","Country-68","Country-69","Country-70","Country-71","Country-72","Country-73","Country-74","Country-75","Country-76","Country-77","Country-78","Country-79","Country-80","Country-81","Country-82","Country-83","Country-84","Country-85","Country-86","Country-87","Country-88","Country-89","Country-90","Country-91","Country-92","Country-93","Country-94","Country-95","Country-96","Country-97","Country-98","Country-99","Country-100"]
+</script>
+
+<script src="/public/scripts/typeahead.bundle.min.js"></script>
+
+<script type="text/javascript">
+  (function($, Bloodhound, window, document, undefined) {
+    var pricesData = JSON.parse($('#js-data-prices').text()),
+      countriesData = JSON.parse($('#js-data-countries').text()),
+      $countryInput = $('#js-country');
+
+    console.log(pricesData);
+
+    var populatePriceInfo = function(e) {
+      var countryString = $(e.target).typeahead('val').toLowerCase();
+      console.log(pricesData.countryString);
+      if (pricesData[countryString]) {
+        console.log(pricesData[countryString])
+        $.each(pricesData[countryString], function(key, value) {
+          $('#js-'+key).text(value);
+        });
+      } else {
+        console.log('toasty!');
+        $('.js-cleanup').text('');
+      }
+    }
+
+    var insertCountry = function(e) {
+      e.preventDefault();
+      $countryInput.typeahead('val', $(e.target).text()).trigger('input');
+    }
+
+    // constructs the suggestion engine
+    var countries = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.obj.whitespace('value'),
+      queryTokenizer: Bloodhound.tokenizers.whitespace,
+      // `states` is an array of state names defined in "The Basics"
+      local: $.map(countriesData, function(country) {
+        return {
+          value: country
+        };
+      })
+    });
+
+    // kicks off the loading/processing of `local` and `prefetch`
+    countries.initialize();
+
+    $('#js-country').typeahead({
+      hint: true,
+      highlight: true,
+      minLength: 1
+    }, {
+      name: 'countries',
+      displayKey: 'value',
+      // `ttAdapter` wraps the suggestion engine in an adapter that
+      // is compatible with the typeahead jQuery plugin
+      source: countries.ttAdapter()
+    });
+
+    $(document).on('input typeahead:selected', '#js-country', populatePriceInfo);
+    $(document).on('click', '.js-fill-input', insertCountry);
+
+  })(jQuery, Bloodhound, window, document)
+</script>
+
+</body>
+</html>
