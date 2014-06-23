@@ -4414,11 +4414,11 @@ input.chat-ctrls-write:focus {
 }
 
 /* line 1, reuse/_icons.sass */
-.icon-consultant, .icon-special, .icon-support, .icon-search, .icon-phone, .icon-time, .icon-message, .icon-wifi, .icon-cabinet, .icon-instagram, .icon-twitter, .icon-facebook, .icon-vkontakte, .icon-madeby {
+.icon-consultant, .icon-special, .icon-support, .icon-search, .icon-phone, .icon-time, .icon-message, .icon-wifi, .icon-cabinet, .icon-instagram, .icon-twitter, .icon-facebook, .icon-vkontakte, .icon-odnoklassniki, .icon-moymir, .icon-madeby {
   display: inline-block;
 }
 /* line 3, reuse/_icons.sass */
-.icon-consultant:before, .icon-special:before, .icon-support:before, .icon-search:before, .icon-phone:before, .icon-time:before, .icon-message:before, .icon-wifi:before, .icon-cabinet:before, .icon-instagram:before, .icon-twitter:before, .icon-facebook:before, .icon-vkontakte:before, .icon-madeby:before {
+.icon-consultant:before, .icon-special:before, .icon-support:before, .icon-search:before, .icon-phone:before, .icon-time:before, .icon-message:before, .icon-wifi:before, .icon-cabinet:before, .icon-instagram:before, .icon-twitter:before, .icon-facebook:before, .icon-vkontakte:before, .icon-odnoklassniki:before, .icon-moymir:before, .icon-madeby:before {
   display: inline-block;
   width: 1.125rem;
   height: 1.125rem;
@@ -4655,6 +4655,38 @@ input.chat-ctrls-write:focus {
 }
 
 /* line 89, reuse/_icons.sass */
+.icon-odnoklassniki:before {
+  vertical-align: top;
+  background-image: url(/public/images/icons/icon-odnoklassniki.svg);
+}
+/* line 39, base/_mixins.sass */
+.no-svg .icon-odnoklassniki:before {
+  background-image: url(/public/images/icons/icon-odnoklassniki.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 39, base/_mixins.sass */
+  .no-svg .icon-odnoklassniki:before {
+    background-image: url(/public/images/icons/icon-odnoklassniki@2x.png);
+  }
+}
+
+/* line 94, reuse/_icons.sass */
+.icon-moymir:before {
+  vertical-align: top;
+  background-image: url(/public/images/icons/icon-moymir.svg);
+}
+/* line 39, base/_mixins.sass */
+.no-svg .icon-moymir:before {
+  background-image: url(/public/images/icons/icon-moymir.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 39, base/_mixins.sass */
+  .no-svg .icon-moymir:before {
+    background-image: url(/public/images/icons/icon-moymir@2x.png);
+  }
+}
+
+/* line 99, reuse/_icons.sass */
 .icon-madeby:before {
   vertical-align: top;
   margin-top: -6px;
@@ -4675,14 +4707,14 @@ input.chat-ctrls-write:focus {
   }
 }
 
-/* line 99, reuse/_icons.sass */
+/* line 109, reuse/_icons.sass */
 .icon-visa,
 .icon-mastercard,
 .icon-maestro,
 .icon-amex {
   padding-top: 12px;
 }
-/* line 104, reuse/_icons.sass */
+/* line 114, reuse/_icons.sass */
 .icon-visa img,
 .icon-mastercard img,
 .icon-maestro img,
