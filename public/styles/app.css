@@ -4821,42 +4821,46 @@ input.chat-ctrls-write:focus {
 .mapLegend {
   padding: 0;
   margin: 0;
-  list-style-type: none;
 }
 
 /* line 5, reuse/_mapLegend.sass */
 .mapLegend-a,
 .mapLegend-b,
 .mapLegend-c {
+  width: 100%;
   display: inline-block;
   padding-right: 12px;
   margin: 0;
+  padding: 12px 0;
 }
-/* line 11, reuse/_mapLegend.sass */
+/* line 13, reuse/_mapLegend.sass */
 .mapLegend-a:before,
 .mapLegend-b:before,
 .mapLegend-c:before {
+  position: relative;
+  top: 3px;
   display: inline-block;
-  width: 16.4px;
-  height: 16.4px;
+  width: 26px;
+  height: 26px;
   margin-right: 6px;
+  vertical-align: bottom;
   background-color: white;
   border: 1px solid white;
   border-radius: 50%;
   content: "";
 }
 
-/* line 21, reuse/_mapLegend.sass */
+/* line 26, reuse/_mapLegend.sass */
 .mapLegend-a:before {
   background-color: #f5d2b6;
 }
 
-/* line 23, reuse/_mapLegend.sass */
+/* line 28, reuse/_mapLegend.sass */
 .mapLegend-b:before {
   background-color: #f5f2bd;
 }
 
-/* line 25, reuse/_mapLegend.sass */
+/* line 30, reuse/_mapLegend.sass */
 .mapLegend-c:before {
   background-color: #dddad6;
 }

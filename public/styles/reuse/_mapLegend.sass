@@ -1,18 +1,23 @@
 .mapLegend
   padding: 0
   margin: 0
-  list-style-type: none
+  // list-style-type: none
 .mapLegend-a,
 .mapLegend-b,
 .mapLegend-c
+  width: 100%
   display: inline-block
   padding-right: $gutter
   margin: 0
+  padding: $gutter 0
   &:before
+    position: relative
+    top: 3px
     display: inline-block
-    width: 1.2*$gutter + 2px
-    height: 1.2*$gutter + 2px
+    width: 2*$gutter + 2px
+    height: 2*$gutter + 2px
     margin-right: $baseline
+    vertical-align: bottom
     background-color: white
     border: 1px solid white
     border-radius: 50%
