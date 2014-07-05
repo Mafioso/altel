@@ -2,11 +2,11 @@
   background-position: 50% 50%
   background-repeat: no-repeat
   background-size: auto 40%
-  -ms-behavior: url(/public/backgroundsize.min.htc)
+  
   @include bp-medium
     background-position: 100% 100%
     background-size: auto 50%
-    -ms-behavior: url(/public/backgroundsize.min.htc)
+    
 
 @mixin box-icon($icon)
   .#{$icon}
@@ -73,10 +73,10 @@
 .plan-icon-lte
   background-position: 50% 40%
   background-size: auto 20%
-  -ms-behavior: url(/public/backgroundsize.min.htc)
+  
   @include bp-small
     background-size: auto 30%
-    -ms-behavior: url(/public/backgroundsize.min.htc)
+    
 
 .plan-icon-gsm
   @extend .box-icon-site-plans

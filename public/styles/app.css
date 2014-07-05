@@ -1697,7 +1697,7 @@ body {
 }
 
 /* line 55, base/_base.sass */
-.adventure-time, .modal-overlay, .modal, .nav-drawer-overlay, .box-background, .box-content, .epic-plan-visual-hover, .plan-device-price-bg, .plan-device-price-body, .sticky-footer footer, .loader, .nav-drawer, .nav-level-1 .nav-button, .nav-level-0 .nav-button, .plan-benefits, .section-container, .item, .slide-visual,
+.adventure-time, .modal-overlay, .modal, .nav-drawer-overlay, .box-background, .box-content, .plan-device-price-bg, .plan-device-price-body, .sticky-footer footer, .loader, .nav-drawer, .nav-level-1 .nav-button, .nav-level-0 .nav-button, .plan-benefits, .section-container, .item, .slide-visual,
 .slide-heading,
 .slide-product,
 .slide-cta,
@@ -1860,14 +1860,12 @@ figure {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto 40%;
-  -ms-behavior: url(/public/backgroundsize.min.htc);
 }
 @media only screen and (max-width: 60em) {
   /* line 1, reuse/_box-icons.sass */
   .box-icon-altel, .box-icon-aon, .box-icon-block, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-dashboard, .box-icon-dashboard-bonus, .box-icon-dashboard-consumption, .box-icon-dashboard-payment-history, .box-icon-docs, .box-icon-exchange, .box-icon-faq, .box-icon-feedback, .box-icon-handshake, .box-icon-html, .box-icon-mifi, .box-icon-missed-call, .box-icon-old-phone, .box-icon-order, .box-icon-pay-mobile, .box-icon-payment, .box-icon-payment-atm, .box-icon-payment-express, .box-icon-payment-portal, .box-icon-payment-pos, .box-icon-pdf, .box-icon-settings, .box-icon-settings-auto, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-star, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-sup-coverage-lte, .box-icon-tick, .box-icon-tonix, .box-icon-unlock, .box-icon-usb-modem, .box-icon-xls, .box-icon-lang, .box-icon-apn, .box-icon-addressbook {
     background-position: 100% 100%;
     background-size: auto 50%;
-    -ms-behavior: url(/public/backgroundsize.min.htc);
   }
 }
 
@@ -3526,19 +3524,17 @@ figure {
 .plan-icon-lte {
   background-position: 50% 40%;
   background-size: auto 20%;
-  -ms-behavior: url(/public/backgroundsize.min.htc);
 }
 @media only screen and (max-width: 36em) {
   /* line 72, reuse/_box-icons.sass */
   .plan-icon-gsm,
   .plan-icon-lte {
     background-size: auto 30%;
-    -ms-behavior: url(/public/backgroundsize.min.htc);
   }
 }
 
 /* line 1, reuse/_box.sass */
-.box-background, .box-content, .epic-plan-visual-hover, .plan-device-price-bg, .plan-device-price-body {
+.box-background, .box-content, .plan-device-price-bg, .plan-device-price-body {
   -webkit-transition-property: -webkit-transform;
           transition-property: transform;
   -webkit-transition-duration: 0.25s;
@@ -3548,7 +3544,7 @@ figure {
 }
 
 /* line 7, reuse/_box.sass */
-.box-background, .ratio-box .box-content, .planbox-icon, .ratio-box .box-footer, .epic-plan-visual .box-footer, .epic-plan-visual-hover {
+.box-background, .ratio-box .box-content, .planbox-icon, .ratio-box .box-footer, .epic-plan-visual .box-footer {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -4273,7 +4269,6 @@ input.chat-ctrls-write:focus {
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: padding-box;
-  -ms-behavior: url(/public/backgroundsize.min.htc);
 }
 
 /* line 1, reuse/_drawer.sass */
@@ -4284,6 +4279,73 @@ input.chat-ctrls-write:focus {
 /* line 13, reuse/_drawer.sass */
 .drawer-text-box {
   padding: 12px 12px 0;
+}
+
+/* line 1, reuse/_feature.sass */
+.feature {
+  position: relative;
+  margin: -12px -12px 0;
+  overflow: hidden;
+}
+
+/* line 6, reuse/_feature.sass */
+.feature-cover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+/* line 16, reuse/_feature.sass */
+.feature-description {
+  position: relative;
+}
+
+/* line 19, reuse/_feature.sass */
+.featureHeader {
+  padding: 12px;
+}
+
+/* line 22, reuse/_feature.sass */
+.feature-transition--top, .feature-transition--bottom {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2em;
+}
+
+/* line 29, reuse/_feature.sass */
+.feature-transition--top {
+  top: 0;
+  bottom: auto;
+  background-image: -webkit-linear-gradient(top, #ffffff, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(top, #ffffff, rgba(255, 255, 255, 0));
+}
+
+/* line 34, reuse/_feature.sass */
+.feature-transition--bottom {
+  background-image: -webkit-linear-gradient(bottom, #ffffff, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(bottom, #ffffff, rgba(255, 255, 255, 0));
+}
+
+/* line 38, reuse/_feature.sass */
+.featureInfo {
+  padding: 1em 12px 0;
+  text-align: center;
+}
+/* line 42, reuse/_feature.sass */
+.featureInfo > p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 45, reuse/_feature.sass */
+.feature-filler {
+  height: 18em;
 }
 
 /* line 1, reuse/_footer.sass */
@@ -4705,7 +4767,6 @@ input.chat-ctrls-write:focus {
   margin-top: -6px;
   background-image: url(/public/images/madeby.svg);
   background-size: contain;
-  -ms-behavior: url(/public/backgroundsize.min.htc);
   height: 24px;
   width: 135px;
 }
@@ -5256,7 +5317,6 @@ input.chat-ctrls-write:focus {
   background-size: contain;
   background-position: 0 50%;
   background-repeat: no-repeat;
-  -ms-behavior: url(/public/backgroundsize.min.htc);
 }
 /* line 39, base/_mixins.sass */
 .no-svg .logotype-image {
@@ -5434,10 +5494,6 @@ footer .logotype-image {
 .active .plan-title {
   color: #ed0088;
 }
-/* line 10, reuse/_plan.sass */
-.box:hover .epic-plan-visual-container .plan-title {
-  color: white;
-}
 
 /* line 12, reuse/_plan.sass */
 .title {
@@ -5450,10 +5506,6 @@ footer .logotype-image {
   color: #56565c;
   text-align: center;
   padding-bottom: 6px;
-}
-/* line 28, reuse/_plan.sass */
-.box:hover .epic-plan-visual-container .plan-subtitle {
-  color: white;
 }
 
 /* line 31, reuse/_plan.sass */
@@ -5505,21 +5557,6 @@ footer .logotype-image {
   }
 }
 
-/* line 71, reuse/_plan.sass */
-.epic-plan-graphics {
-  height: 12em;
-  background-size: contain;
-  background-position: 0 50%;
-  -ms-behavior: url(/public/backgroundsize.min.htc);
-}
-
-/* line 77, reuse/_plan.sass */
-.epic-plan .planbox-icon {
-  background-position: 50% 40%;
-  background-size: auto 40%;
-  -ms-behavior: url(/public/backgroundsize.min.htc);
-}
-
 /* line 84, reuse/_plan.sass */
 .epic-plan-visual {
   position: relative;
@@ -5527,7 +5564,6 @@ footer .logotype-image {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  -ms-behavior: url(/public/backgroundsize.min.htc);
 }
 /* line 92, reuse/_plan.sass */
 .epic-plan-visual .box-footer {
@@ -5674,31 +5710,11 @@ footer .logotype-image {
   }
 }
 
-/* line 178, reuse/_plan.sass */
-.planbox,
-.epic-plan-visual-hover {
+/* line 179, reuse/_plan.sass */
+.planbox {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  -ms-behavior: url(/public/backgroundsize.min.htc);
-}
-
-/* line 185, reuse/_plan.sass */
-.epic-plan-visual-container {
-  position: relative;
-  overflow: hidden;
-  margin: -12px -12px 0;
-}
-
-/* line 191, reuse/_plan.sass */
-.epic-plan-visual-hover {
-  -webkit-transition-property: opacity;
-          transition-property: opacity;
-  opacity: 0;
-}
-/* line 196, reuse/_plan.sass */
-.box:hover .epic-plan-visual-hover {
-  opacity: 1;
 }
 
 /* line 199, reuse/_plan.sass */
@@ -6026,7 +6042,6 @@ footer .logotype-image {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
-  -ms-behavior: url(/public/backgroundsize.min.htc);
 }
 /* line 78, reuse/_slides.sass */
 .slide-visual img {
@@ -6038,7 +6053,6 @@ footer .logotype-image {
   /* line 72, reuse/_slides.sass */
   .slide-visual {
     background-size: auto 100%;
-    -ms-behavior: url(/public/backgroundsize.min.htc);
   }
 }
 /* line 95, reuse/_slides.sass */

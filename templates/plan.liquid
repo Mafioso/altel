@@ -1,0 +1,337 @@
+{% layout 'none' %}
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Тарифы GSM</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="robots" content="index, follow" />
+<meta name="keywords" content="altel, 4g, altel4g" />
+<meta name="description" content="Altel" />
+<link rel="stylesheet" href="{{ 'app.css' | asset_url }}">
+
+
+
+</head>
+<body class="">
+  <!--[if lt IE 8]>
+
+    <div class="browsehappy">
+      <div class="browsehappy-body">
+        <p>К сожалению Ваш браузер устарел.
+        Чтобы использовать все возможности сайта, загрузите и установите один из этих браузеров:</p>
+        <div id="browsers">
+          <a class="column gutter" href="http://www.apple.com/safari/" target="_blank">
+            <img src="public/images/browsehappy/safari.png" alt="" />
+            <div>Safari</div>
+          </a>
+          <a class="column gutter" href="http://www.google.com/chrome/" target="_blank">
+            <img src="public/images/browsehappy/chrome.png" alt="" />
+            <div>Chrome</div>
+          </a>
+          <a class="column gutter" href="http://www.mozilla-europe.org/" target="_blank">
+            <img src="public/images/browsehappy/firefox.png" alt="" />
+            <div>Firefox</div>
+          </a>
+          <a class="column gutter" href="http://www.opera.com/" target="_blank">
+            <img src="public/images/browsehappy/opera.png" alt="" />
+            <div>Opera</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  <![endif]-->
+
+
+  <div class="modal-overlay"></div>
+    <nav class="nav-drawer" tabindex="-1">
+  <div class="nav-drawer-content">
+  <ul class="nav-drawer-list">
+    <li><a href="/" class="nav-drawer-list-item active">Главная</a></li>
+    <li>
+      <div class="d2-3">
+        <a href="https://cabinet.altel.kz" class="nav-drawer-list-item ">Личный кабинет</a>
+      </div>
+    </li>
+    <li><a href="/payment/" class="nav-drawer-list-item ">Оплата</a></li>
+    <li><a href="/tariffs/" class="nav-drawer-list-item ">Тарифы GSM</a></li>
+    <li><a href="/internet/" class="nav-drawer-list-item ">Интернет 4G</a></li>
+    <li><a href="/services/" class="nav-drawer-list-item ">Услуги</a></li>
+    <li><a href="/business/" class="nav-drawer-list-item ">Бизнес-клиентам</a></li>
+  </ul>
+
+  <ul class="nav-drawer-list">
+    <!--<li><a href="#" class="nav-drawer-list-item">Ваш регион</a></li>-->
+    <li><a href="/support/" class="nav-drawer-list-item">Поддержка</a></li>
+    <li>
+      <div class="d1-2">
+        <a href="/language_switcher.php?lang_ui=kz&path=/tariffs/" class="nav-drawer-list-item">Қаз</a>
+      </div><div class="d1-2">
+        <a href="/language_switcher.php?lang_ui=ru&path=/tariffs/detail.php?ID=285" class="nav-drawer-list-item active">Рус</a>
+      </div
+    </li>
+  </ul>
+
+  <ul class="nav-drawer-list">
+    <li><a href="/about/" class="nav-drawer-list-item">О компании</a></li>
+    <li><a href="/news/" class="nav-drawer-list-item">Новости</a></li>
+    <li><a href="/press/" class="nav-drawer-list-item">Пресс-центр</a></li>
+    <li><a href="/partners/" class="nav-drawer-list-item">Партнерам</a></li>
+    <li><a href="/about/licenses/" class="nav-drawer-list-item">Лицензии</a></li>
+    <li><a href="/purchases/" class="nav-drawer-list-item">Закупки</a></li>
+    <li><a href="/about/vacancies/" class="nav-drawer-list-item">Вакансии</a></li>
+    <li><a href="/contacts/" class="nav-drawer-list-item">Контакты</a></li>
+    <li><a href="/search/" class="nav-drawer-list-item">Поиск</a></li>
+    <li><a href="/about/public-contracts/" class="nav-drawer-list-item">Правила оказания услуг</a></li>
+    <li><a href="http://zakupki.altel.kz/" class="nav-drawer-list-item" target="_blank">Старая версия</a></li>
+  </ul>
+  </div>
+</nav>
+<div class="nav-drawer-overlay js-nav-drawer-toggle"></div>
+
+  <div class="adventure-time">
+    <div class="sticky-wrap">
+      <div class="container">
+        <nav class="nav-container header">
+  <ul class="navigation nav-level-2">
+    <li class="nav-col nav-logotype-container d1-3 m2-3 s2-3">
+      <a href="/" class="logotype">
+        <img class="logotype-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Altel">
+      </a>
+    </li><li class="nav-col d1-6 text-right">
+      <a href="/support/" class="icon-support nav-link">Поддержка</a>
+    </li><li class="nav-col d1-6 text-right">
+      <a href="https://cabinet.altel.kz/" class="icon-cabinet nav-link">Личный кабинет</a>
+    </li><li class="nav-col d1-6 text-right">
+      <a class="icon-consultant nav-link" href="https://cabinet.altel.kz/webim/client.php?locale=ru" onclick="if(navigator.userAgent.toLowerCase().indexOf('opera') != -1 &amp;&amp; window.event.preventDefault) window.event.preventDefault();this.newWindow = window.open('https://cabinet.altel.kz/webim/client.php?locale=ru&amp;url='+escape(document.location.href)+'&amp;referrer='+escape(document.referrer), 'webim', 'toolbar=0,scrollbars=0,location=0,status=1,menubar=0,width=640,height=480,resizable=1');this.newWindow.focus();this.newWindow.opener=window;return false;" target="_blank">Онлайн-консультант</a>
+    </li><li class="nav-col d1-6 text-right">
+      <div class="lang-switcher">
+        <a href="/language_switcher.php?lang_ui=kz&path=/tariffs/" class="nav-link">Қаз</a> |
+        <a href="/language_switcher.php?lang_ui=ru&path=/tariffs/detail.php?ID=285" class="nav-link active">Рус</a>
+      </div>
+      <!--<a href="index.html" class="nav-link">Выход</a>-->
+    </li><li class="nav-col nav-toggle-container d1-6 m1-3 s1-3">
+      <a href="#" class="nav-drawer-toggle js-nav-drawer-toggle"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Menu"></a>
+    </li>
+  </ul>
+
+<div class="navigation nav-level-1"><a class="nav-button active d1-7" href="/tariffs/">Тарифы GSM</a><a class="nav-button d1-7" href="/internet/">Интернет 4G</a><a class="nav-button d1-7" href="/devices/">Устройства</a><a class="nav-button d1-7" href="/services/">Услуги</a><a class="nav-button d1-7" href="/payment/">Оплата</a><a class="nav-button d1-7" href="/business/">Бизнес-клиентам</a><a class="nav-button d1-7" href="/support/service-map/">Где купить?</a></div>
+
+
+</nav>
+<ul class="breadcrumbs">
+  <li class="breadcrumbs-item">
+    <a class="breadcrumbs-item-link" href="/" title="Главная">Главная</a>
+  </li>
+  <li class="breadcrumbs-item">
+    <a class="breadcrumbs-item-link" href="/tariffs/" title="Тарифы GSM">Тарифы GSM</a>
+  </li>
+  <li class="breadcrumbs-item">НА СВЯЗИ</li>
+</ul><div class="gutter">
+<div class="d1-6 l1-6 m1"><section class="side-navigation-meta"><h1 class="page-title">Тарифы GSM</h1><ul class="side-navigation"><li><a href="/tariffs/detail.php?ID=282" class="side-navigation-item">НА СВЯЗИ</a></li><li><a href="/tariffs/detail.php?ID=230" class="side-navigation-item">SMART WELCOME</a></li><li><a href="/tariffs/detail.php?ID=232" class="side-navigation-item">SMART 500</a></li><li><a href="/tariffs/detail.php?ID=141" class="side-navigation-item">SMART 1000</a></li><li><a href="/tariffs/detail.php?ID=231" class="side-navigation-item">SMART UNLIM</a></li><li><a href="/tariffs/detail.php?ID=370" class="side-navigation-item">Galaxy S5</a></li></ul>
+</section>
+<ul class="side-navigation">
+    <li class="side-navigation-item">
+        <a href="/tariffs/archive/">Архив</a>
+    </li>
+</ul>
+</div><div class="d2-3 l5-6 m1">
+
+  <div class="box">
+      <div class="box-content epic-plan">
+
+        {% include 'plan-visual' %}
+    
+                  <div class="plan-cta-container">
+            <a href="/devices/phones/" class="u-link small-heading">Подобрать телефон</a>
+          </div>
+                          <div class="plan-description">
+            <div class="readable text-left">
+
+<div style="text-align: center;"><b>Оставайтесь всегда на связи с близкими, родными и друзьями!</b></div>
+               <p></p>
+            </div>
+          </div>
+                                                                                                                                                                                                                        <table class="plan-table plan-table--alternate">
+                <tr>
+                  <th colspan="2" class="plan-table-title">О тарифе</th>
+                </tr>
+                                                                                                                                                                                                                                                                  <tr>
+                      <td class="table2-5">
+                        Абонентская плата                      </td>
+                      <td class="table3-5">
+                        0 тенге                      </td>
+                    </tr>
+                                                                                                                                                                                                                                                                                    <tr>
+                      <td class="table2-5">
+                        Команда для перехода                      </td>
+                      <td class="table3-5">
+                        *808*4#                      </td>
+                    </tr>
+                                                                                                                    </table>
+                                                                                                  <table class="plan-table plan-table--alternate">
+                <tr>
+                  <th colspan="2" class="plan-table-title">Бонусный пакет*</th>
+                </tr>
+                                                      <tr>
+                      <td class="table2-5">
+                        Минуты внутри сети ALTEL GSM, Dalacom, Pathword / день                      </td>
+                      <td class="table3-5">
+                        5 минут                      </td>
+                    </tr>
+                                                                        <tr>
+                      <td class="table2-5">
+                        SMS внутри сети ALTEL GSM, Dalacom, Pathword / день                      </td>
+                      <td class="table3-5">
+                        5 SMS                      </td>
+                    </tr>
+                                                                                  </table>
+                                                                                                                                                                                                                                                                                                                                                                                                    <table class="plan-table plan-table--alternate">
+                <tr>
+                  <th colspan="2" class="plan-table-title">Стоимость превышения трафика и других соединений</th>
+                </tr>
+                                                      <tr>
+                      <td class="table2-5">
+                        1 мин внутри сети ALTEL GSM, Dalacom, Pathword                      </td>
+                      <td class="table3-5">
+                        3 тенге                      </td>
+                    </tr>
+                                                                        <tr>
+                      <td class="table2-5">
+                        1 SMS внутри сети  ALTEL GSM, Dalacom, Pathword                      </td>
+                      <td class="table3-5">
+                        3 тенге                      </td>
+                    </tr>
+                                                                        <tr>
+                      <td class="table2-5">
+                        Интернет-трафик, 1Мб                      </td>
+                      <td class="table3-5">
+                        15 тенге                      </td>
+                    </tr>
+                                                                        <tr>
+                      <td class="table2-5">
+                        1 SMS на других операторов РК                      </td>
+                      <td class="table3-5">
+                        10 тенге                      </td>
+                    </tr>
+                                                                        <tr>
+                      <td class="table2-5">
+                        1 мин на других операторов РК и городские номера                      </td>
+                      <td class="table3-5">
+                        15 тенге                      </td>
+                    </tr>
+                                                </table>
+                                      <div class="footnotes">
+          <p class="footnote"><span style="color: rgb(149, 149, 149); font-size: small;">Все тарифы указаны с учетом НДС. </span>
+<br style="color: rgb(149, 149, 149); font-size: small;" />
+ <span style="color: rgb(149, 149, 149); font-size: small;">Тарификация голосовых соединений - 1 секунда. </span>
+<br style="color: rgb(149, 149, 149); font-size: small;" />
+ <span style="color: rgb(149, 149, 149); font-size: small;">Тарификация передачи данных - 1 Килобайт.</span></p>
+        </div>
+                  <table class="plan-table">
+            <thead>
+              <tr>
+                <th colspan="2" class="plan-table-title">Дополнительная информация</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="plan-table-a">
+
+<p style="margin-left: 18pt; text-align: justify;" class="MsoNormalCxSpFirst"> </p>
+
+<div>
+  <p style="margin-left: 18pt;" class="MsoNormalCxSpFirst"> </p>
+      *  Бонусный пакет начисляется ежедневно и доступен при наличии на балансе суммы не менее 50 тенг<span lang="KZ">е</span>.
+  <br />
+
+  <ul>
+    <li style="box-sizing: border-box;"><span lang="KZ" style="box-sizing: border-box; line-height: 16.099998474121094px;">Скорость передачи данных может быть снижена при использовании </span><span lang="EN-US" style="box-sizing: border-box; line-height: 16.099998474121094px;">SIM</span><span style="box-sizing: border-box; line-height: 16.099998474121094px;">-</span><span lang="KZ" style="box-sizing: border-box; line-height: 16.099998474121094px;">карты в других устройствах </span><span style="box-sizing: border-box; line-height: 16.099998474121094px;">(USB-модем, Mi-Fi роутер и др.) или при использовании телефона в качестве модема.</span></li>
+
+    <li class="MsoNormal">Для тестирования скорости передачи данных рекомендуем использовать сайт <a href="http://www.speedtest.net/" >http://www.speedtest.net/</a> и в настройках выбрать в качестве предпочитаемого сервера - <u>Almaty<span style="box-sizing: border-box;"> </span><span style="box-sizing: border-box;">Kazakhtelecom</span></u> (<span style="box-sizing: border-box;">IP</span><span style="box-sizing: border-box;"> </span>95.56.237.84) или <u><span style="box-sizing: border-box;">Astana</span><span style="box-sizing: border-box;"> </span><span style="box-sizing: border-box;">Kazakhtelecom</span></u> (<span style="box-sizing: border-box;">IP</span><span style="box-sizing: border-box;"> </span>82.200.168.218). В этом случае, интернет-трафик, использованный для тестирования скорости, учитываться и тарифицироваться не будет. При выборе других серверов на сайте <span lang="EN-US">SpeedTest, </span>тарификация интернет-трафика производится согласно условиям тарифного плана. Правило введено с 14 июня 2014 года.</li>
+
+    <li style="box-sizing: border-box;"><span lang="KZ" style="box-sizing: border-box; line-height: 16.099998474121094px;">Использование пиринговых файлообменных сетей </span><span style="box-sizing: border-box; line-height: 16.099998474121094px;">(</span><span lang="EN-US" style="box-sizing: border-box; line-height: 16.099998474121094px;">BitTorrent</span><span lang="EN-US" style="box-sizing: border-box; line-height: 16.099998474121094px;"> </span><span lang="KZ" style="box-sizing: border-box; line-height: 16.099998474121094px;">и пр</span><span style="box-sizing: border-box; line-height: 16.099998474121094px;">.), VPN соединений может быть ограничено до 128 Кбит/сек.</span></li>
+
+    <li>Проверка баланса *111#, проверка бонусного трафика *807#</li>
+   </ul>
+ <font color="#595959">
+    <br />
+   </font>
+  <p></p>
+ </div>
+
+<p></p>
+                 </td>
+              </tr>
+            </tbody>
+          </table>
+                          <div class="box-footer plan-cta-container">
+          <a href="/support/service-map/" class="u-link small-heading">Где купить?</a>
+        </div>
+              </div>
+    </div>
+</div>
+<nav class="mobile-side-navigation">
+    <h2><a href="/tariffs/">Тарифы GSM</a></h2>
+    <ul class="side-navigation"><li><a href="/tariffs/detail.php?ID=282" class="side-navigation-item">НА СВЯЗИ</a></li><li><a href="/tariffs/detail.php?ID=230" class="side-navigation-item">SMART WELCOME</a></li><li><a href="/tariffs/detail.php?ID=232" class="side-navigation-item">SMART 500</a></li><li><a href="/tariffs/detail.php?ID=141" class="side-navigation-item">SMART 1000</a></li><li><a href="/tariffs/detail.php?ID=231" class="side-navigation-item">SMART UNLIM</a></li><li><a href="/tariffs/detail.php?ID=370" class="side-navigation-item">Galaxy S5</a></li></ul>
+  </nav>
+
+  </div>
+
+
+
+      </div>
+    </div>
+    <div class="sticky-footer">
+      <div class="container">
+        <footer>
+          <nav class="nav-container">
+            <div class="navigation nav-level-2 text-center">
+
+              <div class="fpb-list">
+                <ul class="nav-button inline-list">
+                  <li><a href="/about/" class="nav-link">О компании</a></li>
+                  <li><a href="/news/" class="nav-link">Новости</a></li>
+                  <li><a href="/press/" class="nav-link">Пресс-центр</a></li>
+                  <li><a href="/partners/" class="nav-link">Партнерам</a></li>
+                  <li><a href="/about/licenses/" class="nav-link">Лицензии</a></li>
+                  <li><a href="/purchases/" class="nav-link">Закупки</a></li>
+                  <li><a href="/about/vacancies/" class="nav-link">Вакансии</a></li>
+                  <li><a href="/contacts/" class="nav-link">Контакты</a></li>
+                  <li><a href="/search/" class="nav-link">Поиск</a></li>
+                  <li><a href="/about/public-contracts/" class="nav-link">Правила оказания услуг</a></li>
+                  <li><a href="http://zakupki.altel.kz/" class="nav-link" target="_blank">Старая версия</a></li>
+                </ul>
+              </div>
+
+              <div class="d1-4 m1">
+                <a href="/" class="logotype">
+                  <img class="logotype-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Altel">
+                </a>
+                <ul class="nav-button inline-list">
+                  <li><a href="http://instagram.com/altel4ggsm" class="nav-link" target="_blank"><span class="icon-instagram"></span></a></li>
+                  <li><a href="https://twitter.com/ALTEL4GGSM" class="nav-link" target="_blank"><span class="icon-twitter"></span></a></li>
+                  <li><a href="https://www.facebook.com/ALTEL4GGSM" class="nav-link" target="_blank"><span class="icon-facebook"></span></a></li>
+                  <li><a href="https://vk.com/altel4g" class="nav-link" target="_blank"><span class="icon-vkontakte"></span></a></li>
+                  <li><a href="http://my.mail.ru/community/altel.kz/?ref=cat" class="nav-link" target="_blank"><span class="icon-moymir"></span></a></li>
+                  <li><a href="http://www.odnoklassniki.ru/group/53140992819438" class="nav-link" target="_blank"><span class="icon-odnoklassniki"></span></a></li>
+                </ul>
+              </div>
+
+              <ul class="nav-button inline-list">
+                <li><a href="http://v3na.com/about/" target="_blank"><span class="icon-madeby"></span></a></li>
+              </ul>
+            </div>
+          </nav>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

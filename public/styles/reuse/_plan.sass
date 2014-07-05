@@ -7,8 +7,8 @@
   .epic-plan &
     @extend %normal-heading
     @extend %gutter
-  .box:hover .epic-plan-visual-container &
-    color: white
+  // .box:hover .epic-plan-visual-container &
+  //   color: white
 .title
   @extend %normal-heading
   font-weight: 600
@@ -25,8 +25,8 @@
     // text-align: left
     @extend %gutter
   // .planbox &,
-  .box:hover .epic-plan-visual-container &
-    color: white
+  // .box:hover .epic-plan-visual-container &
+  //   color: white
 
 .connection-howto
   // background-color: $bg-color
@@ -68,16 +68,16 @@
     // text-align:
 
 
-.epic-plan-graphics
-  height: 12em
-  background-size: contain
-  background-position: 0 50%
-  -ms-behavior: url(/public/backgroundsize.min.htc)
+// .epic-plan-graphics
+//   height: 12em
+//   background-size: contain
+//   background-position: 0 50%
 
-.epic-plan .planbox-icon
-  background-position: 50% 40%
-  background-size: auto 40%
-  -ms-behavior: url(/public/backgroundsize.min.htc)
+// 
+// .epic-plan .planbox-icon
+//   background-position: 50% 40%
+//   background-size: auto 40%
+
 
 
 
@@ -87,7 +87,7 @@
   background-size: cover
   background-position: 50% 50%
   background-repeat: no-repeat
-  -ms-behavior: url(/public/backgroundsize.min.htc)
+
 
   .box-footer
     color: $normal-text-color
@@ -175,26 +175,26 @@
     padding: ($baseline - 1px)
     @include font($small-text, $small-line)
 
-.planbox,
-.epic-plan-visual-hover
+// .epic-plan-visual-hover,
+.planbox
   background-size: cover
   background-repeat: no-repeat
   background-position: 50% 50%
-  -ms-behavior: url(/public/backgroundsize.min.htc)
 
-.epic-plan-visual-container
-  position: relative
-  overflow: hidden
-  margin: -1*$gutter -1*$gutter 0
-  // padding: 2*$gutter
-
-.epic-plan-visual-hover
-  @extend %box-animation-setup
-  @extend %box-content-setup
-  transition-property: opacity
-  opacity: 0
-  .box:hover &
-    opacity: 1
+//
+// .epic-plan-visual-container
+//   position: relative
+//   overflow: hidden
+//   margin: -1*$gutter -1*$gutter 0
+//   // padding: 2*$gutter
+//
+// .epic-plan-visual-hover
+//   @extend %box-animation-setup
+//   @extend %box-content-setup
+//   transition-property: opacity
+//   opacity: 0
+//   .box:hover &
+//     opacity: 1
 
 .plan-device-price
   position: relative
