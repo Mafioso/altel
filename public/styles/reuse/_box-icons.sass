@@ -2,11 +2,11 @@
   background-position: 50% 50%
   background-repeat: no-repeat
   background-size: auto 40%
-  
+
   @include bp-medium
     background-position: 100% 100%
     background-size: auto 50%
-    
+
 
 @mixin box-icon($icon)
   .#{$icon}
@@ -52,7 +52,9 @@
 @include box-icon('box-icon-settings')
 @include box-icon('box-icon-settings-auto')
 @include box-icon('box-icon-site-internet')
-@include box-icon('box-icon-site-migration')
+@include box-icon('box-icon-site-migration-cdma')
+@include box-icon('box-icon-site-migration-jet')
+@include box-icon('box-icon-site-migration-city')
 @include box-icon('box-icon-site-plans')
 @include box-icon('box-icon-site-roaming')
 @include box-icon('box-icon-star')
@@ -73,10 +75,10 @@
 .plan-icon-lte
   background-position: 50% 40%
   background-size: auto 20%
-  
+
   @include bp-small
     background-size: auto 30%
-    
+
 
 .plan-icon-gsm
   @extend .box-icon-site-plans

@@ -1856,14 +1856,14 @@ figure {
 }
 
 /* line 1, reuse/_box-icons.sass */
-.box-icon-altel, .box-icon-aon, .box-icon-block, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-dashboard, .box-icon-dashboard-bonus, .box-icon-dashboard-consumption, .box-icon-dashboard-payment-history, .box-icon-docs, .box-icon-exchange, .box-icon-faq, .box-icon-feedback, .box-icon-handshake, .box-icon-html, .box-icon-mifi, .box-icon-missed-call, .box-icon-old-phone, .box-icon-order, .box-icon-pay-mobile, .box-icon-payment, .box-icon-payment-atm, .box-icon-payment-express, .box-icon-payment-portal, .box-icon-payment-pos, .box-icon-pdf, .box-icon-settings, .box-icon-settings-auto, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-star, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-sup-coverage-lte, .box-icon-tick, .box-icon-tonix, .box-icon-unlock, .box-icon-usb-modem, .box-icon-xls, .box-icon-lang, .box-icon-apn, .box-icon-addressbook {
+.box-icon-altel, .box-icon-aon, .box-icon-block, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-dashboard, .box-icon-dashboard-bonus, .box-icon-dashboard-consumption, .box-icon-dashboard-payment-history, .box-icon-docs, .box-icon-exchange, .box-icon-faq, .box-icon-feedback, .box-icon-handshake, .box-icon-html, .box-icon-mifi, .box-icon-missed-call, .box-icon-old-phone, .box-icon-order, .box-icon-pay-mobile, .box-icon-payment, .box-icon-payment-atm, .box-icon-payment-express, .box-icon-payment-portal, .box-icon-payment-pos, .box-icon-pdf, .box-icon-settings, .box-icon-settings-auto, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration-cdma, .box-icon-site-migration-jet, .box-icon-site-migration-city, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-star, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-sup-coverage-lte, .box-icon-tick, .box-icon-tonix, .box-icon-unlock, .box-icon-usb-modem, .box-icon-xls, .box-icon-lang, .box-icon-apn, .box-icon-addressbook {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: auto 40%;
 }
 @media only screen and (max-width: 60em) {
   /* line 1, reuse/_box-icons.sass */
-  .box-icon-altel, .box-icon-aon, .box-icon-block, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-dashboard, .box-icon-dashboard-bonus, .box-icon-dashboard-consumption, .box-icon-dashboard-payment-history, .box-icon-docs, .box-icon-exchange, .box-icon-faq, .box-icon-feedback, .box-icon-handshake, .box-icon-html, .box-icon-mifi, .box-icon-missed-call, .box-icon-old-phone, .box-icon-order, .box-icon-pay-mobile, .box-icon-payment, .box-icon-payment-atm, .box-icon-payment-express, .box-icon-payment-portal, .box-icon-payment-pos, .box-icon-pdf, .box-icon-settings, .box-icon-settings-auto, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-star, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-sup-coverage-lte, .box-icon-tick, .box-icon-tonix, .box-icon-unlock, .box-icon-usb-modem, .box-icon-xls, .box-icon-lang, .box-icon-apn, .box-icon-addressbook {
+  .box-icon-altel, .box-icon-aon, .box-icon-block, .box-icon-business-devices, .box-icon-business-informer, .box-icon-business-internet, .box-icon-business-plans, .box-icon-business-services, .box-icon-business-special, .box-icon-dashboard, .box-icon-dashboard-bonus, .box-icon-dashboard-consumption, .box-icon-dashboard-payment-history, .box-icon-docs, .box-icon-exchange, .box-icon-faq, .box-icon-feedback, .box-icon-handshake, .box-icon-html, .box-icon-mifi, .box-icon-missed-call, .box-icon-old-phone, .box-icon-order, .box-icon-pay-mobile, .box-icon-payment, .box-icon-payment-atm, .box-icon-payment-express, .box-icon-payment-portal, .box-icon-payment-pos, .box-icon-pdf, .box-icon-settings, .box-icon-settings-auto, .box-icon-site-internet, .plan-icon-lte, .box-icon-site-migration-cdma, .box-icon-site-migration-jet, .box-icon-site-migration-city, .box-icon-site-plans, .plan-icon-gsm, .box-icon-site-roaming, .box-icon-star, .box-icon-sup-centres, .box-icon-sup-consultant, .box-icon-sup-coverage, .box-icon-sup-coverage-lte, .box-icon-tick, .box-icon-tonix, .box-icon-unlock, .box-icon-usb-modem, .box-icon-xls, .box-icon-lang, .box-icon-apn, .box-icon-addressbook {
     background-position: 100% 100%;
     background-size: auto 50%;
   }
@@ -2992,35 +2992,101 @@ figure {
 }
 
 /* line 12, reuse/_box-icons.sass */
-.box-icon-site-migration {
-  background-image: url(/public/images/icons/box-icon-site-migration.svg);
+.box-icon-site-migration-cdma {
+  background-image: url(/public/images/icons/box-icon-site-migration-cdma.svg);
 }
 /* line 39, base/_mixins.sass */
-.no-svg .box-icon-site-migration {
-  background-image: url(/public/images/icons/box-icon-site-migration.png);
+.no-svg .box-icon-site-migration-cdma {
+  background-image: url(/public/images/icons/box-icon-site-migration-cdma.png);
 }
 @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* line 39, base/_mixins.sass */
-  .no-svg .box-icon-site-migration {
-    background-image: url(/public/images/icons/box-icon-site-migration@2x.png);
+  .no-svg .box-icon-site-migration-cdma {
+    background-image: url(/public/images/icons/box-icon-site-migration-cdma@2x.png);
   }
 }
 /* line 15, reuse/_box-icons.sass */
-.box-icon-site-migration:after, .box:hover .box-icon-site-migration {
-  background-image: url(/public/images/icons/box-icon-site-migration-hover.svg);
+.box-icon-site-migration-cdma:after, .box:hover .box-icon-site-migration-cdma {
+  background-image: url(/public/images/icons/box-icon-site-migration-cdma-hover.svg);
 }
 /* line 39, base/_mixins.sass */
-.no-svg .box-icon-site-migration:after, .no-svg .box:hover .box-icon-site-migration {
-  background-image: url(/public/images/icons/box-icon-site-migration-hover.png);
+.no-svg .box-icon-site-migration-cdma:after, .no-svg .box:hover .box-icon-site-migration-cdma {
+  background-image: url(/public/images/icons/box-icon-site-migration-cdma-hover.png);
 }
 @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /* line 39, base/_mixins.sass */
-  .no-svg .box-icon-site-migration:after, .no-svg .box:hover .box-icon-site-migration {
-    background-image: url(/public/images/icons/box-icon-site-migration-hover@2x.png);
+  .no-svg .box-icon-site-migration-cdma:after, .no-svg .box:hover .box-icon-site-migration-cdma {
+    background-image: url(/public/images/icons/box-icon-site-migration-cdma-hover@2x.png);
   }
 }
 /* line 18, reuse/_box-icons.sass */
-.box-icon-site-migration:after {
+.box-icon-site-migration-cdma:after {
+  content: "";
+}
+
+/* line 12, reuse/_box-icons.sass */
+.box-icon-site-migration-jet {
+  background-image: url(/public/images/icons/box-icon-site-migration-jet.svg);
+}
+/* line 39, base/_mixins.sass */
+.no-svg .box-icon-site-migration-jet {
+  background-image: url(/public/images/icons/box-icon-site-migration-jet.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 39, base/_mixins.sass */
+  .no-svg .box-icon-site-migration-jet {
+    background-image: url(/public/images/icons/box-icon-site-migration-jet@2x.png);
+  }
+}
+/* line 15, reuse/_box-icons.sass */
+.box-icon-site-migration-jet:after, .box:hover .box-icon-site-migration-jet {
+  background-image: url(/public/images/icons/box-icon-site-migration-jet-hover.svg);
+}
+/* line 39, base/_mixins.sass */
+.no-svg .box-icon-site-migration-jet:after, .no-svg .box:hover .box-icon-site-migration-jet {
+  background-image: url(/public/images/icons/box-icon-site-migration-jet-hover.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 39, base/_mixins.sass */
+  .no-svg .box-icon-site-migration-jet:after, .no-svg .box:hover .box-icon-site-migration-jet {
+    background-image: url(/public/images/icons/box-icon-site-migration-jet-hover@2x.png);
+  }
+}
+/* line 18, reuse/_box-icons.sass */
+.box-icon-site-migration-jet:after {
+  content: "";
+}
+
+/* line 12, reuse/_box-icons.sass */
+.box-icon-site-migration-city {
+  background-image: url(/public/images/icons/box-icon-site-migration-city.svg);
+}
+/* line 39, base/_mixins.sass */
+.no-svg .box-icon-site-migration-city {
+  background-image: url(/public/images/icons/box-icon-site-migration-city.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 39, base/_mixins.sass */
+  .no-svg .box-icon-site-migration-city {
+    background-image: url(/public/images/icons/box-icon-site-migration-city@2x.png);
+  }
+}
+/* line 15, reuse/_box-icons.sass */
+.box-icon-site-migration-city:after, .box:hover .box-icon-site-migration-city {
+  background-image: url(/public/images/icons/box-icon-site-migration-city-hover.svg);
+}
+/* line 39, base/_mixins.sass */
+.no-svg .box-icon-site-migration-city:after, .no-svg .box:hover .box-icon-site-migration-city {
+  background-image: url(/public/images/icons/box-icon-site-migration-city-hover.png);
+}
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* line 39, base/_mixins.sass */
+  .no-svg .box-icon-site-migration-city:after, .no-svg .box:hover .box-icon-site-migration-city {
+    background-image: url(/public/images/icons/box-icon-site-migration-city-hover@2x.png);
+  }
+}
+/* line 18, reuse/_box-icons.sass */
+.box-icon-site-migration-city:after {
   content: "";
 }
 
@@ -3519,14 +3585,14 @@ figure {
   content: "";
 }
 
-/* line 72, reuse/_box-icons.sass */
+/* line 74, reuse/_box-icons.sass */
 .plan-icon-gsm,
 .plan-icon-lte {
   background-position: 50% 40%;
   background-size: auto 20%;
 }
 @media only screen and (max-width: 36em) {
-  /* line 72, reuse/_box-icons.sass */
+  /* line 74, reuse/_box-icons.sass */
   .plan-icon-gsm,
   .plan-icon-lte {
     background-size: auto 30%;
@@ -3879,11 +3945,11 @@ a.box:hover .button {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
+  width: 600px;
   height: 240px;
   padding: 24px;
   margin-top: -120px;
-  margin-left: -225px;
+  margin-left: -300px;
   background-color: white;
   text-align: center;
 }

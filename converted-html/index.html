@@ -13,35 +13,33 @@
   <!-- <script data-main="/public/scripts/app" src="/public/scripts/require.min.js"></script> -->
 </head>
 <body class="">
-  <!--[if lt IE 9]>
-
-    <div class="browsehappy">
-      <div class="browsehappy-body">
-        <p>К сожалению Ваш браузер устарел.
-        Чтобы использовать все возможности сайта, загрузите и установите один из этих браузеров:</p>
-        <div id="browsers">
-          <a class="column gutter" href="http://www.apple.com/safari/" target="_blank">
-            <img src="/public/images/browsehappy/safari.png" alt="" />
-            <div>Safari</div>
-          </a>
-          <a class="column gutter" href="http://www.google.com/chrome/" target="_blank">
-            <img src="/public/images/browsehappy/chrome.png" alt="" />
-            <div>Chrome</div>
-          </a>
-          <a class="column gutter" href="http://www.mozilla-europe.org/" target="_blank">
-            <img src="/public/images/browsehappy/firefox.png" alt="" />
-            <div>Firefox</div>
-          </a>
-          <a class="column gutter" href="http://www.opera.com/" target="_blank">
-            <img src="/public/images/browsehappy/opera.png" alt="" />
-            <div>Opera</div>
-          </a>
-        </div>
+  <!--[if lte IE 8]>
+  <div class="browsehappy">
+    <div class="browsehappy-body">
+      <p>К сожалению Ваш браузер устарел.
+      Чтобы использовать все возможности сайта, загрузите и установите один из этих браузеров:</p>
+      <div id="browsers">
+        <a class="column gutter" href="http://www.apple.com/safari/" target="_blank">
+          <img src="/public/images/browsehappy/safari.png" alt="" />
+          <div>Safari</div>
+        </a><a class="column gutter" href="http://www.google.com/chrome/" target="_blank">
+          <img src="/public/images/browsehappy/chrome.png" alt="" />
+          <div>Chrome</div>
+        </a><a class="column gutter" href="http://www.mozilla-europe.org/" target="_blank">
+          <img src="/public/images/browsehappy/firefox.png" alt="" />
+          <div>Firefox</div>
+        </a><a class="column gutter" href="http://www.opera.com/" target="_blank">
+          <img src="/public/images/browsehappy/opera.png" alt="" />
+          <div>Opera</div>
+        </a><a class="column gutter" href="http://http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank">
+          <img src="/public/images/browsehappy/ie.png" alt="" />
+          <div>Internet<br>Explorer</div>
+        </a>
       </div>
     </div>
+  </div>
 
   <![endif]-->
-
 
 
   <div class="modal-overlay"></div>
@@ -261,16 +259,26 @@
   </a>
 </div><div class="d1-3 m1">
   <div class="d1-2">
-    <a href="/site-choose-coverage" class="box ratio-box animated-box ratio-1-2 m-ratio-2-1 s-ratio-1">
+    <a href="/site-choose-coverage" class="box ratio-box animated-box ratio-1">
       <div class="box-background"></div>
       <div class="box-content box-icon-sup-coverage">
         Карта покрытия
       </div>
     </a>
   </div><div class="d1-2">
-    <a href="/site-migration" class="box ratio-box animated-box ratio-1-2 m-ratio-2-1 s-ratio-1">
+    <a href="/site-migration" class="box ratio-box animated-box ratio-1">
       <div class="box-background"></div>
-      <div class="box-content box-icon-site-migration">Миграция с CDMA</div>
+      <div class="box-content box-icon-site-migration-cdma">Миграция с CDMA</div>
+    </a>
+  </div><div class="d1-2">
+    <a href="/site-migration" class="box ratio-box animated-box ratio-1">
+      <div class="box-background"></div>
+      <div class="box-content box-icon-site-migration-jet">Миграция с JET</div>
+    </a>
+  </div><div class="d1-2">
+    <a href="/site-migration" class="box ratio-box animated-box ratio-1">
+      <div class="box-background"></div>
+      <div class="box-content box-icon-site-migration-city">Миграция с City</div>
     </a>
   </div>
 </div>
