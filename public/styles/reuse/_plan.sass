@@ -73,7 +73,7 @@
 //   background-size: contain
 //   background-position: 0 50%
 
-// 
+//
 // .epic-plan .planbox-icon
 //   background-position: 50% 40%
 //   background-size: auto 40%
@@ -196,9 +196,37 @@
 //   .box:hover &
 //     opacity: 1
 
-.plan-device-price
+.devices .plan-title
   position: relative
-  margin: 0 -1*$gutter 0 0
+  @extend %normal-text
+  z-index: 1
+  max-height: 2*$normal-line
+  padding: 0
+  margin: 0
+  overflow: hidden
+  font-weight: bold
+.devices .plan-device-price
+  position: relative
+  z-index: 1
+.devices .plan-device-figure
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: 80%
+
+.devices .button
+  @extend %small-text
+.devices .box-footer
+  padding: $gutter 0 1.5*$gutter
+
+.plan-device-price
+  @extend %small-text
+  position: relative
+  margin: 0 -1*$gutter
   padding: $baseline 0
   color: $secondary-text-color
   overflow: hidden
@@ -213,7 +241,7 @@
   background-color: $accent-color
   transform: translateX(100%)
   .box:hover &
-    transform: translateX(0)
+    transform: translateX($gutter)
 .plan-device-price-body
   @extend %box-animation-setup
   position: relative

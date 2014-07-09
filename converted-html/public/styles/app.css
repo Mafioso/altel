@@ -1096,7 +1096,7 @@ th {
 /* line 3, base/_type.sass */
 sup, sub, cite, .caption,
 .chat-msg-pic-caption,
-.timebound, legend, .agreement-label, .counter-title, .counter-note, .navigation, .nav-level-1, .notification a, .connection-howto, .plan-benefits, .plan-table, .cta-table, .common-table, .post-meta, .readmore, .post-links, .side-navigation-group-title .back-button, .account-balance-note, .bonus-balance-note, .account-additional-info, .service-subtitle {
+.timebound, legend, .agreement-label, .counter-title, .counter-note, .navigation, .nav-level-1, .notification a, .connection-howto, .plan-benefits, .plan-table, .cta-table, .common-table, .devices .button, .plan-device-price, .post-meta, .readmore, .post-links, .side-navigation-group-title .back-button, .account-balance-note, .bonus-balance-note, .account-additional-info, .service-subtitle {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 18px;
@@ -1118,7 +1118,7 @@ input[type="number"],
 input[type="search"],
 input[type="tel"],
 input[type="color"],
-textarea, .box, .phone-input:before, .epic-plan .plan-benefits, .phone-command, .side-navigation, .side-navigation-group-title {
+textarea, .box, .phone-input:before, .epic-plan .plan-benefits, .phone-command, .devices .plan-title, .side-navigation, .side-navigation-group-title {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 24px;
@@ -3719,22 +3719,23 @@ a.box:active .box-content {
 /* line 95, reuse/_box.sass */
 .ratio-box .box-footer {
   top: auto;
+  max-height: 100%;
   background-image: -webkit-linear-gradient(bottom, #ffffff 80%, rgba(255, 255, 255, 0) 100%);
   background-image: linear-gradient(bottom, #ffffff 80%, rgba(255, 255, 255, 0) 100%);
 }
-/* line 99, reuse/_box.sass */
+/* line 100, reuse/_box.sass */
 .box-footer .button {
   color: white;
   background-color: #d3d5d4;
 }
 
-/* line 103, reuse/_box.sass */
+/* line 104, reuse/_box.sass */
 a.box:hover .button {
   color: white;
   background-color: #ed0088;
 }
 
-/* line 107, reuse/_box.sass */
+/* line 108, reuse/_box.sass */
 .ratio-box:before {
   content: "";
   display: block;
@@ -3742,13 +3743,13 @@ a.box:hover .button {
 }
 
 @-webkit-keyframes box-hover {
-  /* line 113, reuse/_box.sass */
+  /* line 114, reuse/_box.sass */
   50% {
     -webkit-transform: translateY(-3px);
             transform: translateY(-3px);
   }
 
-  /* line 115, reuse/_box.sass */
+  /* line 116, reuse/_box.sass */
   100% {
     -webkit-transform: translateY(-6px);
             transform: translateY(-6px);
@@ -3756,138 +3757,138 @@ a.box:hover .button {
 }
 
 @keyframes box-hover {
-  /* line 113, reuse/_box.sass */
+  /* line 114, reuse/_box.sass */
   50% {
     -webkit-transform: translateY(-3px);
             transform: translateY(-3px);
   }
 
-  /* line 115, reuse/_box.sass */
+  /* line 116, reuse/_box.sass */
   100% {
     -webkit-transform: translateY(-6px);
             transform: translateY(-6px);
   }
 }
 
-/* line 119, reuse/_box.sass */
+/* line 120, reuse/_box.sass */
 .ratio-1-2:before {
   padding-top: 200%;
 }
 
-/* line 121, reuse/_box.sass */
+/* line 122, reuse/_box.sass */
 .ratio-2-1:before {
   padding-top: 50%;
 }
 
-/* line 123, reuse/_box.sass */
+/* line 124, reuse/_box.sass */
 .ratio-2-3:before {
   padding-top: 150%;
 }
 
-/* line 125, reuse/_box.sass */
+/* line 126, reuse/_box.sass */
 .ratio-3-2:before {
   padding-top: 66.66666666666666%;
 }
 
-/* line 127, reuse/_box.sass */
+/* line 128, reuse/_box.sass */
 .ratio-3-4:before {
   padding-top: 133.33333333333331%;
 }
 
-/* line 129, reuse/_box.sass */
+/* line 130, reuse/_box.sass */
 .ratio-4-3:before {
   padding-top: 75%;
 }
 
-/* line 131, reuse/_box.sass */
+/* line 132, reuse/_box.sass */
 .ratio-3-1:before {
   padding-top: 33.33333333333333%;
 }
 
-/* line 133, reuse/_box.sass */
+/* line 134, reuse/_box.sass */
 .ratio-4-1:before {
   padding-top: 25%;
 }
 
-/* line 135, reuse/_box.sass */
+/* line 136, reuse/_box.sass */
 .ratio-8-1:before {
   padding-top: 12.5%;
 }
 
-/* line 137, reuse/_box.sass */
+/* line 138, reuse/_box.sass */
 .ratio-8-9:before {
   padding-top: 112.5%;
 }
 
-/* line 139, reuse/_box.sass */
+/* line 140, reuse/_box.sass */
 .ratio-8-3:before {
   padding-top: 37.5%;
 }
 
 @media only screen and (max-width: 72em) {
-  /* line 143, reuse/_box.sass */
+  /* line 144, reuse/_box.sass */
   .l-ratio-2-1:before {
     padding-top: 50%;
   }
 
-  /* line 145, reuse/_box.sass */
+  /* line 146, reuse/_box.sass */
   .l-ratio-2-3:before {
     padding-top: 150%;
   }
 
-  /* line 147, reuse/_box.sass */
+  /* line 148, reuse/_box.sass */
   .l-ratio-3-1:before {
     padding-top: 33.33333333333333%;
   }
 
-  /* line 149, reuse/_box.sass */
+  /* line 150, reuse/_box.sass */
   .l-ratio-1:before {
     padding-top: 100%;
   }
 }
 @media only screen and (max-width: 60em) {
-  /* line 153, reuse/_box.sass */
+  /* line 154, reuse/_box.sass */
   .m-ratio-1:before {
     padding-top: 100%;
   }
 
-  /* line 155, reuse/_box.sass */
+  /* line 156, reuse/_box.sass */
   .m-ratio-3-2:before {
     padding-top: 66.66666666666666%;
   }
 
-  /* line 157, reuse/_box.sass */
+  /* line 158, reuse/_box.sass */
   .m-ratio-3-4:before {
     padding-top: 133.33333333333331%;
   }
 
-  /* line 159, reuse/_box.sass */
+  /* line 160, reuse/_box.sass */
   .m-ratio-4-3:before {
     padding-top: 75%;
   }
 
-  /* line 161, reuse/_box.sass */
+  /* line 162, reuse/_box.sass */
   .m-ratio-2-1:before {
     padding-top: 50%;
   }
 
-  /* line 163, reuse/_box.sass */
+  /* line 164, reuse/_box.sass */
   .m-ratio-1-2:before {
     padding-top: 200%;
   }
 }
 @media only screen and (max-width: 36em) {
-  /* line 167, reuse/_box.sass */
+  /* line 168, reuse/_box.sass */
   .s-ratio-1:before {
     padding-top: 100%;
   }
 
-  /* line 169, reuse/_box.sass */
+  /* line 170, reuse/_box.sass */
   .s-ratio-1-2:before {
     padding-top: 200%;
   }
 
-  /* line 171, reuse/_box.sass */
+  /* line 172, reuse/_box.sass */
   .s-ratio-2-1:before {
     padding-top: 50%;
   }
@@ -5784,15 +5785,49 @@ footer .logotype-image {
 }
 
 /* line 199, reuse/_plan.sass */
+.devices .plan-title {
+  position: relative;
+  z-index: 1;
+  max-height: 48px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+/* line 208, reuse/_plan.sass */
+.devices .plan-device-price {
+  position: relative;
+  z-index: 1;
+}
+
+/* line 211, reuse/_plan.sass */
+.devices .plan-device-figure {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+}
+
+/* line 223, reuse/_plan.sass */
+.devices .box-footer {
+  padding: 12px 0 18px;
+}
+
+/* line 226, reuse/_plan.sass */
 .plan-device-price {
   position: relative;
-  margin: 0 -12px 0 0;
+  margin: 0 -12px;
   padding: 6px 0;
   color: #a5acb0;
   overflow: hidden;
 }
 
-/* line 205, reuse/_plan.sass */
+/* line 233, reuse/_plan.sass */
 .plan-device-price-bg {
   position: absolute;
   top: 0;
@@ -5805,18 +5840,18 @@ footer .logotype-image {
       -ms-transform: translateX(100%);
           transform: translateX(100%);
 }
-/* line 215, reuse/_plan.sass */
+/* line 243, reuse/_plan.sass */
 .box:hover .plan-device-price-bg {
-  -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(12px);
+      -ms-transform: translateX(12px);
+          transform: translateX(12px);
 }
 
-/* line 217, reuse/_plan.sass */
+/* line 245, reuse/_plan.sass */
 .plan-device-price-body {
   position: relative;
 }
-/* line 220, reuse/_plan.sass */
+/* line 248, reuse/_plan.sass */
 .box:hover .plan-device-price-body {
   color: white;
 }
