@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Altel</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- TODO: Place favicon.ico and apple-touch-icons in the root directory -->
+  <link href="/public/styles/app.min.css" rel="stylesheet" type="text/css" media="all"/>
+  <script src="/public/scripts/bower_components/modernizr.min.js"></script>
+  <!-- <script data-main="/public/scripts/app" src="/public/scripts/require.min.js"></script> -->
+</head>
+<body class="">
+  <!--[if lte IE 8]>
+  <div class="browsehappy">
+    <div class="browsehappy-body">
+      <p>К сожалению Ваш браузер устарел.
+      Чтобы использовать все возможности сайта, загрузите и установите один из этих браузеров:</p>
+      <div id="browsers">
+        <a class="column gutter" href="http://www.apple.com/safari/" target="_blank">
+          <img src="/public/images/browsehappy/safari.png" alt="" />
+          <div>Safari</div>
+        </a><a class="column gutter" href="http://www.google.com/chrome/" target="_blank">
+          <img src="/public/images/browsehappy/chrome.png" alt="" />
+          <div>Chrome</div>
+        </a><a class="column gutter" href="http://www.mozilla-europe.org/" target="_blank">
+          <img src="/public/images/browsehappy/firefox.png" alt="" />
+          <div>Firefox</div>
+        </a><a class="column gutter" href="http://www.opera.com/" target="_blank">
+          <img src="/public/images/browsehappy/opera.png" alt="" />
+          <div>Opera</div>
+        </a><a class="column gutter" href="http://http://windows.microsoft.com/en-us/internet-explorer/download-ie" target="_blank">
+          <img src="/public/images/browsehappy/ie.png" alt="" />
+          <div>Internet<br>Explorer</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <![endif]-->
+
+
+  <div class="modal-overlay"></div>
+  
+  <div id="support-modal" class="modal">
+  <div class="container text-center">
+    <div class="d1-3 l2-3 s1">
+      <div class="box">
+        <div class="box-content">
+          <h2 class="plan-title">
+            Поддержка
+          </h2>
+          <ul class="acc-list">
+            <li>
+              <a href="/dashboard-faq" class="acc-list-item">Часто задаваемые вопросы (FAQ)</a>
+            </li>
+            <li>
+              <a href="/dashboard-where-to-buy" class="acc-list-item">Где купить?</a>
+            </li>
+            <li>
+              <a href="/dashboard-contacts" class="acc-list-item">Контакты</a>
+            </li>
+            <li>
+              <a href="#" class="acc-list-item">Онлайн-консультант</a>
+            </li>
+          </ul>
+          <div class="box-footer plan-cta-container">
+            <a href="#" class="u-link js-modal-close">Закрыть</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <nav class="nav-drawer" tabindex="-1">
+  <div class="nav-drawer-content">
+  <ul class="nav-drawer-list">
+    <li><a href="/" class="nav-drawer-list-item ">Главная</a></li>
+    <li>
+      <div class="d2-3">
+        <a href="/dashboard-entrance" class="nav-drawer-list-item ">Личный кабинет</a>
+      </div><div class="d1-3"><a href="#" class="nav-drawer-list-item text-right">выйти</a></div>
+    </li>
+    <li><a href="/site-payment" class="nav-drawer-list-item ">Оплата</a></li>
+    <li><a href="/site-plans" class="nav-drawer-list-item ">Тарифы</a></li>
+    <li><a href="/site-internet" class="nav-drawer-list-item ">Интернет 4G</a></li>
+    <li><a href="/site-services" class="nav-drawer-list-item ">Услуги</a></li>
+    <li><a href="/business-index" class="nav-drawer-list-item ">Бизнесу</a></li>
+  </ul>
+  
+  <ul class="nav-drawer-list">
+    <li><a href="#" class="nav-drawer-list-item">Ваш регион</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Поддержка</a></li>
+    <li>
+      <div class="d1-3">
+        <a href="#" class="nav-drawer-list-item">Қаз</a>
+      </div><div class="d1-3">
+        <a href="#" class="nav-drawer-list-item">Рус</a>
+      </div><div class="d1-3">
+        <a href="#" class="nav-drawer-list-item active">Eng</a>
+      </div>
+    </li>
+  </ul>
+
+  <ul class="nav-drawer-list">
+    <li><a href="#" class="nav-drawer-list-item">О компании</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Новости</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Пресс-центр</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Лицензии</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Закупки</a></li>
+    <li><a href="#" class="nav-drawer-list-item">Вакансии</a></li>
+  </ul>
+  </div>
+</nav>
+<div class="nav-drawer-overlay js-nav-drawer-toggle"></div>
+
+  <div class="adventure-time">
+    <div class="sticky-wrap">
+      <div class="container">
+        
+
+<nav class="nav-container header">
+    <ul class="navigation nav-level-2">
+        <li class="nav-col nav-logotype-container d1-3 m2-3 s2-3">
+            <a href="http://altel.kz" class="logotype">
+                <img class="logotype-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Altel">
+            </a>
+        </li><li class="nav-col d1-6 text-right">
+            <a href="http://altel.kz/support/" class="icon-support nav-link">Поддержка</a>
+        </li><li class="nav-col d1-6 text-right">
+            <a href="https://cabinet.altel.kz/" class="icon-cabinet nav-link">Личный кабинет</a>
+        </li><li class="nav-col d1-6 text-right">
+            <a class="icon-consultant nav-link" href="https://cabinet.altel.kz/webim/client.php?locale=ru" onclick="if(navigator.userAgent.toLowerCase().indexOf('opera') != -1 &amp;&amp; window.event.preventDefault) window.event.preventDefault();this.newWindow = window.open('https://cabinet.altel.kz/webim/client.php?locale=ru&amp;url='+escape(document.location.href)+'&amp;referrer='+escape(document.referrer), 'webim', 'toolbar=0,scrollbars=0,location=0,status=1,menubar=0,width=640,height=480,resizable=1');this.newWindow.focus();this.newWindow.opener=window;return false;"
+            target="_blank">Онлайн-консультант</a>
+        </li><li class="nav-col d1-6 text-right">
+            <div class="lang-switcher">
+                <a href="/?lang=kz&amp;path=/" class="nav-link">Қаз</a> |
+                <a href="/?lang=ru&amp;path=/" class="nav-link active">Рус</a>
+            </div>
+            <a href="/?logout=1" class="nav-link">Выход</a>
+        </li><li class="nav-col nav-toggle-container d1-6 m1-3 s1-3">
+            <a href="#" class="nav-drawer-toggle js-nav-drawer-toggle">
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Menu">
+            </a>
+        </li>
+    </ul>
+
+    <div class="navigation nav-level-1"><a class="nav-button d1-7" href="http://altel.kz/tariffs/">Тарифы GSM</a><a class="nav-button d1-7" href="http://altel.kz/internet/">Интернет 4G</a><a class="nav-button d1-7" href="http://altel.kz/devices/">Устройства</a><a class="nav-button d1-7" href="http://altel.kz/services/">Услуги</a><a class="nav-button d1-7"
+        href="http://altel.kz/payment/">Оплата</a><a class="nav-button d1-7" href="http://altel.kz/business/">Бизнес-клиентам</a><a class="nav-button d1-7" href="http://altel.kz/support/service-map/">Где купить?</a>
+    </div>
+</nav>
+
+        
+<ul class="breadcrumbs">
+  <li class="breadcrumbs-item">
+    <a class="breadcrumbs-item-link" href="/" title="Главная">Главная</a>
+  </li>
+  <li class="breadcrumbs-item">
+    <a class="breadcrumbs-item-link" href="/payment/" title="Оплата">Оплата</a>
+  </li>
+  <li class="breadcrumbs-item">Мобильные платежи</li>
+</ul>
+<div class="gutter">
+  <div class="d1-6 m1">
+    <section class="side-navigation-meta">
+      <h1 class="page-title">Мобильные платежи</h1>
+      <ul class="side-navigation"><li><a class="side-navigation-item" href="/payment/online/">Онлайн-оплата</a></li><li><a class="side-navigation-item" href="/payment/express-card/">Карты экспресс-оплаты</a></li><li><a class="side-navigation-item" href="/payment/atm/">Банкоматы</a></li><li><a class="side-navigation-item" href="/payment/bank-portal/">Интернет-порталы банков</a></li><li><a class="side-navigation-item" href="/payment/pos/">Терминалы</a></li></ul>
+    </section>
+  </div><div class="d5-6 m1">
+    <div class="fluffy">
+      <div class="box">
+        <div class="box-content">
+          <div class="d4-6 m1 middle">
+            <div class="column s1-3 fluffy middle">
+              <img src="/public/images/payment-apps/myth.png" alt="" width="72px" height="72px" />
+
+            </div><div class="column s2-3 middle">
+              <p class="no-trailer">
+                <strong>Myth.kz — удобные платежи</strong>
+              </p>
+              <p class="no-trailer">CrystalSpring LLP</p>
+            </div>
+          </div><div class="d2-6 m1 middle text-right fluffy">
+            <a href="https://itunes.apple.com/us/app/myth.kz-udobnye-platezi/id622466010?mt=8" target="_blank">
+            <img src="/public/images/payment-apps/onAppStore.png" alt="" />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=kz.crystalspring.mythkz" target="_blank">
+          <img src="/public/images/payment-apps/onGooglePlay.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-content">
+          <div class="d4-6 m1 middle">
+            <div class="column s1-3 fluffy middle">
+              <img src="/public/images/payment-apps/homebank.png" alt="" width="72px" height="72px" />
+            </div><div class="column s2-3 middle">
+              <p class="no-trailer">
+                <strong>Homebank.kz</strong>
+              </p>
+              <p class="no-trailer">Kazkommertsbank</p>
+            </div>
+          </div><div class="d2-6 m1 middle text-right fluffy">
+            <a href="https://itunes.apple.com/us/app/myth.kz-udobnye-platezi/id622466010?mt=8" target="_blank">
+            <img src="/public/images/payment-apps/onAppStore.png" alt="" />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=kz.crystalspring.mythkz" target="_blank">
+          <img src="/public/images/payment-apps/onGooglePlay.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-content">
+          <div class="d4-6 m1 middle">
+            <div class="column s1-3 fluffy middle">
+              <img src="/public/images/payment-apps/halyk.png" alt="" width="72px" height="72px" />
+            </div><div class="column s2-3 middle">
+              <p class="no-trailer">
+                <strong>Halyk Bank</strong>
+              </p>
+              <p class="no-trailer">Intervale</p>
+            </div>
+          </div><div class="d2-6 m1 middle text-right fluffy">
+            <a href="https://itunes.apple.com/us/app/myth.kz-udobnye-platezi/id622466010?mt=8" target="_blank">
+            <img src="/public/images/payment-apps/onAppStore.png" alt="" />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=kz.crystalspring.mythkz" target="_blank">
+          <img src="/public/images/payment-apps/onGooglePlay.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ADD THIS! (don't add the comments) -->
+      <div class="box">
+        <div class="box-content">
+          <div class="d4-6 m1 middle">
+            <div class="column s1-3 fluffy middle">
+              <img src="/public/images/payment-apps/qiwi-wallet.png" alt="" width="72px" height="72px" />
+            </div><div class="column s2-3 middle">
+              <p class="no-trailer">
+                <strong>QIWI Wallet</strong>
+              </p>
+              <p class="no-trailer">Qiwi</p>
+            </div>
+          </div><div class="d2-6 m1 middle text-right fluffy">
+            <a href="https://itunes.apple.com/us/app/myth.kz-udobnye-platezi/id622466010?mt=8" target="_blank">
+            <img src="/public/images/payment-apps/onAppStore.png" alt="" />
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=kz.crystalspring.mythkz" target="_blank">
+          <img src="/public/images/payment-apps/onGooglePlay.png" alt="" />
+            </a>
+            <div><a href="#">Другие платформы</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- END -->
+
+    </div>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <div class="sticky-footer">
+      <div class="container">
+        <footer>
+
+<nav class="nav-container">
+  <div class="navigation nav-level-2 text-center">
+
+    <div class="fpb-list">
+      <ul class="nav-button inline-list">
+        <li><a href="/site-about" class="nav-link">О компании</a></li>
+        <li><a href="/site-news" class="nav-link">Новости</a></li>
+        <li><a href="/site-press" class="nav-link">Пресс-центр</a></li>
+        <li><a href="/business-partners" class="nav-link">Партнерам</a></li>
+        <li><a href="/site-licenses" class="nav-link">Лицензии</a></li>
+        <li><a href="/site-buying" class="nav-link">Закупки</a></li>
+        <li><a href="/site-vacancies" class="nav-link">Вакансии</a></li>
+        <li><a href="/site-contacts" class="nav-link">Контакты</a></li>
+        <li><a href="/site-search" class="nav-link">Поиск</a></li>
+      </ul>
+    </div>
+
+    <div class="d1-4 m1">
+      <a href="/" class="logotype">
+        <img class="logotype-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Altel">
+      </a>
+      <ul class="nav-button inline-list">
+        <li><a href="http://instagram.com/altel4g" class="nav-link"><span class="icon-instagram"></span></a></li>
+        <li><a href="https://twitter.com/ALTEL4G" class="nav-link"><span class="icon-twitter"></span></a></li>
+        <li><a href="https://www.facebook.com/ALTEL4G" class="nav-link"><span class="icon-facebook"></span></a></li>
+        <li><a href="https://vk.com/altel4g" class="nav-link"><span class="icon-vkontakte"></span></a></li>
+      </ul>
+    </div>
+
+    <ul class="nav-button inline-list">
+      <li><a href="http://v3na.com/about/"><span class="icon-madeby"></span></a></li>
+    </ul>
+
+  </div>
+</nav>
+
+</footer>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="/public/scripts/bower_components/jquery/jquery.min.js"></script>
+  <script src="/public/scripts/app/bootstrap.min.js"></script>
+  <script src="/public/scripts/simple.min.js"></script>
+  
+</body>
+</html>

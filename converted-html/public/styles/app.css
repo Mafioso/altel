@@ -5481,6 +5481,11 @@ footer .logotype-image {
   margin-bottom: 6px;
 }
 
+/* line 6, reuse/_page-commons.sass */
+.page-title.page-title {
+  padding-top: 6px;
+}
+
 /* line 1, reuse/_pagination.sass */
 .pagination {
   list-style-type: none;

@@ -1,0 +1,112 @@
+{% block content %}
+<ul class="breadcrumbs">
+  <li class="breadcrumbs-item">
+    <a class="breadcrumbs-item-link" href="/" title="Главная">Главная</a>
+  </li>
+  <li class="breadcrumbs-item">
+    <a class="breadcrumbs-item-link" href="/payment/" title="Оплата">Оплата</a>
+  </li>
+  <li class="breadcrumbs-item">Мобильные платежи</li>
+</ul>
+<div class="gutter">
+  <div class="d1-6 m1">
+    <section class="side-navigation-meta">
+      <h1 class="page-title">Мобильные платежи</h1>
+      <ul class="side-navigation"><li><a class="side-navigation-item" href="/payment/online/">Онлайн-оплата</a></li><li><a class="side-navigation-item" href="/payment/express-card/">Карты экспресс-оплаты</a></li><li><a class="side-navigation-item" href="/payment/atm/">Банкоматы</a></li><li><a class="side-navigation-item" href="/payment/bank-portal/">Интернет-порталы банков</a></li><li><a class="side-navigation-item" href="/payment/pos/">Терминалы</a></li></ul>
+    </section>
+  </div><div class="d5-6 m1">
+    <div class="fluffy">
+      <div class="box">
+        <div class="box-content">
+          <div class="d4-6 m1 middle">
+            <div class="column s1-3 fluffy middle">
+              <img src="{{ 'myth.png' | asset_url }}" alt="" width="72px" height="72px" />
+
+            </div><div class="column s2-3 middle">
+              <p class="no-trailer">
+                <strong>Myth.kz — удобные платежи</strong>
+              </p>
+              <p class="no-trailer">CrystalSpring LLP</p>
+            </div>
+          </div><div class="d2-6 m1 middle text-right fluffy">
+            <a href="https://itunes.apple.com/us/app/myth.kz-udobnye-platezi/id622466010?mt=8" target="_blank">
+            {{ "onAppStore.png" | asset_url | image_tag }}
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=kz.crystalspring.mythkz" target="_blank">
+          {{ "onGooglePlay.png" | asset_url | image_tag }}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-content">
+          <div class="d4-6 m1 middle">
+            <div class="column s1-3 fluffy middle">
+              <img src="{{ 'homebank.png' | asset_url }}" alt="" width="72px" height="72px" />
+            </div><div class="column s2-3 middle">
+              <p class="no-trailer">
+                <strong>Homebank.kz</strong>
+              </p>
+              <p class="no-trailer">Kazkommertsbank</p>
+            </div>
+          </div><div class="d2-6 m1 middle text-right fluffy">
+            <a href="https://itunes.apple.com/us/app/myth.kz-udobnye-platezi/id622466010?mt=8" target="_blank">
+            {{ "onAppStore.png" | asset_url | image_tag }}
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=kz.crystalspring.mythkz" target="_blank">
+          {{ "onGooglePlay.png" | asset_url | image_tag }}
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-content">
+          <div class="d4-6 m1 middle">
+            <div class="column s1-3 fluffy middle">
+              <img src="{{ 'halyk.png' | asset_url }}" alt="" width="72px" height="72px" />
+            </div><div class="column s2-3 middle">
+              <p class="no-trailer">
+                <strong>Halyk Bank</strong>
+              </p>
+              <p class="no-trailer">Intervale</p>
+            </div>
+          </div><div class="d2-6 m1 middle text-right fluffy">
+            <a href="https://itunes.apple.com/us/app/myth.kz-udobnye-platezi/id622466010?mt=8" target="_blank">
+            {{ "onAppStore.png" | asset_url | image_tag }}
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=kz.crystalspring.mythkz" target="_blank">
+          {{ "onGooglePlay.png" | asset_url | image_tag }}
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ADD THIS! (don't add the comments) -->
+      <div class="box">
+        <div class="box-content">
+          <div class="d4-6 m1 middle">
+            <div class="column s1-3 fluffy middle">
+              <img src="{{ 'qiwi-wallet.png' | asset_url }}" alt="" width="72px" height="72px" />
+            </div><div class="column s2-3 middle">
+              <p class="no-trailer">
+                <strong>QIWI Wallet</strong>
+              </p>
+              <p class="no-trailer">Qiwi</p>
+            </div>
+          </div><div class="d2-6 m1 middle text-right fluffy">
+            <a href="https://itunes.apple.com/us/app/myth.kz-udobnye-platezi/id622466010?mt=8" target="_blank">
+            {{ "onAppStore.png" | asset_url | image_tag }}
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=kz.crystalspring.mythkz" target="_blank">
+          {{ "onGooglePlay.png" | asset_url | image_tag }}
+            </a>
+            <div><a href="#">Другие платформы</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- END -->
+
+    </div>
+  </div>
+</div>
+{% endblock %}
