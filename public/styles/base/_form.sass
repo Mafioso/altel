@@ -223,6 +223,9 @@ select
   font-size: $small-text
   height: $normal-line
   line-height: $normal-line
+  &:focus
+    font-size: $small-text
+    line-height: $normal-line
 
 
 // .form-stacked input[type="text"],
@@ -348,4 +351,5 @@ select
 // Fix the zoom problem with iphone
 @media screen and (-webkit-min-device-pixel-ratio: 0)
   select:focus, textarea:focus, input:focus
-    @include font($normal-text, $normal-line)
+    font-size: $small-text
+    line-height: $normal-line

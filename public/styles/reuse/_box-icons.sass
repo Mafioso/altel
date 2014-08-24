@@ -13,7 +13,7 @@
     @extend %box-icon
     @include background-image("icons/#{$icon}")
     &:after,
-    .box:hover &
+    .box:hover > &
       @include background-image("icons/#{$icon}-hover")
     &:after
       content: ""
