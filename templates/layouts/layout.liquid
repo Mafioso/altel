@@ -12,7 +12,7 @@
   {{ "modernizr.min.js" | asset_url | script_tag }}
   <!-- <script data-main="/public/scripts/app" src="/public/scripts/require.min.js"></script> -->
 </head>
-<body class="{% block body-class %}{% endblock %}">
+<body class="{% block body-class %}{% endblock %} modal-open">
   <!--[if lte IE 8]>
   <div class="browsehappy">
     <div class="browsehappy-body">
@@ -43,6 +43,18 @@
 
 
   <div class="modal-overlay"></div>
+
+
+  <div id="support-modal" class="modal active">
+    <div class="container text-center">
+      <div class="d1">
+        <a class="box ratio-box ratio-3-1 m-ratio-4-3" href="#">
+          <div class="box-content cover" style="background-image: url({{ 'banner.png' | asset_url }});"></div>
+        </a>
+      </div>
+    </div>
+  </div>
+
   {% block modal %}{% endblock %}
   {% include "support-modal" %}
 
