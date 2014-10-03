@@ -1,0 +1,23 @@
+.prod-type
+  display: none
+  &.active
+    display: block
+
+.prod-toggles
+  padding: $baseline
+  text-align: center
+
+.prod-toggle
+  display: inline-block
+  width: 3*$gutter
+  height: 3*$gutter
+  background-color: currentColor
+  border: 2px solid $normal-text-color
+  border-radius: $radius
+  overflow: hidden
+  text-indent: -9999em
+  &:hover
+    opacity: .8
+    color: currentColor
+  &.active
+    border-color: $accent-color

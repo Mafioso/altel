@@ -2792,3 +2792,18 @@ table tr.tr--highlighted:nth-child(n) { color: white; background-color: #ed0088;
 /* line 5, /Users/Vadim/Documents/work-altel/altel/public/styles/special/_migration.sass */
 .transfer-image img { max-height: 100%; }
 
+/* line 1, /Users/Vadim/Documents/work-altel/altel/public/styles/special/_prodType.sass */
+.prod-type { display: none; }
+/* line 3, /Users/Vadim/Documents/work-altel/altel/public/styles/special/_prodType.sass */
+.prod-type.active { display: block; }
+
+/* line 6, /Users/Vadim/Documents/work-altel/altel/public/styles/special/_prodType.sass */
+.prod-toggles { padding: 6px; text-align: center; }
+
+/* line 10, /Users/Vadim/Documents/work-altel/altel/public/styles/special/_prodType.sass */
+.prod-toggle { display: inline-block; width: 36px; height: 36px; background-color: currentColor; border: 2px solid #56565c; border-radius: 3px; overflow: hidden; text-indent: -9999em; }
+/* line 19, /Users/Vadim/Documents/work-altel/altel/public/styles/special/_prodType.sass */
+.prod-toggle:hover { opacity: 0.8; color: currentColor; }
+/* line 22, /Users/Vadim/Documents/work-altel/altel/public/styles/special/_prodType.sass */
+.prod-toggle.active { border-color: #ed0088; }
+
